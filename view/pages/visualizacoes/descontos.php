@@ -10,7 +10,6 @@
     <meta name="description" content="Cupons SempreNegócio, seu guia de descontos, economize aqui.">
     <meta name="keywords" content="Descontos, cupons, cupons de descontos. economizar, Sempre Negócio, semprenegocio.com.br, semprenegocio.com">
     <link rel="icon" href="view/assets/imagens/flor.png">
- <base href="http://www.semprenegocio.com.br/" target="">
     <title>Sempre Negócio - Descontos</title>
     <!-- build:css css/index.min.css -->
     <link href="view/assets/estilo/reset.css" rel="stylesheet">
@@ -209,7 +208,7 @@
             ?>
             <div class="home">
                 <ul>
-                    <li><a href="home">Home</a></li>
+                    <li><a href="?controller=Home&action=index">Home</a></li>
                 </ul>
             </div>
             <!--fim div que da contexto para seu filhos-->

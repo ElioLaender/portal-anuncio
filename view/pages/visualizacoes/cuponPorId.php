@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="SempreNegócio soluções inteligentes">
-    <base href="http://www.semprenegocio.com.br/" target="">
     <meta name="keywords" content="Descontos, cupons, cupons de descontos, economizar, Sempre Negócio, sempre negócio, semprenegocio.com.br, semprenegocio.com">
     <link rel="icon" href="view/assets/imagens/flor.png">
     <title>Sempre Negócio - Cupon de desconto <?php echo $description[0]['cupon_desconto_titulo']; ?></title>

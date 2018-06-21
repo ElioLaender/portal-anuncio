@@ -48,7 +48,7 @@
                         </form>
                         <ul>
                             <li>
-                              <a href="home" hreflang="pt-br" >Home</a>
+                              <a href="?controller=Home&action=index" hreflang="pt-br" >Home</a>
                            </li>
                            <li>
                             <a href="?controller=CadastroCliente&action=telaCadastro" hreflang="pt-br">Cadastrar</a>
@@ -66,7 +66,7 @@
                             <a href="anuncie/" hreflang="pt-br" class="cor">Anuncie Grátis</a>
                         </li>
                             <li>
-                                <a href="home" hreflang="pt-br">A empresa</a>
+                                <a href="?controller=Home&action=index" hreflang="pt-br">A empresa</a>
                             </li>
                         </ul>
                     </nav>
@@ -204,7 +204,7 @@
                 ?>
                 <div class="home">
                     <ul>
-                        <li><a href="home">Home</a></li>
+                        <li><a href="?controller=Home&action=index">Home</a></li>
                     </ul>
                 </div>
                 <!--fim div que da contexto para seu filhos-->

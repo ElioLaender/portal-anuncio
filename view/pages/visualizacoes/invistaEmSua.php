@@ -51,22 +51,20 @@
                     </form>
                     <ul>
                         <li>
-                            <a href="home">Home</a>
-                        </li>
-                        <li>
                             <a href="?controller=CadastroCliente&action=telaCadastro" hreflang="pt-br">Cadastrar</a>
                         </li>
                         <li>
-                            <a href="descontos/" hreflang="pt-br">Descontos</a>
+                            <a href="?controller=Home&action=viewDescontos" hreflang="pt-br">Descontos</a>
                         </li>
                         <li>
-                            <a href="duvidas-frequentes/" hreflang="pt-br">Dúvidas Freguentes</a>
+                            <a href="?controller=Home&action=duvidasFrequentes" hreflang="pt-br">Dúvidas Freguentes</a>
                         </li>
                         <li>
-                            <a href="dicas/" hreflang="pt-br">Dicas</a>
+                            <a href="?controller=Home&action=viewDicas" hreflang="pt-br">Dicas</a>
                         </li>
                         <li>
-                            <a href="cuidados-com-fraudes/">Cuidados com fraudes</a>                            </li>
+                            <a href="?controller=Home&action=viewInvistaNegocio" hreflang="pt-br" class="cor">Anuncie Grátis</a>
+                        </li>
                         <li>
                             <a href="#" hreflang="pt-br">A empresa</a>
                         </li>
@@ -208,7 +206,7 @@
             ?>
             <div class="home">
                 <ul>
-                    <li><a href="home">Home</a></li>
+                    <li><a href="?controller=Home&action=index">Home</a></li>
                 </ul>
             </div>
             <!--fim div que da contexto para seu filhos-->
@@ -564,25 +562,25 @@
                         <li>
                             <p>SempreNegócio</p>
                         </li>
-                             <li><a href="trabalhe-conosco/" id="trab">Trabalhe conosco</a></li>
-                        <li><a href="fale-conosco/" id="cont">Fale conosco</a></li>
-                        <li><a href="http://www.expressahost.com.br" id="sit"  hreflang="pt-br" target="_blank">Conheça nossos sistemas</a></li>
+                        <li><a href="?controller=Funcionario&action=viewTrabalheConosco" id="trab">Trabalhe conosco</a></li>
+                        <li><a href="?controller=Home&action=viewTermosDeUso" id="cont">Fale conosco</a></li>
+                        <li><a href="#" id="sit"  hreflang="pt-br" target="_blank">Conheça nossos sistemas</a></li>
                     </ul>
                     <ul>
                         <li>
                             <p>Para Você</p>
                         </li>
-                         <li><a href="duvidas-frequentes/" id="duvi">Dúvidas frequêntes</a></li>
-                        <li><a href="termos-de-uso/" id="term">Termos de uso</a></li>
-                        <li><a href="politica-de-privacidade/" id="poli">Política de privacidade</a></li>
+                        <li><a href="?controller=Home&action=duvidasFrequentes" id="duvi">Dúvidas frequêntes</a></li>
+                        <li><a href="?controller=Home&action=viewTermosDeUso" id="term">Termos de uso</a></li>
+                        <li><a href="?controller=Home&action=viewPoliticaPri" id="poli">Política de privacidade</a></li>
                     </ul>
                     <ul>
                         <li>
                             <p>Para Anunciantes</p>
                         </li>
-                        <li><a href="painel-de-controle/" hreflang="pt-br">Painel de Controle</a></li>
-                        <li><a href="termos-gerais/" id="poli">Termos gerais</a></li>
-                        <li><a href="cuidados-com-fraudes/">Cuidados com fraudes</a></li>
+                        <li><a href="?controller=Dashboard&action=ViewDashboard" hreflang="pt-br">Painel de Controle</a></li>
+                        <li><a href="?controller=Home&action=viewTermosGerais" id="poli">Termos gerais</a></li>
+                        <li><a href="?controller=Home&action=dicasFraude">Cuidados com fraudes</a></li>
                     </ul>
                     <ul>
                         <li>

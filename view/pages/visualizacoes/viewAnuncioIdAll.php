@@ -221,7 +221,7 @@ if(isset($arrayFace)){
             ?>
             <div class="home">
                 <ul>
-                    <li><a href="home">Home</a></li>
+                    <li><a href="?controller=Home&action=index">Home</a></li>
                 </ul>
             </div>
             <!--fim div que da contexto para seu filhos-->

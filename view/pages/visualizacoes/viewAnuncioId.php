@@ -263,25 +263,25 @@
                         <li>
                             <p>SempreNegócio</p>
                         </li>
-                      <li><a href="trabalhe-conosco/" id="trab">Trabalhe conosco</a></li>
-                        <li><a href="fale-conosco/" id="cont">Fale conosco</a></li>
-                        <li><a href="http://www.expressahost.com.br" id="sit"  hreflang="pt-br" target="_blank">Conheça nossos sistemas</a></li>
+                        <li><a href="?controller=Funcionario&action=viewTrabalheConosco" id="trab">Trabalhe conosco</a></li>
+                        <li><a href="?controller=Home&action=viewTermosDeUso" id="cont">Fale conosco</a></li>
+                        <li><a href="#" id="sit"  hreflang="pt-br" target="_blank">Conheça nossos sistemas</a></li>
                     </ul>
                     <ul>
                         <li>
                             <p>Para Você</p>
                         </li>
-                          <li><a href="duvidas-frequentes/" id="duvi">Dúvidas frequêntes</a></li>
-                        <li><a href="termos-de-uso/" id="term">Termos de uso</a></li>
-                        <li><a href="politica-de-privacidade/" id="poli">Política de privacidade</a></li>
+                        <li><a href="?controller=Home&action=duvidasFrequentes" id="duvi">Dúvidas frequêntes</a></li>
+                        <li><a href="?controller=Home&action=viewTermosDeUso" id="term">Termos de uso</a></li>
+                        <li><a href="?controller=Home&action=viewPoliticaPri" id="poli">Política de privacidade</a></li>
                     </ul>
                     <ul>
                         <li>
                             <p>Para Anunciantes</p>
                         </li>
-                         <li><a href="painel-de-controle/" hreflang="pt-br">Painel de Controle</a></li>
-                        <li><a href="termos-gerais/" id="poli">Termos gerais</a></li>
-                        <li><a href="cuidados-com-fraudes/">Cuidados com fraudes</a></li>
+                        <li><a href="?controller=Dashboard&action=ViewDashboard" hreflang="pt-br">Painel de Controle</a></li>
+                        <li><a href="?controller=Home&action=viewTermosGerais" id="poli">Termos gerais</a></li>
+                        <li><a href="?controller=Home&action=dicasFraude">Cuidados com fraudes</a></li>
                     </ul>
                     <ul>
                         <li>
