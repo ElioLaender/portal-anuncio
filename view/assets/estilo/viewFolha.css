@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/*este eh a foto do cur*/
+section.curri div:first-of-type{
+	position: relative;
+	top:2.5em;
+	width:8em;
+	height:8em;
+
+	margin: 0 auto 3em;
+}
+section.curri div:first-of-type img{
+	position:relative;
+	top:0;
+
+	width:8em;
+	height:8em;
+}
+section.curri div.nome{
+	position:relative;
+	top:0;
+
+	width:100%;
+
+	margin:0 auto 3em;
+}
+section.curri div.nome h3{
+	position:relative;
+	top:1em;
+
+	color:#666;
+
+	font-size:1.5em;
+}
+section.curri div.controlCon{
+	position: relative;
+	top:0;
+
+	width:100%;
+}
+section.curri div.controlCon dl{
+	position: relative;
+	width:90%;
+	padding-left:.5em;
+	margin:2em auto;
+}
+section.curri div.controlCon dl dt{
+	position: relative;
+	width:100%;
+	height:1.3em;
+	padding-top:.3em;
+
+	text-transform: uppercase;
+	text-align:left;
+	font-size:1em;
+	font-weight:700;
+	margin: 1.5em 0 .5em;
+	
+	color:#333;
+}
+/*endereco*/
+section.curri div.controlCon dl dt:nth-of-type(2){
+	top:-1em;
+	margin-bottom:-1em;
+}
+
+section.curri div.controlCon dl dd{
+	position: relative;
+	left:0;
+	width:90%;
+
+	color:#444;
+	font-weight:600;
+	display:inline;
+	margin-right:.2em;
+}
+
+section.curri div.controlCon dl dd em{
+	font-weight: 500;
+	color:#222;
+}
+section.curri div.controlCon dl dd.bairro{
+  top:-1em;
+  display:inline-block;
+  text-align:left;
+  margin-bottom:0;
+}
+
+section.curri div.controlCon dl dd.sub{
+ top:-1em;
+}
+/*contatos*/
+section.curri div.controlCon dl dl:first-of-type{
+	position:relative;
+	top:0;
+	left:-.5em;
+
+	width:100%;max-width:20em;
+	margin:-1.5em 0 0;
+
+}
+section.curri div.controlCon dl dl:first-of-type dt{
+	top:-.5em;
+	margin-bottom:-.3em;
+}
+section.curri div.controlCon dl dl:first-of-type dd.email{
+	display:block;
+	margin:.8em 0 .5em;
+	text-align:left;
+}
+section.curri div.controlCon dl dl:first-of-type dd.lattes{
+	display:block;
+	text-align:left;
+	margin:0;
+}
+
+
+section.curri div.controlCon dl dl:first-of-type dt:last-of-type{
+	top:-1em;
+	margin-bottom:-1em;
+}
+/*cursos e eventos*/
+section.curri div.controlCon dl dt.cursoEven{
+	top:-1.3em;
+	margin-bottom:-1.2em;
+}
+
+section.curri div.controlCon dl dt.exper{
+	top:-1.4em;
+	margin-bottom:-1.1em;
+}
+section.curri div.controlCon dl dd.dat{
+	display:inline-block;
+	top:-.5em;
+	left:0;
+	text-align:left;
+
+	margin-bottom:-2em;
+}
+section.curri div.controlCon dl dd.cargo{
+	left:0;
+	top:-.5em;
+	display:inline-block;
+	text-align:left;
+
+	margin-bottom:-1em;
+}	
+section.curri div.controlCon dl dt{
+	top:-1em;
+	margin-bottom:-.5em;
+}
+/*qualificação, pular <em> para baixo*/
+section.curri div.controlCon dl dd.qualif{
+	top:.5em;
+	left:0;
+}
+
+section.curri div.controlCon dl dd.obs{
+	top:-.5em;
+	text-align:left;
+	display:inline-block;
+}
+section.curri div.controlCon dl dd.ativ{
+	text-align:left;
+	display: inline-block;
+}
+section.curri div.controlCon dl dd.qualif > em{
+	display:block;
+	text-align:left;
+}
+section.curri div.controlCon dl dd.obs{
+	display:block;
+	text-align:left;
+	margin:.8em 0 0;
+}
+section.curri div.controlCon dl dl.paiObs{
+    left:-.3em;
+	margin:0;
+}

@@ -1,0 +1,427 @@
+@charset "UTF-8"; 
+
+p#retRecoHome p{
+  top:3em;
+  color:#e67e22;
+  font-weight:600;
+}
+/*controla todo conteudo*/
+div.tudo{
+  position:relative;
+  width:100%;max-width:156.25em;
+  
+  margin:0 auto;
+}
+/*-----------bloco cadastrar--------*/
+div.piaSectCadastro{
+  position: relative;
+  top:4em;
+  
+  width:100%;
+}
+
+div.piaSectCadastro h2{
+  position:absolute;
+  left: -99em;
+  font-size:0em;
+  opacity:0;
+}
+div.piaSectCadastro form {
+  width:90%;
+  margin:2em auto 0;
+}
+
+div.piaSectCadastro form fieldset input{
+  border-bottom: solid #999 1px;
+
+  text-indent:.1em;
+  height:3.5em;
+
+  padding-top:1.3em;
+  
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+
+  font-size:1em;
+}
+
+ /*olho super man*/
+ form fieldset input.tSenhas{
+  background: url('../imagens/olho.png') no-repeat;
+  background-size: 15px;
+  background-position: 97% 78%;
+}
+ form fieldset input#olho{
+  position:relative;
+  left:5em;
+  display:block;
+  width:8em !important;
+ }
+
+/*texto de minimo 6 caracteres*/
+ form fieldset input#olho + p{
+  top:-3em;
+  color:#999;
+  text-align:left;
+  margin-bottom:-1em;
+ }
+/*buttom cadastrar*/
+div.piaSectCadastro form fieldset input#tFinaliza{
+  position:relative;
+ 
+  height:2.5em;
+
+  background:#3498db;
+
+  padding-top:0;
+
+  border:none;
+
+  color:#fff;
+  margin:0em 0 1em;
+
+  font-weight:600;
+  font-size:1.4em;
+}
+
+/*estilo do checkbox, aproveito o estilo do menuaside, neste mudo so posicao*/
+input[type="checkbox"]#tCon + span:before{
+   left:0;
+   margin-top:2em;
+}
+
+/*este eh o concordo com os termos*/
+form fieldset label[for="tCon"]{
+  top:1.8em;
+  left:0;
+  margin-left:2em;
+  font-size:.91em;
+
+  color:#999;
+  display:inline-block;
+}
+
+/*seleciona o label dos form */
+div.piaSectCadastro form label[for="tCadastro"],
+div.piaSectCadastro form label[for="tSen"],
+div.piaSectCadastro form label[for="tNome"]{
+   top:1.7em;
+   left:.5em;
+
+   color:#777;
+}
+
+div.piaSectCadastro form fieldset legend{
+  position: relative;
+  top:1em;
+
+  width: 100%;
+  height:2.1em;
+
+  text-align: center;
+  font-weight:600;
+  font-size:1.4em;
+  color:#333;
+
+  padding-top:1.3em;
+  margin-bottom:2em;
+ 
+  background:#f8fcfd;
+}
+
+/*formatando os links da pg*/
+div.piaSectCadastro section ul:first-of-type{
+  top:1.3em;
+
+  width: 90%;max-width:20em;
+  height:3em;
+
+  overflow: visible;
+  margin: 2em auto;
+}
+div.piaSectCadastro section ul:first-of-type li a{
+  position: absolute;
+  top:.5em;
+  left:0;
+  width:100%;
+  height:3em;
+
+  font-size:1.2em;
+  font-weight:500;
+  text-align:center;
+
+  margin-top:-.9em;
+  background:#e74c3c; 
+
+  webkit-border-radius:8px; 
+  -moz-border-radius:8px; 
+  border-radius:8px;
+ 
+  box-shadow: 0 6px 0 0 #c0392b;
+
+  -webkit-transition: .1s linear;
+  -moz-transition: .1s linear;
+  transition: .1s linear;
+
+  cursor: pointer;
+  z-index: 2;
+}
+div.piaSectCadastro section ul:first-of-type li a:hover,
+div.piaSectCadastro section ul:first-of-type li a:focus{
+  letter-spacing:2px;
+  text-indent:.1em;
+} 
+
+div.piaSectCadastro section ul:first-of-type li a strong{
+  color:inherit;
+  display:block;
+  text-align:center;
+}
+
+
+/*link leia os termos*/
+form fieldset input#tFinaliza + p{
+  text-align:left;
+  left:.5em;
+
+  display:inline-block;
+}
+form fieldset input#tFinaliza + p a{
+  display:inline;
+
+  margin-left:.3em;
+  color:#3598db;
+  padding:0;
+}
+form fieldset input#tFinaliza + p a:hover,
+form fieldset input#tFinaliza + p a:focus{
+  border-bottom:solid #999 1px;
+}
+/*fim cadastre*/
+
+/*colocar formatacao de strong em folha de css reset*/
+strong{
+  color:#f1c40f;
+  font-weight:700;
+}
+
+/*estilo do checkbox*/
+input[type="checkbox"]{
+ opacity:0;
+
+  top:-1.5em;
+  cursor: pointer;
+  z-index:2;
+}
+
+ input[type="checkbox"] + span:before{
+  content: "";
+
+  position: relative;
+  top:-3.5em;
+  left:1em;
+
+  width:1.3em;
+  height:1.3em;
+
+  background-color: #ccc;
+  display: inline-block;
+  border: 3px solid #fff;
+
+   -webkit-border-radius:10px;
+   -moz-border-radius:10px;
+   border-radius:2px;
+
+   visibility:visible;
+   box-shadow:0 0 0 2px #999;
+
+   z-index:1;
+ }
+
+input[type=checkbox]:checked + span:before {
+    background-color:#2ecc71;
+}
+
+form fieldset input#tCon{
+  top:.5em;
+  font-size:1em;
+}
+
+/*retorno*/
+div#retorno{
+  position:absolute;
+  top:10em;
+  width:100%;
+  height:25em;
+  padding:1em .5em;
+
+  background:#fff;
+ 
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  margin:0 auto;
+
+  display:none;
+
+  z-index:100;
+}
+
+div#retorno p{
+  width:85%;max-width:15em;
+  height:8em;
+
+  margin:2em auto 0;
+  color:#777;
+  font-size:1.3em;
+  line-height:1.8;
+  font-weight:600;
+  padding-top:4em;
+
+  background:url('../imagens/logo@1x.png') no-repeat;
+  background-size:10em;
+  background-position:50% 0; 
+}
+div#retorno p.textErr{
+  height:10em;
+  padding-top:6em;
+
+
+  background:url('../imagens/alert@1x.png') no-repeat;
+  background-size:4em;
+  background-position:50% 0; 
+}
+div#retorno button.butR{
+  width:90%;
+  height:2.5em;
+  color:#3598db;
+  font-weight:500;
+
+  font-size:1.3em;
+  text-align:center;
+
+  margin:2em auto 0;
+  display:block;
+  z-index:1
+}
+
+div#retorno button.butR:hover,
+div#retorno button.butR:focus{
+  border-bottom: solid 1px #ecf0f1;
+}
+
+div#retorno button.fec{
+  position:absolute;
+  right:.5em;
+  top:.5em;
+  width:2.5em;
+  height:2.5em;
+
+  background:url('../imagens/fecha.png')no-repeat;
+  background-size:2em;
+  background-position:50%;
+}
+
+/*recuperar senha vindo do link retorno*/
+div.recSenh{
+  position:relative;
+  top:5em;
+
+  width:100%;max-width:19em;
+  height:25em;
+
+  background:#fff;
+  z-index:50;
+
+  margin:0 auto -27em;
+  display:none;
+
+  box-shadow:15px 15px 15px rgba(0,0,0,.5);
+
+}
+div.recSenh > button{
+  position:relative;
+  top:1em;
+  left:1em;
+  height:1.3em;
+  color:#666;
+  font-size:1.1em;
+
+  z-index:3;
+}
+div.recSenh > button:hover,
+div.recSenh > button:focus{
+  border-bottom: solid #777 1px;
+}
+div.recSenh form fieldset{
+  position:relative;
+}
+div.recSenh form fieldset legend{
+  top:-1.3em;
+
+  color:#3498db;
+  font-size:1.6em;
+  background:none;
+  font-weight:500;
+  margin-bottom:3em;
+  line-height:1.1;
+}
+div.recSenh form fieldset p{
+  top:-6.5em;
+  color:#777;
+ 
+  margin:0 auto;
+}
+div.recSenh form fieldset label{
+  top:-2.3em;
+  left:1em;
+  color:#888;
+}
+div.recSenh form fieldset label.efeitoLabel{
+  top:-4em;
+  left:1.5em;
+}
+div.recSenh form fieldset input{
+  top:-4.5em;
+ 
+  border:solid #999 1px;
+  border-left:solid 4px #2980b9;
+  text-indent:1em;
+  background:transparent;
+  margin:0 auto;
+  display:block;
+  padding-top:2em;
+}
+div.recSenh form fieldset input[type="button"]{
+  position:relative;
+  top:-2em;
+  width:12em;
+  height:2.5em;
+
+  font-size:1.2em;
+  color:#fff;
+
+  text-indent:0;
+  padding-top:0;
+  margin:0 auto;
+  display:block;
+
+  border:none;
+  background:#2980b9;
+}
+div.recSenh form fieldset input[type="button"]:hover,
+div.recSenh form fieldset input[type="button"]:focus{
+  background:#3498db; 
+}
+
+/*div propaganda*/
+div.prop{
+  position:relative;
+  top:-30em; 
+
+  width:90%;
+
+  margin:0 auto;
+  border:solid red 5px;
+}

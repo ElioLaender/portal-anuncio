@@ -1,0 +1,1339 @@
+@charset "UTF-8";
+header.barraM{
+	top:0;
+}
+div.loader div p span{
+	margin:-.05em;
+}
+div.controlaBa{
+	position:relative;
+	top:7.5em;
+}
+/*este eh a parte das propagandas*/
+div.controlaBa div.paiBan{
+	position:relative;
+	top:0;
+
+	width:100%;
+
+	padding-left:.1em;
+	margin-bottom:3em;
+}
+div.controlaBa aside h2{
+	width:80%;
+	color:#555; 
+	font-weight:400;
+	font-size:1.4em;
+	margin:2em auto;
+}
+div.controlaBa aside h2 strong{
+	font-weight:600;
+	color:#333;
+}
+/*Primeiro banner*/
+aside div.ban01{
+	position:relative;
+
+	width:95%;max-width:25em;
+	margin: 0 auto 4em;
+ 	border:solid #666;
+ 	border-width:0 1px 1px 1px;
+}
+div.ban01 div.zoom{
+	width:100%;
+	height:10em;
+ 	border-top:solid 5px #27ae60;
+
+	overflow: hidden;
+}
+/*Div com imagem de fundo*/
+ div.zoom > div{
+	position:relative;
+	top:0;
+	width:100%;
+	height:10em; 
+		
+	background:url('../imagens/manPhone@1x.jpg')no-repeat;
+	background-size:cover;
+	background-position:50%;
+
+	-webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+     transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+ div.ban01:hover div.zoom > div,
+ div.ban01:focus div.zoom > div{
+	-webkit-transform: scale(1.5);
+   -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+     -o-transform: scale(1.5);
+        transform: scale(1.5);
+}
+
+aside div.ban01 p{
+	width:80%;
+	height:3em;
+	margin:0 auto;
+	color:#555;
+	font-size:1.2em;
+}
+aside div.ban01 p strong{
+	color:#333;
+	font-weight:600;
+}
+aside div.ban01 p::before{
+	content:'';
+	position: relative;
+	top:-1.8em;
+	width:8em;
+	height:4em; 
+
+	margin:0 auto;
+
+	display:block;
+	background: url('../imagens/conect@3x.png') no-repeat;
+	background-size:4em;
+	background-position:50%;
+
+	-webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+     transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+div.ban01:hover p::before,
+div.ban01:focus p::before{
+	-webkit-transform: scale(1.1);
+   -moz-transform: scale(1);
+    transform: scale(1.1);
+}
+div.ban01 ul{
+	position:relative;
+
+	width:60%;
+	height:4em;
+
+	margin:6em auto 0;
+}
+div.ban01 ul li a{
+	border:solid #27ae60 2px;
+	color:#555;
+	text-align:center;
+	padding:.5em 0;
+	-webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+     transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+div.ban01:focus ul li a,
+div.ban01:hover ul li a{
+	background: #27ae60;
+	color: #fff;
+}
+/*fim do primeiro banner*/
+/*Segundo banner*/
+div.ban02 div.zoom > div{
+	background:url('../imagens/negocios@2x.jpg')no-repeat;
+	background-size:cover;
+	background-position:50%;
+
+}
+div.ban02 div.zoom{
+ 	border-top:solid 5px #2980b9;
+}
+
+div.ban02 ul li a{
+	border:solid #2980b9 2px;
+}
+div.ban02:focus ul li a,
+div.ban02:hover ul li a{
+	background: #2980b9;
+}
+aside div.ban02 p::before{
+	background: url('../imagens/acordo@2x.png') no-repeat;
+	background-size:4em;
+	background-position:50%;
+}
+/*abre com o segundo banner*/
+div.cresc{
+	position:absolute;
+	top:10em;
+ 
+ 	width:100%;
+ 	background:#fff;
+
+	z-index:49;
+
+	padding-bottom:2em;
+
+	display:none;
+}
+div.cresc button{
+	position:absolute;
+	right:1em;
+	top:1em;
+
+	height:1.5em;
+	font-size:1em;
+	font-weight:600;
+	color:#666;
+	text-transform:uppercase;
+	border-bottom:solid 1px #fff;
+}
+div.cresc button:hover,
+div.cresc button:focus{
+	border-bottom:solid 1px #777;
+}
+div.cresc p{
+	top:4em;
+
+	width:90%;max-width:15em;
+	font-size:1.1em;
+	color:#555;
+
+	margin:0 auto 2em;
+}
+div.cresc form fieldset{
+	position:relative;
+	top:3em;
+    
+    margin:2em auto 4em;
+
+}
+div.cresc form fieldset legend{
+	position:relative;
+	top:1em;
+
+	text-align:center;
+	color:#e67e22;
+	font-size:1.5em;
+
+	margin-bottom:1em;
+}
+
+div.cresc form fieldset select{
+	position:relative;
+	top:1em;
+
+	width:90%;max-width:25em;
+	height:3em;
+
+	margin: 0 auto;
+	
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+
+	cursor:pointer;
+	display:block;
+}
+
+div.cresc form fieldset optgroup{
+  background:#fff;
+  color:#999;
+  font-size:1.2em;
+  cursor:pointer;
+}
+div.cresc form fieldset option:nth-child(even){
+  background:#ecf0f1;
+}
+div.cresc form fieldset option{
+  font-size:1.3em;
+}
+div.cresc form fieldset label{
+	width:100%;
+
+	color:#3498db;
+	text-align:center;
+	font-size:1.3em;
+
+	margin:2em auto .2em;
+
+	display:block;
+}
+
+div.cresc form fieldset textarea{
+	width:90%;max-width:25em;
+	height:8em;
+
+	margin:0 auto 1.5em;
+	display:block;
+
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+
+	resize:vertical;
+}
+div.cresc form fieldset input[type='button']{
+	width:70%;max-width:15em;
+	height:2.3em;
+	background:#f4a62a;
+
+	margin:0 auto;
+
+	display:block;
+	font-size:1em;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#fff;
+
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+div.cresc form fieldset input[type='button']:hover,
+div.cresc form fieldset input[type='button']:focus{
+	background: #e67e22;
+}
+
+section > h2,
+article > h2.h2Art,
+section > h3,
+div.paiRod h3{
+	position: absolute;
+	left:-99em;
+	opacity:0;
+}
+
+/*aqui eh a div que abre no click do primeiro banner*/
+/*o script esta no jsAnunA.js*/
+div.cupon{
+	position:absolute;
+	top:15em;
+
+	width:100%;max-width:45em;
+	padding-bottom:3em;
+	background:#fff;
+	z-index:49;
+
+	box-shadow:10px 12px 20px rgba(0,0,0,.2);
+	display:none;
+}
+
+
+div.fund01{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:48;
+	background:rgba(52, 152, 219,.3);
+	display:none;
+}
+div.cupon button{
+	position:absolute;
+	top:1em;
+	right:1.5em;
+
+	height:1.5em;
+	font-size:1.1em;
+
+	text-transform:uppercase;
+	color:#777;
+	border-bottom:solid 1px #fff;
+}
+div.cupon button:hover,
+div.cupon button:focus{
+	border-bottom: solid #777 1px;
+}
+div.cupon p{
+	width:90%;max-width:28em;
+	margin: 0 auto 1em;
+	font-size:1.2em;
+}
+div.cupon > p:first-of-type{
+	top:4em;
+	margin-bottom:5em;
+    font-family:"Roboto Slab","arial";
+    font-weight:600;
+    color:#2e8ece;
+}
+div.cupon > p:nth-of-type(3){
+	color:#f39c12; 
+	font-weight:600;
+    font-family:"Roboto Slab","arial";
+}
+
+/*Este eh onde esta contido o conteudo da pagina do anuncio*/
+section div dl{
+ position:relative;
+ top:0;
+ left:0;
+
+ width:90%;
+
+ margin:0 auto;
+}
+/*selecionar todos dt*/
+section div dl dt{
+	text-align:left;
+	font-size:1.1em;
+	color:#777;
+	font-weight:500;
+	display:inline-block;
+	margin:.8em .2em 0 0;
+}
+/*pega todos os dd*/
+section div dl dd{
+	left:0;
+	text-align:left;
+	font-size:.9em;
+	color:#666;
+	display:inline-block;
+	margin:.2em .2em 0 0;
+}
+section div dl dd strong{
+	margin-right: .1em;
+	font-weight:600;
+	color: #555;
+}
+div.inner > div:first-of-type > p{
+	display:none;
+}
+div.inner > div:first-of-type{
+	position:relative;
+	top:0;
+	padding:3em 0;
+	background:rgba(236, 240, 241,.3);
+
+	margin-bottom:-2em;
+}
+div.divControler{
+	position:relative;
+	width:100%;max-width:25em;
+	margin: 0 auto;
+}
+/*bloco do anuncio*/
+article > div.PaiAnuncio{
+	position: relative;
+
+	width:99%;max-width:25em;
+  	
+    padding-bottom:1em;
+    margin: 0 auto;
+
+    z-index:3; 
+}
+/*usado como titulo do anuncio*/
+article > div.PaiAnuncio > p{
+	width:90%;
+	height:2.5em;
+	color:#555;
+	
+	padding-top:.8em;
+	font-size:1.1em;
+	font-weight:600;
+	text-align:left;
+	text-transform:uppercase;
+    
+	margin:0 auto .3em;	
+}
+/*imagem, mensagem e avaliacao*/
+article > div.PaiAnuncio div.divImg{
+	position: relative;
+	top:1em;
+	width:90%;max-width:20em;
+	height:5.5em;
+
+    margin: 0 auto 1.5em;
+	padding-left:.8em;
+
+}
+article > div.PaiAnuncio div.divImg div:first-of-type{
+	position: absolute;
+	top:0;
+	left:0;
+
+	width:50%;max-width:12em;
+	height:5.5em;
+}
+div.divImg div:first-of-type figure img{
+    width:100%; 
+	height:5.5em;
+
+    -webkit-border-radius:5px;
+  	-moz-border-radius:5px;
+  	border-radius:5px;
+	background-position:50%;
+
+}
+/*div onde tem mais tres p*/
+article > div.PaiAnuncio div.divImg div:last-of-type{
+	 position:absolute;
+	 top:-.5em;
+	 right:0;
+
+	 width:8em;
+	 height:5.3em;
+
+	 padding-top:.5em;
+}
+
+div.divImg div p{
+	width: 100%;
+	font-size:1em;
+	font-weight:600;
+	color:#666;
+	margin:0 auto .5em;
+}
+
+div.divImg div p:last-of-type{
+	width:8em;
+	height:1.2em;
+
+	margin:.2em 0 0 .9em;
+	color:#fff;
+	text-indent:-99em;
+}
+div.divImg div:last-of-type p span{
+	color:#555;
+	margin-left:.5em;
+}
+
+article > div.PaiAnuncio div.divImg + dl{
+	padding:0 .5em; 
+}
+/*endereco*/
+article > div.PaiAnuncio div.divImg + dl dt:first-child{
+	display:block;
+	margin-top:2em;
+}
+
+article > div.PaiAnuncio dl dl:first-of-type{
+	margin-top:.5em;
+	width:100%;
+}
+
+/*categoria*/
+article > div.PaiAnuncio dl dd:nth-of-type(8){
+	display:block;
+
+	margin:.5em 0 .1em;
+}
+article > div.PaiAnuncio dl dd:nth-of-type(8) strong{
+	font-size:1.2em;
+}
+/*selecionar os dd tel e cel*/
+article > div.PaiAnuncio dl dl:first-of-type dt:first-child{
+	display:block;
+	margin-top:0;
+}
+article > div.PaiAnuncio dl dl:first-of-type dd:nth-of-type(1),
+article > div.PaiAnuncio dl dl:first-of-type dd:nth-of-type(2){
+	width:45%;max-width: 10em;
+	min-width:8em;
+	margin-top:.5em;
+	display: inline-block;
+  	font-family:"Roboto Slab","arial" !important; 
+  	font-weight:600;
+}
+article > div.PaiAnuncio dl dl:first-of-type dd:nth-of-type(1){
+	left:1.3em;
+}
+article > div.PaiAnuncio dl dl:first-of-type dd:nth-of-type(2){
+	position: absolute;
+	top:.9em;
+	left:8.5em;
+}
+article > div.PaiAnuncio dl dl:first-of-type dd:nth-of-type(1) strong{
+	position: absolute;
+	left:-1.3em;
+
+	width:1.3em;
+	height:1.8em;
+
+	display:inline-block;
+
+	background:url('../imagens/phone@1x.png') no-repeat;
+	background-size:1em; 
+}
+div.inner article > div dl dd:nth-of-type(2) strong{
+	font-size:1.4em;
+	font-weight:500;
+}
+/*link do tel*/
+article > div.PaiAnuncio dl dl:first-of-type dd a{
+	color:#444;
+}
+/*fim dd e link tel*/
+
+/*email*/
+article > div.PaiAnuncio dl dl:first-of-type dt:nth-of-type(2){
+	top:.5em;
+	margin-bottom:.5em;
+}
+article > div.PaiAnuncio dl dl:first-of-type dt:nth-of-type(2),
+article > div.PaiAnuncio dl dl:first-of-type dd:nth-of-type(3){
+	display:block;
+	text-align:left;
+}
+article > div.PaiAnuncio dl dl:first-of-type dd:nth-of-type(3){
+	font-size:.9em;
+	font-weight:600;
+	font-family:"Roboto Slab","arial" !important; 
+	margin:1em 0 0 -.5em;
+}
+article > div.PaiAnuncio dl dl:first-of-type dd:nth-of-type(3) strong{
+    position:relative;
+    top:.6em;
+
+    height:1.5em;
+
+	display:inline;
+
+	background:url('../imagens/whatsapp@1x.png') no-repeat;
+	background-size:1.4em;
+	background-position:0;
+	padding-left:2em;
+}
+article > div.PaiAnuncio dl dl.sit{
+	top:-1em;
+	left:-1em;
+
+	margin-bottom:-1em;
+}
+
+article > div.PaiAnuncio dl dl.sit dd{	
+	width:4em;
+	height:2em;
+
+	background:url('../imagens/planeta.png') no-repeat;
+	background-size:2em;
+	background-position:0;
+
+	cursor:pointer;
+} 
+article > div.PaiAnuncio dl dl.sit dd a{
+	width:2em;
+	height:2em;
+	color:#fff;
+	opacity:0;
+}
+/*redes sociais*/
+article > div.PaiAnuncio dl dl:last-of-type{
+	top:-1em;
+	width:100%;
+
+	padding:0;
+}
+article > div.PaiAnuncio dl dl:last-of-type dt{
+	margin:0 0 .5em;
+}
+article > div.PaiAnuncio dl dl:last-of-type a{
+	top:0;
+	text-indent:-99em;
+
+	width:2.2em;
+	height:2em;
+
+	display:inline-block;
+
+	margin-right:1em;
+
+	background:url('../imagens/iconsRedes@1x.png') no-repeat;
+	background-size:2.3em;
+}
+
+article > div.PaiAnuncio dl dl:last-of-type dd:nth-of-type(2) a{
+	background-position:0 33%;
+}
+article > div.PaiAnuncio dl dl:last-of-type dd:nth-of-type(2){
+	top:.5em;
+}
+article > div.PaiAnuncio dl dl:last-of-type dd:nth-of-type(3) a{
+	background-position:0 65%;
+}
+article > div.PaiAnuncio dl dl:last-of-type dd:nth-of-type(4) a{
+	height:2.2em;
+	background-position:0 100%;
+}
+
+/*Horas de funcionamento*/
+section div.divHoras{
+	position: relative;
+
+	width:95%;max-width:27.5em;
+	min-height:6.5em;
+	margin:0 auto 1em;
+}
+section div.divHoras dl dt{
+  display:block;
+  font-weight:600;
+  margin-bottom:.5em;
+}
+section div.divHoras dl dd{
+	left:0;
+}
+section div.divHoras dl dd span{
+	color:#444;
+    font-family:"Roboto Slab","arial";
+}
+/*formas de pagamento e bandeiras*/
+section div.paiBand,
+section div.paiFac{
+	position:relative;
+	width:95%;max-width:27.5em;
+	
+	margin:0 auto 1.5em;
+}
+section div.paiBand div h3{
+	left:1em;
+	width:90%;
+	margin:1em 0;
+	color:#777;
+	font-size:1.1em;
+	text-align:left;
+    display:inline-block;
+}
+
+section div.paiBand div{
+	position:relative;
+	top:0;
+	
+	width:100%;
+	height:2.8em;
+}
+
+section div.paiBand div input,
+section div.paiFac div input{
+	position:absolute;
+	top:0;
+	left:0;
+
+	font-size:0;
+	opacity:0;
+
+ 	z-index:-1;
+
+ 	display:none;
+}
+section div.paiBand input + span,
+section div.paiFac div input + span{
+	float:left;
+
+	width:3em;
+	height:3em;
+   
+	color:#444;
+    font-size:.7em;
+	display:none;
+	
+	margin-left:.7em;
+}
+
+/*formas de pagamento*/
+section div.paiBand div{
+	margin-bottom:4.5em;
+
+}
+section div.paiBand div:first-of-type span::before{
+ content:'';
+
+ position:relative;
+ bottom:0;
+
+ width:100%;
+ height:2.6em;
+
+ background:url('../imagens/spriteRe@1x.png') no-repeat;
+ background-size:8.5em;
+ background-position:100% 100%;
+
+ margin-bottom:.2em;
+}
+/*boleto*/
+section div.paiBand div:first-of-type span:first-of-type::before{
+ top:.2em;
+ left:-.3em;
+ background-size:6.3em;
+}
+/*credito*/
+section div.paiBand div:first-of-type span:nth-of-type(2)::before{
+ left:.5em;
+ width:55%;
+
+ background-position:100% 0%;
+ background-size:6em;
+}
+/*credito*/
+section div.paiBand div:first-of-type span:nth-of-type(3)::before{
+ background-position:0% 0%;
+}
+/*ticket*/
+section div.paiBand div:first-of-type span:nth-of-type(4)::before{
+ width:73%;
+
+ background-position:55% 5%;
+ background-size:7em;
+}
+/*cheque*/
+section div.paiBand div:first-of-type span:nth-of-type(5)::before{
+ background-position:0% 55%;
+ background-size:6.9em;
+}
+
+/*dinheiro*/
+section div.paiBand div:first-of-type span:nth-of-type(6)::before{
+ top:.5em;
+
+ width:3.5em;
+ height:1.8em;
+
+ margin-bottom:1em;
+ background-position:0% 100%;
+ background-size:7.4em;
+}
+/*Bandeiras aceitas*/
+section div.paiBand div:nth-of-type(2){
+	margin-bottom:.5em;
+	max-width:20em;
+}
+section div.paiBand div:nth-of-type(2) span{
+	position: relative;
+
+	width:3em;
+	height:2.5em;
+	margin:-.5em .7em 1.3em;
+}
+/*master*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(1){
+	background:url('../imagens/master@1x.png') no-repeat;
+	background-size:3em;
+}
+/*visa*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(2){
+	background:url('../imagens/visa@1x.png') no-repeat;
+	background-size:3em;
+}
+/*american*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(3){
+	background:url('../imagens/american@1x.jpg') no-repeat;
+	background-size:3em;
+}
+/*dinner*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(4){
+	background:url('../imagens/dinerClub@1x.png') no-repeat;
+	background-size:3em;
+}
+/*elo*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(5){
+    background:url('../imagens/elo@1x.png') no-repeat;
+	background-size:2.5em;
+}
+/*pagSeguro*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(6){
+    background:url('../imagens/pagseguro@1x.png') no-repeat;
+	background-size:3em;
+}
+/*paypal*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(7){
+	background:url('../imagens/paypal@1x.png') no-repeat;
+	background-size:2.3em;
+}
+/*mercadoPago*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(8){
+    background:url('../imagens/mercadopago@1x.png') no-repeat;
+	background-size:3em;
+}
+/*sodexo*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(9){
+	width:4em;
+
+	background:url('../imagens/sodexo@1x.png') no-repeat;
+	background-size:4em;
+}
+/*ticket*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(10){
+	width:4em;
+
+	background:url('../imagens/ticket@1x.png') no-repeat;
+	background-size:4em;
+}
+section div.paiBand div:nth-of-type(2) span:last-of-type{
+	width:4em;
+	height:1.4em;
+
+	background:none;
+	line-height:1.4;
+	text-align:center;
+	font-size:.8em;
+	font-weight:600;
+
+	border:solid #777 2px;
+}
+/*facilidades oferecidas*/
+section div.paiFac{
+	position:relative;
+	top:1em;
+}
+/*estcionamento*/
+section div.paiFac div:first-of-type{
+	position:relative;
+	top:0;
+
+	width:98%;
+	margin:0 auto;
+	overflow:hidden;
+}
+section div.paiFac div:first-of-type h3,
+section div.paiFac div:last-of-type h3{
+	color:#777;
+	text-align:left;
+	margin-bottom:.8em;
+}
+/*estcionamento*/
+section div.paiFac div:first-of-type span{
+	position:relative;
+	left:.3em;
+	width:45%;
+	font-size:.8em;
+	color:#888;
+	text-align: right;
+	margin:.3em .8em .2em 0;
+}
+section div.paiFac div:first-of-type span:nth-of-type(1){
+	width:9.3em;
+	background:url('../imagens/car@1x.png') no-repeat;
+	background-size:2em;
+	background-position:0 0;
+}
+/*seguranca*/
+section div.paiFac div:first-of-type span:nth-of-type(2){
+	width:6.3em;
+	background:url('../imagens/seg@1x.png') no-repeat;
+	background-size:1.5em;
+	background-position:0 0;
+}
+/*acessibilidade*/
+section div.paiFac div:first-of-type span:nth-of-type(3){
+	width:12em;
+	background:url('../imagens/aces@1x.png') no-repeat;
+	background-size:1.5em;
+	background-position:0 0;
+}
+/*ar*/
+section div.paiFac div:first-of-type span:nth-of-type(4){
+	width:9em;
+    background:url('../imagens/ar@1x.png') no-repeat;
+	background-size:1.5em;
+	background-position:0 0;
+}
+/*wifi*/
+section div.paiFac div:first-of-type span:nth-of-type(5){
+	width:8em;
+	background:url('../imagens/wifi@1x.png') no-repeat;
+	background-size:1.5em;
+	background-position:0 0;
+}
+/*reserva*/
+section div.paiFac div:first-of-type span:nth-of-type(6){
+	width:11em;
+	background:url('../imagens/data@1x.png') no-repeat;
+	background-size:1.5em;
+	background-position:0 0;
+}
+/*animais*/
+section div.paiFac div:first-of-type span:nth-of-type(7){
+	width:9.5em;
+	background:url('../imagens/dog@1x.png') no-repeat;
+	background-size:1.5em;
+	background-position:0 0;
+}
+/*cupons*/
+section div.paiFac div:first-of-type span:nth-of-type(8){
+	width:12em;
+	background:url('../imagens/cupon@0x.png') no-repeat;
+	background-size:1.8em;
+	background-position:7% 0;
+}
+/*delivery*/
+section div.paiFac div:first-of-type span.delivery{
+	width:50%;max-width:10em;
+	background:url('../imagens/delivery@1x.png') no-repeat;
+	background-size:2em;
+	background-position:0 0;border:
+}
+/*criancas*/
+section div.paiFac div:first-of-type span.crian{
+	width:50%;max-width:11em;
+	background:url('../imagens/play@1x.png') no-repeat;
+	background-size:2em;
+	background-position:0 0;
+	margin-right:1em;
+}
+/*planos aceitos*/
+section div.paiFac div:last-of-type{
+	position:relative;
+	width:95%;
+	margin:0 auto 2em;
+	top:1.5em;
+	overflow:hidden;
+}
+section div.paiFac div:last-of-type span{
+	width:6em;
+	height:1.5em;
+    padding-left: 1em;
+	font-size:1em;
+	margin:0;
+	color:#777;
+}
+section div.paiFac div:last-of-type span:first-letter{
+	font-weight:600;
+	color:#555;
+}
+
+/*descricao*/
+
+section div.paiArt{
+	position:relative;
+	width:100%;
+	
+	margin: 2em auto 0;
+
+	padding-bottom:3em;
+	background:rgba(236, 240, 241,.6);
+}
+
+div.paiArt article h2{
+	top:1em;
+	height:2.3em;
+	text-transform:uppercase;
+
+  	color:#666;
+  	text-align:center !important;
+  	font-size:1.2em;
+  	letter-spacing:1px;
+
+  	padding-top:.5em;
+  	margin-bottom:1.5em;
+}
+div.paiArt article div{
+	position:relative;
+	top:.5em;
+	width:90%;max-width:40em;
+	margin: 0 auto;
+}
+div.paiArt article div p{
+	top:0;
+	width:90%;
+	
+	margin: 0 auto;
+	
+	line-height:1.4;
+	
+	font-size:1.1em;
+	color:#666;
+}
+/*button leia mais*/
+div.paiArt article div button{
+	float:right;
+
+	width:6em;
+	height:1.3em;
+	margin:1em;
+	font-size:1.1em;
+	text-align:center;
+	color:#777;
+}	
+div.paiArt article div button:focus,
+div.paiArt article div button:hover{
+ 	border-bottom:solid #999 1px;
+}
+
+/*fotos*/
+section.secFoto{
+	position:relative;
+	top:0; 
+	margin-bottom:9em;
+
+}
+section.semFoto{
+	position:relative;
+	top:0; 
+	height:15em;
+	margin-bottom:5em;
+	background:url('../imagens/imgFoto.jpg') no-repeat;
+	background-size:cover;
+	background-position:50%;
+}
+section.semFoto h3{
+	position:relative;
+	top:3em !important;
+	color:#fff;
+}
+section.secFoto h3{
+	position:relative;
+	top:2em;
+	left:0;
+
+	font-size:1.5em;
+	opacity:1;
+
+	margin-bottom:4em;
+}
+
+section.secFoto div#galeria{
+	position: relative;
+	top:0;
+
+	width:95%;max-width:36em;
+	margin:0 auto;
+	
+	border:solid #ecf0f1 2px;
+}
+
+section.secFoto div#galeria ul{
+	overflow:visible;
+	padding:0;
+	width:90%;max-width:15em;
+	margin:1em auto;
+}
+section.secFoto div#galeria ul li{
+	position:relative;	
+	height:10em;
+	margin:1em 0;
+}
+section.secFoto div#galeria ul li a{
+	position:relative;
+	width:100%;
+	height:9em;
+	padding:0;
+	display:block;
+}
+section.secFoto div#galeria ul li a img{	
+	width:100%;
+	height:9em;
+	display:block;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+div#tela{
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	margin:1em auto 0;
+	background:rgba(0,0,0,.8);
+	z-index:21;
+	display:none;
+}
+
+div#tela div.paiBut{
+	position:fixed;
+	top:6em;
+	width:90%;max-width:30em;
+	height:4em;
+}
+div#tela button.butF{
+	position:absolute;
+	top:0;
+	right:0;
+	width:3em;
+	height:3em;
+	background:url('../imagens/fecha@1x.png') no-repeat;
+	background-size:2.5em;
+	background-position:50%;
+}
+
+div#tela img{
+	position:fixed;
+	top:10em;
+	margin-left:.5em;
+	width:90%;max-width:30em;
+	z-index:5;
+}
+
+div.escuro{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	background:rgba(0,0,0,.8);
+	z-index:15;
+	display:none;
+}
+/*youtube*/
+div.youTube{
+	position:relative;
+	top:-5em;
+	width:100%;
+
+	padding-top:2em;
+	margin-bottom:-14em;
+	background:#ecf0f1;
+
+	border:solid #ecf0f1 1px; 
+}
+div.youTube h3{
+	top:1em;
+	color:#555;
+	font-size:1.6em;
+	margin-bottom:1em;
+}
+div.youTube figure{
+	position:relative;
+	top:3em;
+	width:90%;max-width:45em;
+	margin:0 auto;
+}
+div.youTube figure > div{
+	position:relative;
+	height:0;
+	
+	padding-bottom:56.25%;
+	padding-top:25px;
+	margin-bottom:15em;
+}
+div.youTube figure > div iframe{
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 width:100%;
+	 height:100%;
+}
+
+/*bloco de retorno*/
+div.paiRetLik{
+	position:relative;
+	top:0;
+	width:100%;max-width:35em;
+	margin:0 auto;
+
+}
+div.returLik{
+	position:fixed;
+	top:15em !important;
+	
+	width:100%;max-width:35em;
+	height:13em;
+
+
+	margin:0 auto -14em;
+	background:#fff;
+	z-index:50;
+
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+
+	border:solid #ecf0f1 2px;
+
+	display:none;
+}
+div.returLik:before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+
+	background:url('../imagens/alert@1x.png') no-repeat;
+	background-size:4em;
+	background-position:50% 15%;
+}
+div.returLik p{
+	top:5em;
+	max-width:15em;
+	color:#555;
+	font-size:1.3em;
+
+	margin:0 auto;
+}
+div.returLik button{
+	position:absolute;
+	right:.5em;
+	top:.5em;
+
+	height:1.5em;
+
+	color:#555;
+
+	font-size:1em;
+	border-bottom:solid #fff 1px;
+}
+div.returLik button:hover,
+div.returLik button:focus{
+	border-bottom:solid #777 1px;
+}
+
+/*mensagem, excluir...*/
+div.mensBloc{
+	position:relative !important;
+	top:10em;
+
+	width:95%;max-width:30em;
+
+	z-index:50;
+
+	margin:0 auto;
+}
+
+div.mensBloc div{
+	position:fixed;
+	top:15em;
+	left:0;
+	width:100%;max-width:30em;
+	height:12em;
+
+	background:#fff;
+	
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+
+	-moz-box-shadow:5px 10px 15px rgba(0,0,0,.3);
+	-webkit-box-shadow:5px 10px 15px rgba(0,0,0,.3);
+	box-shadow:5px 10px 15px rgba(0,0,0,.3);
+
+}
+div.mensBloc div:before{
+	content:'';
+
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+
+	background:url('../imagens/sucess@1x.png') no-repeat;
+	background-position:90% 75%;
+	background-size:2em;
+}
+div.mensBloc div p{
+	top:1.5em;
+	max-width:10em;
+	color:#e68026;
+    font-family:"Roboto Slab","arial";
+	font-size:1.3em;
+
+	margin:0 auto;
+}
+
+div.mensBloc div button{
+	top:3em;
+
+	width:8em;
+	height:2em;
+
+	color:#fff;
+	background:#3498db;
+	display:block;
+
+	margin:0 auto;
+
+	font-weight:600;
+	font-size:1.2em;
+
+	text-transform:uppercase;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+div.mensBloc div button:hover,
+div.mensBloc div button:focus{
+	background:#2980b9;
+}	

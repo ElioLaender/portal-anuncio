@@ -1,0 +1,174 @@
+@charset "UTF-8";
+div.primDiv{
+	position:relative;
+	top:8em;
+}
+
+div.primDiv section.prinSect figure{
+   position: relative;
+   top:0;
+
+   width:90%;max-width:20em;
+
+   margin:0 auto 3em;
+}
+div.primDiv section.prinSect img{
+	width:100%;
+}
+
+div.paiArt{
+	position: relative;
+	top:0;
+
+	margin-bottom:-15em;
+}
+div.paiArt > p:first-of-type{
+	color:#e67e22;
+
+	font-size:1.8em;
+	font-weight:600;
+    font-family:"Roboto Slab","arial";
+
+    margin-bottom:1.2em;
+}
+div.paiArt > div:first-of-type{
+	position:relative;
+	top:0;
+}
+
+div.paiArt > div:first-of-type > p,
+div.paiArt > div:first-of-type > h2{
+	top:0;
+	width:100%;max-width:16em;
+	color:#444;
+
+	font-size:1.5em;
+	font-weight:500;
+    font-family:"Source Sans Pro","arial";
+    
+	text-align:left;
+	text-indent:.5em;
+	margin:0 auto 2em;
+}
+div.paiArt > div:first-of-type > h2{
+    top:-1em;
+    margin-bottom:.9em;
+}
+div.paiArt > div:first-of-type button{
+	top:-2em;
+	width:90%;max-width:20em;
+	height:2em;
+
+	font-size:1.1em;
+	font-weight:600;
+	text-align:left;
+	
+	padding:0;
+	color:#999;
+	margin:0 auto .5em;
+	display:block;
+	border-bottom:solid 1px #999;
+}
+div.paiArt > div:first-of-type button:hover,
+div.paiArt > div:first-of-type button:focus{
+	color:#555;
+}	
+div.paiArt article{
+	position:relative;
+	top:-1.8em;
+
+	margin-bottom:2em;
+}
+
+div.paiArt article > div{
+	position:relative;
+	top:0;
+
+	width:100%;max-width:50em;
+
+	margin:0 auto;
+	display:none;
+}
+
+div.paiArt > article:nth-of-type(1) > div{
+	display:block;
+}
+div.paiArt article > div p{
+	width:90%;
+	font-size:1em;
+	text-align:left;
+	padding-left:1em;
+}	
+div.paiArt article > div p strong{
+	font-weight:600;
+	color:#333;
+	text-transform:uppercase;
+}
+/*pequeno breackpoint*/
+@media screen and (min-width:450px){
+	div.paiArt{
+		margin-bottom:-1em;
+		padding-left:1em;
+	}
+
+	div.primDiv section.prinSect figure{
+	   top:-1.5em;
+	}
+
+	div.paiArt article > div{
+		margin:0;
+	}
+
+	div.paiArt > p:first-of-type{
+		color:#e67e22;
+
+		font-size:2.5em;
+		font-weight:600;
+	    font-family:"Roboto Slab","arial";
+
+	    margin-bottom:1.2em;
+	}
+
+
+	div.paiArt > div:first-of-type{
+    	width:100%;max-width:20em;
+	}
+	div.paiArt article button{
+	    float:left;
+	    clear:both;
+
+	    margin:.5em 0;
+	}
+
+}
+
+@media screen and (min-width:1300px){
+	div.paiArt{
+		width:100%;max-width:75em;
+		
+		overflow:hidden;
+		margin:0 auto;
+	}
+   div.paiArt > p:first-of-type{
+   	   margin-bottom:2.5em;
+	}
+    div.paiArt > div:first-of-type{
+    	width:100%;max-width:20em;
+	
+    	display:inline-block;
+	}
+	div.paiArt article button{
+	    float:left;
+	    clear:both;
+
+	    margin:.5em 0;
+	}
+
+	div.paiArt article > div{
+		max-width:50em;
+		float:right;
+		margin-top:-18em;
+		
+	}
+
+}

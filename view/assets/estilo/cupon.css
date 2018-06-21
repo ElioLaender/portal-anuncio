@@ -1,0 +1,195 @@
+@charset "UTF-8";	
+header.headDes{
+	position:relative;
+	top:3.5em;
+	margin-bottom:5em;
+}
+header.headDes > h1{
+	top:0;
+	color:#f39c12;
+	font-size:1.8em;
+}
+button > a:link,
+button > a:visited,
+button > a:active{
+	color:#fff;
+}
+button > a{
+	width:101%;
+	padding:.5em 0;
+}
+/*escadinha no form editar*/
+p.escada{
+  position:absolute;
+  top:-10.5em;
+  left:0;
+
+  width:15em;max-width:100%;
+
+  display:block !important;
+  font-size:1.1em;
+
+  margin-right:.8em;
+}
+p.escada strong{
+  color:#f4a62a;
+}
+p.escada a{
+  color:#777;
+  font-weight:600;
+}
+p.escada a:hover,
+p.escada a:focus{
+  color:#111;
+}
+div.paiDesc{
+	position:relative;
+	top:2.5em;
+	min-height:35em;
+
+	background:#fff;
+}
+div.divCup{
+	position:relative;
+	top:0;
+
+	width:100%;max-width:15em;
+	margin:1em auto 2em;
+
+	padding:1.5em .5em;
+	border:solid #ecf0f1 2px;
+}
+div.reAnun{
+	position:relative;
+	top:0;
+	width:100%;
+	margin:1em auto;
+}
+div.divCup > p.titu{
+	position:absolute;
+	top:0;
+	left:0;
+
+	width:100%;
+	height:2em;
+
+	color:#fff;
+	font-weight:600;
+	font-size:1.3em;
+
+	padding:.3em 0;
+	background:#bdc3c7;
+}
+div.divCup div.divImg{
+	position:relative;
+	top:2em;
+
+	width:100%;
+
+	margin-bottom:3em;
+}
+div.divCup div.divImg a{
+	width:100%;
+}
+div.divCup div.divImg figure{
+	position:relative;
+	top:0;
+
+	width:100%;
+	height:7.5em;
+}
+div.divCup div.divImg figure img{
+	width:100%;
+	height:7.5em;
+}
+div.divCup button.butCup{
+	top:.5em;
+	width:95%;
+
+	margin:0 auto .5em;
+
+	color:#fff;
+	font-size:1.1em;
+	font-weight:600;
+
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+
+    background:#3498db;
+	display:block;
+}
+div.divCup button:first-of-type:hover,
+div.divCup button:first-of-type:focus{
+	background:#2980b9; 
+}
+div.divCup button:last-of-type{
+	background:#2ecc71;
+}
+div.divCup button:last-of-type:hover,
+div.divCup button:last-of-type:focus{
+	background:#27ae60; 
+}
+
+/*container bloco quando nao a anuncios*/
+div.container{
+	position:relative;
+	top:0;
+
+	width:100%;
+	height:25em;
+
+	background:url('../imagens/zeroAnun@1x.jpg')no-repeat;
+	background-position:50%;
+	background-size:cover;
+}
+div.container:before{
+	content:'';
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+
+	background:rgba(0,0,0, .4);
+}
+div.container p{
+	top:2em;
+	max-width:15em;
+	
+	color:#fff;
+	font-size:1.5em;
+	font-weight:600;
+	margin:0 auto;
+
+}
+div.reAnun p{
+	position:relative;
+	top:3em;
+	color:#f39c12;
+}
+div.reAnun ul{
+	top:7.5em;
+	overflow:visible;
+}
+div.reAnun ul li a{
+	width:95%;max-width:15em;
+	height:3em;
+
+	text-align:center;
+
+	background:#3498db;
+
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+
+	-moz-box-shadow:0 5px 0 #2980b9;
+	-webkit-box-shadow:0 5px 0 #2980b9;
+	box-shadow:0 5px 0 #2980b9;
+
+	padding:.5em 0;
+	margin:0 auto;
+
+	display:block;
+}

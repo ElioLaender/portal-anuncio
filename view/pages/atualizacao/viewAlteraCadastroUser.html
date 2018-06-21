@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta name="language" content="pt-br">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="http://adminsn.semprenegocio.com.br/" target="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Élio Laender e Pedro Gontijo">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" href="/view/assets/imagens/flor.png">
+    <base href="http://www.semprenegocio.com.br/" target="">
+    <title>Alterar currículo</title>
+    <!-- build:css css/index.min.css -->
+    <link href="/view/assets/css/reset.css" rel="stylesheet">
+    <link href="/view/assets/css/index.css" rel="stylesheet">
+    <link href="/view/assets/css/header.css" rel="stylesheet"> 
+    <link href="/view/assets/css/editaLogin.css" rel="stylesheet"> 
+ 
+    <link href="/view/assets/css/breakEditLogin.css" rel="stylesheet">
+    <link href="/view/assets/css/breakReset.css" rel="stylesheet">
+    <link href="/view/assets/css/breakIndex.css" rel="stylesheet">
+    <!-- endbuild -->
+</head>
+<body>
+<div class="tudo">
+    <div class="loader load01">
+      <div>
+        <p class="animar carregan">
+          <span>Car</span>
+          <span>re</span>
+          <span>gan</span>  
+          <span>do...</span>
+        </p>
+      </div>  
+    </div>
+<main>
+    <header class="topo">
+        <div class="vol edit">
+            <h1>Alterar seus dados</h1>
+            <ul>
+                <li><a href="index.html"></a></li> 
+            </ul>
+        </div>
+    </header>
+    <!--div controla banner--> 
+    <div> 
+    <!-- div para foto com nome do usuário-->
+      <div class="fotoUsu">
+            <p> Olá, <?php echo $usuario; ?></p>   
+      </div> 
+        <aside class="bannerEdit">
+            <h2>parceria ...</h2>
+            <div>
+              <h3>Quer saber mais?</h3>
+              <p>Temos milhares de vantagens para sua empresa..</p>
+              <ul>
+                <li>
+                  <a href="index.html">Click aqui</a>
+                </li>
+              </ul>
+            </div>
+        </aside>
+
+        <div class="paiSec">
+          <section>
+           <h2>Altere os dados do seu login</h2>          
+
+            <input type="hidden" name="MAX_FILE_SIZE" value="1024000" />
+            <!-- ESTES DADOS SERÃO PREENCHIDOS DE ACRODO COM A BASE DE DADOS -->
+           <div>
+           <!--Controla form --> 
+                <form action="<?php echo $URL_INI; ?>?controller=Anuncio&action=alterInfoUser" method="post">
+                <fieldset class="fie">
+                    <legend>Editar dados</legend>
+                    <fieldset>
+                          <legend>Altere seus dados</legend>
+
+                          <label for="nom">Nome</label>
+                          <input id="nom" name="nome" value="" type="text" class="efeitoL">
+                         
+                          <label for="login">Email login</label>
+                          <input id="login" name="login" value="" type="text" class="efeitoL">
+
+                          <label for="senh">Nova senha</label>
+                         
+                          <input id="senh" name="senha" type="password" class="efeitoL tSenhas">
+                          <input type="checkbox" class="mostraSe">
+                         
+
+                          <label for="novaSenh">Repetir Senha</label>
+                          <input id="novaSenh" name="novaSenha" type="password" class="efeitoL tSenhas">
+                          <input type="checkbox" class="mostraSe"> 
+                    </fieldset>
+                    
+                     <fieldset class="fo">
+                                <legend class="legenP">Alterar foto do perfil</legend>
+                                
+                                <input type="file" name="image" id="image-upload" class="inputfile"  data-multiple-caption="{count} files selected">
+                                <label for="image-upload">
+                                    <span class="spanImg">carregar foto</span>
+                                </label> 
+                                <div class="paiFoto"> 
+                                    <div id="image-preview"></div> 
+                                </div>
+                                <button id="ex" type="button" class="excl">Excluir</button>
+                    </fieldset>
+
+                            <div class="err">
+                                <p id="te">Arquivo não suportado !</p>
+                                <button type="button"></button>
+                            </div>    
+                             <input type="submit" id="subirCur" class="sub"  name="altera" value="Alterar dados">
+                           
+                  <!-- fecha a fieldset principal -->     
+                  </fieldset>
+                </form>
+            </div>
+        </section>
+      </div>
+   <!--Fecha controla section -->
+    </div>
+    <!--div controla banner -->
+  </main>
+ </div>
+<!--Fim da div controla tudo -->  
+</body>
+   <script src="/view/assets/js/jquery-1.11.3.min.js"></script>
+    <script src="/view/assets/js/jquery.mask.min.js"></script>
+    <script src="/view/assets/js/modernizr.custom.js"></script>
+   <!-- build:js js/index.min.js --> 
+    <script  src="/view/assets/js/Assync/anuncioImpress.js"></script>
+    <script src="/view/assets/js/efeito-foto.js"></script>
+    <script src="/view/assets/js/viewFoto.js"></script>
+    <script src="/view/assets/js/custom-file-input.js"></script>
+    <script src="/view/assets/js/gif.js"></script>   
+    <script src="/view/assets/js/revelaSenha.js"></script>   
+    <script src="/view/assets/js/efeitoLabel.js"></script>   
+  <!-- endbuild -->
+
+<!--os dois abaixo eh suporte para medias queries e html5-->
+<!-- [If lt IE 9]>
+     <script  src = "js/html5shiv.js"> </ script>
+     <script  src="js/css3-mediaqueries.js"></script>
+<[endif]-->
+<!-- build:js js/index.min.js -->    
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $.uploadPreview({
+      input_field: "#image-upload",   // Default: .image-upload
+      preview_box: "#image-preview",  // Default: .image-preview
+      label_field: "#image-label",    // Default: .image-label
+      label_default: "Choose File",   // Default: Choose File
+      label_selected: "Change File",  // Default: Change File
+      no_label: false                 // Default: false
+    });
+  });
+</script>
+
+  <!--script>
+
+    //REFAZR ESSA FUNÇÃO DE FORMA QUE POSSA SER REUTILIZADA.
+    $(function(){
+
+        //Função que ao clicar no botão, irá fazer.
+        $("#subAlter").click(function() {
+
+            var controller = "Anuncio";
+
+            var action = "alterInfoUser";
+
+            var email = $("#login").val();
+
+            var senha = $("#senh").val();
+
+            var novaSenha = $("#novaSenh").val();
+
+            //verifica se a atual é igual a do banco de dados.
+
+            $.post("?controller=Anuncio&action=alterInfoUser", {
+
+
+                    controller: controller,
+                    action: action,
+                    login: email,
+                    senha: senha,
+                    novaSenha: novaSenha
+                },
+
+
+                function (result) {
+
+                    //document.write(result);
+
+
+
+                });
+
+
+            //Enviando as variáveis com os valores para a página envia_formulario.php e criando uma nova função para pegar o retorno da página envia_formulario.php
+
+
+            // $("#novaSenha").val('');
+            // $("#senha").val('');
+           // window.location.href = "?controller=Anuncio&action=viewAlterCadastroUser";
+
+        });
+    });
+
+</script -->
+
+</html>

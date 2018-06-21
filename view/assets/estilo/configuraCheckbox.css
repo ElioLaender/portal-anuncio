@@ -1,0 +1,43 @@
+@charset "UTF-8"; 
+div.paiSec div form fieldset input#senhaDelet{
+	top:-2.5em;
+	left:40%;
+	width:15em;
+	font-size:1.5em !important;
+	opacity:0 !important;
+}
+/*posicao dos inputs para mostrar senha*/
+div.paiSec div form fieldset input#senh + input#chec01,
+div.paiSec div form fieldset input#novaSenh + input[type="checkbox"]{
+	position:absolute;
+	top:2em;
+	left:80%;
+	width:15em;
+}
+div.paiSec div form fieldset input#novaSenh + input[type="checkbox"]{
+	top:5em !important;
+}
+@media screen and (min-width:400px){
+	/*posicao dos inputs para mostrar senha*/
+	div.paiSec div form fieldset input#senh + input#chec01,
+   div.paiSec div form fieldset input#novaSenh + input[type="checkbox"]{
+		left:85%;
+	}
+
+}
+@media screen and (min-width:450px){
+	/*posicao dos inputs para mostrar senha*/
+	div.paiSec div form fieldset input#senh + input#chec01,
+	div.paiSec div form fieldset input#novaSenh + input[type="checkbox"]{
+		left:87%;
+	}
+	div.paiSec div form fieldset input#senhaDelet{
+		left:43%;
+	}
+}
+@media screen and (min-width:1600px){
+	div.paiSec div form fieldset input#senhaDelet{
+	  left:22%;
+	}
+
+}

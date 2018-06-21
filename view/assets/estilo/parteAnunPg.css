@@ -1,0 +1,1063 @@
+@charset "UTF-8";
+div.paiPg{
+	position:relative;
+	top:15em;
+
+	width:100%;
+    margin-bottom:8em;
+
+    border:solid #fff 1px;
+}
+div.paiAnunCompl{
+	position:relative;
+	top:0;
+
+	width:100%;
+}
+/*usado para controlar as informacoes do anuncio*/
+div.divControler{
+	position:relative;
+	top:-6em;
+	width:100%;max-width:25em;
+	margin: 0 auto;
+}
+/*bloco do anuncio*/
+article > div.PaiAnuncio{
+	position: relative;
+
+	width:99%;max-width:25em;
+  	
+    padding-bottom:1em;
+    margin: 0 auto;
+
+    z-index:3; 
+}
+/*usado como titulo do anuncio*/
+article > div.PaiAnuncio > p{
+	top:-1.5em;
+	width:90%;
+	height:2.5em;
+	color:#555;
+	
+	padding-top:.8em;
+	font-size:1.1em;
+	font-weight:600;
+  	font-family:"Roboto Slab","arial";
+
+	text-align:left;
+	text-transform:uppercase;
+    
+	margin:0 auto .3em;	
+}
+/*imagem, mensagem e avaliacao*/
+article > div.PaiAnuncio div.divImg{
+	position:relative;
+	top:1em;
+	width:90%;max-width:30em;
+	height:6em;
+
+    margin: 0 auto 5em;
+	padding-left:.8em;
+}
+/*div onde tem estrelas*/
+article > div.PaiAnuncio div.divImg div:first-of-type{
+	 position:relative;
+	 top:-2.7em;
+     left:-.5em;
+
+	 width:8em;
+	 height:2em;
+	 display:inline-block;
+}
+
+div.divImg div p{
+	top:0;
+	width:8em;
+	height:1.3em;
+	text-indent:-99em;
+	color:#fff;
+}
+article > div.PaiAnuncio div.divImg div:first-of-type ul{
+	position:relative;
+	top:.5em;
+}
+article > div.PaiAnuncio div.divImg div:first-of-type ul li a{
+	width:90%;
+	color:#fff;
+	background:#e74c3c; 
+	padding:.5em 0;
+	text-align:center;
+  	font-family:"Roboto Slab","arial";
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+article > div.PaiAnuncio div.divImg div:first-of-type ul li a:hover,
+article > div.PaiAnuncio div.divImg div:first-of-type ul li a:focus{
+	background:#c0392b;
+}
+article > div.PaiAnuncio div.divImg div:last-of-type{
+	position:relative;
+	top:-.5em;
+	left:0;
+
+	width:100%;max-width:9em;
+	height:6em;
+
+	display:inline-block;
+}
+div.divImg div:last-of-type figure img{
+    width:100%; 
+	height:6em;
+
+    -webkit-border-radius:5px;
+  	-moz-border-radius:5px;
+  	border-radius:5px;
+	background-position:50%;
+}
+/*Este eh onde esta contido o conteudo da pagina do anuncio*/
+section div dl{
+ position:relative;
+ top:0;
+ left:0;
+
+ width:90%;
+
+ margin:0 auto;
+}
+/*selecionar todos dt*/
+section div dl dt{
+	text-align:left;
+	font-size:1.1em;
+	color:#777;
+	font-weight:500;
+	display:inline-block;
+	margin:.8em .2em 0 0;
+}
+/*pega todos os dd*/
+section div dl dd{
+	left:0;
+	text-align:left;
+	font-size:.9em;
+	color:#666;
+	display:inline-block;
+	margin:.2em .2em 0 0;
+}
+section div.divHoras dl dd span{
+	color:#444;
+    font-family:"Roboto Slab","arial";
+}
+section div dl dd strong{
+	margin-right: .1em;
+	font-weight:600;
+	color: #555;
+}
+
+div.dadosAnun > dl:first-of-type dd{
+	left:.2em;
+}
+div.dadosAnun dl dt:first-of-type{
+	display:block;
+	margin-top:2em;
+}
+div.dadosAnun dl{
+	padding:0 .5em; 
+}
+/*endereco*/
+div.dadosAnun dl dt:first-child{
+	display:block;
+	margin-top:2em;
+
+}
+/*categoria*/
+div.dadosAnun dl dd:nth-of-type(9){
+	display:block;
+	margin:.5em 0 .1em;
+
+}
+article > div.PaiAnuncio dl dd:nth-of-type(9) strong{
+	font-size:1.2em;
+}
+
+/*selecionar os dd tel e cel*/
+div.dadosAnun > dl:first-of-type dl dt:first-child{
+	left:-1.4em;
+	display:block;
+	margin-top:.5em;
+}
+div.dadosAnun > dl:first-of-type dl dd:nth-of-type(1),
+div.dadosAnun > dl:first-of-type dl dd:nth-of-type(2){
+	width:45%;max-width:10em;
+	min-width:8em;
+	margin-top:.5em;
+	display: inline-block;
+  	font-family:"Roboto Slab","arial" !important; 
+  	font-weight:600;
+}
+div.dadosAnun > dl:first-of-type dl dd:nth-of-type(2){
+	position: absolute;
+	top:1em;
+	left:7.8em;
+}
+div.dadosAnun > dl:first-of-type dl dd:nth-of-type(1) strong{
+	position: absolute;
+	top:-.3em;
+	left:-1.3em;
+
+	width:1.3em;
+	height:1.8em;
+
+	display:inline-block;
+
+	background:url('../imagens/phone@1x.png') no-repeat;
+	background-size:1em; 
+
+}
+div.dadosAnun > dl:first-of-type dl dd:nth-of-type(2) strong{
+	font-size:1.4em;
+	font-weight:500;
+}
+/*link do tel*/
+div.dadosAnun > dl:first-of-type dl dd a{
+	color:#444;
+}
+article > div.PaiAnuncio dl dl:first-of-type dd:nth-of-type(3){
+	left:-1.7em;
+	font-weight:600;
+}
+article > div.PaiAnuncio dl dl:first-of-type dd:nth-of-type(3) strong{
+    position:relative;
+    top:.6em;
+
+    width:2em;
+    height:1.5em;
+
+	display:inline-block;
+
+	background:url('../imagens/whatsapp@1x.png') no-repeat;
+	background-size:1.4em;
+	background-position:50%;
+}
+/*fim dd e link tel*/
+/*email*/
+article > div.PaiAnuncio dl dl:first-of-type dt:nth-of-type(2){
+	top:.5em;
+	left:-1.4em;
+	margin-bottom:.5em;
+}
+div.dadosAnun > dl:first-of-type dl dt:nth-of-type(2),
+div.dadosAnun > dl:first-of-type dl dd:nth-of-type(3){
+	display:block;
+	text-align:left;
+}
+div.dadosAnun > dl:first-of-type dl dd:nth-of-type(4){
+	top:-.5em;
+	left:-2em;
+}
+div.dadosAnun > dl:first-of-type dl dd:nth-of-type(4) strong{
+	width:2.5em;
+	height:2em;
+
+	background:url('../imagens/carta.png') no-repeat;
+	background-size:2em;
+	background-position:50% 100%;
+ 	display:inline-block;
+}
+dl.sit{
+	top:-1.5em;
+ 	margin-bottom:-1em;
+}
+dl.sit dd{	
+	width:4em;
+	height:2em;
+
+	background:url('../imagens/planeta.png') no-repeat;
+	background-size:2em;
+	background-position:0;
+
+	cursor:pointer;
+} 
+
+dl.sit dd a{
+	width:2em;
+	height:2em;
+	color:#fff;
+	opacity:0;
+}
+/*redes sociais*/
+dl#verRed{
+	top:1.5em;
+	left:1.5em;
+	width:65%;
+   
+	padding:0;
+	margin:0;
+}
+dl#verRed dt{
+	margin:0 0 .5em;
+}
+dl#verRed a{
+	top:0;
+	text-indent:-99em;
+
+	width:2.2em;
+	height:2em;
+
+	display:inline-block;
+
+	margin-right:1em;
+
+	background:url('../imagens/iconsRedes@1x.png') no-repeat;
+	background-size:2.3em;
+}
+
+dl#verRed dd:nth-of-type(2) a{
+	background-position:0 33%;
+}
+
+dl#verRed dd:nth-of-type(3) a{
+	background-position:0 65%;
+}
+dl#verRed dd:nth-of-type(4) a{
+	height:2.2em;
+	background-position:0 100%;
+}
+
+/*Horas de funcionamento*/
+section div.divHoras{
+	position:relative;
+	width:95%;max-width:27.5em;
+	margin:2em auto 1em;
+}
+section div.divHoras dl dt{
+  display:block;
+  font-weight:600;
+  margin-bottom:.5em;
+}
+section div.divHoras dl dd{
+	left:0;
+}
+/*formas de pagamento e bandeiras*/
+section div.paiBand,
+section div.paiFac{
+	position:relative;
+	width:95%;max-width:27.5em;
+	margin:0 auto 1.5em;
+}
+section div.paiBand div h3{
+	left:1em;
+	width:90%;
+	margin:1em 0;
+	color:#777;
+	font-size:1.1em;
+	text-align:left; 
+    display:inline-block;
+
+}
+
+section div.paiBand div{
+	position:relative;
+	top:0;
+	
+	width:100%;
+	height:100%; 
+	overflow:hidden;
+}
+
+section div.paiBand div input,
+section div.paiFac div input{
+	position:absolute;
+	top:0;
+	left:0;
+
+	font-size:0;
+	opacity:0;
+
+ 	z-index:-1;
+
+ 	display:none;
+}
+section div.paiBand input + span,
+section div.paiFac div input + span{
+	float:left;
+
+	width:3em;
+	height:3em;
+   
+	color:#444;
+    font-size:.7em;
+	display:none;
+	
+	margin-left:.7em;
+}
+
+/*formas de pagamento*/
+section div.paiBand div{
+	margin-bottom:1em;
+}
+section div.paiBand div:first-of-type{
+	height:7em;
+}
+section div.paiBand div:first-of-type span::before{
+ content:'';
+
+ position:relative;
+ bottom:0;
+
+	
+ width:100%;
+ height:2.6em;
+
+ background:url('../imagens/spriteRe@1x.png') no-repeat;
+ background-size:8.5em;
+ background-position:100% 100%;
+
+ margin-bottom:.2em;
+}
+/*boleto*/
+section div.paiBand div:first-of-type span:first-of-type::before{
+ top:.2em;
+ left:-.3em;
+ background-size:6.3em;
+}
+/*credito*/
+section div.paiBand div:first-of-type span:nth-of-type(2)::before{
+ left:.5em;
+ width:55%;
+
+ background-position:100% 0%;
+ background-size:6em;
+}
+/*credito*/
+section div.paiBand div:first-of-type span:nth-of-type(3)::before{
+ background-position:0% 0%;
+}
+/*ticket*/
+section div.paiBand div:first-of-type span:nth-of-type(4)::before{
+ width:73%;
+
+ background-position:55% 5%;
+ background-size:7em;
+}
+/*cheque*/
+section div.paiBand div:first-of-type span:nth-of-type(5)::before{
+ background-position:0% 55%;
+ background-size:6.9em;
+}
+/*dinheiro*/
+section div.paiBand div:first-of-type span:nth-of-type(6)::before{
+ top:.5em;
+
+ width:3.5em;
+ height:1.8em;
+
+ margin-bottom:1em;
+ background-position:0% 100%;
+ background-size:7.4em;
+}
+/*Bandeiras aceitas*/
+section div.paiBand div:nth-of-type(2){
+	max-width:20em;
+}
+section div.paiBand div:nth-of-type(2) span{
+	position: relative;
+
+	width:3em;
+	height:2.5em;
+	margin:-.5em .7em 1.3em;
+}
+/*master*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(1){
+	background:url('../imagens/master@1x.png') no-repeat;
+	background-size:3em;
+}
+/*visa*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(2){
+	background:url('../imagens/visa@1x.png') no-repeat;
+	background-size:3em;
+}
+/*american*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(3){
+	background:url('../imagens/american@1x.jpg') no-repeat;
+	background-size:3em;
+}
+/*dinner*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(4){
+	background:url('../imagens/dinerClub@1x.png') no-repeat;
+	background-size:3em;
+}
+/*elo*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(5){
+    background:url('../imagens/elo@1x.png') no-repeat;
+	background-size:2.5em;
+}
+/*pagSeguro*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(6){
+    background:url('../imagens/pagseguro@1x.png') no-repeat;
+	background-size:3em;
+}
+/*paypal*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(7){
+	background:url('../imagens/paypal@1x.png') no-repeat;
+	background-size:2.3em;
+}
+/*mercadoPago*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(8){
+    background:url('../imagens/mercadopago@1x.png') no-repeat;
+	background-size:3em;
+}
+/*sodexo*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(9){
+	width:4em;
+
+	background:url('../imagens/sodexo@1x.png') no-repeat;
+	background-size:4em;
+}
+/*ticket*/
+section div.paiBand div:nth-of-type(2) span:nth-of-type(10){
+	width:4em;
+
+	background:url('../imagens/ticket@1x.png') no-repeat;
+	background-size:4em;
+}
+section div.paiBand div:nth-of-type(2) span:last-of-type{
+	width:4em;
+	height:1.4em;
+
+	background:none;
+	line-height:1.4;
+	text-align:center;
+	font-size:.8em;
+	font-weight:600;
+
+	border:solid #777 2px;
+}
+/*facilidades oferecidas*/
+section div.paiFac{
+	position:relative;
+	top:0;
+	padding-left:1em;
+
+	width:95%;
+}
+
+section div.paiFac div:first-of-type{
+	position:relative;
+	top:0;
+
+	width:98%;
+	margin:0 auto;
+	overflow:hidden;
+}
+section div.paiFac div:first-of-type h3,
+section div.paiFac div:last-of-type h3{
+	color:#777;
+	text-align:left;
+	margin-bottom:.8em;
+}
+/*estcionamento*/
+section div.paiFac div:first-of-type span{
+	position:relative;
+	left:.3em;
+	width:45%;
+	font-size:.8em;
+	color:#888;
+	text-align: right;
+	margin:.3em .8em .2em 0;
+}
+section div.paiFac div:first-of-type span:nth-of-type(1){
+	width:9.3em;
+	background:url('../imagens/car@1x.png') no-repeat;
+	background-size:2em;
+	background-position:0 0;
+}
+/*seguranca*/
+section div.paiFac div:first-of-type span:nth-of-type(2){
+	width:6.3em;
+	background:url('../imagens/seg@1x.png') no-repeat;
+	background-size:1.5em;
+	background-position:0 0;
+}
+/*acessibilidade*/
+section div.paiFac div:first-of-type span:nth-of-type(3){
+	width:12em;
+	background:url('../imagens/aces@1x.png') no-repeat;
+	background-size:1.5em;
+	background-position:0 0;
+}
+/*ar*/
+section div.paiFac div:first-of-type span:nth-of-type(4){
+	width:9em;
+    background:url('../imagens/ar@1x.png') no-repeat;
+	background-size:1.5em;
+	background-position:0 0;
+}
+/*wifi*/
+section div.paiFac div:first-of-type span:nth-of-type(5){
+	width:8em;
+	background:url('../imagens/wifi@1x.png') no-repeat;
+	background-size:1.5em;
+	background-position:0 0;
+}
+/*reserva*/
+section div.paiFac div:first-of-type span:nth-of-type(6){
+	width:11em;
+	background:url('../imagens/data@1x.png') no-repeat;
+	background-size:1.5em;
+	background-position:0 0;
+
+}
+/*animais*/
+section div.paiFac div:first-of-type span:nth-of-type(7){
+	width:9.5em;
+	background:url('../imagens/dog@1x.png') no-repeat;
+	background-size:1.5em;
+	background-position:0 0;
+}
+/*cupons*/
+section div.paiFac div:first-of-type span:nth-of-type(8){
+	width:12em;
+	background:url('../imagens/cupon@0x.png') no-repeat;
+	background-size:1.8em;
+	background-position:7% 0;
+}
+/*delivery*/
+section div.paiFac div:first-of-type span.delivery{
+	width:50%;max-width:10em;
+	background:url('../imagens/delivery@1x.png') no-repeat;
+	background-size:2em;
+	background-position:0 0;border:
+}
+/*criancas*/
+section div.paiFac div:first-of-type span.crian{
+	width:50%;max-width:11em;
+	background:url('../imagens/play@1x.png') no-repeat;
+	background-size:2em;
+	background-position:0 0;
+	margin-right:1em;
+}
+/*planos aceitos*/
+section div.paiFac div:last-of-type{
+	position:relative;
+	top:1.5em;
+
+	width:95%;
+	margin:0 auto 1em;
+	overflow:hidden;
+}
+section div.paiFac div:last-of-type span{
+	width:6em;
+	height:1.5em;
+    padding-left: 1em;
+	font-size:1em;
+	margin:0;
+	color:#777;
+}
+section div.paiFac div:last-of-type span:first-letter{
+	font-weight:600;
+	color:#555;
+}
+/*descricao*/
+section div.paiArt{
+	position:relative;
+	width:100%;
+	
+	margin: 2em auto 0;
+
+	padding-bottom:3em;
+	background:rgba(236, 240, 241,.6);
+}
+
+div.paiArt article h2{
+	top:1em;
+	height:2.3em;
+	text-transform:uppercase;
+
+  	color:#666;
+  	text-align:center !important;
+  	font-size:1.2em;
+  	letter-spacing:1px;
+
+  	padding-top:.5em;
+  	margin-bottom:1.5em;
+}
+div.paiArt article div{
+	position:relative;
+	top:.5em;
+	width:90%;max-width:40em;
+	margin: 0 auto;
+}
+div.paiArt article div p{
+	top:0;
+	width:90%;
+	
+	margin: 0 auto;
+	
+	line-height:1.4;
+	
+	font-size:1.1em;
+	color:#666;
+}
+
+/*fotos*/
+section.secFoto{
+	position:relative;
+	top:2em; 
+	margin-bottom:10em;
+}
+section.semFoto{
+	position:relative;
+	top:0; 
+	height:15em;
+	margin-bottom:5em;
+	background:url('../imagens/imgFoto.jpg') no-repeat;
+	background-size:cover;
+	background-position:50%;
+}
+section.semFoto h3{
+	position:relative;
+	top:3em !important;
+	color:#fff !important;
+}
+section.secFoto h3{
+	position:relative;
+	left:0;
+
+	font-size:1.5em;
+	color:#777;
+	opacity:1;
+
+	margin-bottom:1em;
+}
+
+section.secFoto div#galeria{
+	position: relative;
+	top:0;
+
+	width:95%;max-width:36em;
+	margin:0 auto;
+	
+	border:solid #ecf0f1 2px;
+}
+
+section.secFoto div#galeria ul{
+	overflow:visible;
+	padding:0;
+	width:90%;max-width:15em;
+	margin:1em auto;
+}
+section.secFoto div#galeria ul li{
+	position:relative;	
+	height:10em;
+	margin:1em 0;
+}
+section.secFoto div#galeria ul li a{
+	position:relative;
+	width:100%;
+	height:9em;
+	padding:0;
+	display:block;
+}
+section.secFoto div#galeria ul li a img{	
+	width:100%;
+	height:9em;
+	display:block;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+div#tela{
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	margin:1em auto 0;
+	background:rgba(0,0,0,.8);
+	z-index:21;
+	display:none;
+}
+
+div#tela div.paiBut{
+	position:fixed;
+	top:6em;
+	width:90%;max-width:30em;
+	height:4em;
+}
+div#tela button.butF{
+	position:absolute;
+	top:0;
+	right:0;
+	width:3em;
+	height:3em;
+	background:url('../imagens/fecha@1x.png') no-repeat;
+	background-size:2.5em;
+	background-position:50%;
+}
+
+div#tela img{
+	position:fixed;
+	top:10em;
+	margin-left:.5em;
+	width:90%;max-width:30em;
+	z-index:5;
+}
+
+div.escuro{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	background:rgba(0,0,0,.8);
+	z-index:15;
+	display:none;
+}
+/*youtube*/
+div.youTube{
+	position:relative;
+	top:-5em;
+	width:100%;
+
+	padding-top:2em;
+	margin-bottom:-14em;
+	background:#ecf0f1;
+
+	border:solid #ecf0f1 1px; 
+}
+div.youTube h3{
+	color:#555;
+	font-size:1.6em;
+	margin-bottom:1em;
+}
+div.youTube figure{
+	width:90%;max-width:45em;
+	min-width:17.5em;
+
+	margin:0 auto;
+}
+div.youTube figure > div{
+	position:relative;
+	height:0;
+	
+	padding-bottom:56.25%;
+	padding-top:25px;
+	margin-bottom:15em;
+}
+div.youTube figure > div iframe{
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 width:100%;
+	 height:100%;
+}
+
+/*mapa*/
+section div.rota{
+	position: relative;
+	top:0;
+	
+	width:100%;
+	height:11.5em;
+
+	background:url('../imagens/manPurse@2x.jpg')no-repeat;
+	background-size:cover;
+	background-position:50% 100%;
+}
+
+section div.rota::before{
+	content:'';
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+
+	background:rgba(0,0,0,.4);
+	z-index:1;
+}
+
+div.rota > p{
+	top:2em; 
+
+	width:90%;max-width:25em;
+
+	margin:0 auto;
+
+	color:#fff;
+	font-size:1.3em;
+	-moz-text-shadow:8px 8px 10px #000;
+	-webkit-text-shadow:8px 8px 10px #000;
+	text-shadow:8px 8px 10px #000;
+	z-index:5;
+}
+section div.rota p strong{
+	font-weight:600;
+}
+section div.paiMapa{
+	position:relative;
+	top:2em;
+
+	width:100%;
+
+	margin:0 auto;
+}	
+section div.paiMapa div:first-of-type{
+	position:relative;
+	top:-2em;
+
+	width:100%;
+	height:14em;
+    background: -webkit-linear-gradient(left,#3498db 30%,#15679c 80%);
+	background: -o-linear-gradient(left,#3498db 30%,#15679c 80%); 
+	background: -moz-linear-gradient(left,#3498db 30%,#15679c 80%); 
+	background: linear-gradient(left,#3498db 30%,#15679c 80%); 
+}
+section div.paiMapa div:first-of-type::before{
+	content:'';
+
+	position:relative;
+	top:-2em;
+
+	width:5em;
+	height:5em;
+
+    margin:0 auto;
+
+    display:block;
+
+	background:url('../imagens/map@1x.png') no-repeat;
+	background-position:50%;
+	background-size:100%;
+
+	z-index:5;
+}
+
+section div.paiMapa div p{
+	top:-.5em;
+	width:80%;
+
+	font-size:1.2em;
+	text-shadow:5px 8px 10px rgba(41, 128, 185,.5);
+
+	color:#fff;
+	margin:0 auto .5em;
+}
+section div.paiMapa div p strong{
+	font-weight:600;
+}
+
+section div.paiMapa div:last-of-type{
+	position:relative;
+	top:-2em;
+	width:100%;
+	height:17em;
+
+	background:rgba(236, 240, 241,.7);
+}
+/*bloco de retorno*/
+div.paiRetLik{
+	position:relative;
+	top:0;
+	width:100%;max-width:35em;
+	margin:0 auto;
+}
+div.returLik{
+	position:fixed;
+	top:15em !important;
+	
+	width:100%;max-width:35em;
+	height:13em;
+
+
+	margin:0 auto -14em;
+	background:#fff;
+	z-index:50;
+
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+
+	border:solid #ecf0f1 2px;
+
+	display:none;
+}
+div.returLik:before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+
+	background:url('../imagens/alert@1x.png') no-repeat;
+	background-size:4em;
+	background-position:50% 15%;
+}
+div.returLik p{
+	top:5em;
+	max-width:15em;
+	color:#555;
+	font-size:1.3em;
+
+	margin:0 auto;
+}
+div.returLik button{
+	position:absolute;
+	right:.5em;
+	top:.5em;
+
+	height:1.5em;
+
+	color:#555;
+
+	font-size:1em;
+	border-bottom:solid #fff 1px;
+}
+div.returLik button:hover,
+div.returLik button:focus{
+	border-bottom:solid #777 1px;
+}
+
+/*escrito quando nao esta logado e tenta responder*/
+p.returResp{
+	top:3em;
+	width:90%;
+	font-size:1.2em !important;
+	color:#e74c3c !important;
+}
+/*iframe*/
+#map{
+	position:relative;
+	top:1.5em;
+
+	width:90%;max-width:48em;
+	height:14em;
+
+	margin:0 auto;
+
+	display:block;
+}
+
+/*controlar paragrafo fe avaliacoes de sua empresa*/
+/*avaliacao*/
+p.pAval{
+	top:8em;
+	color:#444;
+	padding-top:.3em;
+	font-size:1.5em;
+	margin-bottom:.3em;
+}
+
+/*mensagem de retorno*/
+p.retorno{
+	top:-2em;
+	font-size:1.4em;
+	font-weight:600;
+	color:#666;
+}
+
+p.ret01{
+	top:0;
+}

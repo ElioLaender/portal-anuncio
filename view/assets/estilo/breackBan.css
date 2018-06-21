@@ -1,0 +1,203 @@
+@charset "UTF-8"; 
+@media screen and (min-width:380px){
+	div.ban{
+	  height:22em;
+	}
+	div.ban > div:first-of-type p:first-of-type{
+		top:2em;
+		font-size:1.5em; 
+	}
+	div.ban > div:first-of-type p:last-of-type{
+		font-size:1.3em;
+	}
+}
+
+@media screen and (min-width:450px){
+
+	div.ban{
+	  top:6em;
+	  height:24em;
+
+	  margin-bottom:6em;
+	}
+
+	div.ban > div:first-of-type p:last-of-type{
+		margin-bottom:2em;
+	}
+
+}
+
+@media screen and (min-width:500px){
+	div.ban{
+	  height:26em;
+
+	  background: url('../imagens/banner@3x.jpg') no-repeat;
+	  background-size:cover;
+	  background-position:80% 50%;
+	}
+	div.ban > div:first-of-type p:first-of-type{
+		top:2.5em;
+		font-size:1.6em; 
+	}
+	div.ban > div:first-of-type p:last-of-type{
+		font-size:1.5em;
+	}
+	div.ban > div:first-of-type ul li a{
+		width:90%;max-width:14em;
+		font-size:1.2em;
+	}
+}
+
+@media screen and (min-width:950px){
+	body{
+		border:solid red 2px;
+	}
+	div.ban{
+	  top:5em;
+	  height:37em;
+
+	  background:rgba(236, 240, 241,.6);
+
+	  margin-bottom:0;
+	}
+	div.ban:before{
+		display:none;
+	}
+	div.ban > div:first-of-type{
+		display:none;
+	}
+
+	/*banners*/
+	div.ban div.banners{
+		position:relative;
+		top:1em;
+
+		width:100%;max-width:50em;
+		margin:0 auto;
+		display:block;
+		padding-left:4.5em;
+	}
+	div.ban div.banners h2{
+		top:1.8em;
+		font-size:1.5em;
+		color:#f39c12;
+	}
+	div.ban div.banners h2 + p{
+		top:2.5em;
+		font-size:1em;
+		text-align:left;
+		text-indent:5.7em;
+
+		color:#888;
+	}
+	div.ban div.banners > div{
+		position:relative;
+		top:5em;
+
+		width:45%;
+		display:inline-block;
+	}
+
+	div.ban div.banners > div:first-of-type{
+		box-shadow:0 -4px 0 #2980b9;
+	}
+	div.ban div.banners > div h3{
+		height:2.3em;
+		color:#fff;
+		font-size:1.3em;
+		padding-top:.6em;
+		background:#3498db;
+	}
+
+	div.ban div.banners > div:last-of-type{
+		box-shadow:0 -4px 0 #27ae60;
+	}
+	div.ban div.banners > div:last-of-type h3{
+		background:#2ecc71;
+	}
+
+	div.ban div.banners > div:first-of-type > div:first-of-type{
+		background:rgba(52, 152, 219,.6);
+	}
+
+	div.ban div.banners > div:last-of-type > div:first-of-type{
+		background:rgba(46, 204, 113,.6);
+	}
+
+	div.ban div.banners > div div div p:first-of-type{
+		top:.3em;
+		color:#fff;
+		font-size:2.4em;
+		font-weight:600;
+  		font-family:"Roboto Slab","arial";
+	}
+	div.ban div.banners > div div div p:last-of-type{
+		top:.4em;
+		margin:0;
+		color:#fff;
+		font-size:1em;
+	}
+	div.ban div.banners > div div div p span{
+		color:#fff;
+		font-size:.6em;
+		font-weight:500;
+	}
+	div.ban div.banners > div div div p span.rs{
+		position:relative;
+		top:-.3em;
+
+	}
+	div.paiVal{
+		padding-bottom:.3em;
+	} 
+	div.paiVal div{
+		display:none;
+	}
+	div.paiVal > div:first-of-type{
+		display:block;
+	}
+	div.paiVal select{
+		position:relative;
+		top:.5em;
+
+		width:12em;
+		height:2.5em;
+
+		text-indent:.5em;
+		color:#888;
+		margin:1.3em auto;
+		display:block;
+
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		border-radius:5px;
+
+		border:none;
+	}
+
+	div.paiVal select option{
+		font-size:1.3em;
+	}
+	div.paiVal select option:nth-of-type(odd){
+		background:#ecf0f1;
+	}
+	div.ban div.banners > div > div:last-of-type{
+		background:#fff;
+		padding:1em 0;
+	}
+	div.ban div.banners > div > div:last-of-type p{
+		width:90%;
+
+		color:#888;
+		font-size:.9em;
+		text-align:left;
+		text-indent:1.5em;
+		margin:0 auto;
+		padding:.3em 0;
+		border-bottom:solid #ecf0f1 1px;
+	}
+
+	div.ban div.banners > div > div:last-of-type p:nth-of-type(odd){
+		//background:rgba(236, 240, 241,.5);
+	}
+}

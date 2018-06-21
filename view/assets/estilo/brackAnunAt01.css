@@ -1,0 +1,330 @@
+@charset "UTF-8";
+
+@media screen and (min-width:350px){
+	div#retAnun article div.contBu ul li a{
+		height:2.5em; 
+		font-size:1.2em; 
+        padding-top:.7em;
+	}
+	/*pai dos dois divs*/
+	article div.contBu{
+		top:21em;
+	}
+	div.container a{
+		top:3.5em;
+		font-size:1.1em;
+	}
+
+}
+@media screen and (min-width:400px){
+	header h1.tituAnunc{
+		margin:3em auto 2em;
+		font-size:1.6em;
+	}
+	/*imagem, mensagem e avaliacao*/
+	article div.divImg{
+	    margin: .8em auto 1em;
+	}
+
+	header h1.tituAnunc{
+		font-size:1.8em;
+	}
+}
+
+@media screen and (min-width:460px){
+    div.paiM{
+      max-width:24.5em;
+	  left:1.3em;
+	}
+	div#retAnun article{
+		max-width:25em;
+		margin:6em auto;
+	}
+div#retAnun article button.abrir{
+	position:absolute;
+	top:-2em;
+	right:1em;	
+}
+
+@media screen and (min-width:600px){
+	div.backAsi{
+		position: relative;
+
+		width: 100%;
+		height: 20em;
+		padding-top:4em;
+
+		background:rgba(189, 195, 199,.2);
+
+		margin-bottom:3.5em;
+	}
+	aside.asidAnunAtiv{
+		width:60%;max-width:24.5em;
+	}
+	aside.asidAnunAtiv div:first-of-type,
+	aside.asidAnunAtiv div:nth-of-type(2){
+		  float:none;
+	}
+	aside.asidAnunAtiv div:nth-of-type(2){
+		  left:1.9em;
+	}
+	aside.asidAnunAtiv div:nth-of-type(3){
+		top:0;
+		left:4em;
+		display: inline-block;
+	}
+	/*paragrafo parte anuncio des*/
+	p.parInat{
+		font-size:2.1em;
+	}
+}
+@media screen and (min-width: 700px){
+	div#retAnun article{
+		max-width:25em;
+	}
+	div.fundo{
+		height:23em;
+
+		background:url('../imagens/office@2x.jpg') no-repeat;
+		background-size:cover;
+		background-position:50%;
+	}
+	div.backAsi{
+		height: 25em;
+		padding-top:4em;
+		margin-bottom:4.5em;
+	}
+	aside.asidAnunAtiv{
+		width:90%;max-width:40em;
+		height:15em;
+
+		margin: 0 auto 13em;
+	}
+	/*trabalhar em banners circulares*/
+	aside.asidAnunAtiv div{
+		width:8em;
+		height:8em;
+	}
+	/*padrao para todos before*/
+	aside.asidAnunAtiv div::before{
+		width:7em;
+		height:7em;
+	}
+	aside.asidAnunAtiv div:nth-of-type(2){
+		left:6.7em;
+	}
+	aside.asidAnunAtiv div:nth-of-type(3){
+		left:13.5em;
+	}
+
+	aside.asidAnunAtiv div > p{
+		top:9em;
+		left:0;
+
+		width: 100%;
+
+		font-size: 1.1em;
+		font-weight: 600;
+	}
+
+}
+@media screen and (min-width: 1100px){
+	header h1.tituAnunc{
+		margin:5em auto 4em;
+		font-size:2em;
+	}
+	/*pai onde as pgs serao insiridas*/
+	section.sectDas > div:last-of-type{
+ 		min-height:60em;
+	}
+
+	div.fundo{
+		background:url('../imagens/office@3x.jpg') no-repeat;
+		background-size:cover;
+		background-position:50%;
+	 }
+
+	 /*faz sumir menu do dashboads*/
+	section.sectDas > div:first-of-type {
+		display:block;
+	}
+	div.container p{
+		top:3em;
+		font-size:1.7em;
+	}
+	div.container p:last-of-type{
+		top:1em;
+		font-size:2em;
+	}
+	div.container a{
+		top:5em;  
+	}
+
+	/*article*/
+	div#retAnun article{
+		max-width:50em;
+	}
+
+	div.paiM{
+	  top:3.7em;
+	  left:7.5em;
+
+	  max-width:35em;
+	}
+	div#retAnun article button.abrir{
+		top:2em;
+		right:3.5em;	
+
+		height:3em;
+		width:13.2em;
+		font-size:1em;
+		text-indent:2em;
+	    background:#eff3f3;
+		border:solid #eff3f3 1px;
+		
+		border-radius:2px;
+	}
+	div#retAnun article button.abrir:before{
+		content: 'anúncio';
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		
+		text-align:right;
+		padding-right:2em;
+		padding-top:.8em;
+
+	}
+	/*div inner eh o pai do anuncio dinamico*/
+	div#retAnun{
+	    width:100%;max-width:50em;
+	}
+	div#retAnun article div.PaiAnuncio{ 
+		max-width:50em;
+		height:24em;
+		box-shadow:none;
+	}
+	div#retAnun article div.PaiAnuncio p.titu{
+		text-align:left;
+		font-size:1.5em;
+		color:#666;
+		background:transparent; 
+	}
+
+		/*imagem, mensagem e avaliacao*/
+	div#retAnun article div.divImg{
+		position:absolute;
+		left:0;
+		top:5em;
+		max-width:45em;
+	}
+	div#retAnun article div.divImg a img{
+		position:absolute;
+		left:0;
+
+		width:100%;max-width:12em;
+		height:7em;
+	}
+
+	/*div onde tem mais tres p*/
+	div#retAnun article div.divImg div{
+		 top:-.8em;
+		 right:-2em;
+
+		 width:100%;max-width:30em;
+		 border:solid #f6f8f9 0;
+	}
+	div.divImg div p{
+		top:-.5em;
+	    display:inline-block;
+
+		width:90%;max-width:8em;
+		height:4.3em;
+
+		font-size:1.3em;
+		margin:.5em;
+		padding:.5em 1em;
+	}
+	div.divImg div p:nth-of-type(3){
+		top:-2.4em;
+		height:4.3em;
+
+		background-position:50% 85%; 
+		background-size:5em;
+	}
+	/*status online*/
+	div#retAnun article div.PaiAnuncio p.titu + p{
+	   margin:0;
+	   text-transform:uppercase;
+	   font-weight:600;
+	   font-size:1.3em;
+	   color:#4aa3df;
+	}
+	div#retAnun article div.PaiAnuncio p.titu + p.inat{
+		font-size:1.2em;
+		margin-top:-.5em;
+	}
+	/*pai dos dois divs*/
+	article div.contBu{ 
+		top:5em;
+		max-width:12em;
+  	}
+	article div.contBu ul{
+		position:relative;
+		width:100%;
+	}
+	/*formatar button ir pg do anuncio*/
+	article div.contBu ul li{
+		float:left;
+
+		width:100%;
+		margin-bottom:1em;
+	}
+	article div.contBu ul li a{
+		color:#777;
+		background:#3498db;
+	}	
+	article div.contBu ul li:first-of-type a,
+	article div.contBu ul li:last-of-type a{
+	    -webkit-border-radius:0;
+	  	-moz-border-radius:0;
+	  	border-radius:0;
+
+	  	color:#fff;
+	  	border-right:solid rgba(236, 240, 241,.9) 1px; 
+	}
+	article div.contBu ul li:last-of-type a{
+		background:#f39c12;
+	}
+
+	article div.contBu ul li:first-of-type a:focus,
+	article div.contBu ul li:first-of-type a:hover{
+		background:#2980b9;
+	}
+
+	article div.contBu ul li:last-of-type a:focus,
+	article div.contBu ul li:last-of-type a:hover{
+		background:#e67e22;
+	}
+
+	div#retAnun article div.divImg div p:nth-of-type(2){
+		height:4.4em;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	
+	/*pai onde as pgs serao insiridas*/
+	section.sectDas > div:last-of-type{
+ 		min-height:70em;
+	}
+
+	header > h1.tituDes{
+		top:5em; 
+		margin-bottom:7em;
+		font-size:2em;
+		
+	}
+}

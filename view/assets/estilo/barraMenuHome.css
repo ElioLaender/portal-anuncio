@@ -1,0 +1,365 @@
+@charset "UTF-8";
+header.barraM{
+    height:3.5em;
+ }
+div.paiBarra > div:nth-of-type(5){
+	display:none;
+}
+div.home ul li a{
+	display:none;
+}
+
+@media screen and (min-width:360px){
+	/*div esconde barra para primeira tela*/
+	header.barraM div#escBar{
+		display:none !important;
+	}
+	div.paiBarra > div:first-of-type{
+		width:90%;max-width:30em;
+		height:100em;
+		overflow:hidden;
+	}
+			/*este eh o escrito login*/
+	div.paiBarra > div:nth-of-type(4) > button{
+		top:-1.5em;
+	}
+	header.barraM{
+ 		height:5em;
+ 	}
+	/*este eh o escrito login*/
+	div.paiBarra > div:nth-of-type(4) > button{
+		top:-1.5em;
+	}
+	div.paiBarra > button{
+		position:relative;
+		top:2em;
+		left:1em;
+	}
+/*login parte branca para logar*/
+	div.paiBarra > div:nth-of-type(4) div:first-of-type{
+	    height:23em;
+	}
+
+	div.paiBarra div.logar{
+	    height:23em;
+	}
+}
+@media screen and (min-width:450px){
+	div.pesBarraM form{
+		height:0;
+	}
+
+	div.paiBarra div.logar{
+	    height:33em;
+	    overflow:hidden;
+	}
+	/*mensagen de retorno*/
+	p#returnLogin{
+		top:-2em;
+		height:1.5em;
+	}
+}
+@media screen and (min-width:800px){
+	div.paiBarra div.logar > button{
+		text-indent:-999em;
+	}
+	div.recupSenha button:first-of-type{
+		position:relative;
+		top:18em !important;
+	}
+}
+
+@media screen and (min-width:922px){
+	/*background inicial da pg home*/
+	section div.paiLogo{
+		top:2em;
+	}
+	/* Estilo do cabecalho*/
+	header.barraM{
+	  background:rgba(41, 128, 185,.3);
+	  -moz-transition:height ease-out .2s;
+	  -webkit-transition:height ease-out .2s;
+	  transition: height ease-out .2s;
+	}
+	/*barra com lista*/
+	div.paiBarra > div:first-of-type{
+		position:absolute;
+		top:0;
+		left:0;
+
+		width:100%;max-width:100%;
+		height:2em;
+		padding-top:1em;
+
+		z-index:5;
+	}
+
+	div.paiBarra > div:first-of-type ul{
+		position:relative;
+		top:-2.5em;
+		left:4em;
+		width:100%;max-width:50em;
+		height:2em;
+		margin:0 auto;
+		padding:0;
+		overflow: visible;
+	}
+	div.paiBarra > div:first-of-type ul li{
+		display:inline;
+		margin:0 .8em;
+		padding:0;
+	}
+
+	div.paiBarra > div:first-of-type ul li a{
+		font-size:1.2em;
+		margin:0;
+		padding:0;
+		line-height:1;
+		display:inline;
+	}
+
+	/*link com imagem SM*/
+	div.paiBarra > div:first-of-type ul li:last-of-type{
+		position:absolute;
+		top:-.3em;
+		left:-7em;
+		width:5em;
+		display:inline-block;
+	}
+	div.paiBarra > div:first-of-type ul li:last-of-type a{
+		width:5em;
+	
+		top:-.67em;
+		left:-1em;
+		text-indent:-99em !important;
+		
+		display:inline-block;
+	   
+	    background:url('../imagens/logo@1x.png') no-repeat;
+		background-size:5.5em;
+		background-position:50%;
+	}
+	div.paiBarra > div:first-of-type ul li a:hover,
+	div.paiBarra > div:first-of-type ul li a:focus{
+		color:#fff;
+		text-shadow:2px 2px 10px rgba(0,0,0,.8);
+		-moz-text-shadow:2px 2px 10px rgba(0,0,0,.8);
+		-webkit-text-shadow:2px 2px 10px rgba(0,0,0,.8);
+		font-weight:500;
+	}
+
+	/*este eh o escrito login*/
+	div.paiBarra > div:nth-of-type(4){
+		position:absolute;
+		top:1.5em;
+		right:0;
+		width:30em;
+		height:.3em;
+		 -moz-transition: linear .2s;
+		 -webkit-transition: linear .2s;
+		 transition: linear .2s;
+
+		 z-index:8;
+	}
+	div.paiBarra > div:nth-of-type(4) button{
+		top:0;
+		right:1em;
+	}
+	/*button fechar logar*/
+	div.paiBarra div.logar > button{
+		top:1em;
+		left:-25em;
+	}
+	/*esconder button e outros elementos que nao saõ desta tela*/
+	div.paiBarra > div:first-of-type span,
+	div.paiBarra > button,
+	div.paiBarra > div:first-of-type button,
+	div.paiBarra > div:first-of-type form fieldset input[type="search"],
+	div.paiBarra > div:first-of-type form fieldset input[type="button"]{
+		display:none;
+	}
+	/*foto home*/
+	div#fotoHome{
+		top:2em;
+		right:1.8em;
+
+		-moz-transition:linear .2s;
+		-webkit-transition:linear .2s;
+		transition:linear .2s;
+	}
+	/*home*/
+	div.paiBarra > div:nth-of-type(5){
+		position:relative;
+		top:.8em;
+		background:transparent;
+	}
+	div.paiBarra > div:nth-of-type(5) button{
+		width:12em;
+		margin:0;
+		background:rgba(236, 240, 241,.4);
+	}
+
+	div.paiBarra > div:nth-of-type(5) button:focus,
+	div.paiBarra > div:nth-of-type(5) button:hover{
+		-moz-text-shadow:2px 2px 10px rgba(0,0,0,.3);
+		-webkit-text-shadow:2px 2px 10px rgba(0,0,0,.3);
+		text-shadow:2px 2px 10px rgba(0,0,0,.3);
+
+		border-bottom:none;
+	}
+
+	div.paiBarra > div:nth-of-type(5) button::before{
+		left:1em;
+	}
+	div.paiBarra > div:nth-of-type(5) ul{
+		top:0;
+		overflow:visible;
+	}
+	div.paiBarra > div:nth-of-type(5) ul a{
+		top:-.2em;
+		left:.8em;
+
+		height:1.8em;
+		width:4em;
+
+		text-align:center;
+		text-indent:0;
+		padding-left:0;
+	}
+
+	div.paiBarra > div:nth-of-type(5) ul a:hover{
+		border-bottom:solid 1px #fff;
+		text-shadow:none;
+	}
+	
+	/*este e input search de pesquisa, que fica ao centro da barra*/
+	div.paiBarra > div:nth-of-type(3){
+		position:relative;
+		top:.8em;
+		width:56.5%;max-width:32em;
+		margin:0 auto;
+		display:block;
+		opacity:0;
+		-moz-transition: linear .1s;
+		 -webkit-transition: linear .1s;
+		 transition: linear .1s;
+
+		 z-index:-1;
+	}
+
+	div.paiBarra > div:nth-of-type(3) form fieldset{
+		position:relative;
+		top:2.5em;
+	}
+	/*input search*/
+	div.paiBarra > div:nth-of-type(3) form fieldset input[type='search']{
+		width:17em;
+		height:3em;
+		text-indent:1em;
+	}
+	div.paiBarra > div:nth-of-type(3) form fieldset label[for="pesq"]{
+		float:right;
+		margin:0em .3em 0 0;
+		width:2.5em;
+
+	}
+	div.paiBarra > div:nth-of-type(3) form fieldset label[for="pesq"] input{
+		text-indent:-99em;
+		background:#ecf0f1;
+
+		height:3em; 
+	}
+
+	label[for="pesq"]::before{
+		content:'';
+		position:absolute;
+
+		width:100%;
+		height:2em;
+		background:url('../imagens/zoom.png') no-repeat;
+		background-size:1.5em;
+		background-position:50%;
+		z-index:2;
+	}
+
+}
+@media screen and (min-width:1100px){
+
+	div.paiBarra > div:nth-of-type(5) button.butFechD{
+			display:none !important;
+		}
+	
+}
+
+@media screen and (min-width:1200px){
+
+		/*link com imagem SM*/
+	div.paiBarra > div:first-of-type ul{
+		width:100%;max-width:57em;
+		left:8em;
+	
+	}
+	div.paiBarra > div:first-of-type ul li{
+		display:inline;
+		margin:0 .8em;
+		padding:0;
+	}
+	div.paiBarra > div:first-of-type ul li a{
+		text-transform:uppercase;
+		font-size:.9em;
+		left:3em;
+	}
+
+	div.paiBarra > div:first-of-type ul li:last-of-type{
+		top:.4em;
+		left:-5em;
+	}
+
+	div.paiBarra > div:first-of-type ul li:last-of-type a{
+		top:-.55em;
+		width:8em;
+	    background:url('../imagens/logo@1x.png') no-repeat;
+		background-size:7em;
+	}
+
+	div.paiBarra > div:nth-of-type(4) button{
+		right:2em;
+	}
+	/*foto home*/
+	div#fotoHome{
+		right:3em;
+	}
+	div.fotoBar div{
+		top:6em;
+	}
+		/*este e input search de pesquisa, que fica ao centro da barra*/
+	div.paiBarra > div:nth-of-type(3){
+		top:.5em;
+		left:2em;
+		width:55%;max-width:38.7em;
+
+	}
+		/*input search*/
+	div.paiBarra > div:nth-of-type(3) form fieldset input[type='search']{
+		width:21em;
+		height:3.3em;
+	}
+
+	div.paiBarra > div:nth-of-type(3) form fieldset label[for="pesq"] input{
+		height:3.3em;
+		width:3.5em;
+		background:#ecf0f1; 
+	}
+	label[for="pesq"]::before{
+		height:2.5em;
+		background:url('../imagens/zoom.png') no-repeat;
+		background-size:1.8em;
+		background-position:75% 50%;
+	}
+}
+@media screen and (min-width:1700px){
+	div.paiBarra > div:nth-of-type(4) button{
+		right:3.5em;
+	}
+
+}

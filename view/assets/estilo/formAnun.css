@@ -1,0 +1,1011 @@
+@charset "UTF-8"; 
+div.tudo{
+  background:#fff;
+}
+header{
+  position:relative;
+  top:0;
+
+  padding:1.5em 0;
+  background:rgba(236, 240, 241,.5);
+}
+header > ul:first-of-type li a{
+  color:#666;
+  font-weight:600;
+  font-size:1.2em;
+  text-indent:1em;
+
+  background:url('../imagens/arrowLeft@1x.png') no-repeat;
+  background-size:.6em;
+  background-position:.6em 50%;
+}
+
+header figure{
+  position:relative;
+  top:2em;
+
+  width:100%;max-width:15em;
+  margin:0 auto;
+}
+header figure img{
+  width:100%;
+}
+header figure + p{
+  top:2em;
+  color:#f39c12;
+  font-size:1.3em;
+  font-weight:600;
+}
+header div ul{
+  position:relative;
+  top:5em;
+  max-width:20em;
+  padding-left:.5em;
+  overflow:visible;
+  margin:0 auto 6em;
+}
+header div ul li{
+  width:48%;
+  height:5em;
+  display:inline-block;
+  margin-top:2em; 
+}
+header div ul li:first-of-type{
+  background:url('../imagens/card@1x.png') no-repeat;
+  background-size:3em;
+  background-position:50% 0;
+} 
+header div ul li:nth-of-type(2){
+  background:url('../imagens/peo@0x.png') no-repeat;
+  background-size:3em;
+  background-position:50% 0;
+} 
+header div ul li:nth-of-type(3){
+  background:url('../imagens/adpt@2x.png') no-repeat;
+  background-size:3em;
+  background-position:50% 0;
+}
+header div ul li:nth-of-type(4){
+  background:url('../imagens/final@1x.png') no-repeat;
+  background-size:3em;
+  background-position:50% 0;
+} 
+header div ul li:nth-of-type(5){
+  background:url('../imagens/final@1x.png') no-repeat;
+  background-size:3em;
+  background-position:50% 0;
+}
+header div ul li p{
+  top:3.3em;
+  font-size:1.1em;
+}
+
+/*configurar form*/
+div.paiS{
+  position: relative;
+  top:0;
+
+  width:100%;
+
+  margin: 0 auto;
+
+  z-index:300;
+}
+
+div.paiS section div#backEdita{
+  background:url('../imagens/officeAnun@1x.jpg')repeat;
+  background-size:cover;
+}
+/*escadinha no form editar*/
+div.paiS section div#backEdita p.escada{
+  position:absolute;
+  top:1em;
+  left:0;
+  width:30em;max-width:100%;
+
+  display:block !important;
+  font-size:1.1em;
+
+  margin-right:.8em;
+}
+div.paiS section div#backEdita p.escada strong{
+  color:#f4a62a;
+}
+div.paiS section div.pa::before{
+  content: '';
+  position: absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+
+  background:rgba(0,0,0,.5);
+}
+/*textos encima do background nuvem*/
+div.paiS section div.pa p{
+  top:4em;
+
+  width:90%;
+
+  font-size:1.5em;
+  font-weight:600;
+
+  color:#fbfcfc;
+  -moz-text-shadow: 3px 5px 10px rgba(0,0,0,.5);
+  -webkit-text-shadow: 3px 5px 10px rgba(0,0,0,.5);
+  text-shadow: 3px 5px 10px rgba(0,0,0,.5);
+
+  margin:0 auto;
+}
+div.paiS section div.pa p:last-of-type{
+  top:6em;
+  letter-spacing:2px;
+  text-shadow:none;
+  font-weight:500;
+}
+/*some com elemento*/
+.sumir{
+  position:absolute;
+  left:-99em;
+
+  opacity:0;
+}
+div.paiS section p.anunParagr{
+  top:-1em;
+
+  height:4em;
+  width:100%;
+
+  color:#fff;
+  font-size:1.5em;
+  padding-top:1.3em;
+  background:#3498db;
+} 
+
+/*pai do form*/
+div.paiF{
+  position: relative;
+  width:100%;
+
+  margin: 0 auto;
+}
+/*seleciona todos label*/
+div.paiF form > fieldset{
+  position:relative;
+  top:-1em;
+}
+div.paiF form fieldset{
+  position:relative;
+}
+div.paiF form fieldset legend{
+  position:relative;
+  top:0;
+
+  width:100%;
+  height:3em;
+
+  color:#666;
+  font-size:1.4em;
+  font-weight:600;
+  text-align:center;
+  display:block;
+}
+div.paiF form fieldset label{
+  top:0;
+  text-indent:.8em;
+  color:#777;
+  font-size:1.2em;
+  font-weight:500;
+
+  margin-bottom:1em;
+  display:block;
+}
+div.paiF form fieldset label input{
+  top:0;
+  width:90%;
+  height:1.1em;
+
+  font-size:1em;
+  color:#333;
+  background:transparent;
+  display:block;
+
+  border-bottom:solid #777 1px;
+}
+div.paiF form fieldset.PaiEnder{
+  top:-1.6em;
+  background:#fff;
+}
+div.paiF form fieldset.PaiEnder > legend{
+  top:1em;
+
+  width:90%;  
+  font-size:1.5em;
+  color:#27ae60;
+}
+fieldset.PaiEnder label[for="tLog"]{
+  width:98%;
+  margin:0 auto 1em;
+}
+fieldset.PaiEnder label[for="tLog"] input{
+  width:96%;
+}
+/*flutuar cep e bairro*/
+fieldset.PaiEnder label[for="cep"],
+fieldset.PaiEnder label[for="bairro"],
+fieldset.PaiEnder label[for="numero"],
+fieldset.PaiEnder label[for="rua"]{
+  width:49%;
+  display:inline-block;
+}
+/*este eh o estilo do button abrir cep*/
+button#buttonBus{
+  position:relative;
+  left:0;
+  top:-.5em;
+
+  width:100%;
+  height:1em;
+
+  color:#555;
+  
+  font-size:1.1em;
+  font-weight:600;
+
+  text-align:right;
+
+  padding-right:1em;
+  margin-bottom:1em;
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;
+  border-radius:2px;
+  
+  display:block;
+
+  z-index:10;
+}
+/*iframe dos correios*/
+div.buscaCep{
+  position:relative;
+  top:10em;
+  left:0;
+  width:90%;max-width:35em;
+
+  height:22em;
+
+  background:#ecf0f1;
+  margin:0 auto -22em;
+
+  -moz-box-shadow:5px 5px 15px rgba(0,0,0,.5);
+  -webkit-box-shadow:5px 5px 15px rgba(0,0,0,.5);
+  box-shadow:5px 5px 15px rgba(0,0,0,.5);
+
+  
+  z-index:55;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  display:none;
+}
+div.buscaCep button{
+  position:absolute;
+  top:-1.3em;
+  right:-.5em;
+  width:2em;
+  height:2em;
+
+  background:url('../imagens/fech@0x.png')no-repeat;
+  background-size:2em;
+  background-position:50%;
+  color:#fff;
+
+  text-indent:-999em;
+  font-size:1.1em;
+  letter-spacing:1px;
+
+  z-index:15;
+}
+div.buscaCep iframe{
+  position:absolute;
+  top:0;
+
+  width:100%;
+  height:22em;
+  
+    -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+}
+div.fundoAzul{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+
+  background:rgba(41, 128, 185,.5);
+
+  z-index:50;
+
+  display:none;
+}
+/*primeiro bloco vai ate input numero*/
+div.paiF form fieldset.PaiEnder fieldset:first-of-type{
+  max-width:35em;
+  display:block;
+  margin:0 auto;
+}
+div.paiF form fieldset.PaiEnder fieldset:last-of-type{
+  max-width:35em;
+  display:block;
+  margin:2em auto;
+}
+
+div.paiF form fieldset select{
+  position:relative;
+  width:45%;
+  height:3em;
+  margin-left:.5em;
+  margin-bottom:2.9em;
+  cursor:pointer;
+  display:inline-block;
+
+  border: solid #444 1px; 
+  -webkit-border-radius:5px; 
+  -moz-border-radius:5px; 
+  border-radius:5px;
+}
+div.paiF form fieldset optgroup{
+  background:rgba(46, 204, 113,1.0);
+  color:#fff;
+  font-size:1.5em;
+  cursor:pointer;
+}
+div.paiF form fieldset option:nth-child(even){
+  background:#ecf0f1;
+}
+div.paiF form fieldset option{
+  font-size:1.3em;
+}
+fieldset.PaiEnder fieldset:last-of-type label[for="numCom"]{
+  top:.5em;
+  width:45%;
+  margin-left:.5em;
+  display:inline-block;
+}
+fieldset.PaiEnder fieldset:last-of-type label[for="cidade"],
+fieldset.PaiEnder fieldset:last-of-type label[for="estado"],
+fieldset.paiCont fieldset:first-of-type label[for="tel-fixo"],
+fieldset.paiCont fieldset:first-of-type label[for="tel-cel"]{
+  width:49%;
+  display:inline-block;
+}
+/*tel whastapp*/
+fieldset.paiCont fieldset:first-of-type label[for="tel-whatapp"]{
+  background:url('../imagens/whatsapp@1x.png') no-repeat;
+  background-position:5.5em 10%;
+  background-size:1em;
+}
+/*contato*/
+div.paiF form fieldset.paiCont{
+  top:-3em;
+  padding:1.5em 0;
+  background:#f2f2f2;
+}
+div.paiF form fieldset.paiCont > fieldset{
+  max-width:35em;
+  display:block;
+  margin:0 auto;
+}
+div.paiF form fieldset.paiCont > fieldset fieldset legend{
+  top:-3em;
+  margin-bottom:-3em;
+}
+/*redes sociais*/
+fieldset.paiCont fieldset.revelar button{
+   top:1em;
+   width:90%;max-width:22em;
+   height:3em;
+   margin:0 auto 1.5em;
+   color:#fff;
+   font-size:1.3em;
+   background:#3498db; 
+
+   -moz-border-radius:8px;
+   -webkit-border-radius:8px;
+   border-radius:8px;
+
+   -moz-box-shadow: 0 6px 0 0 #2980b9;
+   -webkit-box-shadow: 0 6px 0 0 #2980b9;
+   box-shadow: 0 6px 0 0 #2980b9;
+
+   display:block;
+  -webkit-transition: .1s linear;
+  -moz-transition: .1s linear;
+  transition: .1s linear;
+}
+fieldset.paiCont fieldset fieldset.revelar button:hover,
+fieldset.paiCont fieldset fieldset.revelar button:focus{
+    color:#ecf0f1;
+} 
+fieldset.paiCont fieldset fieldset{
+  margin:0 auto;
+}
+fieldset.paiCont fieldset fieldset:last-of-type{
+  margin:6em auto 2em;
+  display:none;
+}
+
+/*categoria*/
+fieldset.categoria{
+  top:-5.5em;
+  background:rgba(52, 152, 219,.7);
+
+  padding:5em 0 2em;
+}
+div.paiF form fieldset.categoria > legend{
+  top:2em;
+  color:#fff;
+  font-size:1.7em;
+  line-height:1.4;
+}
+div.paiF form div#categ{
+  position:relative;
+  top:1em;
+  max-width:30em;
+
+  margin:0 auto;
+}
+div.paiF form div#categ fieldset > legend{
+  position:absolute;
+  left:-99em;
+
+  opacity:0;
+}
+div.paiF form div#categ fieldset select{
+  width:90%;
+  height:4em;
+  margin:0 auto 2em;
+  display:block;
+}
+div.paiF form fieldset.categoria button{
+  width:60%;max-width:15em;
+  margin:-4.5em auto 1em;
+  display:block;
+  color:#fff;
+  font-size:1.1em;
+
+  border:solid rgba(41, 128, 185,.8) 2px;
+  background:rgba(41, 128, 185,.9);
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+
+  -webkit-transition: .1s linear;
+  -moz-transition: .1s linear;
+  transition: .1s linear;
+}
+/*button dica importante*/
+div.paiF form fieldset.categoria button:hover,
+div.paiF form fieldset.categoria button:focus{
+  background:none;
+}
+
+div.paiF form fieldset.categoria p{
+  position:absolute;
+  top:0em;
+  width:100%;
+  height:13em;
+  color:#666;
+
+  font-size:1.3em;
+  padding:1em;
+  background:#fff;
+  z-index:3;
+}
+div.paiF form fieldset.categoria fieldset p:first-of-type{
+  padding-top:2.5em;
+  top:-3em;
+  display:none; 
+}
+div.paiF form fieldset.categoria fieldset p:last-of-type{
+  top:5em;
+}
+div.paiF form fieldset.categoria  button.fec{
+  position:absolute;
+  right:.5em;
+  top:5em;
+  width:5em;
+  height:1.4em;
+
+  font-size:.8em;
+  color:#666;
+
+  background:none;
+}
+div.paiF form fieldset.categoria p:nth-of-type(2){
+ height:12em;
+
+ display:none;
+}
+/*relatar categoria*/
+div.paiF form fieldset.categoria p:nth-of-type(2) > button{
+  top:6em !important;
+  width:100%;
+  height:2.5em;
+  font-size:1em;
+
+  background:rgba(231, 76, 60,1.0);
+  border:solid 2px rgba(231, 76, 60,1.0);
+}
+div.paiF form fieldset.categoria p:nth-of-type(2) > button:hover,
+div.paiF form fieldset.categoria p:nth-of-type(2) > button:focus,
+div.paiF form fieldset.categoria p:first-of-type button:hover,
+div.paiF form fieldset.categoria p:first-of-type button:focus{
+  -moz-box-shadow: 3px 5px 10px rgba(0,0,0,.5);
+  -webkit-box-shadow: 3px 5px 10px rgba(0,0,0,.5);
+  box-shadow: 3px 5px 10px rgba(0,0,0,.5);
+}
+
+/*Breve descrição*/
+form fieldset.categoria label[for="te"]{
+  top:.8em;
+ 
+  width:90%;max-width:20em;
+  margin:-2em auto 0;
+  color:#fff;
+  text-align:center;
+  font-size:1.6em;
+  font-weight:600;
+  display:block;
+}
+fieldset.categoria label[for="te"] textarea{
+  position:relative;
+  top:.5em;
+  left:-.2em;
+  width:100%;
+  height:2em;
+
+  font-size:1.1em;
+  margin:.5em auto 1em;
+  resize:none;
+}
+
+/*Planos de saude*/
+div.paiF form fieldset.saud{
+  top:-3.5em;
+  width:90%;max-width:20em;
+  margin:1em auto 5em;
+  /*display:none;*/
+}
+
+fieldset.saud input[type="checkbox"]:checked + span:before{
+    background-color:rgba(52, 152, 219,.8);
+}
+div.paiF form fieldset.saud label{
+  width:50%;
+  margin: 0 auto 1em;
+}
+/*descricao*/
+div.paiF form fieldset.desc{
+  top:-6em;
+  padding-bottom:2em;
+  background:#ecf0f1; 
+  background:url('../imagens/womanComp@1x.jpg') no-repeat;
+  background-size:cover;
+  background-position:50% 70%;
+}
+div.paiF form fieldset.desc::before{
+  content:'';
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+
+  background:rgba(236, 240, 241,.8);
+}
+div.paiF form fieldset.desc legend{
+  display:none;
+}
+div.paiF form fieldset.desc p{
+  width:90%;
+  font-size:1.4em;
+  color:#555;
+  margin:2em auto 1em;
+  display:block;
+}
+div.paiF form fieldset.desc label{
+  width:90%;max-width:30em;
+  display:block;
+  text-align:center;
+  font-weight:600;
+  font-size:1.7em;
+  margin:0 auto;
+}
+div.paiF form fieldset.desc textarea{
+  width:100%;
+  height:8em;
+  font-size:1.1em;
+  margin:.5em auto 1em;
+  resize:vertical;
+}
+
+/*dias funcionamento*/
+div.paiF form fieldset.diasFunc{
+  top:-8.1em;
+
+  padding-top:2em;
+  background:rgba(236, 240, 241,.2); 
+}
+div.paiF form fieldset.diasFunc > fieldset:first-of-type{
+  top:-3em;
+}
+
+/*primeiro bloco, onde tem tres checkbox*/
+div.paiF form fieldset.diasFunc fieldset.dias{
+ margin:-2em auto 2em;
+}
+div.paiF form fieldset.diasFunc fieldset.dias legend{
+  top:-1em;
+  color:#555;
+  font-size:1.4em;
+
+  margin-bottom:-1.5em;
+}
+div.paiF form fieldset.diasFunc fieldset.dias span.cli{
+  position:relative;
+  top:-1em;
+
+  text-align:center;
+  color:#e74c3c;
+  font-size:1.1em;
+  display:block;
+  margin:0 auto 1em;
+}
+
+div.paiF form fieldset.diasFunc fieldset.dias label{
+  top:-1em;
+  width:11em;
+  margin:0 auto 1em;
+  text-align:left;
+}
+div.paiF form fieldset label input[type="checkbox"]{
+  position:absolute;
+  right:0;
+  top:0;
+
+  opacity:0;
+  z-index:2;
+}
+div.paiF form fieldset input[type="checkbox"] + span{
+  position:absolute;
+  right:0;
+  top:0;
+
+  z-index: -1;
+}
+div.paiF form fieldset input[type="checkbox"] + span:before{
+  content:"";
+
+  position: relative;
+  top:0;
+  left:0;
+ 
+  width:1em;
+  height:1em;
+
+  background-color: #ccc;
+  display: inline-block;
+  border: 3px solid #fff;
+
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius:2px;
+
+   visibility:visible;
+   box-shadow:0 0 0px 2px #999;
+
+  z-index:1;
+ }
+fieldset.diasFunc input[type="checkbox"]:checked + span:before {
+    background-color:#2ecc71;
+}
+
+/*horas para escolher*/
+div.paiF form fieldset.horas{
+  top:-5em;
+}
+div.paiF form fieldset.horas fieldset{
+  width:90%; max-width:20em;
+  margin:0 auto;
+}
+div.paiF form fieldset.horas fieldset fieldset.selec{
+  width:100%;    
+}
+div.paiF form fieldset.horas fieldset p{
+  width:5em;
+  font-size:1.3em;
+  font-weight:600;
+  margin-left:1em;
+  display:inline-block;
+}
+fieldset.horas > fieldset#sabado,
+fieldset.horas > fieldset#domingo{
+  display:none;
+}
+
+/*modo de recebimento*/
+div.paiF form fieldset.receb{
+  top:-15em;
+  padding-top:2em;
+  background:#ecf0f1;
+
+
+}
+div.paiF form fieldset.receb fieldset.paga legend{
+  width:95%;max-width:15em;
+  top:-3em;
+}
+fieldset.receb input[type=checkbox]:checked + span:before {
+  background-color:#3498db;
+}
+div.paiF form fieldset.receb fieldset fieldset label{
+  top:-3em;
+  width:10em;
+  display:block;
+  margin:.9em auto;
+  font-size:1.4em;
+}
+div.paiF form fieldset.receb fieldset.band{
+  top:-1.5em;
+}
+div.paiF form fieldset.receb fieldset.band label{
+  top:-1.3em;
+}
+
+/*facilidades*/
+div.paiF form fieldset.paifacil{
+  top:-13em;
+}
+div.paiF form fieldset.paifacil legend{
+  top:3em;
+}
+div.paiF form fieldset.paifacil fieldset{
+  width:100%;max-width:13.5em;
+  margin:0 auto;
+}
+div.paiF form fieldset.paifacil fieldset label{
+  width:11.5em;
+  font-size:1.4em;
+  text-indent:0;
+}
+div.paiF form fieldset.paifacil fieldset:first-of-type{
+  margin-bottom:-4em; 
+}
+fieldset.paifacil input[type=checkbox]:checked + span:before {
+  background-color:rgba(41, 128, 185,.7);
+}
+
+/*inicio o campo de carregar foto*/
+div.paiF form fieldset.fo{
+  width:95%;max-width:23em;
+  top:-8em;
+  border:solid #e74c3c 3px;
+  margin: 0 auto;
+
+  -webkit-border-radius:2px;
+  -moz-border-radius:2px;
+  border-radius:2px;
+}
+div.paiF form fieldset.fo > legend{
+  width:80%;
+  font-size:1.5em;
+  font-weight: 600;
+}
+div.paiF form fieldset input.inputfile{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+  
+    position:absolute;
+    z-index: -1;
+}
+div.paiF form input.inputfile + label{
+    width: 100%;
+    height:6em;
+
+    top:1em;
+    left:0;
+   
+    display:inline-block;
+  
+    text-align:center;
+    margin-bottom:1em;
+    background: url('../imagens/foto.png')no-repeat;
+    background-size:3em;
+    background-position: 50% 15%;
+}
+
+div.paiF form label span.spanImg{
+  position: relative;
+  top:4.7em;
+  left:-.5em;
+
+  width:10em;
+  height: 2.3em;
+
+  overflow:hidden;
+ 
+  color:#666;
+  font-weight:600;
+  display: inline-block;
+
+  margin-top:-5em;
+  line-height: 1; 
+}
+/*este eh o nome da imagem*/
+span.spanImg em{
+  position:relative;
+  top:0;
+  width:100%;
+  height:3em;
+
+  display: inline-block;
+  margin-top:0; 
+  overflow:hidden;
+}
+div.paiFoto{
+  position: relative;
+  top:-4em;
+
+  width:50%;
+  height:5em;
+
+  margin: 0 auto;
+}
+
+div#image-preview{
+  position:relative;
+  top:-4em;
+   
+  margin: 0 auto;
+  width:6.7em;
+  height:6em;
+ display: none;
+}
+
+.no-js .inputfile + label {
+    display: none;    
+}
+
+/*button para apagar img*/
+button[type="button"].excl{
+  position: relative;
+  top:-8em;
+  
+  margin: 0 auto;
+
+  width: 8em;
+  height: 2em;
+
+  color:#fff;
+  text-align:left;
+  text-indent:.5em;
+
+  display:none;
+  
+  border:solid #37474f 0;   
+  -webkit-border-radius:2px; 
+  -moz-border-radius:2px; 
+  border-radius:2px;
+  background:#e74c3c;
+
+  z-index: 5;
+}
+
+button[type="button"].excl::before{
+  content: '';
+
+  position: absolute;
+  right:.5em;
+  top:0;
+
+  width:1.5em;
+  height:2em;
+
+  background: url('../imagens/trash.png') no-repeat;
+  background-size: 70%;
+  background-position: 50%;
+}
+
+/*caixa mensagem de erro*/
+div.err{
+  position: absolute;
+  bottom:11em;
+
+  width: 100%;
+  height:17em;
+
+  background:rgba(0,0,0,.9);
+  z-index:10;
+
+  display: none;
+}
+
+div.err::before{
+  content:'';
+  position: relative;
+  top:10em;
+  
+  margin: 0 auto;
+
+  width:5em;
+  height:6em;
+  display: block;
+
+  background:url('../imagens/caraT.png') no-repeat;
+  background-size:4em;
+}
+
+div.err > p#tes{
+  width: 15em;
+  font-size:1.4em;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+
+  margin: 0 auto;
+  display: block;
+}
+
+div.err button{
+  position:absolute;
+  top:1em;
+  right: 1em;
+
+  width: 2em;
+  height: 2em;
+
+  background:url('../imagens/fecha01.png') no-repeat;
+  background-size: 90%;
+}
+
+/*formatar button cadastre seu curriculo*/
+form fieldset div.butCad{
+  position: relative;
+  bottom:6em;
+
+  width:95%;max-width:20em;
+  height:3.5em;
+
+  margin: 0 auto; 
+
+  background:#3498db;
+  -webkit-border-radius:4px; 
+  -moz-border-radius:4px; 
+  border-radius:4px;
+}
+
+div.butCad input.sub{
+  top:0;
+  height: 3.5em;
+
+  background:none;
+  border:none;
+
+  line-height:0;
+  font-size: 1em;
+  font-weight:600;
+
+  -webkit-box-sizing:border-box;
+   -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  
+  color:#fff;
+  padding:0;
+}
+
+
+
+

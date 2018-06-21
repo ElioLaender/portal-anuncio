@@ -1,0 +1,327 @@
+@charset "UTF-8"; 
+div.tudo{
+  background:#fff;
+}
+
+/*configurar form*/
+div.paiS{
+  position: relative;
+  top:0;
+
+  width:100%;
+
+  margin: 0 auto;
+
+  z-index:300;
+}
+
+div.paiS section div#backEdita{
+  background:url('../imagens/officeAnun@1x.jpg')repeat;
+  background-size:cover;
+}
+/*escadinha no form editar*/
+div.paiS section div#backEdita p.escada{
+  position:absolute;
+  top:1em;
+  left:0;
+  width:30em;max-width:100%;
+
+  display:block !important;
+  font-size:1.1em;
+
+  margin-right:.8em;
+}
+div.paiS section div#backEdita p.escada strong{
+  color:#f4a62a;
+}
+div.paiS section div.pa::before{
+  content: '';
+  position: absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+
+  background:rgba(0,0,0,.5);
+}
+/*textos encima do background nuvem*/
+div.paiS section div.pa p{
+  top:4em;
+
+  width:90%;
+
+  font-size:1.5em;
+  font-weight:600;
+
+  color:#fbfcfc;
+  -moz-text-shadow: 3px 5px 10px rgba(0,0,0,.5);
+  -webkit-text-shadow: 3px 5px 10px rgba(0,0,0,.5);
+  text-shadow: 3px 5px 10px rgba(0,0,0,.5);
+
+  margin:0 auto;
+}
+div.paiS section div.pa p:last-of-type{
+  top:6em;
+  letter-spacing:2px;
+  text-shadow:none;
+  font-weight:500;
+}
+/*some com elemento*/
+.sumir{
+  position:absolute;
+  left:-99em;
+
+  opacity:0;
+}
+div.paiS section p.anunParagr{
+  top:-1em;
+
+  height:4em;
+  width:100%;
+
+  color:#fff;
+  font-size:1.5em;
+  padding-top:1.3em;
+  background:#3498db;
+} 
+
+/*pai do form*/
+div.paiF{
+  position: relative;
+  width:100%;
+
+  margin: 0 auto;
+}
+/*seleciona todos label*/
+div.paiF form > fieldset{
+  position:relative;
+  top:-1em;
+}
+div.paiF form fieldset{
+  position:relative;
+}
+div.paiF form fieldset legend{
+  position:relative;
+  top:0;
+
+  width:100%;
+  height:3em;
+
+  color:#666;
+  font-size:1.4em;
+  font-weight:600;
+  text-align:center;
+  display:block;
+}
+div.paiF form fieldset label{
+  top:0;
+  text-indent:.8em;
+  color:#777;
+  font-size:1.2em;
+  font-weight:500;
+
+  margin-bottom:1em;
+  display:block;
+}
+div.paiF form fieldset label input{
+  top:0;
+  width:90%;
+  height:1.1em;
+
+  font-size:1em;
+  color:#333;
+  background:transparent;
+  display:block;
+
+  border-bottom:solid #777 1px;
+}
+div.paiF form fieldset.PaiEnder{
+  top:-1.6em;
+  background:#fff;
+}
+div.paiF form fieldset.PaiEnder > legend{
+  top:1em;
+
+  width:90%;  
+  font-size:1.5em;
+  color:#27ae60;
+}
+fieldset.PaiEnder label[for="tLog"]{
+  width:98%;
+  margin:0 auto 1em;
+}
+fieldset.PaiEnder label[for="tLog"] input{
+  width:96%;
+}
+
+div.fundoAzul{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+
+  background:rgba(41, 128, 185,.5);
+  z-index:50;
+  display:none;
+}
+/*primeiro bloco vai ate input numero*/
+div.paiF form fieldset select{
+  position:relative;
+  width:95%;max-width:35em;
+  height:3em;
+  margin:0 auto 1em;
+  cursor:pointer;
+  display:block;
+
+  border: solid #444 1px; 
+  -webkit-border-radius:5px; 
+  -moz-border-radius:5px; 
+  border-radius:5px;
+}
+div.paiF form fieldset optgroup{
+  background:rgba(46, 204, 113,1.0);
+  color:#fff;
+  font-size:1.5em;
+  cursor:pointer;
+}
+div.paiF form fieldset option:nth-child(even){
+  background:#ecf0f1;
+}
+div.paiF form fieldset option{
+  font-size:1.3em;
+}
+fieldset legend.neces{
+  margin-bottom:1em;
+}
+fieldset.veiculo{
+  position:relative;
+  top:-5em;
+
+  margin-bottom:-4em;
+}
+fieldset.hora{
+  position:relative;
+  width:90%;max-width:45em;
+
+  margin:1.5em auto 10em;
+}
+fieldset.hora label[for="Disp"]{
+  position:relative;
+  margin:2em 0 0;
+  max-width:10em;
+  padding:0;
+  text-indent:0;
+  text-align:left !important;
+}
+fieldset.hora input#Disp{
+  position:absolute;
+  right:0;
+  width:1em;
+  display:block;
+  opacity:1 !important;
+}
+/*descricao*/
+div.paiF form fieldset.desc{
+  top:-6em;
+  padding-top:4em;
+  background:#ecf0f1; 
+  background:url('../imagens/womanComp@1x.jpg') no-repeat;
+  background-size:cover;
+  background-position:50% 70%;
+}
+div.paiF form fieldset.desc::before{
+  content:'';
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+
+  background:rgba(236, 240, 241,.8);
+}
+div.paiF form fieldset.desc legend{
+  display:none;
+}
+div.paiF form fieldset.desc p{
+  width:90%;
+  font-size:1.4em;
+  color:#555;
+  margin:2em auto 1em;
+  display:block;
+}
+div.paiF form fieldset.desc label{
+  width:90%;max-width:30em;
+  display:block;
+  text-align:center;
+  font-weight:600;
+  font-size:1.7em;
+  margin:0 auto;
+}
+div.paiF form fieldset.desc textarea{
+  width:100%;
+  height:8em;
+  font-size:1.1em;
+  margin:.5em auto 1em;
+  resize:vertical;
+}
+div.paiF form fieldset label input[type="checkbox"]{
+  position:absolute;
+  right:0;
+  top:0;
+
+  opacity:0;
+  z-index:2;
+}
+div.paiF form fieldset input[type="checkbox"] + span{
+  position:absolute;
+  right:0;
+  top:0;
+
+  z-index: -1;
+}
+div.paiF form fieldset input[type="checkbox"] + span:before{
+  content:"";
+
+  position: relative;
+  top:0;
+  left:0;
+ 
+  width:1em;
+  height:1em;
+
+  background-color: #ccc;
+  display: inline-block;
+  border: 3px solid #fff;
+
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius:2px;
+
+   visibility:visible;
+   box-shadow:0 0 0px 2px #999;
+
+  z-index:1;
+ }
+fieldset.diasFunc input[type="checkbox"]:checked + span:before {
+    background-color:#2ecc71;
+}
+fieldset.carg{
+  position:relative;
+  top:-8em;
+  width:95%;max-width:45em;
+  margin:0 auto;
+}
+input.envia{
+  max-width:15em;
+  margin:2em auto 0;
+  height:2em;
+  font-size:1.4em;
+  color:#fff;
+  display:block;
+  background:#f39c12;
+}
+input.envia:hover,
+input.envia:focus{
+  background:#f1c40f;
+}

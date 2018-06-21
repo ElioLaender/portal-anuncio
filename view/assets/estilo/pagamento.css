@@ -1,0 +1,69 @@
+@charset "UTF-8";
+header div ul li:first-of-type{
+	background:url('../imagens/card@1x.png') no-repeat;
+	background-size:3em;
+	background-position:50% 0;
+}	
+header div ul li:nth-of-type(2){
+	background:url('../imagens/peo@0x.png') no-repeat;
+	background-size:3em;
+	background-position:50% 0;
+}	
+header div ul li:nth-of-type(3){
+	background:url('../imagens/adpt@1x.png') no-repeat;
+	background-size:3em;
+	background-position:50% 0;
+}
+header div ul li:nth-of-type(4){
+	background:url('../imagens/credito@3x.png') no-repeat;
+	background-size:3em;
+	background-position:50% 0;
+}	
+header div ul li:nth-of-type(5){
+	background:url('../imagens/final@1x.png') no-repeat;
+	background-size:3em;
+	background-position:50% 0;
+}
+form fieldset{
+	position:relative;
+	top:0;
+	width:90%;max-width:35em;
+	margin:8em auto 0;
+}
+form fieldset legend{
+	width:100%;
+	color:#777;
+	padding:1em 0;
+	font-weight:600;
+	text-align:center;
+	font-size:1.7em;
+	margin-bottom:2em;
+	background:#ecf0f1;
+}
+form fieldset label{
+	color:#888;
+	font-weight:600;
+}
+form fieldset input{
+	height:1.5em;
+	border-bottom:solid 1px #999;
+	display:block;
+	margin-bottom:1em;
+	font-size:1.3em;
+}
+form fieldset input[type="submit"]{
+	width:90%;max-width:15em;
+	height:2.5em;
+	padding:.5em 0;
+	color:#fff;
+	background:#3498db;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	font-size:1.3em;	
+	margin:2em auto 3em;
+}
+form fieldset input[type="submit"]:hover,
+form fieldset input[type="submit"]:focus{
+	background:#2980b9;
+}

@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+header + div{
+	position:relative;
+	top:7em;
+}
+
+header + div h2{
+	top:2em;
+	width:90%;
+	font-size:1.5em;
+	text-transform:uppercase;
+}
+header + div p:first-of-type{
+	top:4em;
+	width:90%;
+
+	margin:0 auto;
+	font-size:1.2em;
+
+	color:#999;
+
+	margin-bottom:5em;
+}
+header + div p:last-of-type{
+	top:0;
+
+	width:80%;
+ 	color:#666;
+	font-size:1.3em;
+
+	margin:1em auto;
+}
+/*div fotos*/
+div.paiFotos{
+	position:relative;
+	top:2em;
+
+	width:100%;
+
+	margin:0 auto;
+}
+/*pai onde sera gerado todos os input*/
+div.paiFotos form fieldset#paiFile{
+	position:relative;
+	top:3em;
+	width:90%;max-width:45em;
+
+	margin:0 auto 3em;
+}
+div.paiFotos form > fieldset:first-of-type legend{
+	color:#777;
+	font-size:1.4em;
+	font-weight:600;
+	text-transform:uppercase;
+	text-align:center;
+	margin-bottom:1em;
+}
+/*somente o primeiro input file*/
+div.paiFotos form fieldset.primField{
+	position:relative;
+	top:0em;
+
+	width:90%;max-width:10.5em;
+	height:8em;
+	margin:0 auto;
+}
+div.paiFotos form fieldset.primField label{
+	position:absolute;
+	top:0;
+	left:0;
+
+	width:100%;
+	height:1.5em;
+
+	background:#2980b9;
+}
+div.paiFotos form fieldset.primField label span{
+	position:absolute;
+	top:.2em;
+	left:.8em;
+
+	font-size:1.1em;
+	font-weight:500;
+	text-transform:uppercase;
+	color:#fff;	
+}
+
+div.paiFotos form fieldset.primField img{
+	position:absolute;
+	top:2.5em;
+	left:0;
+
+	width:100%;
+	height:6.5em;
+	color:#555;
+	
+	display:inline-block;
+}
+/*seleciona todos os inputs file*/
+div.paiFotos form fieldset input[type=file] {
+    position:absolute;
+
+ 	width:0.1px;
+    height:0.1px;
+    opacity:0;
+  
+    z-index:-1;
+color:#222;
+    display:inline-block;
+}
+
+label.lab{
+	position:absolute;
+	top:0;
+	
+}
+div.paiFotos form fieldset img.fot{
+	position:relative;
+	top:0;
+
+	width:63%;max-width:10.5em;
+	height:6.5em;
+	color:#555;
+	margin:3em auto 0;
+color:#222;
+	display:block;
+}
+
+div.paiFotos form fieldset label.labDinamic{
+	position:relative;
+	top:1em;
+
+	width:10em;
+	height:1.6em;
+	margin:0 auto;
+	background:#2980b9;
+	display:block;
+}
+div.paiFotos form fieldset span.spanDinamic{
+	position:absolute;
+	top:.2em;
+	left:1em;
+	width:100%;
+
+	font-size:1.1em;
+	font-weight:500;
+	display:block;
+	text-transform:uppercase;
+	color:#fff;	
+}
+
+/*este pega o button criar mais unput*/
+div.paiFotos form > fieldset:last-of-type{
+	position:relative;
+	top:3em;
+	width:85%;
+
+	margin:5em auto 0;
+}
+div.paiFotos form > fieldset:last-of-type input.hide{
+	position:relative;
+	bottom:0;
+	left:0;
+
+	width:100%;
+	height:2.5em;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+
+	margin:0 auto;
+	color:#fff;
+	font-size:1.1em;
+
+	display:block;
+	background:#3498db;
+}
+
+
+/*rodape*/
+div.paiRodape{
+   margin:-5em 0 0!important;
+}

@@ -1,0 +1,74 @@
+@charset "UTF-8";	
+div.totem{
+	position:relative;
+	top:5em;
+	padding-bottom:8em;
+	margin-bottom:8em;
+	background:#555;
+	background:url('../imagens/fundTotem01.jpg') no-repeat;
+	background-size:cover;
+	background-position:50%;
+
+	-moz-box-shadow:0 0 8px 5px rgba(0,0,0,.3);
+	-webkit-box-shadow:0 0 8px 5px rgba(0,0,0,.3);
+	box-shadow:0 0 8px 5px rgba(0,0,0,.3);
+}
+div.totem h3{
+	top:2em;
+	font-size:1.6em;
+	color:#f1c40f;
+}
+div.totem p{
+	width:90%;max-width:25em;
+	margin:0 auto;
+	top:3.5em;
+	color:#fff;
+	font-size:1.2em;
+}
+div.totem figure{
+	position:relative;
+	top:5.8em;
+	width:90%;max-width:12em;
+
+	margin:0 auto;
+}
+div.totem figure img{
+	width:100%;
+}
+div.paiTextos{
+	margin-bottom:-8em;
+	padding-bottom:3em;
+}
+div.paiTextos > section h3{
+	position:relative;
+	top:1em;
+	max-width:20em;
+	font-size:1.5em;
+	margin-bottom:1.5em;
+}
+div.paiTextos > section > div:first-of-type{
+	padding:2em 0 3em;
+}
+div.paiTextos > section p.benef{
+	font-size:1.2em;
+	max-width:15em;
+    margin:0 auto;
+}
+div.paiTextos > section div dl{
+	width:100%;
+	margin-bottom:1.5em;
+	max-width:25em;
+}
+div.paiTextos > section div dl dl{
+	cursor:pointer;
+}
+div.paiTextos > section div dl dl:hover{
+	background:rgba(236,240,241 ,.3);
+}
+div.paiTextos > section div dl dt,
+div.paiTextos > section div dl dd{
+	width:90%;
+}
+div.paiTextos > section div dl dt{
+	color:#666;
+}

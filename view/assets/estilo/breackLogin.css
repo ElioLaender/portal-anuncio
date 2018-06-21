@@ -1,0 +1,101 @@
+@charset "UTF-8";	
+@media screen and (min-width: 375px){
+ 	form fieldset input#olho{
+	  left:6.5em;
+	 }
+}
+@media screen and (min-width:430px){
+	form fieldset input#olho{
+	  left:8em;
+	 }
+}
+@media screen and (min-width:460px){
+	form fieldset input#olho{
+	   left:9.5em;
+	 }
+	aside.asidLogin div{
+		background-position:100% 0%;
+	}
+
+	aside.asidLogin div{
+		top:2.7em;
+		background: url('../imagens/jovensEmpre@1x.jpg')no-repeat;
+		background-size:cover;
+		background-position:100% 50%;
+	}
+}
+@media screen and (min-width:500px){
+	form fieldset input#olho{
+	   left:11em;
+	 }
+}
+@media screen and (min-width:610px){
+	form fieldset input#olho{
+	  left:14em;
+	 }
+   div#retorno button{
+		top:-.8em;
+		right:-.7em;
+		width:2.5em;
+		height:2.5em;
+		
+		background:url('../imagens/fech@1x.png') no-repeat;
+		background-size:cover;
+	}
+
+	aside.asidLogin div{
+		background: url('../imagens/jovensEmpre@2x.jpg')no-repeat;
+		background-size:cover;
+		background-position:100% 100%;
+	}
+
+}
+@media screen and (min-width: 950px){
+	aside.asidLogin div{
+		top:1.5em;
+		height:25em;
+	}
+
+}
+@media screen and (min-width: 1000px){
+	  section.secLogin > h2{
+	  	top:.8em;
+	  	font-size: 1.5em;
+	  }
+	/*recuperar senha vindo do link retorno*/
+	div.recupS{
+	  position:relative;
+	  top:-20em;
+
+	}
+	aside.asidLogin div p{
+	  top:4em;
+	  font-size:2em;
+	}
+
+}
+@media screen and (min-width: 1200px){
+
+	  aside.asidLogin div{
+	  	top:3.5em;
+		
+		
+		background: url('../imagens/jovensEmpre@3x.jpg')no-repeat;
+		background-size:cover;
+		background-position:70% 100%;
+
+		margin-bottom:9em;
+	}
+
+}
+@media screen and (min-width: 1700px){
+	aside.asidLogin div{
+		height:30em;	
+	}
+
+	aside.asidLogin div p{
+	  top:4em;
+	  font-size:2.5em;
+	}
+
+}

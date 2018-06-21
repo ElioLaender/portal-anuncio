@@ -1,0 +1,190 @@
+@charset "UTF-8";
+body{
+  color:#fff;
+  background:#fff;
+}
+/*COntrola todo conteudo*/
+div.tudo{
+  position:relative;
+  width:100%;max-width:156.25em;
+
+  margin:0 auto;
+}
+body,
+html,
+main,
+div.tudo,
+section{
+	height:100%;
+}
+header > h1{
+	position:absolute;
+	left:-99em;
+	z-index:0;
+	opacity:0;
+}
+section > h1{
+	position:absolute;
+	left:-99em;
+
+	opacity:0;
+	font-size:0;
+}
+section{
+	position:relative;
+	top:0;
+	width:100%;
+}
+section > div{
+	position:absolute;
+	top:0;
+
+	width:100%;
+	height:100%;
+	min-height:60em;
+
+ 	background:#2e8ece;
+
+ 	background:url('../imagens/womanOffcie@1x.jpg') no-repeat;
+ 	background-size:cover;
+ 	background-position:100% 50%;
+}
+section > div:before{
+	content:'';
+
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+
+	background:rgba(0,0,0,.5);
+}
+section > div h2{
+	top:2.5em;
+	width:90%;max-width:15em;
+	color:#fff;
+	font-size:1.4em;
+	margin-bottom:4em;
+}
+
+section > div p{
+	width:90%;max-width:35em;
+	color:#ecf0f1;
+
+	font-size:1.2em;
+	margin:1em auto 0;
+}
+section > div h3{
+	top:2em;
+	color:#f39c12; 
+	font-size:1.3em;
+	text-transform:uppercase;
+	margin-bottom:3em;
+}
+section > div form fieldset{
+	position:relative;
+	top:0;
+
+	width:90%;max-width:35em;
+
+	margin:0 auto;
+}
+
+section > div form fieldset legend{
+	position:relative;
+	top:1em;
+
+	color:#fff;
+
+	margin-bottom:2.5em;
+}
+section > div form fieldset label{
+	font-weight:500;
+}
+section > div form fieldset input{
+	background:none;
+	height:1.8em;
+	color:#fff;
+	font-size:1.1em;
+	text-indent:0em;
+	border-bottom:solid #888 1px;
+
+	margin-bottom:1em;
+}
+
+
+section > div form fieldset textarea{
+	position:relative;
+	top:1em;
+	left:-.3em;
+
+	width:100%;
+	height:5em;
+
+	font-size:1.3em;
+	font-weight:600;
+	color:#555;
+	resize:vertical;
+	margin:0 auto;
+}
+
+section > div form fieldset input[type='submit']{
+	position:relative;
+	top:2em;
+	width:60%;max-width:15em;
+	height:3em;
+	border:none;
+   font-family:"Roboto Slab","arial";
+   font-weight:600;
+	-moz-border-radius:5px;
+	=webkit-border-radius:5px;
+	border-radius:5px;
+	letter-spacing:2px;
+	background:#2e8ece; 
+}
+section > div form fieldset input[type='submit']:hover,
+section > div form fieldset input[type='submit']:focus{
+	background:#3498db; 
+}
+
+
+@media screen and (min-width:360px){
+section > div h2{
+	top:3em;
+	font-size:1.8em;
+}
+
+section > div p{
+	font-size:1.4em;	
+	}
+}
+
+@media screen and (min-width:900px){
+	section > div{
+		position:absolute;
+		top:0;
+
+		width:100%;
+		height:100%;
+		min-height:60em;
+
+	 	background:#2e8ece;
+
+	 	background:url('../imagens/womanOffcie@3x.jpg') no-repeat;
+	 	background-size:cover;
+	 	background-position:100% 50%;
+	}
+	section > div h2{
+		top:3em;
+		width:90%;max-width:17em;
+		color:#fff;
+		font-size:2em;
+		margin-bottom:4em;
+	}
+	section > div h3{
+		top:3em;
+		font-size:1.6em;
+		margin-bottom:5em;
+	}
+}

@@ -1,0 +1,246 @@
+@charset "UTF-8";
+@media screen and (min-width:350px){
+	ul.lin li:last-of-type{
+		background-position:26% 50%;
+	}
+	div.paiSe figure{
+		top:5em;
+		margin: 0 auto 3.5em;
+	}
+}
+@media screen and (min-width:450px){
+	div.paiSe figure{
+		top:8.5em;
+		margin: 0 auto 4em;
+	
+	}
+	div.paiSe section h2{
+		top:4em;
+		font-size:1.8em;
+		margin-bottom:4em;
+	}	
+
+	div.paiSe section button#ab{
+		top:1em;
+		max-width:15em;
+	}
+
+	div.paiSe section form{
+		top:6.5em;
+		height:26em;
+	}
+
+	/*retorno de nao haver anuncios */
+	div.returVazio{
+		top:13em;
+		margin:0 auto 0;
+	}
+	div.returVazio > p:first-of-type{
+		max-width:20em;
+		font-size:1.5em;
+		text-align:left;
+		padding-left:.5em;
+		margin:0;
+	}
+	div.returVazio div ul{
+		top:3em;
+		max-width:25em;
+		margin:0;
+	}
+	div.returVazio div ul li:first-of-type a{
+		font-size:1.3em;
+		text-align:left;
+		border:none;
+
+		background:url('../imagens/arrowR@0x.png') no-repeat;
+		background-size:1em;
+		background-position:95% 20%;
+	}
+	div.returVazio div ul li:first-of-type a:hover{
+		background:url('../imagens/arrowR@1x.png') no-repeat;
+		background-size:1em;
+		background-position:95% 20%;
+		border-bottom: none;
+	}
+	div.returVazio div ul li:last-of-type a{
+		color:#999;
+		margin-top:-1em;
+	}
+}
+@media screen and (min-width:580px){
+	ul.lin li a{
+		height:2.3em;
+	 }
+	div.paiSe section form{
+		height:30em;
+	}
+
+	/*titulo doanuncio*/
+	div.inner{
+		max-width:26em;
+	}
+	div.PaiAnuncio p.titu{
+		font-size:1.2em;
+	}
+
+	div.PaiAnuncio dl{
+		width:100%;
+	}
+
+	div.PaiAnuncio dl dd{
+		font-size:1em;
+		
+		margin-right:.2em;
+
+		display:inline;
+	}
+
+	/*retorno de nao haver anuncios */
+	div.returVazio{
+		top:15em;
+	}
+	div.returVazio > p:first-of-type{
+		max-width:25em;
+		font-size:1.8em;
+		margin-bottom:2em;
+	}
+	div.returVazio div p:first-of-type,
+	div.returVazio div p{
+		font-size:1.3em;
+	}
+	div.returVazio div ul li a{
+		font-size:1.4em;
+		width:100%;
+		background-position:100% 20%;
+	}
+	div.returVazio div ul li a:hover{
+		background-position:100% 20%;
+	}
+}
+@media screen and (min-width:800px){
+	div.paiSe section form{
+		height:32em;
+	}
+}
+@media screen and (min-width:900px){
+	button#moreG{
+		top:5em;
+		margin:4em auto 0;
+		font-size:1.3em;
+	}
+
+}
+@media screen and (min-width:900px){
+	div.paiSe{
+		position:relative;
+		min-height:110em;
+	}
+	div.paiSe section form fieldset.priField > button:first-of-type,
+	div.paiSe section button#ab{	
+		display:none;
+	}
+	
+	div.paiSe figure{
+		top:6.5em;
+		max-width:18em;
+		margin: 0 auto 4em;
+	
+	}
+	div.paiSe section h2{
+		top:4em;
+		font-size:1.8em;
+		margin-bottom:4em;
+	}
+	div.paiSe section form{
+		position:relative;
+		left:0;
+
+		height:auto;
+		max-width:15em;
+
+		display:inline-block !important;
+		float:left;
+		z-index:40;
+	}
+	div.inner{
+		top:6.5em;
+		width:100%;max-width:30em;
+		
+		margin-left:1em;
+		display:inline-block;
+	}
+
+	div.inner article div.PaiAnuncio{
+		padding-left:1em;
+	}
+
+	div.inner article{
+		padding-bottom:0;
+		border-bottom:solid #ecf0f1 1px;
+	}
+	div.PaiAnuncio dl{
+		width:80%;
+		padding-left:.5em
+	}
+	div.PaiAnuncio dl dd.ddTel{
+		margin-right:17em;
+	}
+	div.PaiAnuncio dl dd.categ{
+		display:inline;
+	}
+	ul.lin{
+		margin-bottom:-1.5em;
+	}
+	ul.lin li:last-of-type{
+		display:none !important;
+	}
+	ul.lin li:first-of-type a{
+	   top:-.7em;
+	   left:1.5em;
+	   border:none;
+
+	   height:1.2em;
+	}
+
+}
+@media screen and (min-width:1000px){
+	 div.paiSe{
+	 	top:5em;
+	 	width:90%;max-width:55em;
+        padding-left:2em;
+	 	margin:0 auto;
+	 }
+
+}
+
+@media screen and (min-width:1180px){
+	div.paiSe{
+	 	width:95%;max-width:120em;
+	 }
+
+	 div.paiSe section div.paiBan{
+		position:absolute;
+		right:0;
+		top:23em;
+
+		width:95%;max-width:15em;
+
+		display:block !important;
+	}
+
+	 div.paiSe section div.paiBan > button,
+	 div.paiSe section button.Abaner{
+	 	display:none;
+	 }
+
+}
+@media screen and (min-width:1500px){
+	div.paiSe{
+	 	position:relative;
+	 	top:8em;
+	 	width:90%;max-width:70em;
+	 	min-height:105em;
+	 	margin:0 auto;
+	 }
+	
+}

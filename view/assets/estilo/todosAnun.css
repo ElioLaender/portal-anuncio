@@ -1,0 +1,523 @@
+@charset "UTF-8";
+div.paiSe{
+	position:relative;
+	top:5em;
+	margin-bottom:-15em;
+}
+
+div.paiSe figure{
+	position:relative;
+	top:4em;
+
+	width:90%;max-width:18em;
+
+	margin:0 auto 3em;
+}
+div.paiSe figure img{
+	width:100%;
+}
+div.paiSe section h2{
+	top:2.5em;
+	font-size:1.4em;
+
+	margin-bottom:2em;
+}	
+
+div.paiSe section button#ab{
+	position:absolute;
+	top:-1.15em;
+	left:0;
+	width:100%;
+	padding:0 1em;
+	font-size:1.3em;
+
+	border:solid #ecf0f1 2px;
+	
+	z-index:10;
+}
+div.paiSe section button#ab:hover,
+div.paiSe section button#ab:focus{
+	background:rgba(236, 240, 241,.3); 
+}
+
+/*pai tres banners*/
+div.fun{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:rgba(52, 152, 219,.5);
+
+	z-index:45;
+
+	display:none;
+}
+div.paiSe section div.paiBan{
+	position:relative;
+	right:0;
+	top:-1em;
+
+	width:95%;max-width:20em;
+	
+	margin:0 auto -30em;
+	z-index:46;
+
+	display:none;
+}
+div.paiSe section button.Abaner{
+	position:absolute;
+	top:14.5em;
+	right:0;
+
+	width:3em;
+	height:3em;
+
+	text-indent:-99em;
+	color:#fff;
+	background:url('../imagens/arrowL@0x.png') no-repeat;
+	background-size:100%;
+	background-position:50%;
+
+	-moz-transition: background linear .1s;
+	-webkit-transition: background linear .1s;
+	transition: background linear .1s;
+
+	z-index:10;
+}
+div.paiSe section button.Abaner:hover,
+div.paiSe section button.Abaner:focus{
+	background:url('../imagens/arrowL@1x.png') no-repeat;
+	background-size:100%;
+	background-position:50%;
+}
+div.paiSe section div.paiBan > button{
+	position:absolute;
+	top:-1.3em;
+	left:-.5em;
+
+	width:2em;
+	height:2em;
+
+	font-size:1.1em;
+	font-weight:600;
+	color:#999;	
+
+	text-indent:-99em;
+
+	background:url('../imagens/fech@1x.png') no-repeat;
+	background-position:50%;
+	background-size:100%;
+
+	z-index:10;
+}
+div.paiSe section div.paiBan aside div{
+	position:relative;
+	top:0;
+
+	width:100%;
+	height:8em;
+
+	margin:1em auto 0;
+	background:#fff;
+
+}
+div.paiSe section div.paiBan aside > div:first-of-type{
+	background:url('../imagens/boyOffice@0x.jpg')no-repeat;
+	background-size:100%;
+	background-position:0 40%;
+}
+div.paiSe section div.paiBan aside > div:nth-of-type(2){
+	background:url('../imagens/descont@0x.png')no-repeat;
+	background-size:100%;
+	background-position:0 40%;
+}
+div.paiSe section div.paiBan aside > div:nth-of-type(3){
+	background:url('../imagens/imp@0x.png')no-repeat;
+	background-size:100%;
+	background-position:0 40%;
+}
+
+div.paiSe section div.paiBan aside div a{
+	width:100%;
+	height:8em;
+}
+
+div.paiSe section div.paiBan aside div p{
+	position:absolute;
+	right:0;
+	width:50%;
+	top:1.5em;
+	font-size:1.4em;
+	color:#fff;
+}
+
+
+div.paiSe section form{
+	position:fixed;
+	top:4em;
+
+	width:100%;max-width:19em;
+	height:25em;
+
+	-moz-transition:left ease-out .3s;
+	-webkit-transition:left ease-out .3s;
+	transition:left ease-out .3s;
+
+	overflow:hidden;
+	background:#fff;
+	display:none;
+	z-index:50;
+}
+
+div.paiSe section form fieldset{
+	position:relative;
+	top:0;
+	width:100%;max-width:20em;
+	margin:.5em 0 0;
+}
+div.paiSe section form fieldset input[type='checkbox']{
+	position:absolute;
+	left:0;
+	top:0;
+
+	width:1em;
+	height:1em;
+	opacity:1;
+}
+div.paiSe section form fieldset legend.ref{
+	font-size:1.3em;
+	text-transform:uppercase;
+}
+div.paiSe section form fieldset legend{
+	color:#444;
+	text-indent:.5em;
+}
+div.paiSe section form fieldset.priField{
+	width:95%;
+
+	padding:3em 0 1em .5em;
+	border:solid #ecf0f1 2px;
+}
+div.paiSe section form fieldset.priField > button:first-of-type{
+	position:absolute;
+	top:1.5em;
+	right:1em;
+
+	height:1.5em;
+	font-size:1.2em;
+	border-bottom:solid #fff 1px;
+}
+div.paiSe section form fieldset.priField > button:first-of-type:hover,
+div.paiSe section form fieldset.priField > button:first-of-type:focus{
+	border-bottom:solid #777 1px;
+}
+div.paiSe section form fieldset.priField fieldset{
+	width:98%;
+	padding-left:.2em;
+}
+div.paiSe section form fieldset.priField > fieldset:first-of-type{
+	height:19em;
+}
+div.paiSe section form fieldset.priField > fieldset:nth-of-type(2){
+	height:26em;
+}
+div.paiSe section form fieldset.priField > fieldset:last-of-type{
+	height:15em;
+}
+div.paiSe section form fieldset.priField fieldset legend{
+	text-indent:0;
+}	
+div.paiSe section form fieldset.priField fieldset label{
+	position:relative;
+	top:2em;
+	text-indent:1.1em; 
+	height:2em;
+
+	color:#888;
+	display:block;
+	font-size:.9em;
+	margin-bottom:.5em;
+}
+
+
+div.paiSe section form fieldset.priField fieldset label p{
+	position:absolute;
+	top:0;
+	right:1.5em;
+	color:#999;
+}
+/*fieldset dinamico radio*/
+fieldset.priField div.radioCate{
+	position:relative;
+	height:10em;
+	overflow:hidden;
+}
+fieldset.priField div.radioCate label input{
+    position:absolute;
+    left:0;
+    top:0;
+
+    height:.9em;
+    width:.9em;
+
+	font-size:1em;
+	display:block;
+}
+
+fieldset.priField div.checkBairros{
+	position:relative;
+	height:12em;
+
+	margin-bottom:1.5em;
+}
+
+/*anuncios*/
+div.inner{
+	position:relative;
+	top:3em;
+
+	width:100%;max-width:25em;
+	margin:0 auto;
+}
+
+div.inner article{
+	position:relative;
+	top:0;
+	padding-top:1.5em;	
+}
+
+div.inner article div.PaiAnuncio{
+	position:relative;
+	top:0;
+	padding-bottom:1.5em;
+
+	border-bottom:solid #ecf0f1 2px;
+}
+
+div.PaiAnuncio > a{
+	position:relative;
+	top:0;
+	width:100%;
+}
+div.PaiAnuncio > a::before{
+	content:'';
+
+	position:absolute;
+	top:0;
+	left:0;
+
+	width:100%;
+	height:8em;
+
+	z-index:5;
+}
+div.PaiAnuncio div.divImg{
+	float:left;
+	width:4em;
+	height:4em;
+	margin-left:.5em;
+	
+}
+
+div.PaiAnuncio div.divImg img{
+	width:100%;
+	height:4em;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+/*titulo doanuncio*/
+div.PaiAnuncio p.titu{
+	width:70%;
+	height:1.5em;
+
+	text-indent:.7em;
+	text-align:left;
+	font-weight:600;
+	font-size:1.1em;
+
+	color:#f39c12;
+	margin-right:.5em;
+	display:inline-block;
+	overflow:hidden;
+}
+div.PaiAnuncio dl{
+	float:left;
+	width:70%;
+	margin:-2.4em 0 0 5em;
+}
+div.PaiAnuncio dl dd{
+	font-size:.8em;
+	color:#777;
+	margin-right:.2em;
+
+	display:inline;
+}
+div.PaiAnuncio dl dd.categ{
+	margin:0;
+	text-align:left;
+	display:block;
+}
+div.PaiAnuncio dl dd a{
+	color:#444;
+	text-align:left;
+}
+div.qtdAv{
+	float:left;
+
+	width:12em;
+	margin-left:5em;
+}
+div.qtdAv p:first-of-type{
+	float:right;
+	margin-right:1.5em;
+	display:inline-block;
+    font-family:"Roboto Slab","arial";
+}
+div.qtdAv p:first-of-type span{
+	color:#222;
+    font-family:inherit;
+}
+div.qtdAv p:last-of-type{
+	width:5.5em;
+	height:1.3em;
+	text-indent:-99em;
+	color:#fff;
+}
+ul.lin{
+	position:relative;
+	top:.5em;
+
+	overflow:visible;
+}
+ul.lin li{
+	width:50%;
+	display:inline-block !important;
+}
+
+ul.lin li:last-of-type{
+	background:url('../imagens/phone@0x.png') no-repeat;
+	background-size:1em;
+	background-position:20% 50%;
+
+	display:none !important;
+}
+ul.lin li a{
+	text-indent:0;
+	text-align:center;
+	font-weight:600;
+
+	color:#2a82bc !important;
+	padding:.5em 0 0;
+	//border:solid #ecf0f1 1px;
+ }
+
+/*retorno de nao haver anuncios */
+div.returVazio{
+	position:relative;
+	top:8em;
+
+	width:100%;max-width:35em;
+	margin:0 auto -15em;
+}
+div.returVazio > p:first-of-type{
+	max-width:15em;
+	color:#f39c12;
+
+    font-family:"Roboto Slab","arial";
+    font-weight:600;
+	font-size:1.4em;
+
+	text-align:center;
+    margin:0 auto;
+}
+
+div.returVazio div{
+	position:relative;
+	top:0;
+	width:95%;
+
+	margin:0 auto;
+}
+div.returVazio div p{
+	font-size:1em;
+	color:#777;
+	text-align:left;
+	margin-bottom:.5em;
+	padding-left:1em;
+    
+    background:url('../imagens/arrowRight@1x.png') no-repeat;
+	background-size:.5em;
+	background-position:0 30%;
+	line-height:1.1;
+
+}
+div.returVazio div p:first-of-type{
+	font-size:1.2em;
+	color:#3498db;
+	margin:1.3em 0 1.5em;
+	padding-left:0;
+
+	background:none;
+}
+div.returVazio div p:last-of-type{
+	background:none;
+}
+div.returVazio div p em{
+	color:#999;
+}
+div.returVazio div p strong{	
+	font-weight:500;
+	font-family:italic;
+	font-size:1.1em;
+}
+
+div.returVazio div ul{
+	top:2em;
+	max-width:15em;
+
+	margin:0 auto 2.5em;
+}
+div.returVazio div ul li:first-of-type a{
+	height:3.5em;
+	color:#e74c3c;
+	font-size:1.1em;
+	font-weight:600;
+	text-align:center;
+    border-bottom:solid #bdc3c7 1px;
+
+}
+div.returVazio div ul li:first-of-type a:hover,
+div.returVazio div ul li:first-of-type a:focus{
+   border-bottom:solid #999 1px;
+}	
+
+div.returVazio div ul li:last-of-type a{
+	color:#999;
+	margin-top:1em;
+}
+div.returVazio div ul li:last-of-type a:hover,
+div.returVazio div ul li:last-of-type a:focus{
+	color:#555;
+}
+button#moreG{
+	position:relative;
+	top:2em;
+
+	width:85%; max-width:15em;
+	height:2.3em;
+	display:block;
+	font-size:1.2em;
+	margin:2em auto 0;
+	color:#fff;
+	background:#2e8dcc;
+
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+button#moreG:hover,
+button#moreG:focus{
+	background:#3598db;
+}

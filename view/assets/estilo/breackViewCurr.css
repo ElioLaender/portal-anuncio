@@ -1,0 +1,76 @@
+@charset "UTF-8";	
+
+@media screen and (min-width:350px){
+	 div.paiS section p.anunParagr{
+	  padding:1em;
+	}
+}
+@media screen and (min-width:500px){
+	div.paiS section div.pa{
+		height:19em;
+		background-size:cover;
+	}
+   div.paiS section p.anunParagr{
+	  padding-top:1.5em;
+	  font-weight: 600;
+	}
+   div.paiS section h2.tituCur{
+		font-size:1.2em;	
+	}
+	div.paiS section div.pa > p{
+		top:3.5em !important;
+		font-size:1.8em;
+		text-shadow:10px 8px 10px rgba(0,0,0,.8) !important;
+	}
+
+	fieldset.hora label[for="Disp"]{
+	  max-width:13em;
+	}
+}
+@media screen and (min-width:700px){
+
+	div.paiS section div.pa{
+		height:22em;
+		background:url('../imagens/manOffice@2x.jpg') no-repeat;
+		background-position:80% 100%;
+		background-size:cover;
+	}
+	div.paiS section div#bac{
+	  background: url('../imagens/manAndwoman@2x.jpg')no-repeat;
+	  background-size:cover;
+	  background-position:0% 50%;
+	}
+
+	/*observacoes*/
+	div.paiF form fieldset.desc{
+		height:20em;
+		background:url('../imagens/womanOffice@2x.jpg') no-repeat;
+		background-size:cover;
+		background-position:100% 50%;
+	}
+	div.paiF form fieldset textarea#tObs{
+		height:12em;
+	}
+
+	/*cidade e estado*/
+	fieldset.compl label[for="cidade"],
+	fieldset.compl label[for="estado"]{
+		margin-top:2em;
+	}
+}
+@media screen and (min-width:1200px){
+	
+	div.paiS section div.pa{
+		top:2em;
+		height:35em;
+		background:url('../imagens/manOffice@3x.jpg') no-repeat;
+		background-attachment:fixed;
+		background-position:100%;
+		background-size:cover;
+	}
+	div.paiS section div.pa > p{
+		top:5em !important;
+		font-size:2.5em;
+		
+	}
+}

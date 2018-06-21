@@ -1,0 +1,327 @@
+div.paiForm{
+	position:relative;
+	top:8em;
+
+	width:90%;
+	margin:0 auto;
+}
+div.paiForm h2{
+	font-size:1.5em;
+	margin-bottom:2em;
+}
+form#form{
+	position:relative;
+	top:0;
+
+	width:100%;max-width:50em;
+	min-width:10em;
+	margin:0 auto;
+	display:block;
+}
+form#form div#uploader{
+	width:100%;
+}
+div.plupload_header_text{
+	display:none;
+}
+form#form input[type='submit']{
+	max-width:15em;
+	font-size:1.2em;
+	background:#e67e22;
+	color:#fff;
+	font-weight:600;
+	
+	-webkit-transition:ease .5s;
+	-moz-transition:ease .5s;
+	transition:ease .5s;
+	
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+form#form input[type='submit']:hover,
+form#form input[type='submit']:focus{
+	background:#f39c12;
+}
+div#uploader_buttons{
+	padding-top:1em;
+}
+div#uploader_buttons a{
+	min-width:5em;
+	width:100%;
+	font-size:1.5em;
+	display:block;
+}
+section.secFoto{
+	position: relative;
+	top:11em;
+	margin-bottom:8em;
+}
+section.secFoto h3{
+	font-size:1.7em;
+	margin-bottom:1em;
+}
+section.secFoto div#galeria{
+	position:relative;
+	top:0;
+
+	width:95%;max-width:30em;
+	margin:0 auto;
+	border:solid #ecf0f1 2px;
+	z-index:20;
+}
+section.secFoto div#galeria ul{
+	overflow:visible;
+	padding:0;
+	width:90%;max-width:15em;
+	margin:1em auto;
+}
+section.secFoto div#galeria ul li{
+	position:relative;	
+	height:10em;
+	margin:1em 0;
+}
+section.secFoto div#galeria ul li a{
+	position:relative;
+	width:100%;
+	height:9em;
+	padding:0;
+	display:block;
+}
+
+section.secFoto div#galeria ul li a img{	
+	width:100%;
+	height:9em;
+	display:block;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+div#tela{
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	margin:1em auto 0;
+	background:rgba(0,0,0,.8);
+	z-index:21;
+	display:none;
+}
+div#tela div.paiBut{
+	position:fixed;
+	top:6em;
+	width:90%;max-width:30em;
+	height:4em;
+}
+div#tela button.butF{
+	position:absolute;
+	top:0;
+	right:0;
+	width:3em;
+	height:3em;
+	background:url('../imagens/fecha@1x.png') no-repeat;
+	background-size:2.5em;
+	background-position:50%;
+}
+button.lixo{
+	position:absolute;
+	top:.5em;
+	right:.5em;
+	width:2.5em;
+	height:2.5em;
+	background:url('../imagens/trash.png') no-repeat;
+	background-size:1.5em;
+	background-position:50%;
+	z-index:7;
+}
+span.fun{
+	position:absolute;
+	top:0;
+	height:3em;
+	width:100%;
+	background:rgba(0,0,0,.5);
+	z-index:5;
+	cursor:pointer;
+}
+div#tela img{
+	position:fixed;
+	top:10em;
+	margin-left:.5em;
+	width:90%;max-width:30em;
+	z-index:5;
+}
+
+div.escuro{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	background:rgba(0,0,0,.8);
+	z-index:15;
+	display:none;
+}
+div.excluir{
+	position:fixed;
+	top:10em;
+	width:100%;
+	z-index:30;
+	background:transparent;
+	display:none;
+}
+div.excluir > div{
+	position:relative;
+	width:90%;max-width:35em;
+	height:10em;
+	padding:1em 0 1.5em;
+	margin:0 auto;
+	background:#fff;
+}
+div.excluir > div p{
+	color:#888;
+	font-size:1.5em;
+	font-weight:600;
+}
+div.excluir > div button{
+	position:relative;
+	top:0;
+	width:8em;
+	border:solid #999 2px;
+	display:block;
+	margin:.5em auto;
+	font-weight:600;
+}
+div.excluir > div button:hover,
+div.excluir > div button:focus{
+		background:rgba(236,240,241 ,.5);
+}
+@media screen and (min-width:350px){
+	section.secFoto div#galeria ul{
+		width:100%; max-width:25em;
+		overflow:hidden;
+		padding-bottom:1em;
+	}
+	section.secFoto div#galeria ul li{
+		width:46%;
+		margin:1em 0 1em .5em;
+		height:7.5em;
+		float:left;
+	}
+	section.secFoto div#galeria ul li a,
+	section.secFoto div#galeria ul li a img{
+		height:7.5em;
+	}
+	div.excluir > div div{
+		width:15em;
+		margin:1em auto 0;
+	}
+	div.excluir > div button{
+		float:left;
+		margin-left:.5em;
+	}
+}
+@media screen and (min-width:450px){
+	div.paiForm{
+		top:15em;
+	}
+	div.paiForm h2{
+		font-size:1.8em;
+	}
+	section.secFoto{
+		top:20em;
+	}
+	section.secFoto h3{
+		font-size:2em;
+	}
+	div#tela div.paiBut{
+		top:9em;
+	}
+	div#tela img{
+		top:12em;
+		margin-left:.5em;
+	}
+	div.excluir{
+		top:12em;
+	}
+}
+@media screen and (min-width:500px){
+	 div#uploader_buttons a{
+		max-width:10.5em;
+		font-size:1.2em;
+		display:inline-block;
+	} 
+	div.plupload_header_text{
+		display:block;
+	}
+	div.paiForm h2{
+		font-size:2em;
+	}
+	div#tela button.butF{
+		right:2em;
+	}
+	
+	div#tela div.paiBut button{
+		right:0;
+	}
+	div#tela img{
+		top:12.5em;
+	}
+}
+@media screen and (min-width:650px){
+	section.secFoto div#galeria{
+		max-width:35em;
+	}
+	section.secFoto div#galeria ul{
+		max-width:35em;
+		padding-left:1.5em;
+
+	}
+	section.secFoto div#galeria ul li{
+		width:30%;max-width:10em;
+		margin:1em 0 1em .5em;
+		height:7.5em;
+		float:left;
+	}
+
+	div#tela div.paiBut{
+		max-width:35em;
+	}
+	div#tela img{
+		top:15em;
+		width:90%;max-width:33em;
+	}
+	div.excluir{
+		top:18em;
+		
+	}
+}
+@media screen and (min-width:950px){
+	section.secFoto div#galeria{
+		max-width:55em;
+	}
+	section.secFoto div#galeria ul{
+		max-width:55em;
+		padding-left:1em;
+	}
+	div#tela div.paiBut{
+		position:absolute;
+		top:0;
+		right:0;
+	}
+	div#tela img{
+		position:relative;
+		top:3em;
+		margin: 0 auto;
+		width:90%;max-width:35em;
+	}
+	div.escuro{
+		background:rgba(0,0,0,1);
+	}
+	
+}
+@media screen and (min-width:1500px){
+div.excluir{
+		top:25em;
+	}
+}

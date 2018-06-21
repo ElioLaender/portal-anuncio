@@ -1,0 +1,474 @@
+@charset "UTF-8";
+div.primDiv{
+	position:relative;
+	top:3.5em;
+	width:100%;
+}
+span{
+  font-family:"Roboto Slab";
+}
+section > div:first-of-type{
+	position:relative;
+	top:0;
+
+	width:100%;
+	height:23em;
+
+	background:url('../imagens/invista@1x.jpg') no-repeat;
+	background-size:cover;
+	background-position:50%;
+	margin:0 auto;
+}
+section > div:first-of-type:before{
+	content:'';
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+
+	background:rgba(0,0,0,.5);
+}
+section > div:first-of-type > p:first-of-type{
+	top:3em;
+	font-size:1.4em;
+    font-family:"Roboto Slab","arial";
+
+	color:#ecf0f1;
+
+	margin-bottom:4em;
+}
+section > div:first-of-type > p:last-of-type{
+	width:90%;
+
+	font-size:1.2em;
+	color:#fff;
+
+	margin:1em auto;
+}
+section > div:first-of-type ul.plan li a{
+	width:85%;max-width:13em;
+
+	background:#f39c12;
+
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+
+	display:block;
+
+    font-family:"Roboto Slab","arial";
+	text-align: center;
+
+	padding:.5em 0; 
+	margin: 1em auto;
+}
+section > div:first-of-type ul.plan li a:hover,
+section > div:first-of-type ul.plan li a:focus{
+	background:#e67e22;
+}
+/*bloco bolas coloridas*/
+section > div:nth-of-type(2){
+	position:relative;
+	top:3em;
+
+	margin-bottom:4em;
+}
+section > div:nth-of-type(2) h3{
+	max-width:15em;
+	font-size:1.5em;
+	color:#3498db;
+	margin-bottom:.5em;
+}
+section > div:nth-of-type(2) p{
+	width:90%;max-width:20em;
+	margin:0 auto;
+	font-size:1.2em;
+}
+section > div:nth-of-type(2) dt{
+	color:#888;
+	width:5em;
+
+	margin-top:2em; 
+}
+section > div:nth-of-type(2) dt:before{
+	content:'';
+
+	position:absolute;
+	right:0;
+	top:-.2em;
+
+	width:2.5em;
+	height:2.5em;
+
+	background:#2ecc71;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+
+	z-index:-1;
+}
+section > div:nth-of-type(2) dl:first-of-type dt:before{
+	top:-.5em;
+}
+section > div:nth-of-type(2) dl dt span{
+	color:#fff;
+}
+section > div:nth-of-type(2) dl dd{
+	font-size:1em;
+	max-width:18em;
+
+	color:#555;
+}
+section > div:nth-of-type(2) dl:nth-of-type(2) dt:before{
+	right:-1.5em;
+	top:-.5em;
+
+	width:3.8em;
+	height:3.8em;
+
+	background:#2980b9;
+}
+
+section > div:nth-of-type(2) dl:nth-of-type(3) dt:before{
+	background:#f39c12;
+	right:-1em;
+	top:-.5em;
+}
+section > div:nth-of-type(2) dl:nth-of-type(4) dt:before{
+   top:-.5em;
+   background:#e74c3c;
+}
+section > div:nth-of-type(2) dl:nth-of-type(5) dt:before{
+	top:-.4em;
+	right:-.5em;
+	width:3.2em;
+	height:3.2em;
+
+	background:#9b59b6;
+}
+section > div:nth-of-type(3){
+	position:relative;
+	top:1em;
+
+	width:100%;max-width:65em;
+	border:solid #fff 1px;
+
+	margin:0 auto 1em;
+}
+section > div:nth-of-type(3) h3{
+	top:1.8em;
+    width:95%;max-width:20em;
+	font-size:1.3em;
+	color:#f39c12;
+
+	margin-bottom:3em;
+}	
+
+section > div:nth-of-type(3) > div{
+	position:relative;
+	top:0;
+	width:100%;max-width:35em;
+
+	margin:0 auto;
+}
+section > div:nth-of-type(3) > div ul{
+	width:95%;
+	border:solid #E9EAEB 2px;
+	
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+
+	margin:0 auto 2em;
+}
+section > div:nth-of-type(3) > div ul li{
+	height:5em;
+
+	padding:.8em .5em;
+	cursor:pointer;
+	border-bottom:solid #E9EAEB 1px;
+}
+section > div:nth-of-type(3) > div ul li:first-of-type{
+	background:#ecf0f1;
+}
+section > div:nth-of-type(3) > div ul li:hover,
+section > div:nth-of-type(3) > div ul li:focus{
+    background:#ecf0f1 !important;
+}
+section > div:nth-of-type(3) > div ul li:hover h4,
+section > div:nth-of-type(3) > div ul li:focus h4{
+	color:#444;
+}
+section > div:nth-of-type(3) > div ul li:nth-of-type(3),
+section > div:nth-of-type(3) > div ul li:nth-of-type(4){
+	height:6.5em;
+}
+section > div:nth-of-type(3) > div ul li h4{
+  text-align:left;
+  padding-left:1.8em;
+
+  color:#666;
+}
+section > div:nth-of-type(3) > div ul li:first-of-type h4{
+  background:url('../imagens/graphic@0x.png') no-repeat;
+  background-size:1em;
+  background-position:10px 25%;
+}
+section > div:nth-of-type(3) > div ul li:first-of-type:hover h4,
+section > div:nth-of-type(3) > div ul li:first-of-type:focus h4{
+  background:url('../imagens/graphic@1x.png') no-repeat;
+  background-size:1em;
+  background-position:10px 25%;
+}
+
+section > div:nth-of-type(3) > div ul li:nth-of-type(2) h4{
+  background:url('../imagens/doc@0x.png') no-repeat;
+  background-size:.8em;
+  background-position:10px 25%;
+}
+section > div:nth-of-type(3) > div ul li:nth-of-type(2):hover h4,
+section > div:nth-of-type(3) > div ul li:nth-of-type(2):focus h4{
+  background:url('../imagens/doc@1x.png') no-repeat;
+  background-size:.8em;
+  background-position:10px 25%;
+}
+section > div:nth-of-type(3) > div ul li:nth-of-type(3) h4{
+  background:url('../imagens/photo@0x.png') no-repeat;
+  background-size:1.1em;
+  background-position:8px 25%;
+}
+section > div:nth-of-type(3) > div ul li:nth-of-type(3):hover h4,
+section > div:nth-of-type(3) > div ul li:nth-of-type(3):focus h4{
+  background:url('../imagens/photo@1x.png') no-repeat;
+  background-size:1.1em;
+  background-position:8px 25%;
+}
+section > div:nth-of-type(3) > div ul li:last-of-type h4{
+  background:url('../imagens/editar@0x.png') no-repeat;
+
+  background-size:1em;
+  background-position:8px 25%;
+}
+section > div:nth-of-type(3) > div ul li:last-of-type:hover h4,
+section > div:nth-of-type(3) > div ul li:last-of-type:focus h4{
+  background:url('../imagens/editar@1x.png') no-repeat;
+
+  background-size:1em;
+  background-position:8px 25%;
+}
+section > div:nth-of-type(3) > div ul li p{
+  padding-left:.5em;
+  text-align:left;
+  color:#777;
+}
+
+section > div:nth-of-type(3) > div:last-of-type{
+	position:relative;
+	top:0;
+
+	width:95%;
+	height:10em;
+	margin:0 auto 8em;
+}
+
+section > div:nth-of-type(3) > div:last-of-type div{
+   position:absolute;
+   top:0;
+
+   width:100%;
+   height:12em;
+}
+section > div:nth-of-type(3) > div:last-of-type div p{
+	float:left;
+	color:#555;
+    width:100%;
+
+	font-size:1em;
+	font-weight:600;
+	text-transform:uppercase;
+	text-align:left;
+	text-indent:2em;
+	margin:-.5em 0 1em;
+}
+section > div:nth-of-type(3) > div:last-of-type div:first-of-type p{
+  background:url('../imagens/graphic@0x.png') no-repeat;
+  background-size:1em;
+  background-position:10px 50%;
+}
+section > div:nth-of-type(3) > div:last-of-type div:nth-of-type(2) p{
+  background:url('../imagens/doc@0x.png') no-repeat;
+  background-size:.9em;
+  background-position:10px 50%;
+}
+section > div:nth-of-type(3) > div:last-of-type div:nth-of-type(3) p{
+  background:url('../imagens/photo@1x.png') no-repeat;
+  background-size:1.1em;
+  background-position:10px 50%;
+}
+section > div:nth-of-type(3) > div:last-of-type div:nth-of-type(4) p{
+  background:url('../imagens/editar@0x.png') no-repeat;
+  background-size:1em;
+  background-position:10px 50%;
+}
+section > div:nth-of-type(3) > div:last-of-type div img{
+	width:100%;
+}
+section > div:nth-of-type(3) > div:last-of-type div{
+   display:none;
+}
+section > div:nth-of-type(3) > div:last-of-type div:first-of-type{
+   display:block;
+}
+
+section > div:nth-of-type(4){
+	position:relative;
+	top:0;
+
+	width:100%;
+	height:25em;
+
+	padding-top:2.8em;
+	background:#ecf0f1;
+	margin:0 auto;
+	display:none;
+	
+} 
+section > div:nth-of-type(4) figure{
+	position:relative;
+	top:0;
+	width:95%;max-width:40em;
+
+	margin:0 auto;
+}
+section > div:nth-of-type(4) figure iframe{
+	position:relative;
+	top:0;
+	width:100%;
+}
+
+section > div:nth-of-type(5){
+	position:relative;
+	top:0;
+
+	width:100%;
+	height:22em;
+    margin-bottom:-6em; 
+    padding:3em 0;
+    background:url('../imagens/agencia01.jpg') no-repeat;
+    background-size:cover;
+    background-position:50%;
+    box-shadow:0 5px 10px rgba(0,0,0,.3);
+}
+section > div:nth-of-type(5):before{
+	content:'';
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:rgba(236,240,241 ,.8);
+}
+
+section > div:nth-of-type(5) h3{
+	max-width:18em;
+	font-size:1.5em;
+	margin-bottom:1.5em;
+}
+
+section > div:nth-of-type(5) p{
+	width:90%;max-width:40em;
+
+	margin:0 auto;
+	font-size:1.7em;
+}
+
+/*nossos anuncios*/
+section > div:nth-of-type(7){
+	position:relative;
+	top:0;
+	padding:3em 0;
+	background:url('../imagens/textura.png') no-repeat;
+	background-size: cover;
+
+}
+section > div:nth-of-type(7) h3{
+	font-size:1.9em;
+	margin-bottom:1em;
+}
+section > div:nth-of-type(7) > div > div{
+		border:solid #bdc3c7 2px;
+		width:90%;max-width:30em;
+		margin:1em auto;
+		padding:.5em 0 1em;
+}
+
+section > div:nth-of-type(7) div h4{
+	color:#888;
+	font-size:1.8em;
+	margin:1.5em auto 0;
+}
+section > div:nth-of-type(7) div p{
+	width:95%;max-width:25em;
+	margin:1em auto 0;
+	font-size:1.1em;
+	text-align:center !important;
+}
+
+section > div:nth-of-type(7) div p:first-of-type{
+  color:#3498db;
+  font-size:1.5em;
+  font-weight:600;
+  text-align:left;
+  padding-left:1em;
+  text-transform:uppercase;
+
+  margin-bottom:-.5em;
+}
+
+/*passos para criar anúncio*/
+section > div.passos{
+	position:relative;
+	top:0;
+
+	width:100%;
+	padding:3em 0;
+	margin:7em auto -3em;
+
+}
+section > div.passos strong{
+	color:#333;
+	font-weight:600;
+}
+section > div.passos h3{
+  width:90%;
+
+  font-size:1.8em;
+  color:#f39c12;
+  margin-bottom:1em;
+}
+section > div.passos div p{
+	color:#777;
+	font-size:1.2em;
+	margin-bottom:.5em;
+	text-indent:.5em;
+	text-align:left;
+}
+section > div.passos div{
+	position:relative;
+	top:0;
+
+	width:100%;max-width:20em;
+	
+	margin:0 auto 2em;
+}
+section > div.passos div figure{
+	position:relative;
+	top:0;
+	width:100%;max-width:18em;
+	margin:0 auto;
+}
+section > div.passos div figure img{
+	width:100%;
+}
+

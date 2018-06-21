@@ -1,0 +1,44 @@
+@charset "UTF-8";
+header div ul li:first-of-type{
+	background:url('../imagens/card@1x.png') no-repeat;
+	background-size:3em;
+	background-position:50% 0;
+}	
+header div ul li:nth-of-type(2){
+	background:url('../imagens/peo@0x.png') no-repeat;
+	background-size:3em;
+	background-position:50% 0;
+}	
+header div ul li:nth-of-type(3){
+	background:url('../imagens/adpt@1x.png') no-repeat;
+	background-size:3em;
+	background-position:50% 0;
+}
+header div ul li:nth-of-type(4){
+	background:url('../imagens/credito@0x.png') no-repeat;
+	background-size:3em;
+	background-position:50% 0;
+}	
+header div ul li:nth-of-type(5){
+	background:url('../imagens/final@2x.png') no-repeat;
+	background-size:3em;
+	background-position:50% 0;
+}
+section p{
+	width:90%;
+	margin:.5em auto;
+	font-size:1.3em;
+	color:#666;
+}
+section p:last-of-type{
+	display:block;
+	color:#f39c12;
+	font-weight:600;
+	margin-bottom:5em;
+}
+
+@media screen and (min-width:600px){
+	section{
+		margin-top:10em;
+	}
+}

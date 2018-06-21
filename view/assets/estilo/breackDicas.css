@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@media screen and (min-width:350px){
+	/*bloco da dica*/
+	div.paiArtigos section > div  article h3{
+		top:.5em;
+		font-size:1.5em;
+	}
+}
+@media screen and (min-width:450px){
+	div.primDiv{
+		position:relative;
+		top:13em;
+
+		margin-bottom:-10em;
+	}
+	
+	section.prinSect div.paiDic div{
+		margin-bottom:2em;
+	}
+
+	/*pagina dicas*/
+	div.paiArtigos section > div article p:nth-of-type(2),
+	div.paiArtigos section > div article p:last-of-type,
+	div.paiArtigos section > div article ul li a{
+		text-align:left;
+	}
+	
+	div.paiArtigos section.prinSect > div article ul li a{
+		padding-left:1.7em;
+	}
+}
+
+@media screen and (min-width:650px){
+
+        section.prinSect div.paiDic > p:first-of-type{
+		   top:-.5em;
+		   width:90%;max-width:15em;
+	      
+	       font-size:2em;
+	       margin:0 auto 1.5em;
+	    }	
+		section.prinSect div.paiDic > p:nth-of-type(2){
+	 		font-size:1.3em;
+		}
+		section.prinSect div.paiDic div h3{
+		  top:.3em;
+		}
+}
+
+@media screen and (min-width:950px){
+		div.primDiv{
+			margin-bottom:-12em;
+		}
+
+		section.prinSect div.paiDic{
+		   width:90%;max-width:55em;
+		}
+
+		section.prinSect div.paiDic div{
+			width:25em;
+		    display:inline-block;
+
+		    margin-left:1em;
+		}
+		section.prinSect div.paiDic div p{
+			top:1.5em;
+			max-width:10em;
+		}
+
+		section.prinSect div.paiDic div ul{
+			top:2em;
+			margin-bottom:2em;
+		}
+	
+}
+
+@media screen and (min-width:1250px){
+	/*este e pg dica*/
+	section div.paiCon > button{
+		display:none;
+	}
+	section div.paiCon div.filtro{
+		top:12em;
+		left:0 !important;
+		width:100%;max-width:15em !important;
+	}
+	section div.paiCon div.filtro button{
+		display:none;
+	}
+}
+
+@media screen and (min-width:1600px){
+	/*este e pg dica*/
+	section div.paiCon div.filtro{
+		top:18em;
+		width:100%;max-width:20em !important;
+	}
+}
+
+
+@media screen and (min-width:1800px){
+	/*este e pg dica*/
+	section div.paiCon div.filtro{
+		width:100%;max-width:25em !important;
+	}
+}
+

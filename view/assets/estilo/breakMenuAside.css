@@ -1,0 +1,297 @@
+@charset "UTF-8"; 
+@media screen and (min-width: 315px){
+    /*body{
+        border:solid red 2px;
+      }*/
+      /*este pega o entrar*/
+
+  aside form label[for="tEntrar"]{  
+    left: 3.5em;
+  }
+
+  /*seleciona os links de login face*/
+ aside div:first-of-type  ul li a{
+    left: 1.1em;
+    }
+
+  form fieldset input#mostraS{
+    left:14.5em;
+  }
+}
+
+@media screen and (min-width: 335px){
+    /*body{
+        border:solid red 2px;
+      }*/
+      /*este pega o entrar*/
+       aside div:first-of-type ul li:last-child{
+          right: 3.3em;
+          top: 3.5em;
+
+          width: 32%;
+         }
+           /*seleciona os links de login face*/
+     aside div:first-of-type  ul li:first-of-type a{
+        left: .9em;
+        //border:solid red 2px;
+        }
+  
+}
+
+@media screen and (min-width: 345px){
+    /*body{
+        border:solid red 2px;
+      }*/
+           /*seleciona os links de cadastre e face*/
+     aside div:first-of-type  ul li a{
+          left: 1.9em;
+      }
+      /*recuperar senha legend azul claro*/
+    aside div:last-of-type form fieldset legend{
+      padding-top: .5em;
+      height: 3.5em;
+    }
+    /*Seleciona o <p> do bloco recuperar senha*/
+    aside div:last-of-type form fieldset p{
+      font-size: 1.1em;
+      top:1em;
+
+      //border:solid red 2px;
+    }
+
+
+    aside div:last-of-type{
+            height: 20em;
+            left: 1em;
+          }
+
+    /*pega o email que recupera a senha*/
+    aside form fieldset input#tMailRecupera{
+      top:2em;
+      height: 3.2em;
+    }
+    aside form  label[for="tMailRecupera"]{
+      top:4em;
+    }
+
+    label[for="tMailRecupera"].efeitoLabel{
+      top:3.8em;
+      }
+    /*seleciona recuperar senha button*/
+    aside form fieldset input#tR{
+      top: 5em;
+      height: 3em;
+
+      //border:solid red 2px;
+    }
+
+    aside form fieldset label[for="tR"]{
+      top:5.8em;
+      left: 4.5em;
+
+      //border:solid red 2px;
+    }
+}
+
+
+@media screen and (min-width: 360px){
+    /*body{
+        border:solid red 2px;
+      }*/
+           /*seleciona os links de login face*/
+     
+      aside div:first-of-type ul li:last-child{
+        right: 4.3em;
+       }
+        /*quero cadastrar <p>*/
+     aside div:first-of-type > p{
+      left: 2em;
+    }
+  
+}
+
+@media screen and (min-width: 390px){
+    /*body{
+        border:solid red 2px;
+      }*/
+
+      /*-----Inicio formatacao do aside menu-----*/
+      aside{ 
+          width: 70%;max-width:18em;min-width: 18em;
+          height: 22em;
+
+          overflow: hidden;
+
+          border: solid #333;
+          border-width: 0 1px 1px 0;
+          
+          -webkit-border-radius:0 0 10px 0; 
+          -moz-border-radius:0 0 10px 0; 
+          border-radius:0 0 10px 0;
+        }
+
+      /*formatar insira seu email e digite sua senha*/
+      aside div:first-of-type form input#tSenha{
+        left: 1em;
+        width: 55%;
+      }
+
+      /*formatar insira seu email e digite sua senha*/
+      aside div:first-of-type form input#tM{
+        left: 1em;
+        width: 85%;
+      }
+
+            /*seleciona o label dos form de aside*/
+      aside form fieldset label{
+        left: 1.3em;
+      }
+      /*estilo para efeito no label de suber escrito*/
+      aside form fieldset label.efeitoLabel{
+        left: 1.5em;
+      }
+      /*configuara button entrar*/
+      aside form input#tEntrar{
+        width: 30%;
+        float: right;
+
+        height: 2.4em;
+
+        margin: -1.7em 2.5em  0;
+
+        //border: solid red 3px;
+      }
+
+      /*este eh o label entrar*/
+      aside form label[for="tEntrar"]{
+        float: right;
+
+        margin: -2.5em 5.5em  0;
+      }
+      /*este pega o esqueceu sua senha?*/
+      aside div:first-of-type button{
+        //height: 1.1em;
+        top: -4em;
+        margin-bottom: 3.5em;
+
+        color:#000;
+       
+        //border: solid red 2px;
+      }
+
+      /*input checkbox*/
+
+     input[type="checkbox"] + span:before{
+      top:-1.7em;
+      left: 1em;
+     }
+
+     form fieldset label[for="tMan"]{
+        top:1em;
+        left: 2.8em;
+        display: inline-block;
+      }
+             /*seleciona os links de login face*/
+      aside div:first-of-type  ul li:first-of-type a{
+        height: 2em;
+        left: .7em;
+        }
+
+        /*posicionamento vertical dos dois links*/
+      aside div:first-of-type  ul{
+        top:-2.7em;
+        }
+
+        /*seleciona o pai li do button cadastre*/
+       aside div:first-of-type ul li:last-child{
+          right: 2.7em;
+          width: 35%;
+          line-height: 1.5;
+         }
+
+        /*quero cadastrar <p>*/
+       aside div:first-of-type > p{
+          left: .8em;
+          top:-5em;    
+        }
+
+      /*  bloco recuperar senha   */
+       aside div:last-of-type{
+        height: 13em;
+      }
+
+      /*recuperar senha legend azul claro*/
+      aside div:last-of-type form fieldset legend{
+        height: 2.3em;
+        line-height: 2;
+        background:#4b67a1;
+      }
+      /*Seleciona o <p> do bloco recuperar senha*/
+      aside div:last-of-type form fieldset p{
+        margin-top: 0;
+        font-size: 1em;
+        font-weight: 600;
+      }
+      /*pega o email que recupera a senha*/
+      aside form fieldset input#tMailRecupera{
+        top:.8em;
+      }
+
+      aside form  label[for="tMailRecupera"]{
+        top:3em;
+      }
+      /*criado para configurar o class efeitoLabel*/
+      label[for="tMailRecupera"].efeitoLabel{
+        top:2.7em;
+        left: .5em;
+      }
+      /*seleciona recuperar senha button*/
+      aside form fieldset input#tR{
+        top: -.1em;
+      }
+
+      aside form fieldset label[for="tR"]{
+        top:2em;
+        left: 2.8em;
+      }
+
+      aside div.fundoEscuro{
+      cursor: pointer;
+      background:#fff;
+    }
+
+     form fieldset input#mostraS{
+        left:8.5em;
+  }
+
+  
+}
+@media screen and (min-width: 560px){ 
+    /*-----bloco recuperar senha------*/
+    aside div:last-of-type{
+      top: 2.7em;
+      //border:solid red 2px;
+    }
+
+}
+
+@media screen and (min-width: 825px){ 
+  
+aside{ 
+    position: absolute;
+    top:4em;
+    left: .5em;
+
+    border-width:1px;
+          
+    -webkit-border-radius:10px; 
+    -moz-border-radius:10px; 
+     border-radius: 10px;
+  }
+
+  p.paragrafoJs{
+    position:absolute;
+    opacity: 0;
+  }
+
+}

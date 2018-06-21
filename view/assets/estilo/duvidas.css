@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+div.primDiv{
+	position:relative;
+	top:7em;
+	width:100%;
+
+	margin:0 auto -21.5em;
+}
+
+div.primDiv figure{
+	position:relative;
+	top:0;
+
+	width:100%;max-width:15em;
+	height:4em;
+
+	margin:0 auto;
+}
+div.primDiv figure img{
+	position:relative;
+	top:0;
+	width:100%;
+}
+div.primDiv section h3{
+	top:1.5em;
+	font-size:1.7em;
+	color:#777;
+
+	margin-bottom:4em;
+}
+
+div.primDiv section > div{
+	position:relative;
+	top:1.3em;
+
+	margin-bottom:-8em;
+}
+
+div.primDiv section > div article{
+	position:relative;
+	top:0;
+	width:100%;
+	padding:2.5em 0;
+	margin:0 auto 3em;
+}
+div.primDiv section > div article:nth-of-type(odd){
+	background:rgba(236, 240, 241,.6); 
+}
+div.primDiv section > div article h4{
+	width:100%;
+	font-size:1.5em;
+	color:#e98b39;
+
+	margin-bottom:2em;
+}
+div.primDiv section > div article div{
+	position:relative;
+	top:0;
+
+	margin-bottom:2em;
+}
+
+div.primDiv section > div article div h5{
+	font-size:1.3em;
+	color:#999;
+	width:100%;max-width:20em;
+	text-align: center;
+	padding-left:1em;
+	margin:0 auto 1em;
+}
+
+div.primDiv section > div article div p{
+	width:90%;max-width:20em;
+	margin: 0 auto;
+}
+div.primDiv section > div article div p strong{
+	color:#333;
+	font-weight:600;
+}
+/*pequeno breack point*/
+@media screen and (min-width:350px){
+	div.primDiv section > div article h4{
+		font-size:1.7em;
+	}	
+	div.primDiv section > div article div h5{
+		font-size:1.4em;
+	}	
+	div.primDiv section > div article div p{
+		font-size:1em;
+	}
+}
+/*pequeno breack point*/
+@media screen and (min-width:450px){
+
+	div.primDiv{
+		top:12em;
+		margin:0 auto -17em;
+	}
+	div.primDiv section h3{
+		top:2em;
+		font-size:2em;		
+		margin-bottom:4.5em;
+	}
+	div.primDiv section > div article h4{
+		font-size:1.8em;
+	}	
+	div.primDiv section > div article div h5{
+		font-size:1.6em;
+	}	
+	div.primDiv section > div article div p{
+		font-size:1.1em;
+		max-width:35em;
+	}
+}
+@media screen and (min-width:860px){
+	div.primDiv{
+		margin:0 auto -22em;
+	}
+}
+@media screen and (min-width:1300px){
+	div.primDiv section > div article > div{
+		 position:relative;
+		 top:0;
+		 width:90%;max-width:73em;
+
+		 margin:0 auto;
+	}
+	div.primDiv section > div article h5{
+		position:relative;
+		top:.5em;
+		
+	}
+	div.primDiv section > div article div div{
+		max-width:35em;
+		display:inline-block;
+		margin:0 0 3em 1em;
+	}
+}

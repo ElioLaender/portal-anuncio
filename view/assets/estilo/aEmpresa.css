@@ -1,0 +1,140 @@
+@charset "UTF-8";
+div.paiTextos section:last-of-type{
+    position:relative;
+    top:0;
+
+   	padding:2em 0 4em;
+
+   	margin-bottom:-15em;
+  	background:#555;
+	background:url('../imagens/texturaAzul@1x.jpg') no-repeat;
+    background-position:0 80%;
+    background-size:cover; 
+}
+div.paiTextos section:last-of-type:before{
+	content:'';
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+
+	background:rgba(236,240,241 ,0.3);
+}
+
+/*pai div segunText*/
+div.segunText{
+	position: relative;
+	top:0;
+}
+/*bloco separado background people*/
+div.paiTextos div.backAempr{
+	position:relative;
+	top:0;
+	width:100%;
+	height:20em;
+
+	background:url('../imagens/people.jpg') no-repeat;
+    background-position:0 80%;
+    background-size:cover; 
+}
+
+div.paiTextos div.backAempr::before{
+	content: '';
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	background:rgba(0,0,0,.5);
+}
+
+div.backAempr > p{
+	top:4em;
+	width:90%;max-width:17em;
+
+	margin: 0 auto;
+	
+	color:#fff;
+	font-weight:600;
+	font-size:1.5em;
+	text-shadow:2px 7px 20px #111;
+}
+/*fim do bloco people*/
+section.sect > h3.tituloEmpresa{
+	position: relative;
+	top:1em;
+
+	width:95%;max-width:20em;
+
+	font-size:1.3em;
+	color:#fff;
+	opacity:1 !important;
+}
+
+/*configurar espaco dos textos*/
+div.segunText > p{
+	width:90%;max-width:30em;
+	font-size:1.3em;
+	margin:2em auto 0;
+	color:#fff;
+}
+div.segunText > p strong{
+	color:#f1c40f;
+	font-weight:600;
+}
+div.segunText > div > a {
+	display:block;
+	max-width:30em;
+	margin:2em auto 0;
+}
+/*pego a logo expressaHost*/
+div.segunText div a figure{
+    width: 100%;max-width:27em;
+
+    margin:0 auto;
+} 
+div.segunText img{
+	top:.6em;
+	width:90%;
+	margin-bottom: 1.5em;
+
+} 
+
+/*configura o link ir para expressaHost*/
+div.segunText div ul{
+	top:.5em;
+	width:90%;max-width:20em;
+
+	margin:0 auto;
+	display:block;
+	overflow:visible;
+}
+
+div.segunText ul li a{
+	letter-spacing: 0;
+	text-align:center;
+	text-transform:uppercase;
+    padding:0 0 2.5em;
+	font-size:1.2em;
+	font-weight:600;
+	color:#fff;
+	
+	border-bottom:solid #fff 2px;
+ 	
+
+	-webkit-transition:  .1s linear;
+	-moz-transition:  .1s linear;
+	transition:  .1s linear;
+}
+div.segunText ul a:focus,
+div.segunText ul a:hover{
+	color:#f1c40f;
+	border-bottom:solid #f1c40f 2px;
+
+}
+/*fim do link expressaHost*/
+/*fim do terceiro bloco*/
+
+

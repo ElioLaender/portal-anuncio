@@ -1,0 +1,161 @@
+@charset "UTF-8";	
+div.tudo{
+  background:#fff;
+}
+div.paiS section div.pa{
+  position:relative;
+  top:-2.9em;
+	height:16em;
+	background:url('../imagens/manOffice@1x.jpg') no-repeat;
+	background-position:80% 100%;
+  margin-bottom:-1.5em;
+}
+div.paiS section div.pa > p{
+	top:3em !important;
+	max-width:20em;
+
+  -moz-text-shadow:10px 8px 10px rgba(0,0,0,.5) !important;
+  -webkit-text-shadow:10px 8px 10px rgba(0,0,0,.5) !important;
+	text-shadow:10px 8px 10px rgba(0,0,0,.5) !important;
+}
+div.paiF form fieldset.paiDados fieldset legend{
+  color:#888 !important;
+}
+div.paiS section p.anunParagr{
+  padding:.5em;
+  line-height:1.4 !important;
+}
+div.paiS section h2.tituCur{
+	padding:.8em 1em;
+	font-size:1em;
+
+	margin-bottom:-5em;
+}
+h3.preen{
+  font-size:1.6em;
+}
+div.paiF form fieldset label{
+  font-size:1.1em !important;
+}
+/*Primeiro fieldset*/
+fieldset.paiDados fieldset{
+  top:-5em;
+ 	max-width:30em;
+ 	margin:0 auto;
+}
+fieldset label[for="cIdade"]{
+  display:block;
+  width:95%;
+}
+fieldset.paiDados select,
+fieldset.paiDados select.box{
+  width:95% !important;
+  display:block;
+  border:solid red 2px;
+}
+
+/*contato*/
+div.paiF form fieldset.paiCont{
+	top:-5em;
+}
+div.paiF form fieldset.paiCont fieldset:last-of-type{
+	margin:0 auto 0;
+	display:none;
+}
+div.paiF form fieldset.paiCont fieldset.revelar{
+  top:-3em;
+}
+/*escolaridade*/
+div.paiF form fieldset.capacit{
+	top:-7em;
+	max-width:30em;
+
+	margin: 0 auto;
+}
+
+div.paiF form fieldset.capacit fieldset:last-of-type{
+	width:90%;
+	margin:2em auto 0;
+	line-height:1.2;
+}
+div.paiF form fieldset.capacit fieldset:last-of-type textarea,
+div.paiF form fieldset.exper > fieldset:first-of-type textarea{
+  width:95%;
+  height:8em;
+  font-size:1.1em;
+  margin: 0 auto 1em;
+  resize:vertical;
+  display:block;
+}
+
+
+/*Bloco experiencia profissional*/
+div.paiF form fieldset.exper{
+	top:0;
+
+	margin:-5em auto 3em;
+
+	background:rgba(236, 240, 241,.6);
+
+}
+div.paiF form fieldset.exper legend{
+	width:90%;
+	font-size:1.2em;
+}
+
+/*textarea*/
+div.paiF form fieldset.exper fieldset label[for="cAtiv"]{
+	top:.2em;
+	font-size:1.3em !important;
+	text-align:center;
+
+}
+div.paiF form fieldset.exper > fieldset:first-of-type{
+	margin-top: 1em;
+	max-width:30em;
+
+	margin: 0 auto;
+}
+
+
+div.paiF form fieldset.exper > fieldset:last-of-type{
+	margin:1em auto;
+	max-width:30em;
+}
+/*area de atuacao*/
+div.paiF form fieldset.hab{
+	top:-5em;
+}
+div.paiF form fieldset.hab > fieldset:first-of-type div{
+	top:-.5em !important;
+}
+/*checkbox habilitacao*/
+div.paiF form fieldset.hab > fieldset:last-of-type{
+	width:83%;max-width:14.5em;
+
+	margin:0 auto;
+	display:block;
+}
+div.paiF form fieldset.hab > fieldset:last-of-type label{
+	top:-1.5em;
+	width:2em;
+	text-indent:0;
+	text-transform:uppercase;
+	margin-right:.4em;
+	margin-bottom:2em;
+	display:inline-block;
+}
+
+div.paiF form fieldset.hab > fieldset:last-of-type input[type="checkbox"]:checked + span:before {
+    background-color:#3498db;
+}
+div.paiF form fieldset.desc{
+	background:url('../imagens/womanOffice@1x.jpg') no-repeat;
+	background-size:cover;
+	background-position:100% 50%;
+
+	margin-bottom:4.5em;
+}
+div.paiF form fieldset.desc > p{
+	max-width:28em;
+}

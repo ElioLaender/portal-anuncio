@@ -1,0 +1,131 @@
+@charset "UTF-8"; 
+@media screen and (min-width:350px){
+	div.paiBlo > div.espec h5{
+		left:0;
+	}
+}
+@media screen and (min-width:380px){
+	div.banners > h3{
+		top:1em;
+
+		max-width:15em;
+		font-size:1.7em;
+		margin-bottom:2em;
+	}
+}
+
+@media screen and (min-width:750px){
+	div.banners > h3{
+		top:.8em;
+		font-size:2em;
+		margin-bottom:1em;
+	}
+
+	div.paiBlo > div{
+		display:inline-block;
+	}
+
+	div.paiBlo ul li a{
+		font-weight:600;
+	}
+	div.paiBlo ul.basic li a{
+		background:#3498db;
+	}
+	div.paiBlo ul.basic li a:hover,
+	div.paiBlo ul.basic li a:focus{
+		background:#2980b9;
+	}
+
+	div.paiBlo ul.complet li a{
+		background:#2ecc71;
+	}
+	div.paiBlo ul.complet li a:hover,
+	div.paiBlo ul.complet li a:focus{
+		background:#27ae60;
+	}
+
+	div.itens div:hover p:last-of-type{
+		display:block;
+	}
+	div.paiBlo > div.espec{
+		top:3em;
+		left:1.5em;
+		overflow:hidden;
+	    max-width:38em;	
+	}
+	div.paiBlo > div.espec h5{
+		max-width:20em;
+		left:-1em;
+		font-size:1.7em;
+	}
+	/*bloco de especificação dl*/
+	div.paiBlo > div.espec dl{
+		float:left;
+		min-height:15em;
+		margin:.5em .5em 0 1.5em;
+	}
+	div.paiBlo > div.espec dl dt{
+		text-indent:-200em;
+		color:rgba(236, 240, 241,.5); 
+	}
+}
+@media screen and (min-width:860px){
+	div.banners{
+		margin-bottom:-28em;
+	}
+
+	div.paiBlo > div.espec h5{
+		left:-2.5em;
+		font-size:2em;
+		text-align:center;
+		width:125%;
+	}
+}
+@media screen and (min-width:1000px){
+	div.banners > h3{
+		font-size:2.2em;
+		max-width:100%;
+		margin-bottom:1em;
+	}
+	
+}
+@media screen and (min-width:1100px){
+	div.paiBlo{
+		overflow:hidden;
+	}
+	div.paiBlo > div.espec{
+		float:right;
+		margin:-3em 5em 0 0;
+	}
+	div.paiBlo > div{
+		margin-left:1em;
+	}
+	
+	div.paiRodape footer fieldset{
+		position:absolute;
+		top:-8em;
+		width:100%;
+	}
+}
+@media screen and (min-width:1400px){
+	div.paiBlo > div.espec h5{
+		max-width:100%;
+		font-size:2.3em;
+		margin:1em 0;
+	}
+	div.paiBlo > div.espec{
+			float:none;
+			left:4em;
+			max-width:80em;
+		}
+}
+@media screen and (min-width:1600px){
+	div.paiBlo > div.espec{
+			float:none;
+			left:0;
+			max-width:100em;
+		}
+
+}
+
+

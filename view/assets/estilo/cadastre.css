@@ -1,0 +1,335 @@
+@charset "UTF-8";	
+div.slideCa{
+	position: relative;
+	top:4em;
+
+	width:100%;
+	height:18.5em;
+
+	margin:0 auto;
+
+ 	z-index:1;
+}
+
+div#slide{
+	width:100%;
+}
+/*formatacao padrao*/
+ div#slide > div{
+ 	position:relative;
+
+	width:100%;
+	height:18.5em;
+
+	margin: 0 auto;
+}
+
+div#slide > div h3{
+	width:70%;max-width:12em;
+	top:1em;
+	font-size:1.3em;
+ 	color: #fff;
+}
+
+div#slide > div p,
+div#slide > div p em{
+ 	color:#fff;
+	margin:0 auto;
+	font-size:1em;
+	max-width:17em;
+}
+div#slide > div p em{
+	font-weight:600;
+}
+
+div#slide > div::before{
+	content: '';
+
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:rgba(0,0,0,.4);
+}
+
+/*fim formatacao padrao*/
+
+/*numeros que chamam as imagens*/
+div#nav{
+	position:relative;
+	top:5.5em;
+
+	height:2em;
+	width:100%;
+	text-align:center;
+}
+div#nav a{
+	position: relative;
+	left:1em;
+	width:2.5em;
+	height:1.4em;
+
+	color:#fff;
+	font-size:.8em;
+	font-weight:600;
+
+	background:rgba(52, 152, 219,.8);
+
+	box-shadow:0 0 0 2px #fff, 
+	0 0 0 4px rgba(41, 128, 185,.8);
+	 -webkit-border-radius:3px; 
+    -moz-border-radius:3px; 
+    border-radius:3px;
+
+	margin-right:2.8em;
+	padding-top:.2em;
+
+	-webkit-transition:.3s linear;
+	-moz-transition:.3s linear;
+	transition:.3s linear;
+}
+.nav a:focus { 
+	outline: none; 
+}
+
+div#nav a.activeSlide{
+	background:#fff;
+	color:#222;
+	font-weight:800;
+}
+
+/*editar o primeiro bloco do slide*/
+
+ div#slide > div:first-child{
+ 	background: url('../imagens/manComputer@1x.jpg') no-repeat;
+ 	background-size:cover;
+ 	background-position:50%;
+ }
+div#slide > div:first-child h3{
+	color:#f39c12;
+	font-weight:600;
+}
+div#slide > div:first-child::before{
+	background:rgba(236, 240, 241,.7);
+
+}
+ div#slide > div:first-child p:first-of-type{
+ 	position: relative;
+ 	top:2.5em;
+
+ 	width:80%; 
+ 	color:#666;
+ 	font-weight:600;
+ 	text-align: center;
+ }
+div#slide > div:first-of-type p em{
+	color:#444;
+
+}
+div:first-of-type > div.butCad ul li > a{
+	background:#e67e22;
+	border-color:#e67e22;
+}
+div:first-of-type > div.butCad ul li > a:hover,
+div:first-of-type > div.butCad ul li > a:focus{
+	background:none;
+	color:#555;
+}
+/*fim do primeiro bloco slide*/
+
+/*inicio do segundo bloco slide*/
+div#slide > div:nth-of-type(2){
+ 	background:url('../imagens/reuniao@1x.jpg') no-repeat;
+ 	background-size: cover;
+ 	background-position: 0 50%;
+}
+div#slide > div:nth-of-type(2)::before{
+background:rgba(0,0,0,.5)
+
+}
+
+div#slide > div:nth-of-type(2) p:first-of-type{
+	top:4em;
+	font-size:1.3em;
+	font-weight:600;
+	color:#fff;
+	width:80%;
+}
+div#slide > div:nth-of-type(2) p:first-of-type em{
+	color:#f1c40f; 
+	font-weight:600;
+}
+div#slide > div:nth-of-type(2) h3:first-of-type{
+	top:2em;
+	color:#fff;
+}
+/*fim do seg bloco do slide*/
+
+/*inicio do terceiro bloco slide*/
+div#slide > div:nth-of-type(3){
+ 	background:url('../imagens/cur@1x.jpg') no-repeat;
+ 	background-size:cover;
+ 	background-position:100% 50%;
+}
+div#slide > div:nth-of-type(3) h3{	
+	width:95%;
+	font-size:1.6em;
+	font-weight:500;
+}
+div#slide > div:nth-of-type(3) p{
+	top:2em;
+	width:80%;max-width:15em;
+	color:#f1c40f;
+	font-size:1.4em;
+	font-weight:600;
+}
+
+/*fim do terceiro bloco do slide*/
+/*inicio do quartos bloco slide*/
+div#slide > div:nth-of-type(4){
+ 	overflow: hidden;
+
+ 	background:url('../imagens/womanOffcie@1x.jpg') no-repeat;
+ 	background-size:cover;
+ 	background-position:100% 50%;
+ 	
+}
+div#slide > div:nth-of-type(4) h3{
+	top:1.5em;
+	width:90%;
+	color:#3498db;
+}
+div#slide > div:nth-of-type(4) p{
+	top:3em;
+	width:70%;
+	color:#fff; 
+	font-size:1.1em;
+	font-weight:600;
+}
+div#slide > div:nth-of-type(4) em{
+  color:#58ace3;
+  font-weight:600;
+}
+div#slide > div:nth-of-type(4)::before{
+	background:rgba(0,0,0,.7);
+}
+/*fim do qaurto bloco*/
+
+/*button link*/
+div.butCad{
+	position: relative;
+	top:3.7em;
+
+	width: 8em;
+	margin: 0 auto;
+}
+div.butCad ul {
+	overflow: visible;
+}
+div.butCad ul li > a{
+	 background:#2ecc71;
+
+	 font-size:1.1em;
+
+	 border:solid #2ecc71 3px;
+	 -webkit-border-radius:5px; 
+     -moz-border-radius:5px; 
+	 border-radius:5px;
+
+    -moz-transition:.5s linear;
+    -webkit-transition:.5s linear;
+    transition:.2s linear;
+}
+/*button 3 slide*/
+div.linkCur ul li > a{
+	 top:0;
+	 background:#62ddf8;
+
+	 border:solid #62ddf8 3px;
+}
+
+div.linkAnu ul li > a{
+	 top:1em;
+	 background:#3498db;
+	 text-align:center;
+	 padding:.5em 0 0 0;
+	 border:solid #3498db 3px;
+}
+
+div.butCad ul li > a:hover,
+div.butCad ul li > a:focus{
+	background:none;
+	color:#fff;
+}
+
+/*fim do bloco pai*/
+div.chamaImg{
+	position: relative;
+    top:-8em;
+
+	width:95%;
+	margin: 0 auto;
+	z-index: 3;
+}
+div.chamaImg > button{
+	position:absolute;
+	opacity:.3;
+	
+	width:2em;
+	height:2em;
+
+	background:#000;
+
+	border:solid #2980b9 0;
+   
+     -moz-transition:.1s linear;
+    -webkit-transition:.1s linear;
+    transition: .1s linear;
+
+    cursor: pointer;
+}
+div.chamaImg > button:hover,
+div.chamaImg > button:focus{
+	width:2.5em;
+	height:2.5em;
+
+	opacity: .5;
+}
+
+div.chamaImg > button.btn2{
+  right: 0;
+}
+
+div.chamaImg > button.btn1::after{
+  content: '';
+
+  width: .8em;
+  height: .8em;
+  
+  margin-left: .4em;
+
+  -webkit-transform:rotate(-135deg);
+  -moz-transform:rotate(-135deg);
+  transform:rotate(-135deg);
+
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff; 
+}
+div.chamaImg > button.btn2::after{
+  content: '';
+
+  width:.8em;
+  height:.8em;
+  
+  margin-right:.4em;
+
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  transform:rotate(45deg);
+
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff; 
+}
+
+

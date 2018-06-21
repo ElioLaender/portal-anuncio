@@ -1,0 +1,323 @@
+@charset "UTF-8";	
+ 
+/*este eh o bloco da propaganda*/
+ section.colherEmail > div{
+	position: relative;
+	top:0;
+
+	width:100%;
+	height:33em;
+
+	background:#ecf0f1;
+  padding:3em 0;
+
+	-moz-transition: right .4s ease-in-out;
+    -webkit-transition: right .4s ease-in-out;
+    transition:left .4s ease-in-out;
+
+    z-index: 3;
+
+}
+ section.colherEmail > div::before{
+ 	content: '';
+
+ 	position: absolute;
+ 	top:0;
+ 	bottom:0;
+ 	right:0;
+ 	left:0;
+
+ 	background:url('../imagens/cupon@2x.png') no-repeat;
+ 	
+ 	background-position:100% 30%;
+ 	background-size:8em;
+
+ 	opacity:.9;
+ }
+ section.colherEmail > div::after{
+ 	content:'';
+
+ 	position:absolute;
+ 	top:0;
+ 	left:0;
+ 	right:0;
+ 	bottom:0;
+
+ 	background:rgba(236, 240, 241,.5);
+ 	z-index:1;
+ }
+ section.colherEmail > div form{
+ 	position: relative;
+	width:95%;max-width:30em;
+	margin: 0 auto;
+
+}
+section.colherEmail > div h3, section.colherEmail > div p{
+	width: 90%;max-width: 17em;
+
+	margin:-.5em auto;
+	font-size:1.4em;
+
+  padding-bottom:.8em;	
+
+  color:#222;	
+ 	z-index:2;
+}
+section.colherEmail > div h3{
+	top:.3em;
+	font-size:1.6em;
+}
+section.colherEmail form fieldset label{
+	top:3em;
+	left:0;
+	color:#555;
+	z-index:4;
+}
+section.colherEmail form fieldset label.efeitoLabel{
+  top:3.3em;
+}
+
+section.colherEmail form fieldset input{
+	top:2em;
+	width:100%;
+	height:2em;
+
+	padding-top:.5em;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+
+	text-indent:.5em;
+	font-size:1.2em;
+	background:transparent;
+	border-bottom: solid #333 1px;
+  	-o-transition:.2s ease-in-out;
+  	-webkit-transition:.2s ease-in-out;
+  	transition:.2s ease-in-out;
+  	z-index:2;
+}
+
+/*aqui eh campo senha*/
+
+section.colherEmail form fieldset input#tS{
+
+	background:url('../imagens/olho.png') no-repeat;
+  background-size:1em;
+  background-position:95% 85%;
+  	z-index:5;
+}
+section.colherEmail form fieldset input#olho{
+	position: absolute;
+	left:20em;
+	top:21em;
+	
+	width:10em !important;
+	height:5em;
+  font-size:.5em;
+	display:block;
+	z-index:6;
+  opacity:0;
+}
+
+/*botao subimite do bloco propaganda, nao retirar height*/
+form fieldset input#tReceber{
+    top:5.3em;
+
+	  width:80%;max-width:20em;
+	  height:3em;
+
+    color:#fff;
+    text-transform: uppercase;
+	  font-size:1em;
+    font-weight:600;
+    padding:0;
+    display:block;
+
+	border:5px solid rgba(192, 57, 43,.3);
+	-webkit-border-radius:29px;
+  	-moz-border-radius:29px;
+  	border-radius:29px;
+
+	background:#e74c3c;
+}
+
+ section.colherEmail form fieldset input#tReceber:focus,
+ section.colherEmail form fieldset input#tReceber:hover{
+    background:rgba(192, 57, 43,1);
+ }
+ section.colherEmail form fieldset p.min{
+  top:3em;
+  left:0em;
+
+  width:100%;
+  height:1em;
+  font-size:1em;
+  text-align:left;
+  display:inline-block;
+}
+/*retorno*/
+div#retorno{
+  position:relative;
+  top:0em;
+  width:95%;
+  height:20em;
+
+  padding:1em .5em;
+
+  background:#fff;
+
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+
+  box-shadow:5px 5px 15px rgba(0,0,0,.3);
+
+  display:none;
+  margin:0 auto -20em;
+
+  z-index:10;
+}
+
+div#retorno p{
+  width:85%;
+  margin:2em auto 0;
+  color:#555;
+  line-height:1.8;
+}
+div#retorno a{
+  width:100%;
+
+
+   margin-top:.5em;
+  color:#999;
+  font-weight:600;
+  font-size:1.3em;
+  text-align:center;
+
+  z-index:1
+}
+
+div#retorno button.butR{
+  position:relative;
+  width:95%;
+  color:#3498db;
+  display:block;
+  margin:0 auto;
+  font-size:1.3em;
+  font-weight:600;
+}
+div#retorno button.butR:hover,
+div#retorno button.butR:focus{
+  border-bottom:solid #3498db 1px;
+}
+div#retorno button.fec{
+  position:absolute;
+  right:.5em;
+  top:.5em;
+  width:2.5em;
+  height:2.5em;
+ 
+  background:url('../imagens/fech@1x.png')no-repeat;
+  background-size:2.3em;
+  background-position:50%;
+}
+
+/*recuperar senha vindo do link retorno*/
+div.recSenh{
+  position:relative;
+  top:5em;
+
+  width:100%;max-width:19em;
+  height:25em;
+
+  background:#fff;
+
+  margin:0 auto -27em;
+  display:none;
+
+  box-shadow:15px 15px 20px rgba(0,0,0,.2);
+  z-index:50;
+}
+div.recSenh > button{
+  position:relative;
+  top:1em;
+  left:1em;
+  height:1.3em;
+  color:#666;
+  font-size:1.1em;
+
+  z-index:3;
+}
+div.recSenh > button:hover,
+div.recSenh > button:focus{
+  border-bottom: solid #777 1px;
+}
+div.recSenh form fieldset{
+  position:relative;
+  top:3em;
+}
+div.recSenh form fieldset legend{
+
+  top:1.3em;
+
+  color:#3498db;
+  background:none;
+
+  font-size:1.6em;
+  font-weight:500;
+  display:block;
+  margin:0 auto 3em;
+  line-height:1.1;
+}
+div.recSenh form fieldset p{
+  top:-3em;
+  color:#777;
+ 
+  margin:0 auto;
+}
+div.recSenh form fieldset label{
+  top:2.5em;
+  left:1.8em;
+  color:#888;
+}
+div.recSenh form fieldset label.efeitoLabel{
+  top:3em;
+  left:2.3em;
+}
+div.recSenh form fieldset input{
+  top:1em;
+  width:90%;
+  height:2em;
+  border:solid #999 1px;
+  border-left:solid 4px #2980b9;
+
+  text-indent:1em;
+  font-size:1.1em;
+  background:transparent;
+
+  margin:0 auto;
+
+  display:block;
+  padding-top:1em;
+}
+div.recSenh form fieldset input[type="button"]{
+  position:relative;
+  top:2em;
+  width:12em;
+  height:2.5em;
+
+  font-size:1.2em;
+  color:#fff;
+
+  text-indent:0;
+  padding-top:0;
+  margin:0 auto;
+  display:block;
+
+  border:none;
+  background:#2980b9;
+}
+div.recSenh form fieldset input[type="button"]:hover,
+div.recSenh form fieldset input[type="button"]:focus{
+  background:#3498db; 
+}

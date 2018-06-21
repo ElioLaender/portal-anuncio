@@ -1,0 +1,357 @@
+@charset "UTF-8";	
+@media screen and (min-width:350px){
+	/*Planos de saude*/
+	div.paiF form fieldset.saud{
+	  width:90%;max-width:20em;
+	  margin:1em auto 5em;
+	}
+	div.paiF form fieldset.saud label{
+	  width:42%;
+	  max-width:8.5em;
+	  display:inline-block;
+
+	  margin-right:1.1em; 
+	}
+	
+}
+@media screen and (min-width:380px){
+
+	header div ul{
+		top:9em;
+		max-width:37em;
+		padding-left:1em;
+		margin-bottom:10em;
+	}
+	header div ul li{
+		width:30%;max-width:6.5em;
+		margin-top:1em;	
+	}
+}
+@media screen and (min-width:450px){
+/*escadinha no form editar*/
+	div.paiS section div#backEdita p.escada{
+	  top:1em;
+	  left:-2.5em !important;
+	}
+	div.paiS section div#backEdita{
+		top:0;
+		margin-bottom:1em;
+	}
+
+	header div ul{
+		max-width:40em;
+		padding-left:1.5em;
+	}
+	header div ul li{
+		margin-left:.5em;
+	}
+}
+@media screen and (min-width:550px){
+/*escadinha no form editar*/
+	div.paiS section div#backEdita p.escada{
+	  left:-5em !important;
+	}
+}
+@media screen and (min-width:600px){
+  	div.paiS section h2:last-of-type{
+	  height:5em;
+	  line-height:2;
+	  font-size:1.8em;	  
+	} 
+	div.paiF form fieldset.PaiEnder > legend{
+	  top:1.5em;
+	  font-size:1.8em;
+	}
+	div.paiF form fieldset.categoria fieldset p:first-of-type{
+		padding:2em 30% 0;
+		font-size:1.4em;
+	}
+
+}
+@media screen and (min-width:610px){
+	header div ul{
+			top:8em;
+		}
+}
+@media screen and (min-width:620px){
+	header div ul{
+			top:3em;
+			margin:4em auto;
+		}
+}
+@media screen and (min-width:650px){
+	
+	/*horas para escolher*/
+	div.paiF form fieldset.horas fieldset{
+	  width:95%;max-width:35em;
+	}
+	div.paiF form fieldset.horas fieldset select{
+	  max-width:11em;
+	}
+	div.paiF form fieldset.diasFunc fieldset.dias span.cli{
+	  margin:0 auto 1.3em;
+	}
+}
+@media screen and (min-width:700px){
+
+	header div ul{
+		max-width:45em;
+		padding-left:1em;
+	}
+	header div ul li{
+		margin-left:1.5em;
+	}
+}
+@media screen and (min-width:800px){
+	div.paiS section div.pa{
+	  background:url('../imagens/cloud@2x.jpg')repeat;
+	  background-size:cover;
+	  background-position:50%;
+	}
+	/*pg altera anuncio*/
+	div.paiS section div#backEdita{
+	  background:url('../imagens/officeAnun@2x.jpg')repeat;
+	  background-size:cover;
+	  background-position:50% 50%;
+	}
+	div.paiS section div#backEdita > p{
+		top:5em;
+		max-width:18em;
+
+		margin-bottom:.5em;
+	}
+	/*modo de recebimento*/
+	div.paiF form fieldset.receb > fieldset:first-of-type{
+	  max-width:45.5em;
+	  margin:0 auto;
+	}
+	
+	div.paiF form fieldset.receb fieldset.paga{
+	  display:inline-block;
+	  
+	}
+	div.paiF form fieldset.receb fieldset.band{
+		margin-top: -3em;
+	 float: right;
+	}
+	div.paiF form fieldset.receb fieldset.paga legend{
+		width:30em;
+	}
+	/*Planos de saude*/
+	div.paiF form fieldset.saud{
+	  width:90%;max-width:25em;
+	}
+	div.paiF form fieldset.saud legend{
+		font-size:2em;
+		height:2em;
+	}
+	div.paiF form fieldset.saud label{
+	  width:42%;
+	  max-width:8.5em;
+	  display:inline-block;
+
+	  margin-right:1.1em; 
+
+	  font-size:1.4em;
+	}
+
+	/*facilidades*/
+	div.paiF form fieldset.paifacil{
+	  max-width:35.5em;
+	  margin:2em auto;
+	}
+	div.paiF form fieldset.paifacil legend{
+	  font-size:1.8em;
+	}
+	div.paiF form fieldset.paifacil fieldset{
+	  display:inline-block;
+	}
+
+	div.paiF form fieldset.paifacil fieldset:first-of-type{
+		top:-1em;
+		margin-right:2.9em;
+	}
+}
+@media screen and (min-width:900px){
+	/*escadinha no form editar*/
+	div.paiS section div#backEdita p.escada{
+	   top:2em;
+	}
+}
+@media screen and (min-width:950px){
+	/*escadinha no form editar*/
+	div.paiS section div#backEdita p.escada{
+	   top:1em;
+	}
+}
+@media screen and (min-width:1000px){
+	
+		/*descricao*/
+	div.paiF form fieldset.desc{
+	    padding:4em 0;
+	  
+	    background:url('../imagens/womanComp@3x.jpg')no-repeat;
+	 	background-attachment:fixed;
+		background-position:100%;
+		background-size:cover;
+	}
+	div.paiF form fieldset.desc p{
+		  width:70%;max-width:20em;
+		  font-size:1.9em;
+		  margin:0 auto 1.8em;
+	}
+	div.paiF form fieldset.categoria  button.fec{
+		 right:3em;
+		 width:5em;
+		 height:1.8em;
+		 font-size:1.3em;
+	}
+}
+@media screen and (min-width:1100px){
+		/*pg altera anuncio*/
+	div.paiS section div#backEdita{
+	  background:url('../imagens/officeAnun@3x.jpg')repeat;
+	  background-size:cover;
+	  background-position:50% 50%;
+	}
+
+}
+@media screen and (min-width:1200px){
+	/*escadinha no form editar*/
+	div.paiS section div#backEdita p.escada{
+	   top:2.5em;
+	}
+}
+@media screen and (min-width:1300px){
+	div.paiS section div.pa{
+	  height:25em;
+	}
+	div.paiS section div.pa p{
+	  font-size:1.9em;
+	}
+
+	 div.paiF form fieldset.PaiEnder{
+		max-width:70em;
+	  }
+}
+@media screen and (min-width:1450px){
+
+ 	  div.paiF form fieldset.PaiEnder,
+	  div.paiF form fieldset.paiCont > fieldset{
+		max-width:65em;
+		margin:0 auto;
+	  }
+	 /*primeiro bloco vai ate input numero*/
+	 div.paiF form fieldset.PaiEnder fieldset:first-of-type{
+	 	margin:0 .5em 0 2em;
+	 }
+
+	div.paiF form fieldset.PaiEnder fieldset:first-of-type,
+	div.paiF form fieldset.PaiEnder fieldset:last-of-type,
+	fieldset.paiCont fieldset fieldset{
+	  max-width:30em;
+	  display:inline-block;
+	}
+ 
+	/*redes sociais*/
+	/*contato*/
+	div.paiF form fieldset.paiCont{
+	  padding-bottom:6em;
+	}
+
+	fieldset.paiCont fieldset.revelar button{
+		top: -3em;
+		left:7em;
+	    width:15em;
+	}
+
+	fieldset.paiCont fieldset.redes legend,
+	fieldset.paiCont fieldset fieldset:first-of-type legend{
+		font-size:2em;
+		font-weight:500;
+	}
+	fieldset.paiCont fieldset.redes label{
+		width:35em;
+		text-indent:2em;
+	}
+	fieldset.paiCont fieldset fieldset:first-of-type{
+	  margin:1.5em 0 0 2em;
+	}
+
+			/*descricao*/
+	div.paiF form fieldset.desc{
+		top:-6.5em;
+	}
+	div.paiF form fieldset.desc label{
+	    font-size:1.8em;
+	}
+
+		/*dias funcionamento*/
+	div.paiF form fieldset.diasFunc{
+	  top:-8.5em;
+	  margin-bottom:3em;
+	
+	}
+	div.paiF form fieldset.diasFunc > fieldset:first-of-type{
+	  top:1em;
+	  max-width:60em;
+	  margin:0 auto;	 	  
+	}
+
+	/*primeiro bloco, onde tem tres checkbox*/
+	div.paiF form fieldset.diasFunc fieldset.dias{
+		position:relative;
+		top:-1em;
+		left:0;
+		display:inline-block;
+		max-width:20em;
+	}
+
+	div.paiF form fieldset.diasFunc fieldset.dias label{
+	  top:-.5em;
+	  left:-.5em;
+	  font-size:1.5em;
+	}
+	/*horas para escolher*/
+	div.paiF form fieldset.horas{
+	  float:right;
+	  margin:-15em 0 2em 0;
+	  width:75%;max-width:50em;
+	}
+
+	div.paiF form fieldset.horas fieldset fieldset.selec select{
+		top:-1.5em; 
+	}
+	div.paiF form fieldset.horas fieldset fieldset.selec p{
+		top:-1em;
+	}
+	/*modo de pagamento*/
+	div.paiF form fieldset.receb fieldset fieldset label{
+	  font-size:1.6em;
+	}
+		/*facilidades*/
+	div.paiF form fieldset.paifacil{
+	  max-width:42em;
+	  margin:2em auto;
+	}
+	div.paiF form fieldset.paifacil fieldset:first-of-type{
+		margin: 0 6.5em 0 2em;
+
+	}
+
+} 	
+@media screen and (min-width:1900px){
+	  div.paiF form fieldset.PaiEnder,
+	  div.paiF form fieldset.paiCont > fieldset{
+		max-width:75em;
+	  }
+ 	div.paiF form fieldset.PaiEnder fieldset:first-of-type{
+	 	margin:0 3em 0 3.5em;
+	 }
+	 div.paiF form fieldset.diasFunc fieldset.dias legend{
+	  font-size:1.7em;
+	}
+
+}
+/*primeiro bloco vai ate input numero*/
+	

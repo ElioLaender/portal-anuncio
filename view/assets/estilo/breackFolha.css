@@ -1,0 +1,78 @@
+@charset "UTF-8";	
+@media screen and (min-width:350px){	
+		/*este eh a foto do cur*/
+section.curri div:first-of-type{
+	top:4em;
+}
+	section.curri div.nome{
+		top:2em;
+		margin-bottom:5.5em;
+	}
+	section.curri div.nome h3{
+		font-size:1.6em;
+	}
+	section.curri div.controlCon{
+		position: relative;
+		top:1em;
+
+		width:100%;
+	}
+	        
+}
+@media screen and (min-width: 810px){
+
+	/*div pai da tag img*/
+	section.curri div:first-of-type{
+		position: absolute;
+		top:3.5em;
+		right:.8em;
+	}
+	section.curri div.nome h3{
+		top:1em;
+		
+		margin-bottom:3em;
+	}
+
+}
+@media screen and (min-width:850px){
+
+	/*div pai da tag img*/
+	section.curri div:first-of-type{
+		top:5em;
+	}
+	section.curri div.nome h3{
+		top:6em;
+		margin-bottom:9em;
+	}
+
+	section.curri div.controlCon dl dd.bairro{
+	  top:0;
+	  display:inline;
+	  margin:0;
+	}
+	section.curri div.controlCon dl dd.sub{
+	  top:0;
+	}
+	/*contatos*/
+	section.curri div.controlCon dl dl:first-of-type{
+	  top:1em;
+	  margin-bottom:3em;
+	}
+}
+
+@media screen and (min-width:1200px){
+	section.curri div.controlCon dl dd.qualif > em{
+		max-width:50em;
+	}
+
+}
+@media screen and (min-width:1400px){
+	section.curri{
+		position:relative;
+		top:0;
+
+		max-width:75em;
+		margin:0 auto;
+	}
+
+}

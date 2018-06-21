@@ -1,0 +1,158 @@
+@charset "UTF-8";	
+
+@media screen and (min-width: 355px){
+	/*este seleciona o texto de beneficios*/
+	div.primText div:last-of-type > dl:first-of-type {
+		margin-top:3em;
+	}
+}	
+
+@media screen and (min-width: 385px){
+	div.paiTextos{
+		top:12em;
+	}
+}
+	
+@media screen and (min-width: 500px){
+	div.paiTextos{
+		top:8em;
+	}
+	/*titulo conheça melhor este mercado*/
+   div.primText > div:first-of-type h3{
+		font-size:1.8em;
+		margin-bottom:2em;
+	}
+
+	div.primText > div:first-of-type p:last-of-type{
+		max-width:20em;
+		font-size:1.3em;
+	}
+	/*bloco beneficios*/
+	div.primText div:last-of-type > dl:first-of-type dt{
+		font-size:2.3em;
+	}
+	div.primText div:last-of-type > dl:first-of-type dd{
+		font-size:1.3em;
+	}
+}
+
+@media screen and (min-width: 660px){
+
+	/*este seleciona o texto de beneficios*/
+	div.primText div:last-of-type > dl:first-of-type dd{
+		max-width:40em;
+		margin-top:-1em;
+	}
+}
+
+@media screen and (min-width: 830px){
+	/*titulo conheça melhor este mercado*/
+   div.primText > div:first-of-type h3{
+   		top:2em;
+		font-size:2em;
+		
+		margin-bottom:4em;
+	}
+	div.primText > div:first-of-type p:first-of-type{
+		font-size:1.4em;
+	}
+
+	/*este seleciona o texto de beneficios*/
+	div.primText > div:last-of-type > dl:first-of-type{
+		width:95%;max-width:40em;
+		padding-bottom:3em;
+
+	}
+	div.primText div:last-of-type > dl:first-of-type dd{
+		top:1em;
+		max-width:20em;
+	}
+
+	div dl.paiCores{
+		margin:0 auto;
+		width:100%;max-width:60em !important;
+		padding-top:1em;
+	}
+	div dl.paiCores dl{
+		width:49%;
+		display:inline-block;
+		margin:0;
+	}
+	div dl.paiCores dl:nth-of-type(3){
+		top:-2.5em;
+	}
+
+	div dl.paiCores dl:nth-last-of-type(2){
+		top:-3em;
+	}
+
+}	
+@media screen and (min-width: 1000px){
+	div.primText > div:first-of-type p:first-of-type{
+		top:-3em;
+		width:90%;max-width:20em;
+		font-size:1.1em;
+		color:#777;
+		margin:0 auto;
+	}
+	div.primText > div:first-of-type figure{
+		left:12.5em;
+		top:-.5em;
+		max-width:12.5em;
+		display:inline-block;
+	}
+	
+	div.primText > div:first-of-type > p:last-of-type{
+		top:-4.5em;
+		left:7em;
+		width:80%;
+		font-size:1.2em;
+	
+		margin:1em auto 0;
+
+	}
+	div.primText > div:first-of-type{
+		max-width:62em;
+		margin:0 auto 0;
+	}
+	div.primText > div:first-of-type div{
+		display:inline-block;
+	}
+	
+}
+@media screen and (min-width: 1400px){
+	/*pai dos dt coloridos*/
+	div.primText div:last-of-type dl.paiCores{
+		width:100%;max-width:80em !important;
+	}
+	div dl.paiCores dl{
+		max-width:26em;	
+	}
+
+		/*este eh o primeiro dt roxo*/
+	div.primText dl.paiCores dl:first-of-type dt{
+	  top:-1em;
+	}
+	div.primText dl.paiCores dl:first-of-type dd{
+	  top:-1.5em;
+	}
+	/*este eh o beneficio*/
+	div dl.paiCores dl:nth-of-type(2){
+		top:-2em;
+	}
+	/*este eh o terceiro li azul*/
+	div dl.paiCores dl:nth-of-type(3) dt{
+	    top:-.7em;
+	}
+	div dl.paiCores dl:nth-of-type(3) dd{
+	    top:-1.2em;
+	}
+	/*este eh o vermelho dt*/
+	div dl.paiCores dl:nth-of-type(4) dt{
+	  top:-1.3em; 
+	}
+	div dl.paiCores dl:nth-of-type(4) dd{
+	  top:-1.3em;
+	}
+	
+}

@@ -1,0 +1,322 @@
+@charset "UTF-8";
+@media screen and (min-width:300px){
+	section div.paiBand input + span{
+		margin-left:1em;
+	}
+}
+@media screen and (min-width:350px){
+	section.secFoto div#galeria ul{
+		width:100%; max-width:25em;
+		overflow:hidden;
+		padding-bottom:1em;
+	}
+	section.secFoto div#galeria ul li{
+		width:46%;
+		margin:1em 0 1em .5em;
+		height:7.5em;
+		float:left;
+	}
+	section.secFoto div#galeria ul li a,
+	section.secFoto div#galeria ul li a img{
+		height:7.5em;
+	}
+	div.excluir > div div{
+		width:15em;
+		margin:1em auto 0;
+	}
+	div.excluir > div button{
+		float:left;
+		margin-left:.5em;
+	}
+}
+@media screen and (min-width:400px){
+	
+
+	div.mensBloc div:before{
+		background-position:80% 75%;
+	}
+	div.youTube h3{
+		font-size:1.8em;
+	}
+}
+@media screen and (min-width:450px){
+
+	div#tela div.paiBut{
+		top:9em;
+	}
+	div#tela img{
+		top:12em;
+		margin-left:.5em;
+	}
+}
+@media screen and (min-width:500px){
+	div#tela button.butF{
+		right:2em;
+	}
+	
+	div#tela div.paiBut button{
+		right:0;
+	}
+	div#tela img{
+		top:12.5em;
+	}
+}
+@media screen and (min-width:530px){
+
+	div.mensBloc div{
+		left:auto;
+	}
+
+	div.paiArt article h2{
+ 	  	margin-bottom:.5em;
+	}
+
+ }
+@media screen and (min-width:600px){
+	div.controlaBa aside h2{
+		font-size:1.6em;
+	}
+
+	div.paiArt article h2{
+		height:2.6em;
+		font-size:1.3em;
+	}
+	
+	div.youTube h3{
+		font-size:2.2em;
+	}
+	section.secFoto h3{
+		font-size:2em;
+	}
+	section.semFoto{
+		background:url('../imagens/imgFoto@2.jpg') no-repeat;
+		background-size:cover;
+		background-position:50%;
+	}
+	section.semFoto h3{
+		top:2.7em;
+		font-size:2em;
+	}
+}
+@media screen and (min-width:650px){
+	section.secFoto div#galeria{
+		max-width:35em;
+	}
+	section.secFoto div#galeria ul{
+		max-width:35em;
+		padding-left:1.5em;
+
+	}
+	section.secFoto div#galeria ul li{
+		width:30%;max-width:10em;
+		margin:1em 0 1em .5em;
+		height:7.5em;
+		float:left;
+	}
+
+	div#tela div.paiBut{
+		max-width:35em;
+	}
+	div#tela img{
+		top:15em;
+		width:90%;max-width:33em;
+	}
+}
+@media screen and (min-width:700px){
+/*abre com o segundo banner*/
+	div.cresc{
+		position:relative;
+		top:18em;
+	 
+	 	width:100%;max-width:40em;
+		margin:0 auto -40em;
+
+		box-shadow: 10px 10px 20px rgba(0,0,0,.2);
+
+		display:none;
+	}
+	
+	/*youtube*/
+	div.youTube{
+		padding-top:4em;
+	}
+	div.youTube h3{
+		margin-bottom:1em;
+	}
+	/*facilidades oferecidas*/
+	section div.paiFac{
+		left:1.2em; 
+	}
+}
+@media screen and (min-width:746px){
+	/*aqui eh a div que abre no click do primeiro banner*/
+	div.cupon{
+		position:relative;
+		margin:0 auto -27em;
+	}
+}
+@media screen and (min-width:780px){
+/*controla a parte completa do anuncio*/
+	div.divControler{
+		position:relative;
+		width:100%;max-width:47.5em;
+		height:48em;
+		margin: 0 auto;
+	}
+	/*bloco do anuncio*/
+	div.divControler > article{
+		max-width:25em;
+		display:inline-block;
+	}
+	/*controla os resto dos elemento de anuncio*/
+	div.divControler > article + div{
+		width:22em;
+		float:right;
+	}
+
+	section.semFoto{
+		background:url('../imagens/imgFoto@3.jpg') no-repeat;
+		background-size:cover;
+		background-position:50%;
+		background-attachment:fixed;
+	}
+}
+@media screen and (min-width:950px){
+
+section.secFoto div#galeria{
+		max-width:55em;
+	}
+	section.secFoto div#galeria ul{
+		max-width:55em;
+		padding-left:1em;
+	}
+	div#tela div.paiBut{
+		position:absolute;
+		top:0;
+		right:0;
+	}
+	div#tela img{
+		position:relative;
+		top:3em;
+		margin: 0 auto;
+		width:90%;max-width:35em;
+	}
+	div.escuro{
+		background:rgba(0,0,0,1);
+	}
+}
+@media screen and (min-width:1000px){
+	/*este eh a parte das propagandas*/
+	div.controlaBa div.paiBan{
+		width:100%;max-width:52em;
+
+		padding-left:1em;
+		margin:0 auto 3em;
+	}
+	/*Primeiro banner*/
+	aside div.ban01{
+		display:inline-block;
+	}
+	div.youTube h3{
+		font-size:2.5em;
+	}
+}
+@media screen and (min-width:1100px){
+	div.controlaBa aside h2{
+		font-size:1.8em;
+	}
+	/*este eh a parte das propagandas*/
+	div.controlaBa div.paiBan{
+		width:100%;max-width:60em;
+
+		padding-left:3em;
+	}
+	aside div.ban02{
+		margin-left:3.5em;
+	}
+
+}
+@media screen and (min-width:1200px){
+	/*descricao*/
+	section div.paiArt p{
+		top:2.5em;
+		max-width:32em;
+		line-height:1.8;
+	}
+	/*descricao*/
+	div.paiArt article{
+		background-size:16em;
+		background-position:90% 70%;
+	}
+
+	section div.paiMapa div:last-of-type{
+		height:25em;	
+	}
+}
+@media screen and (min-width:1300px){
+/*controla a parte completa do anuncio*/
+	div.divControler{
+		width:100%;max-width:75em;
+		height:37em;
+	}
+	/*bloco do anuncio*/
+	div.divControler > article{
+		max-width:25em;
+		margin-left:3em;
+		display:inline-block;
+	}
+	/*controla os resto dos elemento de anuncio*/
+	div.divControler > article + div{
+		width:45em;
+		float:right;
+	}
+	/*Horas de funcionamento*/
+	section div.divHoras{
+		max-width:20em;
+		margin:1em auto 1.3em;
+		display:inline-block;
+	}
+	/*formas de pagamento e bandeiras*/
+	section div.paiBand{
+		width:95%;max-width:22em;
+        float:right;
+	}
+	section div.paiFac{
+		width:95%;max-width:21em;
+		float:left;
+	}
+	div.paiArt{
+		padding-top:2em;
+	}
+	div.paiArt article h2{
+		width:20em;
+	}
+}
+@media screen and (min-width:1500px){
+				/*aqui eh a div que abre no click do primeiro banner*/
+	div.cupon{
+		top:20em;
+		margin-bottom:-28em;
+	}
+	div.controlaBa aside h2{
+		font-size:1.9em;
+		margin:3.5em auto 2em;
+	}
+	/*este eh a parte das propagandas*/
+	div.controlaBa div.paiBan{
+		width:100%;max-width:60em;
+
+		padding-left:3em;
+	}
+	aside div.ban02{
+		margin-left:3.5em;
+	}
+		/*descricao*/
+	div.paiArt article{
+		background-size:17em;
+		background-position:80% 70%;
+	}
+	div.youTube h3{
+		font-size:2.8em;
+	}
+}

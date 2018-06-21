@@ -1,0 +1,231 @@
+@charset "UTF-8";
+div.contextB{
+   position: relative;
+   top:-4em;
+
+   width:90%;max-width:25em;
+   margin: 0 auto 1.5em;
+}
+/*dentro de contextB foi alterado dois buttons por form de pesquisa*/
+div.contextB input, select{
+  width:100%;
+  height:3.1em;
+
+  -webkit-border-radius:2px;
+  -moz-border-radius:2px;
+  border-radius:2px;
+}
+
+div.contextB input#pesquisaHom{
+  text-indent:1em;
+  z-index:5;
+}
+div.contextB input#pesBair{
+   position:relative;
+
+   width:80%;
+   background:#fff;
+   margin:1em 0;
+   text-indent:1em;
+   display:inline-block;
+   cursor:pointer;
+   z-index:5;
+ }
+ div.contextB form fieldset label[for="pesBair"]{
+  display:none;
+ }
+ div.contextB input#pesHom{
+  width:3em;
+  height:3.2em;
+  background:#2ecc71;
+  text-indent:-99em;
+ }
+ div.contextB input#pesHom:hover,
+ div.contextB input#pesHom:focus{
+  background:#27ae60;
+}
+ div.contextB form fieldset label[for="pesHom"] span{
+  position:absolute;
+  top:-.3em;
+  right:0;
+
+  width:95%;
+  height:2em;
+  background:url('../imagens/zoomWhate.png') no-repeat;
+  background-size:1.5em;
+  background-position:50%;
+
+  z-index:15;
+}
+/*pega os todos os links que o pai tem a class"efeito", borda com rotate*/
+ ul.efeito li > a::after{
+  content: '';
+
+  position: absolute;
+  top:.1em;
+  right: 0;
+
+  width: 18%;
+  height: 4em;
+
+  background: rgba(255,255,255, .3);
+
+  -webkit-transform-origin: 0 0;
+  -webkit-transform: rotate(-20deg);
+
+  -moz-transform-origin: 0 0;
+  -moz-transform: rotate(-20deg);
+
+  -ms-transform-origin: 0 0;
+  -ms-transform: rotate(-20deg);
+
+  transform-origin: 0 0;
+  transform: rotate(-25deg);
+
+ -moz-transition:  .2s ease-out;
+ -webkit-transition:  .2s ease-out;
+ transition:  .2s ease-out;
+}
+/*apenas os ul que tem a class "cre" ficam maior o afeter do ancora*/
+ ul.cre li > a::after{
+  top: -.4em;
+
+  width: 25%;
+  height: 8em;
+}
+
+
+/*efeito  hover em todos que contem esta barra*/
+ ul.efeito:hover a::after{
+  width: 25%;
+  background: rgba(255,255,255, .2);
+}
+
+/*pega todos os a::after que o ul pai tem class"cre"*/
+ul.cre:hover a::after{
+  width: 30%;
+}
+
+
+/*configurar button curriculo*/
+div.paiContext{
+  position:relative;
+  top:-2.5em;
+  height:22em;
+  padding:2em 0 2em; 
+  background:#ecf0f1;
+
+  margin:0 auto -6.5em;
+}
+div.contextCur{
+   position: relative;
+   top:0;
+   width:90%;max-width:20em;
+ 
+   margin:0 auto 4em;
+}
+div.contextCur div:first-of-type h3{
+  font-size: 1.3em;
+}
+
+div.contextCur div:first-of-type p{
+   top:1em;
+   line-height: 1.6;
+}
+
+div.contextCur div:first-of-type ul{ 
+  top:2em;
+
+  width: 100%;
+  max-width: 19em;
+
+
+  height: 8em;
+  overflow: visible;
+  margin: 0 auto;
+
+   background:url('../imagens/verC@1x.png') no-repeat;
+   background-size: 5em;
+   background-position: 50% 0;
+}
+
+div.contextCur div:first-of-type ul li a{
+  position: absolute;
+  top: 5.5em;
+  background: #e74c3c;
+  overflow: hidden;
+}
+div.contextCur div:first-of-type ul li a::before{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom:.3em;
+
+  width: 13%;
+  height: 2em;
+
+  background:url('../imagens/man.png') no-repeat;
+  background-size: 80%;
+  background-position: 50% 80%;
+}
+       
+/*efeito com focus e hover bairro*/
+div.contextCur div:first-of-type ul:hover a,
+div.contextCur div:first-of-type ul a:focus{
+  background: #ff6345;
+}
+div.contextCur  div:last-of-type{
+  position: absolute;
+  top:2em;
+  left: 8em;
+
+  width: 100%;
+  height: 30em;
+
+  opacity:0;
+  font-size: 0;
+  background: url('../imagens/graphic@2x.gif') no-repeat;
+  background-size: 55%;
+  background-position: 100% 0%;
+}
+
+/*class efeito de scroll*/
+.scrol{
+  opacity: 0;
+}
+.scrolLeft{
+  position: absolute;
+  left: -50em;
+
+
+  -moz-transition: .5s linear;
+  -webkit-transition: .5s linear;
+  transition: .5s ease;
+}
+.scrolRight{
+  position: absolute;
+  right: -50em;
+
+  opacity:0;
+
+ -moz-transition:  .3s linear;
+  -webkit-transition:  .3s linear;
+  transition:  .3s linear;
+}
+/*div com gradient*/
+div.controlaAlt{
+  position: relative;
+  top:-4.5em;
+  width: 100%;
+  height: 20em;
+
+  margin-bottom:-5em;
+}
+
+/*Aqui configuara os select*/
+/*seleciona o legend escolaridade*/
+ul.efeito + form{
+  display: none;
+}
+
+ 

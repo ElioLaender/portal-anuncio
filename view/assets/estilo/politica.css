@@ -1,0 +1,84 @@
+@charset "UTF-8";
+div.primDiv{
+	position:relative;
+	top:5em;
+
+	width:90%;
+
+	margin:0 auto -15em;
+}
+div.primDiv > div{
+	position:relative;
+	top:0;
+
+	padding-top:1em;
+}
+div.primDiv > div h3{
+	position:relative;
+	top:1em;
+
+	color:#29b865;
+	font-size:1.5em;
+	margin:0 auto 4em;
+}
+div.primDiv > div section div{
+	position:relative;
+	top:0;
+
+	padding-bottom:2em;
+	border-bottom:solid #666 2px;
+	max-width:25em;
+
+	margin:0 auto 1.3em;
+}
+
+div.primDiv > div section div h4{
+	margin-bottom:1em;
+    color:#777;
+}
+div.primDiv > div section div p{
+	font-size:1em;
+}
+
+div.primDiv > div section div:nth-last-of-type(2){
+	top:1.5em;
+
+	padding-bottom:.5em;
+	margin-bottom:1.5em;
+    border-bottom:solid #2980b9 1px;
+}
+div.primDiv > div section div:last-of-type{
+	top:1.5em;
+
+	padding-bottom:.5em;
+	margin-bottom:1.5em;
+    border-bottom:solid #2980b9 1px;
+}
+
+/*pequeno breackPoint*/
+@media screen and (min-width:450px){
+	div.primDiv > div h3{
+		top:2.5em;
+		font-size:1.7em;
+		margin:0 auto 4.5em;
+	}
+	div.primDiv > div section div h4{
+		font-size:1.3em;
+		margin:2em auto;
+	}
+}	
+/*pequeno breackPoint*/
+@media screen and (min-width:600px){
+	div.primDiv > div section div {
+		max-width:40em;
+	}
+	div.primDiv > div h3{
+		font-size:2em;	
+	}
+	div.primDiv > div section div h4{
+		font-size:1.5em;
+	}
+	div.primDiv > div section div p{
+		font-size:1.2em;
+	}
+}

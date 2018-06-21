@@ -1,0 +1,221 @@
+@charset "UTF-8";	
+/*texto de dicas, este div foi criado para contexto dos filhos*/
+ div.paiTextos{
+ 	position: relative;
+ 	top:10em;
+ 	left:0;
+ 	width:100%;
+
+ 	margin:0 auto 25em;
+ }
+/*formatando titulo do primeiro texto*/
+div.paiTextos section.sect > h3{
+	opacity:0;
+}
+div.primText{
+	position:relative;
+	top:0;
+	
+	width:100%;
+	padding:4em auto 1em;
+	overflow:hidden;
+}
+
+/*primeiro bloco de explicacao*/
+div.primText > div:first-of-type{
+	position:relative;
+	top:0;
+
+	width:100%;
+
+	background: #fff; 
+
+}
+div.primText > div:first-of-type h3{
+	width:80%;
+	font-size:1.5em;
+	color:#f39c12;
+	margin-bottom:2em;
+}
+div.primText > div:first-of-type p:first-of-type{
+	top:-1em;
+	width:90%;max-width:15em;
+	font-size:1.2em;
+	color:#777;
+	margin:0 auto;
+}
+div.primText > div:first-of-type figure{
+	position:relative;
+	top:0;
+
+	width:60%;max-width:10em;
+	margin:2.5em auto 1em;
+}
+div.primText > div:first-of-type figure img{
+	width:100%;
+}
+
+div.primText > div:first-of-type p:last-of-type{
+	width:80%;
+	font-size:1em;
+	color:#888;
+	margin:1em auto 3em;
+}
+
+/*+115 ...*/
+div.primText > div:first-of-type > div{
+	margin:0 auto 4em;
+	max-width:20em;
+}
+div.primText > div:first-of-type > div:first-of-type{
+	position:relative;
+	top:1em;
+
+	width:95%;
+}
+div.primText > div:first-of-type > div:first-of-type p:first-of-type,
+div.primText > div:first-of-type > div:nth-of-type(2) p:first-of-type,
+div.primText > div:first-of-type > div:last-of-type p:first-of-type{
+	top:0;
+	font-size:1.5em;
+    font-family:"Roboto Slab","arial";
+    font-weight:600;
+
+	border-bottom:solid #2ecc71 3px;
+    color:#999;
+}
+div.primText > div:first-of-type > div:first-of-type p:last-of-type,
+div.primText > div:first-of-type > div:nth-of-type(2) p:last-of-type,
+div.primText > div:first-of-type > div:last-of-type p:last-of-type{
+	top:-.5em;
+	width:90%;
+
+	text-transform:uppercase;
+}
+/*+55*/
+div.primText > div:first-of-type > div:nth-of-type(2),
+div.primText > div:first-of-type > div:last-of-type{
+	position:relative;
+	top:1em;
+}
+div.primText > div:first-of-type > div:nth-of-type(2) p:first-of-type{
+	border-bottom:solid #4aa3df 3px;
+}
+/*+50%*/
+div.primText > div:first-of-type > div:last-of-type p:first-of-type{
+	border-bottom:solid #f39c12 3px;
+
+}
+
+
+/*este seleciona o texto de beneficios*/
+div.primText > div:last-of-type{
+	background:rgba(236,240,241,.4);
+	box-shadow:0 0 10px 1px rgba(0,0,0,.2);
+
+}
+div.primText div:last-of-type > dl:first-of-type{
+	top:4em;
+	width:95%;max-width:30em;
+
+	padding-bottom:2em;
+	border:solid #ecf0f1 2px;
+
+	margin-bottom:7em;
+}
+div.primText div:last-of-type > dl:first-of-type dt{
+	color:#666;
+}
+div.primText div:last-of-type > dl:first-of-type dd{
+	max-width:18em;
+}
+
+/*pai dos dt coloridos*/
+div.primText div:last-of-type dl.paiCores{
+	top:0;
+	width:100%;max-width:30em;
+	padding-bottom:.5em;
+}
+
+/*pega todos os dt*/
+div dl.paiCores dl{
+	width:100%;
+}
+div dl.paiCores dl dt{
+	width:100%;
+	height:5.5em;
+	color:#777;
+
+	font-size:1.4em;
+	line-height:9.5;
+
+	margin-bottom:-.7em;
+}
+/*este eh o primeiro dt roxo*/
+div.primText dl.paiCores dl:first-of-type dt{
+    background:url('../imagens/mobile@1x.png') no-repeat;
+    background-size:5.5em;
+    background-position:50% 0; 
+}
+/*este eh o segundo dt cinza*/
+div dl.paiCores dl:nth-of-type(2) dt{
+	height:6em;
+	line-height:11em;
+    background:url('../imagens/pork@1x.png') no-repeat;
+    background-size:4.5em;
+    background-position:50% 0; 
+}
+/*este eh o terceiro li azul*/
+div dl.paiCores dl:nth-of-type(3) dt{
+    background:url('../imagens/page@1x.png') no-repeat;
+    background-size:3.5em;
+    background-position:50% 0; 
+}
+/*este eh o vermelho dt*/
+div dl.paiCores dl:nth-of-type(4) dt{
+	height:4em;
+	line-height:7em;
+    background:url('../imagens/youtube@1x.png') no-repeat;
+    background-size:3.5em;
+    background-position:50% 0; 
+}
+/*este eh o  verde*/
+div dl.paiCores dl:nth-of-type(5) dt{
+    background:url('../imagens/cash@2x.png') no-repeat;
+    background-size:2.5em;
+    background-position:50% 0;
+}
+/*este eh o ultimo dt laranja*/
+div dl.paiCores dl:last-of-type dt{ 
+	background:url('../imagens/review@1x.png') no-repeat;
+    background-size:3.5em;
+    background-position:50% 0;
+}
+
+/*configurar todos dd colors*/
+div.primText div:last-of-type dl.paiCores dl dt + dd{
+	width:80%;
+	margin:2em auto 4em;
+
+	color:#555;
+}
+/*ir todos*/
+ul.verTodas li a{
+	width:90%;max-width:15em;
+	height:3em;
+	padding:1em 0 0;
+	font-weight:600;
+	text-align:center;
+	text-transform:uppercase;
+	margin:0 auto 4em;
+	background:#f39c12;
+	border:solid #f39c12 3px;
+
+	display:block;
+}
+
+ul.verTodas li a:hover,
+ul.verTodas li a:focus{
+	color:#555;
+	background:rgba(236,240,241 ,.5);
+}

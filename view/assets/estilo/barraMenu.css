@@ -1,0 +1,914 @@
+@charset "UTF-8";	
+/* Estilo do cabecalho*/
+header.barraM{
+  position:fixed;
+
+  width:100%;max-width:156em;
+  height:3.5em;
+ 
+  background:#3498db;
+  z-index:50;
+}
+/*Este h1 eh para a semantica do site, este nao eh visto na tela*/
+header.barraM > h1{
+  position:absolute;
+  left:-99em;
+  font-size:0;
+  opacity:0;
+}
+
+header.barraM div.paiBarra{
+	position:relative;
+	top:0;
+}
+div.paiBarra > button{
+	position:relative;
+	top:1em;
+	left:1em;
+
+	width:4.3em;
+	height:3em;
+
+	background:url('../imagens/hamburger.png') no-repeat;
+	background-size:4em;
+}
+div.paiBarra > div:first-of-type{
+	position:absolute;
+	top:0;
+	left:-99em;
+
+	width:100%;max-width:30em;
+	height:21.5em;
+
+	padding-top:1em;
+	background:#2980b9;
+	z-index:100;
+
+	overflow-y:scroll;
+	-moz-transition:left .1s ease;
+	-webkit-transition:left .1s ease;
+	transition:left .1s ease;
+}
+/*div esconde barra para primeira tela*/
+header.barraM div#escBar{
+	position:absolute;
+	right:0;
+	top:0;
+
+	height:21.5em;
+	width:3em;
+	background:#2980b9;
+
+	z-index:105;
+
+	display:none;
+}
+
+/*button fechar*/
+div.paiBarra > div:first-of-type button{
+	float:right;
+	width:5em;
+	height:1.5em;
+	color:#ecf0f1;
+	font-size:1.3em;
+	font-weight:500;
+	letter-spacing:2px;
+	
+	margin-right:1em;
+	-moz-transition:linear .1s;
+	-webkit-transition:linear .1s;
+	transition:linear.1s;
+
+}
+div.paiBarra > div:first-of-type button:focus,
+div.paiBarra > div:first-of-type button:hover{
+	color:#fff;
+	border-bottom:solid #ecf0f1 2px;
+}
+div.paiBarra > div:first-of-type span{
+	position:relative;
+	top:3.5em;
+
+	height:5em;
+	width:90%;
+
+	margin:0 auto;
+	display:block;
+
+	background:url('../imagens/logo@1x.png') no-repeat;
+	background-size:13em;
+	background-position:50%;
+}
+/*barrade pesquisa no nav*/
+div.paiBarra > div:first-of-type form fieldset{
+	position:relative;
+	top:5em;
+	left:1.7em;
+	width:90%;
+}
+div.paiBarra > div:first-of-type form fieldset input[type="search"]{
+	width:70%;max-width:20em;
+	text-indent:.5em;
+}
+div.paiBarra > div:first-of-type form fieldset input[type="search"]:focus,
+div.paiBarra > div:first-of-type form fieldset input[type="search"]:hover{
+	box-shadow:5px 8px 10px rgba(0,0,0,.3);
+}
+div.paiBarra > div:first-of-type form fieldset input[type="submit"]{
+	text-indent:-99em;
+	width:3em;
+	background:#ecf0f1;
+}
+div.paiBarra > div:first-of-type form fieldset input[type="submit"]:hover,
+div.paiBarra > div:first-of-type form fieldset input[type="submit"]:focus{
+	box-shadow:5px 8px 20px rgba(0,0,0,.1);
+}
+div.paiBarra > div:first-of-type form fieldset label[for="pes"] span{
+	position:absolute;
+	top:-.3em;
+	right:0;
+
+	height:1.7em;
+	background:url('../imagens/zoom.png') no-repeat;
+	background-size:1.5em;
+	background-position:30% 60%;
+}
+div.paiBarra > div:first-of-type ul{
+	position:relative;
+	top:5.5em;
+
+	width:95%;
+	margin:0 auto;
+}
+div.paiBarra > div:first-of-type ul li{
+	position:relative;
+	top:0;
+
+	width:100%;
+	height:3em;
+}
+div.paiBarra > div:first-of-type ul li a{
+	color:#ecf0f1;
+	font-size:1.3em;
+}
+div.paiBarra > div:first-of-type ul li a.cor{
+	color:#f1c40f;
+	font-weight:600;
+}
+div.paiBarra > div:first-of-type ul li a:hover,
+div.paiBarra > div:first-of-type ul li a:focus{
+	color:#fff;
+	font-weight:600;
+}
+
+div.paiBarra div.fundoEscuro{
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+
+	background:rgba(52, 152, 219,.3);
+	z-index:8;
+
+	display:none;
+}
+
+/*este e barra de pesquisa, aparecer so em tablet grande*/
+div.paiBarra > div:nth-of-type(3){
+	position:relative;
+	display:none;
+}
+/*efetuar login*/
+div.paiBarra > div:nth-of-type(4){
+	position:relative;
+	top:0;
+}
+
+/*este eh o escrito login*/
+div.paiBarra > div:nth-of-type(4) > button{
+	position:absolute;
+	top:-2.3em;
+	right:.5em;
+	padding-top:.5em;
+	font-size:1em;
+	color:#fff;
+
+	//display:none;
+}
+div.paiBarra > div:nth-of-type(4) > button:hover,
+div.paiBarra > div:nth-of-type(4) > button:focus{
+	border-bottom: solid #fff 1px;
+}
+
+/*borda branca onde esconde barra de menu*/
+div.paiBarra > div.efetua > div:first-of-type{
+	position:absolute;
+	right:0;
+	top:.5em;
+	height:18em;
+	width:1.3em;
+
+	background:#fff;
+
+	z-index:50;
+
+   display:none;
+}
+/*mensagens de retorno*/
+p#returnLogin{
+	top:-1.5em;
+
+	width:100% !important;
+   
+	font-size:1em;
+	text-align:center;
+
+	display:block;
+	margin:0 auto;
+}
+div.paiBarra div.logar{
+	position:absolute;
+	top:-60em;
+	right:0;
+
+    width:100%;max-width:28em;
+    height:18em;
+
+    background:#fff;
+	z-index:30;
+	overflow-y:scroll; 
+     padding-bottom:3em;
+   -moz-transition:top ease .1s;
+	-webkit-transition:top ease .1s;
+	transition:top ease-out .3s;
+}
+div.paiBarra div.logar input:hover,
+div.paiBarra div.logar input:focus,
+div.paiBarra div.logar form fieldset:first-of-type ul li a:hover,
+div.paiBarra div.logar form fieldset:first-of-type ul li a:focus{
+    box-shadow:5px 8px 20px rgba(0,0,0,.1);
+}
+div.paiBarra div.logar > button{
+	position:absolute;
+	top:.8em;
+	left:.7em;
+	width:2.1em;
+	height:2.1em;
+	text-indent:-99em;
+
+	background:url('../imagens/fech@1x.png') no-repeat;
+	background-size:cover;
+
+	z-index:5;
+}
+div.paiBarra div.logar > button:hover{
+	-moz-transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+	transform:scale(1.2);
+}
+div.paiBarra div.logar form fieldset label{
+  top:2em;
+  left:1.8em;
+  color:#999;
+  font-weight:500;
+
+}
+div.paiBarra div.logar form fieldset input{
+  width:90%;
+  height:1.7em;
+
+  text-indent:.5em;
+  font-size:1.1em;
+
+  margin:.5em auto 0;
+  padding-top:.8em;
+
+  display:block;
+  border:solid #999 1px;
+  border-left:solid #27ae60 4px; 
+  background:transparent;
+}
+
+
+/*button faceboock*/
+div.paiBarra div.logar form fieldset:first-of-type{
+	position:relative;
+	top:4.5em;
+	width:99%;max-width:20em;
+	height:3.5em;
+
+	margin:0 auto;
+}
+div.paiBarra div.logar form fieldset:first-of-type legend{
+  position:relative;
+  top:-1em;
+  width:100%;
+
+  color:#3498db;
+
+  text-indent:.5em;
+  text-transform:uppercase;
+  text-align:center;
+  font-size:1.1em;
+  margin:0 auto 3em;
+}
+input#tSenha,input#senh{
+  background: url('../imagens/olho.png') no-repeat;
+  background-size: 15px;
+  background-position: 97% 78%;
+}
+input.mostraSe{ 
+	 top:-2.5em;
+	 left:6.7em;
+	 width:2em !important;
+}
+div.paiBarra div.logar form fieldset:first-of-type ul{
+	position:relative;
+	top:-3em;
+	width:93%;
+
+	margin:0 auto;
+}
+/*logo semprenegocio*/
+div.paiBarra > div:first-of-type ul li:last-of-type{
+	display:none;
+}
+div.paiBarra div.logar form fieldset:first-of-type ul li a{
+  top:0;
+  left:0;
+
+  width:100%;
+  height:3em;
+
+  padding-top:1em;
+  margin-bottom:1em;
+  letter-spacing:0;
+  text-align:center;
+  background:#4b67a1;
+
+  -webkit-border-radius:2px; 
+  -moz-border-radius:2px; 
+  border-radius:2px;
+
+  z-index:1;	
+}
+
+div.paiBarra div.logar form fieldset:nth-of-type(2){
+	max-width:20em;
+	margin:7.5em auto 0;
+}
+div.paiBarra div.logar form fieldset:nth-of-type(2) legend{
+	position:relative;
+	width:99.1%;
+	color:#444;
+	text-align:center;
+}
+div.paiBarra div.logar form fieldset:nth-of-type(2) legend::before{
+	content:'';
+	position:absolute;
+	top:.4em;
+	left:1em;
+
+	width:3.5em;
+	border-bottom:solid #777 1px;
+}
+div.paiBarra div.logar form fieldset:nth-of-type(2) legend::after{
+ 	content:'';
+ 	position:absolute;
+ 	top:.4em;
+ 	right:1em;
+
+	width:3.5em;
+
+	border-bottom:solid #777 1px;
+}
+
+input#tEntrar{
+	top:-1.8em;
+	width:80%;
+	height:2.5em;
+
+	background:#f39c12;
+	border:none;
+
+	color:#fff;
+	padding-bottom:1em;
+}
+
+label[for="tEntrar"]{
+	position:absolute;
+	left:-99em;
+
+	opacity:0;
+}
+/*manter conectado*/
+div.paiBarra div.logar form fieldset:nth-of-type(2) label[for="tManter"]{
+	top:0;
+	left:1em;
+	width:60%;
+	height:1em;
+	display:block;
+}
+div.paiBarra div.logar form fieldset:nth-of-type(2) label[for="tManter"] span{
+	position:absolute;
+	top:0;
+	right:-.5em;
+
+}
+div.paiBarra div.logar form fieldset:nth-of-type(2) label[for="tManter"] span::before{
+	top:0;
+	left:0;
+}
+div.paiBarra div.logar form fieldset:nth-of-type(2) input[type=checkbox]:checked + span:before {
+    background-color:#c0392b;
+}
+/*esqueceu sua senha?*/
+div.paiBarra div.logar form fieldset:nth-of-type(2) button:last-of-type{
+	width:47%;
+	top:1.5em;
+	left:1em;
+	text-align:left;
+    text-indent:0;
+
+    border-bottom: solid #fff 1px;
+}
+
+div.paiBarra div.logar form fieldset:nth-of-type(2) button:last-of-type:hover,
+div.paiBarra div.logar form fieldset:nth-of-type(2) button:last-of-type:hover:focus,
+div.paiBarra div.logar form fieldset:nth-of-type(2) button:last-of-type + ul li a:hover,
+div.paiBarra div.logar form fieldset:nth-of-type(2) button:last-of-type + ul li a:focus{
+	border-bottom:solid #bdc3c7 1px;
+}
+/*este e o link que envia o cliente para a pg cadastre*/
+div.paiBarra div.logar form fieldset:nth-of-type(2) button:last-of-type + ul{
+	position:relative;
+	top:1.3em;
+	left:.5em;
+	width:43%;
+	display:inline-block;
+	overflow:visible;
+}
+div.paiBarra div.logar form fieldset:nth-of-type(2) button:last-of-type + ul li a{
+	color: #444;
+	font-weight:600;
+	font-size:.8em;
+	height:2em;
+}
+/*esta parte e cadastrar*/
+div.paiBarra div.logar form fieldset.cadastre{
+	position:relative;
+}
+div.paiBarra div.logar form fieldset.cadastre fieldset legend{
+	top:-2em;
+	line-height:1.4;
+	margin-bottom:-1.8em;
+}
+/*senha*/
+div.paiBarra div.logar form fieldset.cadastre fieldset input.mostraSe + p{
+	top:-2.3em;
+	color:#999;
+	text-align:left;
+	text-indent:.9em;
+}
+div.paiBarra div.logar form fieldset.cadastre fieldset label[for="conT"]{
+	top:-.8em;
+	left:2em;
+}
+div.paiBarra div.logar form fieldset.cadastre input#conT + span{
+	position:relative;
+	top:-4.5em;
+}
+div.paiBarra div.logar form fieldset.cadastre input#conT + span::before{
+	top:0;
+}
+div.paiBarra div.logar form fieldset.cadastre input#conT{
+	top:-2.5em;
+	z-index:3;
+}
+div.paiBarra div.logar form fieldset.cadastre input[type=checkbox]:checked + span:before {
+    background-color:#c0392b;
+}
+div.paiBarra div.logar form fieldset.cadastre input#cadast{
+	top:-2.3em;
+
+	height:2.5em;
+	line-height:0;
+	padding:0;
+	background:#2a84bf;
+	border:none;
+	color:#fff;
+}
+div.paiBarra div.logar form fieldset.cadastre input#cadast + p{
+	top:-2em;
+	left:1em;
+	width:95%;
+	text-align:left;
+}
+div.paiBarra div.logar form fieldset.cadastre input#cadast + p a{
+	color:#3598db;
+	margin-left:.5em;
+}
+div.paiBarra div.logar form fieldset.cadastre input#cadast + p a:hover{
+	border-bottom:solid #3598db 1px;
+}
+
+/*foto php*/
+div#fotoHome{
+	position:absolute;
+	right:1.5em;
+	top:.8em;
+}
+/*demais paginas com foto na barra*/
+div#paiFoto{
+	position:absolute;
+	top:.5em;
+	right:2em;
+	width:3.5em;
+	height:2.5em !important;
+	cursor:pointer;
+    
+	z-index:10;
+}
+/*foto do anunciante selesciona so dashboard e anuncio completo*/
+div.paiBarra > div:nth-of-type(4) div.fotoBar{
+	position:absolute;
+	top:-2em;
+	right:2em;
+	width:3.5em;
+	height:2.5em !important;
+	cursor:pointer;
+    
+	z-index:10;
+}
+
+/*foto do anunciante*/
+div.fotoBar figure{
+	position:relative;
+}
+
+div.fotoBar figure img{
+	position:absolute;
+	top:0;
+	right:-.5em;
+
+	width:2.5em;
+	height:2.5em;
+
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	cursor:pointer;
+	z-index:12;
+}
+
+div.fotoBar > div{
+	position:absolute;
+	top:4.6em;
+	right:0em;
+
+	width:15em;
+	height:10em !important;
+
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+
+	display:none;
+	z-index:10;
+}
+div.fotoBar div ul{
+	width:100%;
+	height:9em;
+
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+
+	border:solid #dadada 2px;
+	background:#f9f9f9;
+
+	overflow:visible;
+}
+
+/*painel da foto para pgs foto php*/
+div#fotoHome div ul,
+div#fotoAnunId div ul,
+div#paiFoto div ul{
+	height:11em;
+}
+div.fotoBar div ul::before{
+	content:'';
+	position:absolute;
+	top:-.5em;
+	right:1em;
+
+	width:2.5em;
+	height:3em;
+	background:#f9f9f9;
+     
+	-moz-transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	transform:rotate(-45deg);	
+}
+div.fotoBar div ul li a{
+	top:1.5em;
+	left:0;
+	color:#666;
+
+	height:2.5em;
+	width:100%;
+
+	margin-bottom:.5em;
+	text-indent:.5em;
+  	font-size:1em;
+	font-weight:600;
+	padding:.6em 0;
+	text-transform:uppercase;
+
+	text-align:left;
+}
+div#fotoHome div ul li:first-of-type a::before,
+div#fotoAnunId div ul li:first-of-type a::before,
+div#paiFoto div ul li:first-of-type a::before{
+	background:url('../imagens/dashboar@0x.png') no-repeat; 
+	background-size:1.2em;
+}
+
+div.fotoBar div ul li a::before{
+	content: '';
+	position:absolute;
+	right:.5em;
+	top:.7em;
+	width:1.5em;
+	height:1.2em;
+
+	background:url('../imagens/perfil@1x.png') no-repeat; 
+	background-size:1.2em;
+}
+div.fotoBar div ul li:last-of-type a::before{
+	background:url('../imagens/sair@1x.png') no-repeat; 
+	background-size:1.2em;
+}
+div.fotoBar div ul li a:focus,
+div.fotoBar div ul li a:hover{
+	 border-left:4px solid #2980b9;
+	 background:#ecf0f1; 
+}
+
+/*home*/
+div.paiBarra > div:nth-of-type(5){
+	position:relative;
+	top:2em;
+
+	width:100%;
+	height:1.6em;
+	background:#2980b9;
+	display:none;
+}
+div.paiBarra > div:nth-of-type(5) ul{
+	height:1.6em;
+}
+div.paiBarra > div:nth-of-type(5) ul a{
+	width:5em;
+	height:1.5em;
+	top:-.2em;
+	left:.2em;
+	letter-spacing:2px;
+}
+div.paiBarra > div:nth-of-type(5) ul a:hover,
+div.paiBarra > div:nth-of-type(5) ul a:focus,
+div.paiBarra > div:nth-of-type(5) button:focus,
+div.paiBarra > div:nth-of-type(5) button:hover{
+	-moz-text-shadow:2px 2px 10px rgba(0,0,0,.8);
+	-webkit-text-shadow:2px 2px 10px rgba(0,0,0,.8);
+	text-shadow:2px 2px 10px rgba(0,0,0,.8);
+}
+/*voltar ao dasboard link da pg anuncio completoId*/
+ul.voltarDas{
+	position:relative;
+	top:.9em;
+	left:0;
+}
+ul.voltarDas li a{
+	width:6em;
+	height:2em;
+
+	color:#555;
+	font-weight:600;
+	padding-right:.5em;
+	text-align:right;
+ 	background:#ECF0F1;
+}
+ul.voltarDas li a::before{
+	content:'';
+
+	position:absolute;
+	left:1em;
+
+	width:2.3em;
+	height:2em;
+
+	background:url('../imagens/arrowLeft@1x.png') no-repeat;
+	background-size:.6em;
+}
+/*button fechar pg dashboard*/
+div.paiBarra > div:nth-of-type(5) button{
+	position:absolute;
+	top:-.1em;
+	right:.5em;
+	font-size:.9em;
+	color:#fff;
+
+	display:none;
+}
+div.paiBarra > div:nth-of-type(5) button::before{
+	content:'';
+
+	position:absolute;
+	left:-1em;
+
+	width:2.3em;
+	height:2em;
+
+	background:url('../imagens/arrowLeft@1x.png') no-repeat;
+	background-size:.8em;
+}
+button#butMobile{
+	position:absolute;
+	top:4.2em;
+	left:0;
+
+	width:11em;
+
+	text-align:right;
+
+	padding-right:1em;
+	font-weight:600;
+	background:#ECF0F1;
+
+	display:none;
+}
+button#butMobile::before{
+	content:'';
+
+	position:absolute;
+	top:0;
+	left:0;
+
+	width:5em;
+	height:3em;
+	background:url('../imagens/arrowLeft@1x.png') no-repeat;
+	background-size:.8em;
+	background-position: 10px 50%;
+}
+/*parte recuperar senha*/
+div.recupSenha{
+	position:absolute;
+	top:3.5em;
+	right:0;
+
+	width:95%;max-width:25em;
+	height:20em;
+	background:#fff;
+
+	z-index:20;
+
+	display:none;
+}
+div.recupSenha button:first-of-type{
+	position:absolute;
+	bottom:.5em;
+	left:.5em;
+
+	height:1.3em;
+
+	font-size:1em;
+	text-indent:1em;
+	color:#555;
+
+	background:url('../imagens/arrowLeft@1x.png') no-repeat;
+	background-size:.8em; 
+}
+div.recupSenha button:first-of-type:hover,
+div.recupSenha button:first-of-type:focus{
+    text-shadow:5px 8px 10px rgba(0,0,0,.3);
+}
+div.recupSenha form fieldset{
+	position:relative;
+
+	width:95%;
+	height:17em;
+	margin:0 auto;
+}
+div.recupSenha form fieldset legend{
+	position:relative;
+	top:1em;
+
+	text-align:center;
+	color:#27ae60;
+	font-size:1.3em;
+
+	margin-bottom:2em; 
+}
+
+div.recupSenha form fieldset label{
+	top:1.5em;
+	left:2em;
+	color:#888;
+}
+div.recupSenha form fieldset input{
+	height:1.7em;
+	width:90%;
+
+	margin: 0 auto;
+	display:block;
+	padding-top:1.2em;
+	font-size:1em;
+	text-indent:.5em;
+	border:solid #bdc3c7 1px;
+	border-left:solid #27ae60 4px;
+}
+div.recupSenha form fieldset input:hover,
+div.recupSenha form fieldset input:focus{
+    box-shadow:5px 8px 20px rgba(0,0,0,.1);
+}
+/*button recuperar senha*/
+div.recupSenha form fieldset input:last-of-type{
+	top:1.5em;
+	width:80%;
+	height:3em;
+	padding-top:0;
+	color:#fff;
+	border:none;
+	background:#e74c3c;
+}
+/*class para revelas barra de menu*/
+div.leftZero{
+	position:absolute;
+	left:0 !important;
+} 
+/*via js*/
+.sumir{
+	position:absolute;
+	left:-99em;
+	z-index:-1;
+	opacity:0;
+}
+
+.aparecer{
+	top:.5em !important;
+}
+
+.apagar{
+	display:none;
+}
+
+form fieldset input[type="checkbox"]{
+	opacity:0;
+	top:-2em;
+}
+
+form fieldset input[type="checkbox"] + span:before{
+  content:"\00a0";
+
+  position: relative;
+  top:-5.2em;
+  left:.5em;
+
+  width:1.3em;
+  height:1.3em;
+
+  background-color: #ccc;
+  display: inline-block;
+  border: 3px solid #fff;
+
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius:2px;
+
+   visibility:visible;
+   box-shadow:0 0 0px 2px #999;
+
+   z-index:1;
+ }
+
+section.secLogin form fieldset input[type=checkbox]:checked + span:before {
+    background-color:#3498db;
+}
+
+
+/*css controla barras*/
+.ui-autocomplete {
+    max-height: 100px;
+    width: 50px;// apenas precisou setar o valor de largura para funcion
+    overflow-y: auto;
+     /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+  }
+        /* IE 6 doesn't support max-height
+         * we use height instead, but this forces the menu to always be this tall
+         */
+* html .ui-autocomplete {
+     height: 100px;
+ }

@@ -1,0 +1,176 @@
+@charset "UTF-8";
+header + div{
+	position:relative;
+	top:3.5em;
+
+	width:100%;
+	height:50em;
+
+	margin-bottom:-23em;
+	
+	background:url('../imagens/404@1X.jpg') no-repeat;
+	background-size:cover;
+	background-position:90% 50%;
+}
+header + div::before{
+	content:'';
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+
+	background:rgba(0,0,0,.4);
+}
+header + div section{
+	position:relative;
+
+	width:90%;max-width:30em;
+	margin:0 auto;
+}
+header + div section div{
+	position:relative;
+	top:3em;
+	width:100%;
+
+	margin:0 auto;
+}
+header + div section div > p:first-of-type{
+	color:#f39c12; 
+	text-align:left;
+	font-size:1.8em;
+	font-weight:600;
+    font-family:"Roboto Slab","arial";
+}
+header + div section div > p:nth-of-type(2){
+  top:.5em;
+
+  width:90%;
+  text-align:left;
+  margin:0 auto;
+  color:#fff;
+  font-size:1.2em;
+}
+header + div section div hgroup{
+	position:relative;
+	top:2em;
+	width:90%;
+	margin:0 auto;
+	padding:1em;
+}
+div hgroup h3{
+	color:#f39c12;
+	font-size:1.3em;
+    font-family:"Roboto Slab","arial";
+    text-align:left;
+}
+div hgroup h4{
+	color:#fff;
+	font-size:1em;
+	font-weight:500;
+	text-align:left;
+	margin:1em 0;
+}
+header + div section div ul{
+	position:absolute;
+	left:0;
+	bottom:-6.5em;
+	width:15em;
+
+	margin:0 auto;
+}
+header + div section div ul li a{
+	width:15em;
+	height:2.3em !important;
+	background:#3498db;
+	text-align:left;
+	text-indent:1em;
+	font-size:1.2em;
+
+	border-radius:3px;
+}
+header + div section div ul li a:hover,
+header + div section div ul li a:focus{
+	background:#2980b9;
+}
+@media screen and (min-width:350px){
+	header + div section div{
+		top:4.5em;
+	}
+	header + div section div ul{
+		bottom:-8em;
+	}
+}
+/*pequeno brackPoint*/
+@media screen and (min-width:450px){
+	header + div section div{
+		top:6em;
+	}
+	header + div section div > p:first-of-type{
+		top:2em;
+		font-size:2em;
+	}
+	header + div section div > p:nth-of-type(2){
+	  top:3.5em;
+
+	  margin:0 auto 3em;
+	  font-size:1.5em;
+	}
+	header + div section div hgroup{
+		top:3em;
+	}
+	div hgroup h3{
+		color:#f1c40f;
+
+		font-size:1.5em;  
+	}
+	div hgroup h4{
+		font-size:1em;
+		font-weight:500;
+		text-align:left;
+		margin:1em 0;
+	}
+
+}
+
+@media screen and (min-width:860px){
+	header + div{
+		
+		height:60em;
+
+		margin-bottom:-29em;
+		
+		background:url('../imagens/404@2X.jpg') no-repeat;
+		background-size:cover;
+		background-position:0% 50%;
+	}
+}
+@media screen and (min-width:1100px){
+	header + div{
+		height:63em;
+
+		margin-bottom:-29em;
+		
+		background:url('../imagens/404@3X.jpg') no-repeat;
+		background-size:cover;
+		background-position:0% 50%;
+	}
+}
+@media screen and (min-width:1500px){
+	header + div{
+		background-position:50% 50%;
+	}
+	header + div::before{
+		background:rgba(0,0,0,.3);
+	}
+	header + div section{
+		left:-25em;
+	}
+
+	header + div section div > p:first-of-type{
+		font-size:2.5em;
+	}
+	header + div section div > p:nth-of-type(2){
+	  font-size:1.8em;
+	}
+}

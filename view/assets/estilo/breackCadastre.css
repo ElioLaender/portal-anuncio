@@ -1,0 +1,342 @@
+@charset "UTF-8";	
+@media screen and (min-width: 410px){
+/*seleciona o primeiro div filho de div.cadastre*/
+		/*numeros que chamam as imagens*/
+	div#nav{
+		top:7em;
+	}
+    div#slide > div{
+		height:25em;
+	}
+	
+	div#slide > div h3{
+		font-size:1.5em;
+	}
+	div#slide > div p,
+	div#slide > div p em{
+	  font-size:1.1em;
+	}
+	/*link*/
+	div.butCad{
+		top:6em;
+	}
+	/*numeros que chamam as imagens*/
+	div#nav{
+		top:12.5em;
+		margin-bottom:3em;
+	}
+	div#slide > div:nth-of-type(2) h3{
+		top:3em !important;
+	}
+	div#slide > div:nth-of-type(2) p:first-of-type{
+		top:7em;
+		border-bottom:solid #777 2px;
+		padding-bottom:1em;
+	}
+	div#slide > div:nth-of-type(3) h3{	
+		top:2.3em;
+		font-size:1.9em;
+	}
+	div#slide > div:nth-of-type(3) p{
+		top:4em;
+	}
+	/*button 3 slide*/
+	div.linkCur ul li > a{
+		 top:2.5em;
+	}
+}
+@media screen and (min-width: 500px){
+	
+	div#nav{
+		top:5.3em;
+	}
+	div.slideCa{
+		height:27em;	
+	}
+ 	div#slide > div{
+		height:27em;
+	}
+
+	div#slide > div h3{
+		font-size:1.9em;
+	}
+
+	div#slide > div:nth-of-type(3) h3{	
+		top:1.8em;
+		font-size:2.1em;
+	}
+	div#slide > div p,
+	div#slide > div p em{
+	  font-size:1.2em;
+	}
+
+	div#slide > div:first-child{
+	 	background: url('../imagens/manComputer@2x.jpg') no-repeat;
+	 	background-size: cover;
+	 	background-position: 100% 100%;
+ 	}
+	 div#slide > div:first-child p:first-of-type{
+	 	font-size:1.4em;
+	}
+ 	/*inicio do segundo bloco slide*/
+	div#slide > div:nth-of-type(2){
+	 	background:url('../imagens/reuniao@2x.jpg') no-repeat;
+	 	background-size:cover;	
+	 	background-position: 100% 50%;
+	}
+	
+
+	/*inicio do terceiro bloco slide*/
+	div#slide > div:nth-of-type(3){
+	 	background:url('../imagens/cur@2x.jpg') no-repeat;
+	 	background-size:cover;
+	 	background-position: 100% 50%;
+	}
+
+	/*fim do bloco pai*/
+	div.chamaImg{
+	    top:-15em;
+	}
+}
+
+@media screen and (min-width: 700px){
+		div#slide > div:first-child{
+		 	background: url('../imagens/manComputer@3x.jpg') no-repeat;
+		 	background-size: cover;
+		 	background-position:0 100%;
+	 	}
+		div#slide > div:first-child::before{
+			background:rgba(236, 240, 241,.1);
+		}
+
+		div#slide > div:first-child h3:first-of-type{
+			margin-bottom:1.3em;
+		}
+		div#slide > div:first-child p:first-of-type{
+			top:1.5em;
+ 		}
+	 	
+	 	div#slide > div:first-child div.butCad{
+	 		top:5em;
+	 	}
+
+		div#slide > div:nth-of-type(2) h3{
+			margin-top:1em;
+			left:-3em;
+		}
+		div#slide > div:nth-of-type(2) p{
+			top:1em;
+			left:-3em;
+
+		}
+		div#slide > div:nth-of-type(2) figure.terminal{
+				width:10em;
+				margin:-9em 3em 0 0;
+				float:right;
+				display:block;
+
+			}
+		div#slide > div:nth-of-type(2) figure.terminal img{
+			width:100%;
+		}
+		/*inicio do quartos bloco slide*/
+		div#slide > div:nth-of-type(4){
+		 	background:url('../imagens/womanOffcie@2x.jpg') no-repeat;
+		 	background-size:cover;
+		 	background-position:50% 0%;
+		 	
+		}
+	 	div#slide > div:nth-of-type(4) h3{
+			top:2.5em;
+			font-size:1.7em;
+			font-weight:600 !important;
+		}
+		div#slide > div:nth-of-type(4) p{
+			top:5em;
+			font-size:1.4em;
+		}
+		/*button do ultimo slide*/
+		div.linkAnu ul li > a{
+			 top:3em;
+			 left:0em;
+		}
+}
+
+@media screen and (min-width: 850px){
+	div#slide > div h3{
+		font-size:2.1em;
+		font-weight:500;
+	}
+	div.slideCa{
+		height:30em;
+	}
+ 	div#slide > div{
+		height:30em;
+	}
+ 	/*inicio do segundo bloco slide*/
+	div#slide > div:nth-of-type(2){
+	 	background:url('../imagens/reuniao@3x.jpg') no-repeat;
+	 	background-size: cover;	
+	 	background-position: 25% 100%;
+	}
+	
+	div#slide > div:nth-of-type(3) div.linkCur{
+		top:9em;
+	}
+	
+}
+
+@media screen and (min-width: 1080px){
+	div.slideCa{
+		height:31em;		
+	}
+ 	div#slide > div{
+		height:31em;
+	}
+
+	div#slide > div:nth-of-type(2) p{
+		top:5em !important;
+	   font-size:1.6em !important;
+	}
+	
+	div.chamaImg{
+    	top:-15.5em;
+	}
+	div.chamaImg > button{
+		width:2.8em;
+		height:2.8em;
+	}
+	
+	
+	/*button do ultimo slide*/
+	div.linkAnu ul li > a{
+		top:6em;	
+	}
+
+}	
+
+@media screen and (min-width: 1280px){
+	div#slide > div:nth-of-type(3){
+	 	background:url('../imagens/cur@3x.jpg') no-repeat;
+	 	background-size: cover;
+	 	background-position: 100% 0;
+	}
+}
+
+@media screen and (min-width: 1380px){
+	
+	div.slideCa{
+		height: 34em;
+	}
+	div#slide > div{
+		height:34em;
+	}
+
+	 div#slide > div:nth-of-type(2) h3{
+		font-size:2.5em;
+		left:-6em;
+	}
+	div#slide > div:nth-of-type(2) p{
+		font-size:1.8em;
+		left:-9em;
+		margin-top:2em;
+	}
+	/*inicio do quartos bloco slide*/
+	div#slide > div:nth-of-type(4){
+		 	background:url('../imagens/womanOffcie@3x.jpg') no-repeat;
+		 	background-size:cover;
+		 	background-position:50% 0%;
+		 	
+	}
+	div#slide > div:nth-of-type(4) h3{
+		font-size:2.5em;
+	}
+	div#slide > div:nth-of-type(4) p:first-of-type{
+		top:5em;
+		font-size:1.6em;
+	}
+	/*inicio do quartos bloco slide*/
+	div#slide > div:nth-of-type(4){
+		 background-position:70% 50%;
+	}
+	div#slide > div:nth-of-type(4) ul li a{
+		font-weight:600;
+	}
+	div:first-of-type > div.butCad ul{
+		top:3em;
+		left:-1.3em;
+	}
+	div:first-of-type > div.butCad ul li > a{
+		font-size:1.3em;
+		width:10em;
+		text-align:center;
+		font-weight:600;
+		text-indent:0;
+		padding:.6em 0 0 0;
+	}
+		/*button 3 slide*/
+	div.linkCur ul li > a{
+		 top:0;
+		 left:-1em;
+		 width:10em;
+		 font-size:1.3em;
+		 font-weight:600;
+		 text-align:center;
+		 padding:.8em 0 0 0;
+	}
+
+	div.linkAnu ul li > a{
+		width:11em;
+
+		font-size:1.3em;
+	}	
+}
+
+@media screen and (min-width:1580px){
+
+	div.slideCa{
+		height:40em;
+	}
+	div#slide > div{
+		height:40em;
+	}
+
+	div#slide > div:first-child{
+		 	background: url('../imagens/manComputer@4x.jpg') no-repeat;
+		 	background-size: cover;
+		 	background-position:0 100%;
+	 }
+	div#slide > div:first-child h3{
+		left:-6em;
+		top:2em;
+		font-size:2.5em;
+	}
+	div#slide > div:first-child > p{
+		max-width:20em;
+		top:4em !important;
+		left:-13em;
+
+	}
+	div:first-of-type > div.butCad ul{
+		top:3em;
+		left:-19em;
+	}
+
+		/*inicio do segundo bloco slide*/
+	div#slide > div:nth-of-type(2){
+	 	background:url('../imagens/reuniao@4x.jpg') no-repeat;
+	 	background-size: cover;	
+	 	background-position: 25% 100%;
+	}
+
+	div#slide > div:nth-of-type(3) h3{	
+		top:2.3em;
+		font-size:2.9em;
+	}
+	div#slide > div:nth-of-type(3) p{
+		top:6em;
+		font-size:1.5em;
+		margin-bottom:3em;
+	}
+
+}

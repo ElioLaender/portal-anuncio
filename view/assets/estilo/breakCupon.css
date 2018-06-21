@@ -1,0 +1,126 @@
+@charset "UTF-8"; 
+@media screen and (min-width:300px){
+	div.tudo{
+		min-height:50em;
+	}
+}
+@media screen and (min-width:320px){
+		/*escadinha no form editar*/
+	p.escada{
+	  top:-8em;
+	  left:-1.5em;
+	}
+}
+@media screen and (min-width:450px){
+
+	header.headDes > h1{
+		top:1em;
+		font-size:1.9em;
+		margin-bottom:2.5em;
+	}
+	div.reAnun ul li a{
+		width:95%;max-width:20em;
+		height:3em;
+
+		padding:1em 0;
+	}
+	div.container p{
+		width:70%;
+		font-size:1.8em;
+	}
+	div.reAnun p{
+		font-size:1.5em;
+	}
+}
+@media screen and (min-width:550px){
+	div.paiDesc{
+		min-height:42em;
+		margin:0 auto;
+	}
+	div.reAnun{
+		max-width:33.5em;
+	}
+	div.paiDesc article{
+		width:15em;
+		margin:0 .7em;
+		padding-left:.5em;
+		display:inline-block;
+	}
+	div.divCup{
+		display:inline-block;
+	}
+}
+@media screen and (min-width:800px){
+	div.container{
+		background:url('../imagens/zeroAnun@2x.jpg')no-repeat;
+		background-position:100%;
+		background-size:cover;
+	}
+}
+@media screen and (min-width:900px){
+		/*escadinha no form editar*/
+	p.escada{
+	  top:-7em;
+	}
+}
+@media screen and (min-width:950px){
+	/*escadinha no form editar*/
+	p.escada{
+	  top:-10em;
+	}
+	div.reAnun{
+		max-width:50em;
+	}
+	header.headDes > h1{
+		top:2em;
+		font-size:2.1em;
+		margin-bottom:4em;
+	}
+}
+@media screen and (min-width:1050px){
+	/*escadinha no form editar*/
+	p.escada{
+	  top:-12em;
+	}
+	
+	div.tudo{
+		min-height:90em;
+	}
+	header.headDes > h1{
+		top:3em;
+		margin-bottom:5em;
+	}
+	div.divCup{
+		height:21em;
+	}
+	div.divCup button.butCup{
+		top:1em;
+		height:2.5em;
+		width:100%;
+	}
+}
+@media screen and (min-width:1100px){
+/*escadinha no form editar*/
+	p.escada{
+	  top:-13.5em;
+	  left:-1em;
+	}
+}
+@media screen and (min-width:1200px){
+	/*escadinha no form editar*/
+	p.escada{
+	  top:-11.5em;
+	}
+}
+@media screen and (min-width:1300px){
+	div.container{
+		background:url('../imagens/zeroAnun@3x.jpg')no-repeat;
+		background-position:100%;
+		background-size:cover;
+	}
+}
+@media screen and (min-width:1550px){
+   div.tudo{
+		min-height:95em;
+	}
+}

@@ -1,0 +1,215 @@
+@charset "UTF-8";	
+@media screen and (min-width: 330px){
+	div.paiRodape  footer nav ul li a{
+	  font-size: 1.1em;
+	}
+	div.paiLogo div p{
+	  top:3.8em;
+	}
+}
+
+@media screen and (min-width: 340px){
+	    
+		/*parte principal imagem*/	
+		section div.paiLogo,div.paiLogo div{
+			height:22em;
+		}
+		 div.paiLogo div p{
+  			top:6em;
+		}
+}
+/* 350px vai ate 400px pega*/
+@media screen and (min-width: 350px){
+		div.paiLogo div p{
+			font-size:1.3em;
+		}
+		/*parte principal imagem*/	
+		section div.paiLogo,div.paiLogo div{
+			height:28em;
+		}
+
+		section div.paiLogo div figure img{
+			max-width:15em;
+         }
+}
+ /*Fim do breakpint 350px*/
+
+@media screen and (min-width: 360px){
+	section div.paiLogo div figure img{
+		top:-1em;
+      }
+    div.paiLogo div p{
+  	   top:8.5em;
+	}      
+	div.loader > div{
+	  top:8em;
+	}
+}
+	/*400px ate 450px*/
+@media screen and (min-width: 400px){
+	/*controla o tamnaho da pg*/
+		section div.paiLogo,div.paiLogo div{
+		  	height: 32em;
+		}
+
+		div.loader > div{
+		  		top:12em;
+		}
+}
+/*Fim do breakpoint de 400px*/
+@media screen and (min-width: 560px){	
+	section div.paiLogo{
+	  background: url('../imagens/entrada.jpg') no-repeat;
+	  background-size: cover;
+	  background-position: 0 20%;
+	}
+
+}	
+
+@media screen and (min-width: 580px){	
+	div.paiRodape div:first-of-type{
+	  top:3em;
+
+	  margin:0 auto 8em;
+	}
+/*----------rodapeh da pg--------*/
+	div.paiRodape{
+	  height:61em;
+	}
+
+}
+@media screen and (min-width: 600px){	
+
+/*controla o tamnaho da pg*/
+		section div.paiLogo,div.paiLogo div{
+		  	height: 36em;
+		}
+
+		div.paiLogo div p{
+		  	font-size: 1.5em;
+		}
+		div.loader > div{
+	  		top:15em;
+	    }  
+
+}
+
+@media screen and (min-width: 630px){	
+/*controla o tamnaho da pg*/
+		section div.paiLogo,div.paiLogo div{
+		  	height: 36em;
+		}
+
+		div.paiLogo div p{
+		  	font-size: 1.5em;
+		}
+
+		section div.paiLogo{
+	 	 	background-position: 0 40%;
+		} 
+
+		div.paiRodape footer > p{
+			height: 2.5em;
+			font-size: 1.1em;
+			top:-2.5em;
+		}
+}
+@media screen and (min-width: 825px){	
+	div.paiRodape div:first-of-type{
+	  position:relative;
+	  top:3em;
+	  left:0;
+	  margin:0 auto 7em;
+	}
+	
+	section div.paiLogo div figure img{	
+		width: 100%;max-width:17em;
+	}
+	
+	div.loader > div{
+	  	top:20em;
+	 }
+
+}
+@media screen and (min-width: 860px){	
+					/*----------rodapeh da pg--------*/
+		div.paiRodape{
+		   top:32em;
+		   height:45em;
+		}
+		div.paiRodape div:first-of-type{
+		   position:relative;
+		   left:0;
+		   margin:0 auto 8em;
+		}
+		div.paiRodape footer nav{
+			width:100%;max-width:43em;
+			margin:0 auto;
+		}
+
+		div.paiRodape footer nav ul{
+			width:45%;
+			margin:0 0 2.5em 2em;
+			display:inline-block;
+		}
+		div.paiRodape footer nav ul:last-of-type{
+			top:-2em;
+		}
+		div.paiRodape footer nav ul li p{
+			font-size:1.4em;
+		}
+		div.paiRodape footer nav ul li a{
+			font-size:1.3em;
+			margin-bottom:-1em;
+		}
+				/*este eh copyright*/
+		div.paiRodape div:last-of-type{
+			bottom:1em;
+		}
+		div.paiRodape div:last-of-type p{
+		   font-size:1em;
+		}
+		/*logo expressahost*/
+		div.paiRodape div:last-of-type img{
+		   width:9em;
+		}
+}
+
+@media screen and (min-width: 1050px){	
+
+	div.paiLogo header div p{
+		font-size:1.4em;
+		max-width:20em;		  			
+	}
+
+}
+@media screen and (min-width: 1250px){	
+	div.paiLogo div p{
+		font-size: 1.6em;	  			
+	}
+}
+
+@media screen and (min-width: 1500px){
+	div.paiRodape{
+		height:38em;
+	}	
+	div.paiRodape div:first-of-type{
+	    top:5em;
+	}
+	div.paiRodape footer nav{
+		position:relative;
+	    left:4em;
+	    top:3em;
+
+	    width:100%;max-width:75em;
+	}
+
+	div.paiRodape footer nav ul{
+		width:22%;
+		margin:0 0 .5em 2em;
+		display:inline-block;
+	}
+
+}
+
+

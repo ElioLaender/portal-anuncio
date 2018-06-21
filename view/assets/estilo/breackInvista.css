@@ -1,0 +1,332 @@
+@charset "UTF-8";
+@media screen and (min-width:350px){
+/*bloco pequeno painel*/
+	section > div:nth-of-type(3){
+		margin:0 auto 4em;
+	}
+	section > div:nth-of-type(3) > div ul li p{
+	  top:.7em;
+	}
+}
+@media screen and (min-width:450px){
+	section > div:first-of-type{
+		top:2em;
+		height:25em;
+		margin:0 auto 2em;
+	}
+	section > div:first-of-type ul.plan{
+		top:8em;
+	}
+	section > div:first-of-type > p:first-of-type{
+		top:4em;
+		max-width:18em;
+		margin:0 auto;
+		font-size:1.6em;
+		font-weight:600;
+
+	}
+	section > div:first-of-type > p:last-of-type{
+		top:6em;
+		font-size:1.3em;
+	}
+
+	section > div:nth-of-type(2) h3{
+		top:1em;
+		margin-bottom:1.5em;
+		font-size:1.8em;
+	}
+	section > div:nth-of-type(2) p{
+		top:.5em;
+		width:90%;max-width:18em;
+		margin:0 auto 4em;
+		font-size:1.3em;
+	}
+	/*bloco pequeno painel*/
+	section > div:nth-of-type(3){
+		position:relative;
+		top:1em;
+
+		margin:0 auto 7em;
+	}
+   section > div:nth-of-type(3) h3{
+	    width:95%;max-width:15em;
+		font-size:1.5em;
+	}	
+
+	section > div:nth-of-type(7) h3{
+		font-size:2.3em;
+	}
+}
+@media screen and (min-width:550px){
+/*bloco pequeno painel*/
+	section > div:nth-of-type(3){
+		margin:0 auto 11em;
+	}
+	section > div:nth-of-type(3) h3{
+		top:3em;
+		font-size:1.8em;
+		margin-bottom:5em;
+	}	
+   
+	section > div:nth-of-type(3) > div ul li p{
+	  font-size:1.1em;
+	}
+}
+@media screen and (min-width:580px){
+	section > div:first-of-type ul.plan li a{
+			height:2.3em;
+			font-size:1.3em;
+			font-weight:600;
+			border:solid #f39c12 4px;
+		}
+	section > div:first-of-type ul.plan li a:hover,
+	section > div:first-of-type ul.plan li a:focus{
+		background:none;
+	}
+	section > div:nth-of-type(5){
+		height:17em;
+	}
+}
+@media screen and (min-width:800px){
+	section > div:first-of-type{
+		height:28em;
+
+		background:url('../imagens/invista@2x.jpg') no-repeat;
+		background-size:cover;
+		background-position:50%;
+	}
+	section > div:first-of-type:before{
+		background:rgba(236, 240, 241,.4);
+	}
+	section > div:first-of-type ul.plan li a{
+		background:#2ecc71;
+		border:solid #2ecc71 4px;
+	}
+	section > div:first-of-type ul.plan li a:hover,
+	section > div:first-of-type ul.plan li a:focus{
+		color:#444;
+	}
+	section > div:first-of-type > p:first-of-type{
+		top:3em;
+		font-size:2em;
+		color:#f39c12;
+	}
+	section > div:first-of-type > p:last-of-type{
+		top:5em;
+		max-width:20em;
+
+		font-size:1.5em;
+		font-weight:600;
+		color:#444;
+	}
+
+	/*youtube*/
+	section > div:nth-of-type(4){
+		height:30em;
+		padding-top:4.5em;
+	} 
+	section > div:nth-of-type(4) figure iframe{
+		height:21em;
+	}
+
+	section > div:nth-of-type(5) h3{
+		max-width:18em;
+		font-size:1.8em;
+
+	}
+
+}
+@media screen and (min-width:970px){
+	section > div:first-of-type{
+		top:0;
+	}
+
+	/*bloco boos coloridas*/
+	section > div:nth-of-type(2){
+		max-width:60em;
+		margin:0 auto 5em;
+
+	}
+	section > div:nth-of-type(2) dl{
+		width:30%;
+		display:inline-block;
+		margin:.5em .8em;		
+	}
+	section > div:nth-of-type(2) dl:nth-of-type(2){
+		top:-1em;		
+	}
+	section > div:nth-of-type(2) dl:nth-of-type(3){
+		/*top:-.5em;*/
+	}
+	section > div:nth-of-type(2) dl:nth-of-type(4){
+		top:-.5em;
+		margin: 0 1.5em 0 10em;
+	}
+	
+
+	/*bloco mini menu*/
+	section > div:nth-of-type(3) h3{
+		top:3em;
+		font-size:2.1em;
+		margin-bottom:5em;
+	}	
+
+	/*passos para criar anúncio*/
+	section > div.passos{
+		top:1em;
+		max-width:60em;
+		margin-bottom:2.5em;
+		background:transparent;
+	}
+	section > div.passos:before{
+		content:'';
+
+		position:absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+
+		background:url('../imagens/pegadas@0x.png') no-repeat;
+		background-size:5em;
+		background-position:27% 35%;
+
+	}
+	section > div.passos:after{
+		content:'';
+
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+
+		background:url('../imagens/pegadas@0x.png') no-repeat;
+		background-size:5em;
+		background-position:62% 35%;
+	}
+	section > div.passos h3{
+		font-size:2.3em;
+	}
+	section > div.passos div{
+		height:13.5em;
+		width:100%;max-width:17em;
+		display:inline-block;
+		overflow:hidden;
+		margin:1em 1em 0 1.5em; 
+	}
+	section > div:nth-of-type(5){
+		background-attachment:fixed;
+	}
+	section > div:nth-of-type(7) > div{
+		overflow:hidden;
+		max-width:50em;
+		margin:3em auto 0;
+		padding-left:1.5em;
+	}
+	section > div:nth-of-type(7) > div > div{
+		width:45%;
+		float:left;
+		margin:.5em;
+		min-height:30em;
+
+	}
+}
+
+@media screen and (min-width:1200px){
+	section > div:first-of-type{
+		top:3.5em;
+		height:30em;
+		background:url('../imagens/invista@3x.jpg') no-repeat;
+		background-size:cover;
+		background-position:50%;
+	}
+	section > div:first-of-type ul.plan li a{
+		left:-10.7em;
+	}
+	section > div:first-of-type > p:first-of-type{
+		top:3em;
+		left:-6em;
+		font-size:2.3em;
+	}
+	section > div:first-of-type > p:last-of-type{
+		font-size:1.8em;
+		left:-7.5em;
+	}
+
+	/*boloas coloridas*/
+	section > div:nth-of-type(2) h3{
+		top:2.5em;
+		font-size:2em;
+		margin-bottom:4em;
+	}
+	section > div:nth-of-type(2) p{
+		top:0;
+
+		max-width:25em;
+		font-size:1.5em;
+	}
+	section > div:nth-of-type(2) dl{
+		width:30%;
+		display:inline-block;
+		margin:.5em .8em;
+	}
+	section > div:nth-of-type(2) dl:nth-of-type(4){
+		margin: 0 1.5em 0 4.5em;
+	}
+	section > div:nth-of-type(2) dl:nth-of-type(4),
+	section > div:nth-of-type(2) dl:nth-of-type(5){
+		width:40%;		
+	}
+
+	section > div:nth-of-type(2) dl dt{
+		margin-bottom:1.5em;
+	}
+
+	section > div:nth-of-type(2) dl:nth-of-type(5) dt{
+		margin-bottom:1em;
+	}
+	/*bloco mini bloco*/
+	section > div:nth-of-type(3) h3{
+		margin-bottom:6.5em;
+	}	
+	section > div:nth-of-type(3){
+		width:100%;max-width:75em;
+		overflow:hidden;
+
+		margin-bottom:15em;
+
+	}
+	section > div:nth-of-type(3) > div{
+		width:100%;max-width:35em;
+		float:left;
+	}
+	section > div:nth-of-type(3) > div:first-of-type{
+		margin:0 1.5em;
+	}
+	/*youtube*/
+	section > div:nth-of-type(4){
+		height:35em;
+		padding-top:5em;
+	} 
+	section > div:nth-of-type(4) figure{
+		width:95%;max-width:45em;
+	}
+	section > div:nth-of-type(4) figure iframe{
+		height:26em;
+	}
+	section > div:nth-of-type(5) h3{
+		top:1em;
+		font-size:2em;
+
+	}
+	section > div:nth-of-type(7){
+		background-attachment:fixed;
+	}
+	section > div:nth-of-type(7) > div > div{
+		width:45%;max-width:35em;
+		min-height:28em;
+	}
+}
+
+

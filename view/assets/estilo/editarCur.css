@@ -1,0 +1,26 @@
+@charset "UTF-8";	
+div.paiS section div.pa{
+  position:relative;
+  top:0;
+  overflow: hidden;
+
+  width: 100%;
+  height:20em;
+
+  background: url('../imagens/womanOffice@1x.jpg')no-repeat;
+  background-size:cover;
+  background-position:100% 90%;
+}
+
+div.paiS section div#bac{
+  position:relative;
+  top:0;
+  overflow: hidden;
+
+  width: 100%;
+  height:20em;
+
+  background: url('../imagens/manAndwoman@1x.jpg')no-repeat;
+  background-size:cover;
+  background-position:0% 90%;
+}

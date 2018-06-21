@@ -1,0 +1,392 @@
+@charset "UTF-8";	
+/*Este pega meu celular lg*/
+@media screen and (min-width: 315px){
+		section div ul li a,
+		section.sectDas > div:first-of-type ul li button{
+			font-weight:600;
+	    }
+}
+@media screen and (min-width:500px){
+
+	section.sectDas > div:first-of-type p{
+		top:1em;
+		font-size:1.5em;
+		
+	}
+	section.sectDas > div:first-of-type ul{
+		width:90%;max-width:25em;
+		margin-top:5em;
+	}
+	section.sectDas > div:first-of-type ul.menuCur{
+		top:-5.5em;
+	}
+	
+	/*so aparece a primeira vez*/
+	section.sectDas > div:last-of-type section.boasVin h3{
+		font-size:2em;
+	}
+	section.sectDas > div:last-of-type section.boasVin p{
+		top:7.5em;
+		font-size:1.3em;
+	}
+
+	/*load*/
+	div#carregando_form figure{
+		top:10em;
+		margin-bottom:10.5em;
+	}
+}
+@media screen and (min-width:725px){
+	section.sectDas > div:first-of-type p{
+		top:2em;
+		margin-bottom:6em;
+	}
+	section.sectDas > div:first-of-type ul{
+		 width:90%;max-width:40em;
+	}
+	section.sectDas > div:first-of-type ul.menuCur{
+		width:100%;
+	}
+	section.sectDas > div:first-of-type ul.menuCur p{
+		top:2em;
+		margin-bottom:5em;
+	}
+}
+@media screen and (min-width: 900px){
+	section.sectDas > div:last-of-type{
+	 	top:5em;	
+	}
+	/*so aparece a primeira vez*/
+	section.sectDas > div:last-of-type section.boasVin h3{
+		top:3em;
+		font-size:2.5em;
+	}
+	section.sectDas > div:last-of-type section.boasVin p{
+		top:6em;
+		font-size:1.6em;
+	}
+	/*load*/
+	div#carregando_form figure{
+		top:11.5em;
+		margin-bottom:12.5em;
+	}
+}
+@media screen and (min-width:1100px){
+	body{
+		background:#40424a;
+	}
+	section.sectDas > div:first-of-type {
+		position:fixed;
+		top:2em;
+		width:100%;max-width:20em !important;
+		height:47em;
+		background:#40424a;
+		overflow-y:scroll;
+	}
+	section.sectDas > div:first-of-type p{
+		top:5.5em;
+		left:-1.4em;
+		color:#fff;
+		font-weight:500;
+		font-size:1.2em;
+  		font-family:"Roboto Slab","arial";
+
+		margin-bottom:7em;
+	}
+	section.sectDas > div:first-of-type ul{
+		width:100%;max-width:100%;
+		min-height:65em;
+	}
+	section.sectDas > div:first-of-type ul li{
+		left:0;
+		width:100%;max-width:100%;
+		height:2.8em;
+		margin-bottom:.5em;
+	}
+	section.sectDas > div:first-of-type ul li figure{
+		display:none;
+	}
+	section.sectDas > div:first-of-type ul li a,
+	section.sectDas > div:first-of-type ul li button{
+		height:2.8em;
+	    width:100%;
+
+	    padding:.8em 0 !important;
+		color:#fff;
+		font-size:1em;
+		font-weight:500;
+		text-align:left;
+		text-indent:3em;
+		letter-spacing:1px;
+		border:none;
+	}
+
+	section.sectDas > div:first-of-type ul li a:hover,
+	section.sectDas > div:first-of-type ul li a:focus,
+	section.sectDas > div:first-of-type ul li button:hover,
+	section.sectDas > div:first-of-type ul li button:focus{
+		border:none !important;
+		background:#28384a;
+	}
+	section.sectDas > div:first-of-type ul li a:visited{
+		color:#f0f3f4;
+	}
+
+	#anunAtivos strong,
+	#anunInativos strong{
+		display:inline-block;
+		color:#fff;
+		text-indent:0;
+		margin-left:.2em;
+	}
+	#anunInativos strong{
+		text-indent:.2em;
+	}
+	#anunAtivos strong span,
+	#anunInativos strong span{
+		color:#fff;
+	}
+	/*este pseudo-elemento foi criado afim de servir para os demais abaixo*/
+	section.sectDas > div:first-of-type ul li a::before{
+		content:'';
+		position:absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+
+	}
+	/*anun ativos*/
+	section.sectDas > div:first-of-type ul li:first-of-type a::before{
+		background:url('../imagens/acit@0x.png') no-repeat;
+		background-size:1em;
+		background-position:1.2em 50%;
+	}
+	/*anun inativ*/
+	section.sectDas > div:first-of-type ul li:nth-of-type(2) a::before{
+		background:url('../imagens/des@0x.png') no-repeat;
+		background-size:1em;
+		background-position:1.2em 50%;
+	}
+	/*edt*/
+	section.sectDas > div:first-of-type ul li:nth-of-type(3) a::before{
+		background:url('../imagens/perfil@0x.png') no-repeat;
+		background-size:1.3em;
+		background-position:1.2em 50%;
+	}
+	/*novo anun*/
+	section.sectDas > div:first-of-type ul li:nth-of-type(4) a::before{
+		background:url('../imagens/new@0x.png') no-repeat;
+		background-size:1.3em;
+		background-position:1.2em 50%;
+	}
+	/*cupon*/
+	section.sectDas > div:first-of-type ul li:nth-of-type(5) a::before{
+		background:url('../imagens/desc@0x.png') no-repeat;
+		background-size:.9em;
+		background-position:1.2em 50%;
+	}
+	
+	/*impulsionar*/
+	section.sectDas > div:first-of-type ul li:nth-of-type(6) a::before{
+		background:url('../imagens/fog@01x.png') no-repeat;
+		background-size:1em;
+		background-position:1.2em 50%;
+	}
+	/*divulgar cur*/
+	section.sectDas > div:first-of-type ul li:nth-of-type(7) ::before{
+		background:url('../imagens/irCur@0x.png') no-repeat;
+		background-size:1.2em;
+		background-position:1.2em 50%;
+	}
+	/* sair*/
+	section.sectDas > div:first-of-type ul li:nth-of-type(8) a::before{
+		background:url('../imagens/sair@0x.png') no-repeat;
+		background-size:1.2em;
+		background-position:1.2em 50%;
+	}
+	/* home*/
+	section.sectDas > div:first-of-type ul li:nth-of-type(9) a::before{
+		background:url('../imagens/homePage@0x.png') no-repeat;
+		background-size:1.4em;
+		background-position:1.2em 50%;
+	}
+	/*curriculo*/
+	section.sectDas > div:first-of-type ul.menuCur{
+		top:-5em;
+	}
+	section.sectDas > div:first-of-type ul.menuCur li a.col{
+		color:#ecf0f1;
+	}
+	section.sectDas > div:first-of-type ul.menuCur li a#cadCur::before{
+		background:url('../imagens/cadastre@0x.png') no-repeat;
+		background-size:1.3em;
+		background-position: 1.2em 50%;
+	}
+	section.sectDas > div:first-of-type ul.menuCur li:first-of-type a::before{
+		background:url('../imagens/zoomWhate.png') no-repeat;
+		background-size:1.4em;
+		background-position: 1.2em 50%;
+	}
+	section.sectDas > div:first-of-type ul.menuCur li:nth-of-type(2) a::before{
+		background:url('../imagens/conf@0x.png') no-repeat;
+		background-size:1.2em;
+		background-position: 1.2em 50%;
+	}
+	section.sectDas > div:first-of-type ul.menuCur li:nth-of-type(3) a::before{
+		background:url('../imagens/baix@0x.png') no-repeat;
+		background-size:1em;
+		background-position: 1.2em 50%;
+	}
+	/*deletar*/
+	section.sectDas > div:first-of-type ul.menuCur li:nth-of-type(4) a#eu::before{
+		background:url('../imagens/box@0x.png') no-repeat;
+		background-size:1.1em;
+		background-position: 1.2em 50%;
+	}
+
+	section.sectDas > div:first-of-type ul.menuCur li:nth-of-type(4) a#todos::before{
+	    background:url('../imagens/ocult@0x.png') no-repeat;
+		background-size:1.3em;
+		background-position: 1.2em 50%;
+	}
+	/*sair*/
+	section.sectDas > div:first-of-type ul.menuCur li:nth-of-type(5) a::before{
+		background:url('../imagens/exc@0x.png') no-repeat;
+		background-size:1em;
+		background-position: 1.2em 50%;
+	}
+	/*home*/
+	section.sectDas > div:first-of-type ul.menuCur li:nth-last-of-type(2) a::before{
+		background:url('../imagens/sair@0x.png') no-repeat;
+		background-size:1.2em;
+		background-position: 1.2em 50%;
+	}
+	section.sectDas > div:first-of-type ul.menuCur li:last-of-type a::before{
+		background:url('../imagens/homePage@0x.png') no-repeat;
+		background-size:1.4em;
+		background-position:1.2em 50%;
+	}
+	section.sectDas > div:last-of-type{
+		right:0;
+	 	width:77.7%;
+	 	height:90em;
+	 	display:block!important;
+	 	
+	 	box-shadow:-2px 0 20px rgba(0,0,0,.4);
+	}
+	section.sectDas > div:last-of-type div.man{
+		background:url('../imagens/businessman@2x.jpg') no-repeat;
+	 	background-size:cover;
+	 	background-position:80% 50%;
+	}
+	section.sectDas > div:last-of-type div.man::before{
+		background:rgba(0,0,0,.1); 
+	}
+	section.sectDas > div:last-of-type section.boasVin h3{
+		color:#27ae60;
+	}
+	section.sectDas > div:last-of-type section.boasVin p{
+		color:#555;
+		font-weight:600;	
+	}
+
+	section.sectDas > div:last-of-type section.boasVin h3{
+		top:5.5em;
+		font-size:2.6em;
+	}
+	section.sectDas > div:last-of-type section.boasVin p{
+		top:9em;
+		font-size:1.8em;
+	}
+
+}
+@media screen and (min-width: 1200px){
+
+	section.sectDas > div:first-of-type {
+		height:50em;
+	}
+	section.sectDas > div:last-of-type section.boasVin h3{
+		color:#27ae60;
+	}
+	section.sectDas > div:last-of-type section.boasVin p{
+		color:#555;
+		font-weight:600;	
+	}
+	section.sectDas > div:first-of-type p{
+		top:5.5em;
+		margin-bottom:8em;
+	}
+	/*load*/
+	div#paiContDas aside div#carregando_form figure{
+		top:15em;
+		margin-bottom:16.5em;
+	}
+}
+
+@media screen and (min-width: 1238px){
+section.sectDas > div:last-of-type{
+	 	width:80%;
+	}
+}
+@media screen and (min-width:1360px){
+	section.sectDas > div:first-of-type {
+		max-width:23%;
+	}
+	section.sectDas > div:last-of-type{
+	 	width:80.5%;
+	}
+}
+@media screen and (min-width:1500px){
+	section.sectDas > div:first-of-type p{
+		top:7.5em;
+		left:-1em;
+		margin-bottom:10em;
+	}
+	section.sectDas > div:last-of-type{
+	 	width:82.5%;
+	}
+	section.sectDas > div:last-of-type section.boasVin h3{
+		top:5em;
+		left:-3em;
+		font-size:2.9em;
+		font-weight:500;
+	}
+
+	section.sectDas > div:last-of-type section.boasVin p{
+		top:10em;
+		left:-4.5em;
+	}
+	section.sectDas > div:first-of-type ul li a,
+	section.sectDas > div:first-of-type ul li button{
+		text-indent:4em;
+	}
+	section.sectDas > div:first-of-type ul li a::before,
+	section.sectDas > div:first-of-type ul li button::before{
+
+		background-position: 1.8em 50% !important;
+
+	}
+}
+
+@media screen and (min-width:1650px){
+	section.sectDas > div:last-of-type{
+	 	width:84.5%;
+	}
+}
+@media screen and (min-width:1850px){
+	section.sectDas > div:last-of-type{
+	 	width:86%;
+	}
+}
+@media screen and (min-width:2100px){
+	section.sectDas > div:last-of-type{
+	 	width:87%;
+	}
+}
+@media screen and (min-width:2280px){
+	section.sectDas > div:last-of-type{
+	 	width:88%;
+	}
+}
+

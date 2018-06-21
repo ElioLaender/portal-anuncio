@@ -1,0 +1,362 @@
+@charset "UTF-8";
+@media screen and (min-width:341px){
+	/*imagem, mensagem e avaliacao*/
+	article > div.PaiAnuncio div.divImg{
+	    margin: 0 auto .5em;
+	}
+}
+@media screen and (min-width:350px){
+	section.secFoto div#galeria ul{
+		width:100%; max-width:25em;
+		overflow:hidden;
+		padding-bottom:1em;
+	}
+	section.secFoto div#galeria ul li{
+		width:46%;
+		margin:1em 0 1em .5em;
+		height:7.5em;
+		float:left;
+	}
+	section.secFoto div#galeria ul li a,
+	section.secFoto div#galeria ul li a img{
+		height:7.5em;
+	}
+	div.excluir > div div{
+		width:15em;
+		margin:1em auto 0;
+	}
+	div.excluir > div button{
+		float:left;
+		margin-left:.5em;
+	}
+}
+@media screen and (min-width:400px){
+	
+	/*titulo da pg*/
+	div.paiPg section > div.bemVind{
+		top:-1em;
+		height:20em;
+	}
+	div.paiPg section > div.bemVind p:first-child{
+		max-width:15em;
+		margin:1em auto 0;
+		font-size:2em;
+	}
+	div.paiPg section > div.bemVind p:last-child{
+	  	top:1.3em;
+		font-size:1.2em;
+		max-width:20em;
+	}
+ 
+}
+
+@media screen and (min-width:450px){
+	div.paiPg{
+		top:18em;
+	}
+
+	div#tela div.paiBut{
+		top:9em;
+	}
+	div#tela img{
+		top:12em;
+		margin-left:.5em;
+	}
+}
+@media screen and (min-width:500px){
+	div#tela button.butF{
+		right:2em;
+	}
+	
+	div#tela div.paiBut button{
+		right:0;
+	}
+	div#tela img{
+		top:12.5em;
+	}
+}
+@media screen and (min-width:530px){
+
+	div.youTube h3{
+		font-size:2em;
+		margin:1em 0 .8em;
+    }
+ }
+@media screen and (min-width:600px){
+	/*descricao*/
+	div.paiArt article h2{
+		height:2.6em;
+		font-size:1.3em;
+	}
+	
+	/*bloco de retorno*/
+	div.returLik{
+		top:-1em;
+		height:17em;
+	}
+	div.returLik:before{
+		background-size:5.5em;
+		background-position:50% 15%;
+	}
+	div.returLik p{
+		top:5.5em;
+		font-size:1.5em;
+	}
+	div.returLik button{
+		right:.9em;
+		font-size:1.3em;
+	}
+	/*escrito quando nao esta logado e tenta responder*/
+	p.returResp{
+		font-size:1.7em !important;
+		
+		top:2em;
+		display:block;
+	}
+	section.secFoto h3{
+		font-size:1.8em;   
+		margin:2em 0 1em;
+	}
+
+	section.semFoto{
+		border:solid #fff 1px;
+		background:url('../imagens/imgFoto@2.jpg') no-repeat;
+		background-size:cover;
+		background-position:50%;
+	}
+	section.semFoto h3{
+		top:.7em !important;
+		font-size:2em;
+	}
+}
+@media screen and (min-width:650px){
+	section.secFoto div#galeria{
+		max-width:35em;
+	}
+	section.secFoto div#galeria ul{
+		max-width:35em;
+		padding-left:1.5em;
+
+	}
+	section.secFoto div#galeria ul li{
+		width:30%;max-width:10em;
+		margin:1em 0 1em .5em;
+		height:7.5em;
+		float:left;
+	}
+
+	div#tela div.paiBut{
+		max-width:35em;
+	}
+	div#tela img{
+		top:15em;
+		width:90%;max-width:33em;
+	}
+}
+@media screen and (min-width:700px){
+	/*mapa*/
+	section div.rota{
+		height:13.5em;
+		}
+	section div.rota p{
+		top:2em; 
+		font-size:1.5em;
+	}
+	section div.paiMapa div:first-of-type::before{
+		top:-3em;
+		width:6em;
+		height:6em;
+	}
+	section div.paiMapa div p{
+		font-size:1.5em;
+	}
+	
+
+	/*youtube*/
+	div.youTube{
+		padding-top:4em;
+	}
+	div.youTube h3{
+		top:-.5em;
+		margin-bottom:1em;
+	}
+}
+
+@media screen and (min-width:780px){
+
+	/*avaliacao*/
+	p.pAval{
+		top:6em;
+		font-weight:600;
+		font-size:2em;
+		margin-bottom:1.5em;
+	}
+		/*titulo da pg*/
+	div.paiPg section > div.bemVind{
+		height:23em;
+	}
+	div.paiPg section > div.bemVind p:first-child{
+		margin:2em auto 0;
+	}
+/*controla a parte completa do anuncio*/
+	div.divControler{
+		position:relative;
+		width:100%;max-width:52em;
+		
+		overflow:hidden;
+		margin: 0 auto;
+	}
+	/*bloco do anuncio*/
+	div.divControler > article{
+		max-width:25em;
+		display:inline-block;
+	}
+		/*titulo anuncio*/
+	article > div.PaiAnuncio > p:first-of-type{
+	    top:0;
+	}
+	/*controla os resto dos elemento de anuncio*/
+	div.divControler > article + div{
+		width:22em;
+		float:right;
+	}
+
+	/*redes sociais*/
+	dl#verRed{
+		margin:0 0 1em;
+	}
+
+	section.semFoto{
+		background:url('../imagens/imgFoto@3.jpg') no-repeat;
+		background-size:cover;
+		background-position:50%;
+		background-attachment:fixed;
+	}
+	
+}
+@media screen and (min-width:950px){
+
+section.secFoto div#galeria{
+		max-width:55em;
+	}
+	section.secFoto div#galeria ul{
+		max-width:55em;
+		padding-left:1em;
+	}
+	div#tela div.paiBut{
+		position:absolute;
+		top:0;
+		right:0;
+	}
+	div#tela img{
+		position:relative;
+		top:3em;
+		margin: 0 auto;
+		width:90%;max-width:35em;
+	}
+	div.escuro{
+		background:rgba(0,0,0,1);
+		display:none !important;
+	}
+	body{
+		background:#fff !important;
+	}
+}
+@media screen and (min-width:1000px){
+	/*mapa*/
+	section div.rota{
+		height:17.5em;
+
+		background:url('../imagens/manPurse@3x.jpg')no-repeat;
+		background-attachment:fixed;
+		background-size:cover;
+		background-position:50% 100%;
+	}
+
+	section div.rota p{
+		top:4em; 
+	}
+	section div.paiMapa div:last-of-type{
+		height:22em;	
+	}
+		/*iframe*/
+	#map{
+		height:19em;
+	}
+}
+
+@media screen and (min-width:1200px){
+	/*descricao*/
+	section div.paiArt p{
+		top:2.5em;
+		max-width:32em;
+		line-height:1.8;
+	}
+	/*descricao*/
+	div.paiArt article{
+		background-size:16em;
+		background-position:90% 70%;
+	}
+
+	section div.paiMapa div:last-of-type{
+		height:25em;	
+	}
+		/*iframe*/
+	#map{
+		height:22em;
+	}
+}
+@media screen and (min-width:1300px){
+/*controla a parte completa do anuncio*/
+	div.divControler{
+		width:100%;max-width:75em;
+	}
+	/*bloco do anuncio*/
+	div.divControler > article{
+		max-width:25em;
+		margin-left:3em;
+		display:inline-block;
+	}
+	/*controla os resto dos elemento de anuncio*/
+	div.divControler > article + div{
+		width:45em;
+		float:right;
+	}
+
+	/*Horas de funcionamento*/
+	section div.divHoras{
+		max-width:20em;
+		margin:-.5em auto 1em;
+		display:inline-block;
+	}
+	/*formas de pagamento e bandeiras*/
+	section div.paiBand{
+		width:95%;max-width:22em;
+        float:right;
+	}
+	section div.paiFac{
+		width:95%;max-width:21em;
+		float:left;
+	}
+
+	div.youTube h3{
+		font-size:2.5em;
+	   }
+}
+@media screen and (min-width:1500px){
+	div.paiPg{
+		top:21em;
+	}
+		/*descricao*/
+	div.paiArt article{
+		background-size:17em;
+		background-position:80% 70%;
+	}
+		/*titulo da pg*/
+	div.paiPg section > div.bemVind{
+		height:26em;
+	}
+	div.paiPg section > div.bemVind p:first-child{
+		margin:3.5em auto 0;
+	}
+}

@@ -1,0 +1,19 @@
+@charset "UTF-8";	
+@media screen and (min-width: 335px){
+		/*body{
+			border:solid red 1px;
+		}*/
+		ul li a{
+			height: 2.3em;	
+			font-size: 1.2em;
+		}
+}
+@media screen and (min-width: 580px){
+	/*body{
+			border:solid red 1px;
+		}*/
+		ul li a{
+			height: 2.7em;	
+			
+			}
+}

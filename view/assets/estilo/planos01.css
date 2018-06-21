@@ -1,0 +1,51 @@
+@charset "UTF-8";
+div.gratis button{
+	position:relative;
+	top:2.2em !important;
+
+}
+div.basico button{
+	background:#f1c40f !important;
+}
+div.basico button:hover,
+div.basico button:focus{
+	background:#f39c12 !important;
+}
+@media screen and (min-width:400px){
+	
+	h2.titul{
+		font-size:2em;
+		margin-bottom:.5em;
+	}
+	div.alterar{
+		margin-bottom:-15em !important;
+	}
+}
+
+@media screen and (min-width:600px){
+	h2.titul{
+		font-size:2.5em;
+		margin-bottom:.5em;
+	}
+	
+}
+@media screen and (min-width:700px){
+	div.gratis{
+		position:relative;
+		top:-1.3em !important;
+	}
+}
+@media screen and (min-width:1100px){
+		/*parte de alrerar planos*/
+	div.alterar{
+	  max-width:70em !important;
+	}
+	div.basico{
+		position:relative;
+		top:-.4em;
+	}
+	div.gratis{
+		position:relative;
+		top:-1.6em !important;
+	}
+}

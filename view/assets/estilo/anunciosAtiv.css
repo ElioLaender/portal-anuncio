@@ -1,0 +1,481 @@
+@charset "UTF-8";
+
+header h1.tituAnunc{
+	margin:3em auto 2em;
+	color:#27ae60;
+	font-size:1.6em;
+}
+
+/*pai onde as pgs serao insiridas*/
+section.sectDas > div:last-of-type{
+ 	min-height:50em;
+}
+
+/*div que controla o banner com os outros elementos*/
+div.controlaBa{
+	position:relative;
+}
+
+/*gerenciar anuncios ativos*/
+section.sectAtv > h2{
+	width:80%;max-width: 17em;
+	height:3em;
+
+	color:#333;
+	line-height:2.5;
+	margin-bottom:7em;
+	border:solid #7f8c8d 3px;
+}
+
+section.sectAtv > h2::before{
+	content: '';
+	position:absolute;
+	top:-.5em;	
+	left:1.6em;
+
+	width: 80%;
+	height: 1em;
+
+	margin: 0 auto;
+
+	background:#fff;
+}
+/*Formatar parte gerada dinamicamente quando nao ha anuncios ativos*/
+div.container{
+	position: relative;
+
+	width:100%;
+	height:20em;
+	margin: 4em auto;
+
+	background: url('../imagens/manOffice@1x.jpg')no-repeat;
+	background-size: cover;
+	background-position: 50% 100%;
+}
+div.container::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+	background: rgba(0,0,0,.4);
+	z-index:1;
+
+}
+div.container p{
+	top:3em;
+
+	width: 80%;max-width:12em;
+
+	margin: 0 auto;
+	font-size: 1.1em;
+	color:#fff;
+z-index:10;
+}
+div.container p:last-of-type{
+	top:1em;
+	font-weight: 600;
+	font-size:1.3em;
+
+	text-shadow: 4px 10px 8px rgba(0,0,0,.5);
+}
+div.container ul{
+	overflow:visible;
+	z-index:30;
+}
+div.container ul li  a{
+	position: relative;
+	top:5.5em;
+
+	width: 80%;max-width:22em;
+	height:3.2em;
+
+	margin: 0 auto;
+
+	display:block;
+
+	text-align: center;
+	line-height:2.5;
+	color: #fff;
+	font-size:.8em;
+	font-weight: 600;
+
+	border:solid #2ecc71 3px;
+	-webkit-border-radius:5px;
+  	-moz-border-radius:5px;
+  	border-radius:5px;
+	
+	z-index:30;
+
+	-moz-transition:.2s linear;
+	-webkit-transition:.2s linear;
+	transition:.2s linear;
+}
+
+div.container a:focus,
+div.container a:hover{
+	background:#2ecc71;
+}
+/*fim da formatacao quando nao ha anuncios ativos*/
+
+/*div inner eh o pai do anuncio dinamico*/
+div#retAnun{
+	position: relative;
+	width:100%;max-width:35em;
+	margin:5em auto;
+}
+
+/*sao criados dinamicamente*/
+div#retAnun article{
+	position:relative;
+	margin-bottom:4em;
+}
+
+/*titulo do anuncio*/
+div#retAnun article h2.tituH2{
+	position:absolute;
+	left:-99;
+
+	opacity:0;
+}
+
+div#retAnun article button.abrir{
+	position:absolute;
+	top:-2em;
+	right:1em;
+
+	width:9em;
+	height:2em;
+
+	text-align:left;
+	font-size:1em;
+	font-weight:600;
+	color:#666;
+	border: solid rgba(52, 152, 219,.3); 
+	border-width:2px 2px 0 2px;
+
+	-moz-border-radius:5px 5px 0 0; 
+	-webkit-border-radius:5px 5px 0 0; 
+	border-radius:5px 5px 0 0;
+
+	background: url('../imagens/hamburgerPreto.png') no-repeat;
+	background-size:2.5em;
+	background-position:95% 50%;
+	z-index:6;
+}
+
+div#retAnun article div.PaiAnuncio div.escu{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:rgba(0,0,0,.8);
+	-webkit-border-radius:5px;
+  	-moz-border-radius:5px;
+  	border-radius:5px;
+
+	z-index:8;     
+	display:none;
+}
+div#retAnun article button.fechar{
+	position:absolute;
+	top:.5em;
+	right:.5em;
+
+	width:3em;
+	height:3em;
+
+	background:url('../imagens/fecha@1x.png')no-repeat;
+	background-size:2em;
+	background-position: 50%;
+
+	z-index:6;
+}
+ 
+div#retAnun article div.PaiAnuncio p.titu{
+	position:relative;
+	top:0;
+	right:0;
+
+	height:2.5em;
+	padding-top:.5em;
+	text-transform: uppercase;
+	text-align:center;
+
+	font-size:1em;
+	color:#fff;
+	font-weight:600;
+
+	background:#40424a; 
+	-moz-border-radius:5px 5px 0 0; 
+	-webkit-border-radius:5px 5px 0 0; 
+	border-radius:5px 5px 0 0; 
+}
+div#retAnun article div.PaiAnuncio p.titu + p{
+   margin:1em 0 0;
+   text-transform:uppercase;
+}
+/*imagem, mensagem e avaliacao*/
+div#retAnun article div.divImg{
+	position: relative;
+	top:.2em;
+	width:95%;max-width:20em;
+	height:5.5em;
+
+    margin: 0 auto 1em;
+	padding-left:.8em;
+
+}
+div#retAnun article div.divImg a{
+	position: absolute;
+	top:.5em;
+	left:0;
+
+	width:100%;max-width:20em;
+	height:7em;
+}
+div#retAnun article div.divImg a img{
+	width:100%;
+	height:7em;
+
+	-webkit-border-radius:5px;
+  	-moz-border-radius:5px;
+  	border-radius:5px;
+}
+
+/*div onde tem mais tres p*/
+div#retAnun article div.divImg div{
+	 position:absolute;
+	 top:8em;
+	 right:0;
+
+	 width:100%;
+	
+	 padding:1.5em 0;
+
+	 -moz-border-radius:2px;
+	 -webkit-border-radius:2px;
+	 border-radius:2px;
+}
+
+div.divImg div p{
+	width:90%;max-width:15em;
+	height:3em;
+
+	font-size:1em;
+	font-weight:600;
+
+	color:#666;
+	margin:.4em auto;
+
+	padding:.5em;
+
+	-webkit-box-sizing:initial;
+    -moz-box-sizing:initial;
+    box-sizing:initial;
+
+	border:solid #f6f8f9 1px;
+
+}
+div.divImg div p:after{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+}
+
+div.divImg div p:hover:after,
+div.divImg div p:focus:after{
+	background:rgba(236, 240, 241,.5) 
+}
+div.divImg div p span{
+	display:block;
+	font-size:1.5em;
+	color:#bdc3c7;
+}
+div#retAnun article div.divImg div p:nth-of-type(2){
+	height:5em;
+}
+div#retAnun article div.divImg div p:nth-of-type(2):before{
+	content:'Quantidade de';
+	position:relative;
+	top:0;
+
+ 	width:90%;max-width:15em;
+
+	font-size:1em;
+	font-weight:600;
+	color:#666;
+	
+}
+div.divImg div span p:nth-of-type(3){
+	height:2.4em;
+}
+div.divImg div span p:nth-of-type(4){
+	position:absolute;
+	top:0em;
+	width:4em;
+	height:.4em;
+	text-indent:-99em;
+	border:none;
+}
+div#retAnun article div.PaiAnuncio{ 
+	position: relative;
+	width:95%;max-width:25em;
+	height:38.7em;
+	margin: 0 auto;
+
+	box-shadow: 0 5px 5px rgba(0,0,0,.3);
+
+	-webkit-border-radius:5px;
+  	-moz-border-radius:5px;
+  	border-radius:5px;
+
+  	background:#fff;
+    margin-top:1em;
+
+    z-index:3;
+}
+
+/*pai dos dois divs*/
+article div.contBu{
+	position: relative;
+	top:20.5em;
+	width:100%;
+    
+    margin-top:4.5em;
+}
+article div.contBu ul{
+	position:relative;
+	width:100%;
+}
+/*formatar button ir pg do anuncio*/
+article div.contBu ul li{
+	float:left;
+
+	width:50%;
+	z-index:2;
+}
+
+article div.contBu ul li a{
+	height:3.2em;
+    
+    padding-top:1.3em;
+
+	text-align:center;
+	text-indent:-.8em;
+
+	font-weight:600;
+	font-size:1.1em;
+	letter-spacing:.01em;
+	color:#777;
+	background:rgba(236, 240, 241,.3);
+}	
+
+article div.contBu ul li:first-of-type a:focus,
+article div.contBu ul li:first-of-type a:hover,
+article div.contBu ul li:last-of-type a:focus,
+article div.contBu ul li:last-of-type a:hover{
+	background:rgba(236, 240, 241,1.0);
+}
+article div.contBu ul li:first-of-type a{
+    -webkit-border-radius:0  0 5px;
+  	-moz-border-radius:0 0 0 5px;
+  	border-radius:0 0 0 5px;
+
+  	border-right:solid rgba(236, 240, 241,.9) 1px; 
+}
+article div.contBu ul li:last-of-type a{
+	-webkit-border-radius:0 0 5px 0;
+  	-moz-border-radius:0 0 5px 0;
+  	border-radius:0 0 5px 0;
+}
+/*menu*/
+h3.opc{
+	position:absolute;
+	left:-99em;
+	opacity:0;
+}
+
+div.paiM{
+	position:absolute;
+	top:5em;
+	left:1em;
+	width:90%;
+	height:17em;
+  	background:#fff;
+	margin: 0 auto;
+
+	-moz-border-radius:5px; 
+	-webkit-border-radius:5px ; 
+	border-radius:5px;
+
+	z-index:9;
+	box-shadow:6px 10px 10px #000;
+	display:none;
+}
+div.paiM p{
+	width:100%;
+	height:2.5em;
+
+	font-weight:600;
+	font-size:1.1em;
+	line-height:2.4;
+	color:#fff;
+
+	background:rgba(41, 128, 185,.5); 
+}
+div.paiM div{
+	position:relative;
+	top:0;
+
+}
+div.paiM div button{
+	position:relative;
+	left:.5em;
+
+	width:45%;
+	height:2.5em;
+
+    color:#777;
+    font-size:1.1em;
+    font-weight:600;
+    text-transform:uppercase;
+	border-bottom: solid rgba(46, 204, 113,.5) 2px;
+
+	margin:1.5em .3em;
+	display:inline-block;
+
+	-moz-transition:.2s linear;
+    -webkit-transition:.2s linear;
+    transition:.2s linear;
+
+}
+div.paiM div button:hover,
+div.paiM div button:focus{
+	color:#111;
+}
+div.paiM div button > a:link,
+div.paiM div button > a:visited,
+div.paiM div button > a:active{
+    color:#777 !important;
+}
+div.paiM div button > a{
+	width:100%;
+	padding:.5em 0;
+}
+div.paiM div button > a:hover,
+div.paiM div button > a:focus{
+	color:#111 !important;
+}
+
+
+
+
+

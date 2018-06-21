@@ -1,0 +1,444 @@
+@charset "UTF-8";
+p#retRecoHome p{
+  top:3em;
+  color:#e67e22;
+  font-weight:600;
+}
+  /*formatar aside banner*/
+aside.asidLogin{
+	position:relative;
+	top:3.5em;
+
+  margin-bottom:-7em;
+}
+aside.asidLogin > h3{
+	position:absolute;
+	left: -99em;
+
+	opacity:0;
+}
+aside.asidLogin div{
+	position:relative;
+	top:0;
+
+	height:23em;
+	width:100%;
+
+	margin:0 auto 5em;
+	background: url('../imagens/jovensEmpre@1x.jpg')no-repeat;
+	background-size:cover;
+	background-position:100% 0%;
+}
+
+aside.asidLogin div::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+
+  background:rgba(0,0,0,.3);
+
+}
+aside.asidLogin div p{
+  top:3em;
+
+  width:90%;max-width:20em;
+
+  margin:0 auto;
+  color:#fff;
+  font-family:"Roboto Slab","arial";
+
+  font-size:1.5em;
+}
+aside.asidLogin div p:last-of-type{
+  top:5em;
+  color:#f39c12;
+}
+  /*fim banner*/
+section.secLogin{
+    padding-top:2em;
+}
+section.secLogin > h2{
+  	position: absolute;
+  	left:-99em;
+  	opacity:0;
+ }
+
+section.secLogin article > h3{
+  	top:6em;  
+    width:90%;
+    color:#e74c3c;
+    font-size:1.3em;
+}
+
+section.secLogin article ul{
+    top:9em;
+
+    width:90%;max-width:22em;
+    height:5em;
+    margin:0 auto;
+
+  }
+section.secLogin article ul li a{
+     height:3em;
+
+     color:#fff;
+     font-size:1.3em;
+     background:#3498db; 
+
+     -moz-border-radius:8px;
+     -webkit-border-radius:8px;
+     border-radius:8px;
+     text-align:center;
+
+     padding-top:1em;
+     box-shadow: 0 6px 0  0 #2980b9;
+
+    -webkit-transition: .1s linear;
+    -moz-transition: .1s linear;
+    transition: .1s linear;
+  }
+section.secLogin article ul li a:hover,
+section.secLogin article ul li a:focus{
+    letter-spacing:2px;
+    text-indent:.1em;
+  } 
+
+section.secLogin > div:first-of-type{
+  	position:relative;
+  	top:7em;
+
+  	width: 95%;max-width: 30em;
+  	margin: 0 auto;
+}
+  
+section.secLogin form fieldset legend{
+  position: relative;
+  top:2.5em;
+
+  width: 100%;
+  height:2.3em;
+
+  text-align: center;
+  font-weight:600;
+  font-size:1.1em;
+  color:#444;
+
+  padding-top:1em;
+  margin-bottom:3em;
+ 
+  background:#f8fcfd;
+ 	
+ }
+section.secLogin form fieldset input{
+ 	width:98%;
+  height:3.5em;
+
+  padding-top:1.5em;
+ 	text-indent: .4em;
+  border-bottom:solid #888 1px;
+
+  font-size:1em;
+
+  -webkit-box-sizing:border-box;
+   -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+section.secLogin form fieldset label{
+ 	color:#777;
+ 	top:1.7em;
+ 	left:.5em;
+ }
+/*este eh o continuar logado*/
+section.secLogin form fieldset label[for="tContinuar"]{
+  top:-.3em;
+ 	color:#999;
+ 	font-size:1em;
+ 	left:2.5em;
+ }
+
+section.secLogin form fieldset input[type="submit"]{
+  top:-2em;
+  left:0;
+	
+  height:2em;
+	
+  background:#e74c3c;
+	color:#fff;
+  line-height:0;
+	border:none;
+  padding-bottom:1.3em;
+  font-size:1.2em;
+	margin: 0 auto;
+
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;
+  border-radius:2px;
+}
+section.secLogin form fieldset input[type="submit"]:hover,
+section.secLogin form fieldset input[type="submit"]:focus{
+  box-shadow: 2px 5px 10px rgba(0,0,0,.3);
+}
+/*pai dos ultimos dois buttons*/
+section.secLogin > div:last-of-type{
+	position: relative;
+	top:6em;
+  width: 100%;max-width:31em;
+	margin: 0 auto;
+}
+section.secLogin > div:last-of-type ul li a{
+  width:95%;
+  height:2.5em;
+  left:.4em;
+  margin-bottom: 1em;
+  letter-spacing: 0;
+  text-align:center;
+
+  line-height:1.4;
+  font-size:1.3em;
+
+  background:#4b67a1;
+
+  border:solid #4b67a1 0;
+  -webkit-border-radius:2px; 
+  -moz-border-radius:2px; 
+  border-radius:2px;
+
+  z-index:1;
+}
+section.secLogin > div:last-of-type ul:first-of-type li a:hover,
+section.secLogin > div:last-of-type ul:first-of-type li a:focus{
+  box-shadow: 2px 5px 10px rgba(0,0,0,.3);
+}
+/*esqueceu sua senha ?*/
+section.secLogin div.esq ul:last-of-type li button{
+  top:0;
+  width:75%;
+
+  text-align:center;
+  font-size:1.3em;
+  color:#444;
+
+  display:block;
+  background:none;
+  margin:0 auto 2em;
+
+  padding-top:1em;
+  
+ }
+section.secLogin > div.esq ul:last-of-type li button:hover,
+section.secLogin > div.esq ul:last-of-type li button:focus{
+  border-bottom: solid #999 1px;
+}
+/*criado para configurar o class efeitoLabel*/
+section.secLogin form fieldset label.efeitoLabel{
+  left:.5em; 
+}
+/*estilo do checkbox*/
+section.secLogin form fieldset input[type="checkbox"]{
+ opacity:0;
+
+ top:-3em;
+ left:-5em;
+ cursor:pointer;
+ z-index: 2;
+}
+form fieldset input[type="checkbox"] + span:before{
+  content:"\00a0";
+
+  position: relative;
+  top:-5.2em;
+  left:.5em;
+
+  width:1.3em;
+  height:1.3em;
+
+  background-color: #ccc;
+  display: inline-block;
+  border: 3px solid #fff;
+
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius:2px;
+
+   visibility:visible;
+   box-shadow:0 0 0px 2px #999;
+
+   z-index:1;
+ }
+
+section.secLogin form fieldset input[type=checkbox]:checked + span:before {
+    background-color:#3498db;
+}
+
+section.secLogin form label[for="tMan"]{
+  top:-.2em;
+  left:2.5em;
+  color:#333;
+}
+
+/*formatar insira seu email e digite sua senha*/
+  /*olho super man*/
+ form fieldset input.tSenhas{
+  background:url('../imagens/olho.png') no-repeat;
+  background-size:15px;
+  background-position:97% 78%;
+}
+ form fieldset input#olho{
+  position:relative;
+  top:-3em;
+  left:5em;
+  display:block;
+  width:8em !important;
+ }
+
+/*bloco de mensagem de erro*/
+/*retorno*/
+div#retorno{
+  position:absolute;
+  top:10em;
+  width:100%;
+  height:21em;
+
+  padding:1em .5em;
+
+  background:#fff;
+ 
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+
+  margin:0 auto;
+
+  display:none;
+ 
+  z-index:100;
+}
+
+div#retorno p{
+  width:85%;max-width:15em;
+  height:10em;
+
+  margin:2em auto 0;
+  color:#777;
+  font-size:1.3em;
+  line-height:1.4;
+  font-weight:600;
+
+  padding-top:4.5em;
+
+  background:url('../imagens/alert@1x.png') no-repeat;
+  background-size:4em;
+  background-position:50% 0; 
+}
+
+div#retorno button{
+  position:absolute;
+  right:.5em;
+  top:.5em;
+  width:2em;
+  height:2em;
+ 
+  background:url('../imagens/fech@1x.png')no-repeat;
+  background-size:2em;
+  background-position:50%;
+}
+form fieldset input[type="checkbox"]#tManter{
+  opacity:0;
+  top:-2em !important;
+}
+
+/*recuperar senha vindo do link retorno*/
+div.recupS{
+  position:relative;
+  top:-15em;
+
+  width:100%;max-width:19em;
+  height:25em;
+
+  background:#fff;
+  z-index:100;
+
+  margin:0 auto -27em;
+  display:none;
+
+  box-shadow:15px 15px 15px rgba(0,0,0,.5);
+
+
+}
+div.recupS > button{
+  position:relative;
+  top:1em;
+  left:1em;
+  height:1.3em;
+  color:#666;
+  font-size:1.1em;
+
+  z-index:3;
+}
+div.recupS > button:hover,
+div.recupS > button:focus{
+  border-bottom: solid #777 1px;
+}
+div.recupS form fieldset{
+  position:relative;
+}
+div.recupS form fieldset legend{
+  top:.7em;
+
+  color:#3498db;
+  font-size:1.6em;
+  background:none;
+  font-weight:500;
+  margin-bottom:3em;
+  line-height:1.1;
+}
+div.recupS form fieldset p{
+  top:-5em;
+  color:#777;
+  width:90%;
+  margin:0 auto;
+}
+div.recupS form fieldset label{
+  top:-2.3em;
+  left:1em;
+  color:#888;
+}
+div.recupS form fieldset label.efeitoLabel{
+  top:-4em;
+  left:1.5em;
+}
+div.recupS form fieldset input{
+  top:-4.5em;
+ 
+  border:solid #999 1px;
+  border-left:solid 4px #2980b9;
+  text-indent:1em;
+  background:transparent;
+  margin:0 auto;
+  display:block;
+  padding-top:2em;
+}
+div.recupS form fieldset input[type="button"]{
+  position:relative;
+  top:-1em;
+  width:12em;
+  height:2.5em;
+
+  font-size:1.2em;
+  color:#fff;
+
+  text-indent:0;
+  padding:0;
+  margin:0 auto;
+  display:block;
+
+  border:none;
+  background:#2980b9;
+}
+div.recupS form fieldset input[type="button"]:hover,
+div.recupS form fieldset input[type="button"]:focus{
+  background:#3498db; 
+}

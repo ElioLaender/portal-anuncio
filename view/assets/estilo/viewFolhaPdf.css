@@ -1,0 +1,96 @@
+@charset "UTF-8";
+body{
+  font-family: arial;
+  color:#fff;
+  background:#fff;
+
+
+  border:solid red 3px;
+}
+/*controla todo conteudo*/
+div.tudo{
+  position: relative;
+  width: 100%;max-width: 60em;
+
+  margin:0 auto;
+
+}
+/*div pai da tag img*/
+section > div{
+	position:absolute;
+	top:2em;
+	right: 0;
+
+	width: 8em;
+	height: 8em;
+
+}
+
+/*controla img*/
+section > div img{
+	margin-top:-3em;
+	width: 100%;
+}
+
+header div h1{
+	position: absolute;
+	left:-100%;
+	font-size:0;
+}
+
+section h2{
+	position: relative;
+	top:-2.5em;
+	text-align:center;
+
+	color: #111;
+	font-size:1.7em;
+	margin: 0 auto;
+}
+section dl{
+	position: relative;
+	top:-3em;
+	width:100%;
+	margin:0 auto;
+}
+section dl dt{
+	position: relative;
+	width:100%;
+
+	text-transform: uppercase;
+	text-align:left;
+	font-size: 1em;
+	font-weight: 700;
+
+	margin: 1.5em 0 .5em;
+
+	color: #333;
+}
+section dl dd{
+	margin: 0 0 .3em -1.5em;
+	color:#444;
+}
+section dl dd.nas{
+    margin-top:-500px;
+    color:red;
+}
+section dl dl.ender{
+	top:0;
+	max-width:27em;
+	margin:0;
+}
+section dl dl.ender dd{
+	display:inline;
+	margin:0;
+	margin-left:1em;
+	line-height:1.2; 
+}
+
+section dl dd.flutua{
+	display:inline;
+	margin-left:1em
+}
+section dl dd.flutua01{
+	margin:0;
+	display:inline;
+}

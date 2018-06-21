@@ -1,0 +1,337 @@
+@charset "UTF-8";
+/*para a altura ficar responsiva*/
+body{
+  color:#fff;
+  background:#fff;
+  //overflow-x:hidden;
+}
+div.loader{
+  position:fixed;
+  top: 0;
+  left:0;
+  right:0;
+  bottom: 0;
+  background-color: #fff;
+
+  z-index: 90;
+}
+/*animacao inicio*/
+.animar{
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+
+  -moz-animation-delay: 2s;
+  animation-delay: .4s;
+
+}
+
+@-webkit-keyframes bounceInRight {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bounceInRight {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+div.loader > div{
+  position: absolute;
+  top:4em;
+  width:100%;
+
+  height: 10em;
+
+  background-image: url('../imagens/load.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 3em;
+}
+
+div.load01 div > p{
+  top:8em;  
+}
+div.loader div > p span{
+  font-size: 2em;
+  font-weight: 600;
+  margin-left: .1em;  
+}
+
+div.loader div > p span:nth-of-type(2){
+  color:#2ecc71;
+}
+div.loader div > p span:nth-of-type(3){
+  color: #f39c12;
+}
+div.loader div > p span:last-of-type{
+  color:#ff6345;
+}
+/*controla todo conteudo*/
+div.tudo{
+  position:relative;
+  width:100%;max-width:156.25em;
+ 
+  margin:0 auto;
+}
+/*Texto inicial*/
+section.sectIndex > h1{
+ position: absolute;
+  left: -99px;
+  opacity: 0;
+  font-size: 0;
+  text-indent: -99px;
+}
+
+div.paiLogo > div p{
+  top:5.5em;
+
+  width:85%;max-width:15em;
+
+  font-family:arial;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0 auto;
+
+  letter-spacing: 1px;
+  color:#fff;
+
+  text-shadow: 3px 3px 8px #111;
+
+  z-index: 3;
+}
+
+/*estilo do header do main, controla o tamanho da primeira parte da pagina*/
+section div.paiLogo{
+  position: relative;
+  top:3em;
+
+  width:100%;
+  height:23em;
+
+  background:#222;
+
+  background: url('../imagens/entrada@1x.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50% 40%;
+  margin-bottom:0;
+}
+section div.paiLogo div figure img{
+  top:-3em;
+  width:66%;max-width:15em;
+}
+
+/*este eh o div que cria a mascara escura encima da imagem principal do site*/
+div.paiLogo div{
+  position: relative;
+  height:23em;
+  
+  padding-top:1.5em;
+  background: rgba(0,0,0,.4);
+
+  z-index: 1;
+}
+/*pega todos <a> do footer*/
+div.paiRodape h3{
+  position: absolute;
+  left: -99em;
+}
+/*----------rodapeh da pg--------*/
+div.paiRodape{
+  position:relative;
+  top:26.5em;
+  
+  width:100%;
+  height:52em;
+
+  padding: 1.3em 0;
+
+  overflow:visible;
+  background:hsl(0,0%,20%);
+}
+div.paiRodape div:first-of-type{
+  position:relative;
+  top:1em;
+
+  left:-.3em;
+  width:95%;max-width:40em;
+
+  margin:0 auto 2.8em;
+}
+/*mensagen de retorno*/
+p#returnCadEmail{
+  position:relative;
+  top:-1.3em;
+  width:100%;
+
+  color:#f39c12;
+  text-align:left;
+  font-size:1.3em;
+  margin:0;
+}
+
+/*cadastre e receba novidades*/
+div.paiRodape div:first-of-type fieldset legend{
+  position:relative;
+  top:-.6em;
+  font-weight:500;
+  font-size:1em;
+  text-align:left;
+  color:#fff;
+  margin-bottom:.8em;
+  margin-left:.3em;
+}
+div.paiRodape div:first-of-type fieldset input#prom{
+  width:70%;
+  height:2.5em;
+  font-size:.8em;
+  font-weight:500;
+  text-indent:1em;
+
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+
+  background:#fff;
+}
+div.paiRodape div:first-of-type fieldset input[type="submit"]{
+  width:26%;
+  height:2.8em;
+  left:.2em;
+   -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  color:#fff;
+  background:#3498db;
+ 
+  font-weight:600; 
+
+  -moz-transition:linear .2s;
+  -webkit-transition:linear .2s;
+  transition:linear .2s;
+
+}
+div.paiRodape div:first-of-type fieldset input[type="submit"]:hover,
+div.paiRodape div:first-of-type fieldset input[type="submit"]:focus{
+  background:#2980b9;
+}
+div.paiRodape footer ul{
+  padding-top:1em;
+}
+
+div.paiRodape footer nav ul li a{
+  color:#777;
+}
+
+div.paiRodape footer ul li a:focus,
+div.paiRodape footer ul li a:hover{
+  color:#ecf0f1;
+}
+div.paiRodape footer nav ul li p{
+  color:#ecf0f1;
+  text-align:left;
+  padding-left:.8em;
+  font-weight:600;
+  font-family:"Roboto Slab","arial";
+  font-size:1.2em;
+
+  margin-bottom:.5em;
+}
+/*este eh para posicionamento da imagem logo*/
+div.paiRodape div:last-of-type{
+  position:absolute;
+  bottom:0;
+
+  width:100%;
+  height:2em;
+}
+/*este eh copyright*/
+div.paiRodape div:last-of-type p{
+  position: absolute;
+  left: .5em;
+  top:.6em;
+
+  color:#777;
+  font-size: .81em;
+  letter-spacing: 1px;
+}
+/*logo expressahost*/
+div.paiRodape div:last-of-type img{
+  position: absolute;
+  top:0;
+  right:2em;
+
+  width:7em;
+}
+
+.purple{
+  border:purple 3px solid;
+}
+
+.orange{
+  border:solid orange 3px;
+}
+.yellow{
+  border:solid yellow 2px;
+}

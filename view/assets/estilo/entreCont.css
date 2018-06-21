@@ -1,0 +1,327 @@
+@charset "UTF-8";
+div.loader div p.carregan span{
+  margin: -.05em;
+}
+
+div section h2{
+	position:absolute;
+	left:-99em;
+	opacity:0;
+}
+
+div.primDiv{
+	position:relative;
+	top:3em;
+	width:100%;
+	height:20em;
+
+	background:url('../imagens/keyboard@1x.jpg') no-repeat;
+	background-size:cover;
+	background-position:50% 100%;
+
+	margin-bottom:4em;
+	
+}
+div.primDiv::before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+
+	background:rgba(0,0,0,.4);
+}
+div.primDiv p{
+	top:5em;
+	width:80%;max-width:15em;
+
+	margin:0 auto 4em;
+
+	color:#fff;
+    font-family:"Roboto Slab","arial";
+	font-size:1.5em;
+	font-weight:600;
+	text-shadow:5px 10px 10px rgba(0,0,0,.2);
+
+
+}
+div.primDiv p strong{
+	font-weight:500;
+
+}
+div.faleCom{
+	position:relative;
+	top:3em;
+	width:100%;
+
+	margin-bottom:10em;
+}
+div.faleCom section form{
+	position:relative;
+	top:-2em;
+	width:100%;
+}
+div.faleCom section form fieldset{
+	position:relative;
+	top:0;
+	width:100%;max-width:39em;
+	height:20em;
+	margin:0 auto 2em;
+}
+  
+div.faleCom section form fieldset legend{
+  position: relative;
+  top:1em;
+
+  width: 100%;
+  height:2.3em;
+
+  text-align: center;
+  font-weight:600;
+  font-size:1.1em;
+  color:#444;
+
+  padding-top:1em;
+  margin-bottom:1em;
+ 
+  background:#f8fcfd;
+ }
+div.faleCom section form fieldset input{
+  width: 98%;
+  height:3.5em;
+
+  padding-top:1.5em;
+  text-indent: .4em;
+  border-bottom:solid #888 1px;
+
+  font-size: 1em;
+
+  -webkit-box-sizing:border-box;
+   -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div.faleCom section form fieldset label{
+ 	color:#777;
+ 	top:1.7em;
+ 	left:.5em;
+ }
+
+div.faleCom section form fieldset label.efeitoLabel{
+ 	left:.5em;
+}
+div.faleCom section form fieldset fieldset{
+  	position:relative;
+  	top:0;
+  	width:95%;
+  	height:8em;
+  	margin:1em auto;
+ }
+div.faleCom section form fieldset fieldset select{
+ 	position:relative;
+ 	top:1em;
+
+ 	width:100%;
+ 	height:4em;
+ 	-moz-border-radius:8px;
+ 	-webkit-border-radius:8px;
+ 	border-radius:8px;
+ 	 border:solid #bdc3c7 2px;
+
+ 	 outline:none;
+ }
+
+div.faleCom section form fieldset select optgroup{
+	height: 2em;
+
+	background:#9b59b6;
+	padding-top: .5em;
+
+	color:#fff;
+
+	text-align: center;
+	font-size: 1.3em;
+}
+div.faleCom section form fieldset option{
+	font-size:1.2em;
+}
+div.faleCom section form fieldset option:nth-child(even){
+	background: #ecf0f1;
+}
+
+div.faleCom section form fieldset label[for="tTex"]{
+	top:0;
+	left:0;
+	width:80%;
+	height:1.5em;
+
+	color:#444;
+	
+	font-size:1.2em;
+	text-align:center;
+	text-transform: uppercase;
+	
+	padding-bottom:1em;
+	border:solid #e74c3c 2px;
+	display:block;
+
+	margin:3em auto 1.5em;
+}
+
+div.faleCom section form fieldset label[for="tTex"]::before{
+	content:'';
+	position:relative;
+	top:-.6em;
+
+	width:90%;
+	height:.5em;
+
+	background:#fff;
+}
+
+div.faleCom section form fieldset textarea{
+	position:relative;
+
+	width:90%;
+	height:8em;
+	display:block;
+
+	font-size:1.3em;
+	margin:0 auto 2em;
+}
+
+div.faleCom section form fieldset input#enviar{
+	position:relative;
+
+	width:85%;
+	height:2.5em;
+	line-height:0;
+	padding-bottom:1em;
+	font-size:1.3em;
+	
+
+	color:#fff;
+	background:#2980b9;
+	margin:0 auto; 
+
+	display:block;
+
+}
+div.faleCom section form fieldset input#enviar:hover,
+div.faleCom section form fieldset input#enviar:focus{
+	box-shadow:5px 5px 10px rgba(0,0,0,.5);
+}
+
+div.paiAsi{
+	position:relative;
+	top:5em;
+	width:95%;max-width:38em;
+	height:20em;
+
+	margin:0 auto;
+
+	background:#fff;
+	box-shadow:15px 18px 10px rgba(0,0,0,.2);
+
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+
+	z-index:2;
+
+	display:none;
+}
+div.paiAsi aside h3{
+	position:relative;
+	top:2em;
+
+	width:80%;
+	font-size:1.4em;
+}
+
+div.paiAsi aside ul{
+	position:absolute;
+	height:6em;
+	bottom:0;
+}
+div.paiAsi aside ul li a{
+	width:10em;
+	height:3em;
+	color:#fff;
+
+	line-height:2;
+	text-align:center;
+	text-transform:uppercase;
+	font-size:1.3em;
+	font-weight:600;
+	letter-spacing:2px;
+	background:#e74c3c;
+
+	margin:0 auto;
+	display:block;
+
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+div.paiAsi aside ul li a:focus,
+div.paiAsi aside ul li a:hover{
+	box-shadow:10px 8px 10px rgba(0,0,0,.4);
+}
+/*breackpoint*/
+/*Fazer um breack*/
+@media screen and (min-width: 600px){
+
+   div.primDiv{
+		height:23em;
+	}
+	div.primDiv p{
+		font-size:1.8em;
+	}
+	div.paiAsi aside h3{
+		font-size:1.6em;
+	}
+
+}
+@media screen and (min-width: 800px){
+	 div.primDiv{
+		height:26em;
+		background:url('../imagens/keyboard@2x.jpg') no-repeat;
+		background-size:cover;
+		background-position:50%;
+	}
+	div.primDiv p{
+		top:5em;
+		font-size:1.8em;
+	}
+}
+
+@media screen and (min-width:900px){
+    div.primDiv{
+		top:5em;
+	}
+
+}
+@media screen and (min-width:1200px){
+	  div.primDiv{
+		height:29em;
+		
+		background-position:50% 100%;
+	}
+	div.primDiv p{
+		top:7em;
+		font-size:2em;
+
+	}
+}
+@media screen and (min-width:1900px){
+	 div.primDiv{
+		height:35em;
+	}
+	div.primDiv p{
+		top:4em;
+		font-size:2.4em;
+		line-height:2;
+	}
+	
+}

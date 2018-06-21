@@ -1,0 +1,677 @@
+@charset "UTF-8"; 
+
+div p.animar span{
+	margin-right:-.2em;
+}
+
+div.paiSec{
+	position:relative;
+	top:-2em;
+	height:80em;
+}
+div.paiSec section h2{
+	position:absolute;
+	left:-99em;
+	opacity:0;
+}
+div.paiSec section > div{
+	position: relative;
+	width:100%;max-width:35em;
+
+	margin: 0 auto;
+}
+
+div.paiSec form{
+	position:relative;
+}
+
+
+div.divDel section h4{
+	opacity:0;
+	position:absolute;
+	left:-99em;
+}
+div.paiSec div form fieldset{
+	position:relative;
+	top:0;
+
+	margin-bottom:5em;
+}
+
+/*seleciona todos os legends*/
+div.paiSec div form fieldset legend{
+	position: relative;
+
+	width:90%;
+
+	text-align: center;
+	line-height:1.4;
+	font-weight:500;
+
+	font-size:1.5em;
+
+	margin: 0 auto;
+
+	color:#888;
+}
+
+/*primeiro legend*/
+div.paiSec div form fieldset.fie{
+	top:2em;
+	border:solid #fff 1px;
+}
+div.paiSec div form fieldset legend.alter{
+	 top:2em;
+
+	 width:95%;
+	 height:2em;
+
+	 color:#27ae60;
+	 text-transform:uppercase;
+	 font-weight:600;
+}
+
+/*inicio o campo de carregar foto*/
+div.paiSec div form fieldset.fo{
+	margin: 3.5em auto -5em;
+
+border:solid #ecf0f1 2px;
+
+}
+
+div.paiFoto{
+	position: relative;
+	top:-7em;
+	width:50%;
+	height:5em;
+
+	margin: 0 auto;
+}
+
+div#image-preview{
+	position:absolute;
+	top:0;
+	left:1em;
+	margin: 0 auto;
+	width: 6.7em;
+	height: 6em;
+
+
+	display:none;
+}
+
+ .inputfile{
+    position: absolute;
+
+    width: 0.1px;
+    height: 0.1px;
+    opacity:0;
+  
+    z-index: -1;
+}
+
+.inputfile + label{
+	top:-2em !important;
+    left:0!important;
+
+    width:80%;
+	height:7em;
+
+   	margin: 0 auto;
+
+    display:block;
+  
+    text-align:center;
+
+    background:url('../imagens/foto.png')no-repeat;
+    background-size:4em;
+    background-position:50% 15%;
+}
+
+span.spanImg{
+	position: relative;
+	top:5em;
+	max-width: 10em;
+	height:2.3em;
+
+	overflow: hidden;
+	color: #888;
+	display: inline-block;
+	line-height:1;	
+}
+
+span.spanImg em{
+	width: 100%;
+	display:inline-block;
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+/*button para apagar img*/
+button[type="button"].excl{
+	position: relative;
+	bottom:5.5em;
+	left:0;
+	margin: 3em auto 3em;
+
+	width: 8em;
+	height:2em;
+
+	color:#fff;
+
+    display:none;
+	text-align: left;
+	text-indent: .5em;
+
+ 	border:solid #37474f 0;   
+    -webkit-border-radius:2px; 
+   -moz-border-radius:2px; 
+	border-radius:2px;
+	background:#e74c3c;
+
+	z-index:10;
+}
+
+button[type="button"].excl::before{
+	content: '';
+
+	position: absolute;
+	right: .5em;
+	top:0;
+
+	width: 1.5em;
+	height: 2em;
+
+    background: url('../imagens/trash.png') no-repeat;
+    background-size: 70%;
+    background-position: 50%;
+}
+
+/*caixa mensagem de erro*/
+div.err{
+	position: absolute;
+	top:6.7em;
+
+	width: 100%;
+	height: 7em;
+
+	background:rgba(0,0,0,.8);
+	z-index:10;
+
+	display: none;
+}
+
+div.err::before{
+	content:'';
+	position: relative;
+	top:1em;
+	
+	margin: 0 auto;
+
+	width:2.5em;
+	height: 3em;
+	display: block;
+
+	background:url('../imagens/caraT.png') no-repeat;
+	background-size: 90%;
+}
+
+div.err > p#te{
+	width: 15em;
+	font-size: 1em;
+	font-weight: 600;
+	color: #fff;
+	letter-spacing: 1px;
+
+	margin: 0 auto;
+	display: block;
+}
+
+div.err button{
+	position: absolute;
+	top:1em;
+	right: 1em;
+
+	width: 2em;
+	height: 2em;
+
+	background:url('../imagens/fecha01.png') no-repeat;
+	background-size: 90%;
+}
+/*fim da img*/
+/*fieldset principal*/
+div.paiSec div form fieldset:first-child{
+	width:95%;
+	padding-top:0em;
+	margin:0 auto 3em;
+}
+/*login*/
+div.paiSec div form fieldset.log{
+	position:relative;
+	top:5em;
+	margin-bottom:7em;
+}
+
+div.paiSec div form fieldset.log legend,
+div.paiSec div form fieldset.sen legend,
+div.paiSec div form fieldset.dadosP legend{ 
+	top:1.1em;
+}
+
+div.paiSec div form fieldset.dadosP{
+	top:-2.5em;
+	margin-bottom:0;
+}
+
+div.paiSec div form fieldset > label{
+	top:2.5em;
+	left:0;
+	color: #666;
+}
+div.paiSec div form fieldset label.efeitoLabel{
+	top:2.2em;
+	left:1em;
+}
+div.paiSec div form fieldset input{
+	position: relative;
+	width:100%;
+	height:1em;
+
+	margin-top:1em;
+
+	font-size:1.2em;
+	padding-top:1.5em;
+	text-indent:1em;
+	display:block;
+
+	border-bottom:#bdc3c7 solid 1px;
+}
+/*radio*/
+div.paiSec form fieldset.sexo{
+	top:-2em;
+
+	margin-bottom:0;
+}
+div.paiSec form fieldset.sexo legend{
+	top:1.5em;
+}
+
+div.paiSec form fieldset.sexo label[for="tMasculino"],
+div.paiSec form fieldset.sexo label[for="tFeminino"]{
+	 width:47%;max-width:7em;
+	 display:inline-block;
+
+	 margin:1em 0 3em;
+}
+
+div.paiSec div form fieldset.sexo label input[type="radio"]{
+  position:absolute;
+  right:0;
+  top:0;
+
+  opacity:0;
+  z-index: 2;
+}
+div.paiSec div form fieldset.sexo label[for="tMasculino"] span,
+div.paiSec div form fieldset.sexo label[for="tFeminino"] span{
+	position:absolute;
+	right:.5em;
+	top:0;
+}
+div.paiSec div form fieldset.sexo input[type="radio"] + span::before{
+  content:"";
+
+  position:relative;
+  top:0;
+  left:0;
+ 
+  width:1em;
+  height:1em;
+
+  background-color: #ccc;
+  display: inline-block;
+  border: 3px solid #fff;
+
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius:50%;
+
+   visibility:visible;
+   box-shadow:0 0 0px 2px #999;
+
+  z-index:1;
+ }
+div.paiSec div form fieldset.sexo input[type="radio"]:checked + span::before {
+    background-color:#2ecc71;
+}
+/*fim sexo*/
+
+/*select*/
+ div.paiSec div form fieldset.civil legend{
+ 	margin-bottom:.5em;
+ }
+ div.paiSec div form fieldset.civil select{
+  position:relative;
+  width:90%;
+  height:3em;
+
+  margin-left:.5em;
+  margin:0 auto;
+
+  cursor:pointer;
+
+  display:block;
+  border: solid #444 1px; 
+  -webkit-border-radius:5px; 
+  -moz-border-radius:5px; 
+  border-radius:5px;
+}
+
+div.paiSec div form fieldset.civil optgroup{
+  background:rgba(46, 204, 113,1.0);
+  color:#fff;
+  font-size:1.5em;
+  cursor:pointer;
+} 
+div.paiSec div form fieldset.civil option:nth-child(even){
+  background:#ecf0f1;
+}
+div.paiSec div form fieldset.civil textarea{
+	width:100%;
+	height:10em;
+
+	margin:0 auto;
+	display:block;
+	resize:vertical;
+}
+
+div.paiSec div form fieldset.local legend{
+	top:.5em;
+}
+
+div.paiSec div form fieldset.local label[for='pais']{
+	left:0;
+	width:45%;
+	height:2.5em;
+	margin:0 1em 0 0;
+	display:inline-block;
+}
+div.paiSec div form fieldset.local label[for='uf']{
+	width:45%;
+	height:2em;
+
+	margin:0 0 2em;
+	display:inline-block;
+}
+div.paiSec div form fieldset.local label[for='uf'] input{
+	top:-1.5em;
+	text-indent:0;
+	margin:0;
+	background:transparent;
+}
+
+div.paiSec div form fieldset.local label[for='pais'] input{
+	top:-1.5em;
+	margin:0;
+	text-indent:0;
+	background:transparent;
+}
+
+div.paiSec div form fieldset.sociais{
+	top:-3em;
+	margin-bottom:6.5em;
+}
+div.paiSec div form fieldset.sociais legend{
+  top:.5em;
+}
+
+/*checkbox revela senha*/
+div.paiSec div form fieldset input.tSenhas{
+  background:url('../imagens/olho.png') no-repeat;
+  background-size:15px;
+  background-position: 97% 78%;
+}
+
+div.paiSec div form fieldset.fie input.mostraSe{
+	position:relative;
+	width:10em;
+	font-size:1.8em;
+	z-index:5;
+}
+
+/*input button subir arquivos*/
+form fieldset input.sub,
+form fieldset input.can{
+	top:-5em;
+	width:90% !important;
+
+	background:#3498db; 
+	padding-bottom:1.5em;
+	color: #fff;
+	line-height:0;
+
+	font-size:1.4em;
+	font-weight:600;
+	overflow: visible;
+	letter-spacing:1px;
+}
+form fieldset input.can{
+	background:#f39c12;
+}
+form fieldset input.sub:hover,
+form fieldset input.sub:focus{
+	background:#2980b9; 
+}
+
+/*deletar conta*/
+div.divDel{
+	position:absolute;
+	top:100em;
+
+	width:100%;
+	height:auto;
+
+	background:#fff;
+
+	z-index:18;
+}
+
+div.divDel fieldset{
+	position:relative;
+	width:100%;
+
+	top:0;
+	left:0;
+
+	background:#fff;
+
+}
+div.divDel section form fieldset:first-of-type{
+	display:none;
+}
+div.divDel fieldset legend{
+	top:2em;
+	width:100%;
+	height:3em;
+
+	font-size:1.6em;
+
+}
+/*input senha*/
+div.divDel fieldset input#userPass{
+	margin-bottom:2em;
+}
+
+div.divDel fieldset p{
+   width:15em;	
+   font-weight:600;
+   font-size:1.1em;
+   margin:2em auto 0;
+}
+
+/*mesnsagem de senha incorreta*/
+div#retornoSenha{
+	position:relative;
+	top:-3em;
+
+	width:95%;
+
+	margin:0 auto;
+}
+div#retornoSenha p{
+	top:-1em;
+	color:#ea6153;
+	width:100%;max-width:15em;
+    font-family:"Roboto Slab","arial";
+
+}
+div.divDel fieldset label[for^="mot"]{
+	position:relative;
+	top:0;
+
+	width:90%;
+	height:2em;
+
+	font-size:1.2em;
+	margin-bottom:1.5em;
+	padding-top:.5em;
+
+	display:block;	
+}
+div.divDel fieldset label[for^="mot"]:nth-of-type(odd){
+	color:#fff;
+}
+div.divDel fieldset label[for^="mot"]:nth-of-type(odd)::before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:-1em;
+
+	width:120%;
+	height:3.5em;
+	background:#2980b9;
+
+	z-index:-1;
+}
+div.divDel fieldset input[type=radio] {
+	position:absolute;
+    right:0;
+    top:0;
+
+    cursor: pointer;
+
+    width:1em;
+    height: 1em;
+
+	z-index:2;
+    opacity:0;
+}
+div.divDel fieldset input[type=radio] + span::before {
+    content:"";
+
+    position:absolute;
+    top:.9em;
+    right:-1em;
+
+    background-color: #ccc;
+    display: inline-block;
+ 
+    width:1em;
+    height:1em;
+
+    border:3px solid #fff;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+
+    visibility:visible;
+    box-shadow:0 0 0px 2px #999;
+
+    z-index:1;
+}
+ 
+div.divDel fieldset input[type=radio]:checked + span:before {
+    background-color:#f39c12;
+}
+div.divDel fieldset label[for="motvDesc"]{
+	top:.8em;
+	font-size:1.4em;
+	color:#e74c3c;
+	text-align:center
+}
+div.divDel fieldset textarea{
+	position:relative;
+	top:0;
+
+	width:90%;
+	height:8em;
+
+	display:block;
+	margin:0 auto 3em;
+}
+/*segunda parte do deletar*/
+div.divDel section form fieldset:last-of-type{
+	position:fixed;
+	top:15em;
+	right:0;
+
+  	width:100%;max-width:156.25em;
+
+	box-shadow:13px 14px 5px rgba(0,0,0,.1);
+	padding:4em 0 3em;
+	display:none;
+}
+div.divDel section form fieldset:last-of-type legend{
+	width:80%;
+	top:3em;
+}
+div.divDel section form fieldset:last-of-type p{
+	top:-1em;
+	width:80%;
+	max-width:20em;
+}
+/*buttons*/
+div.divDel fieldset input.sub,
+div.divDel fieldset input.can{
+	top:0;
+	max-width:13em;
+
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+}
+/*button aparecer*/
+button.aparecer{
+	position:relative;
+	top:-3.2em !important;
+
+	width:90%;
+	height:2.3em;
+
+	text-indent:0;
+	font-size:1.5em;
+
+	color:#fff;
+	margin:0 auto;
+	display:block;
+	cursor:pointer;
+	background:#2ecc71;
+}
+button.aparecer:hover,
+button.aparecer:focus{
+	background:#27ae60;
+}
+/*fundo escuro*/
+div.fundoEsc{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:183em;
+
+	background:rgba(41, 128, 185,.5);
+
+	display:none;
+	z-index:10;
+}

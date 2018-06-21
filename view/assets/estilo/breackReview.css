@@ -1,0 +1,230 @@
+@charset "UTF-8";
+@media screen and (min-width:400px){
+/*mensagem ao anunciante*/
+	div.paiMens{
+		margin-bottom:3em;
+	}
+	div.paiMens article h4{
+		width:90%;max-width:20em;
+		font-size:1.5em;
+	}
+	div.paiMens article > p,
+	div.paiMens article div form fieldset legend{
+		font-size:1.2em;
+		max-width:18em;
+	}
+	
+	/*estrelas*/
+	div.avalicao article div p.estrelas{
+		text-indent:-100em;
+	}
+}
+@media screen and (min-width:500px){
+	/*titulo para avaliar, laranja*/
+	div.paiAval article h4{
+		top:2em;
+		font-size:1.4em;
+		margin-bottom:3em;
+	}
+	div.paiAval article form fieldset legend{
+		font-size:1.3em;
+	}
+	/*stars*/
+	div.paiAval article form fieldset > fieldset:first-of-type input[type='radio'] + span{
+		height:1.4em;
+	}
+	/*label dos inputs titulo e textarea*/
+	div.paiAval article form fieldset > fieldset:last-of-type label[for^="revT"]{
+		font-size:1.3em;
+	}
+
+		/*avalicao*/
+	/*bloco de avaliacao*/
+	div.avalicao{
+		width:95%;max-width:100%;
+		padding:1em 0 2em;
+      
+		margin:0 auto 2em;
+	}
+	/*opiniao*/
+	div.avalicao article div:nth-of-type(2){
+		position:relative;
+		width:100%;max-width:23em;
+		display:block;
+		margin:1em 0 1.5em;
+	}
+	/*bloco da resposta*/
+	div.respDeAn{
+		width:25em !important;
+		margin:1em auto 3em;
+	}
+	/*div onde tem a resposta*/
+	div.respDeAn > div:nth-of-type(2){
+		top:1em;
+		left:2.5em;
+		width:30em !important;
+		padding-left:1em;
+	}
+	div.respDeAn > div:nth-of-type(2) p strong{
+		margin-left:-3.5em;
+	}
+
+}
+@media screen and (min-width:700px){
+	/*mensagem ao anunciante*/
+	div.paiMens article h4{
+		top:3em;
+		margin-bottom:4em;
+		font-size:1.7em;
+	}
+
+	/*bloco de avaliacao*/
+	div.avalicao{
+		width:100%;max-width:100%;
+	}
+	div.avalicao article > figure{
+		width:5em;
+		height:5em;
+
+		margin-right:1em;
+		left:1em;
+	}
+	div.avalicao article figure.imgRev img{
+		left:1em;
+
+		width:5em;
+		height:5em;
+	}
+	/*opiniao*/
+	div.avalicao article div:nth-of-type(2){
+		top:0;
+		width:100%;max-width:38em;
+	}
+	/*bloco da resposta*/
+	div.respDeAn{
+		left:2em;
+		width:40em !important;
+		margin:1em auto 3em;
+		display:block !important;
+	}
+	/*div onde tem a resposta*/
+	div.respDeAn > div:nth-of-type(2){
+		top:1em;
+	
+		width:35em !important;
+		padding-left:1em;
+
+		margin-left:5em;
+		display:block;
+	}
+	div.respDeAn > div:nth-of-type(2) p strong{
+		margin-left:-3.5em;
+	}
+	/*bloco que aparece, resposta*/
+	div.avalicao article > div:last-of-type > div:first-of-type{
+		margin:0;
+		display:block;
+	}
+}
+@media screen and (min-width:1000px){
+
+		/*titulo para avaliar, laranja*/
+
+	div.paiAval article h4{
+		font-size:1.6em;
+	}
+	/*star*/
+	div.paiAval article form fieldset > fieldset:first-of-type label[for^="nota"]{
+		text-indent:-100em;
+	}
+	/*fieldset deixe opniao*/
+	div.paiAval article form fieldset fieldset.fieldOpn{
+		top:2em;
+		width:53em;max-width:100%;
+	}
+	div.paiAval article form fieldset fieldset.fieldOpn label:first-of-type{
+		width:20em;
+		margin-top:-1.8em;
+	}
+	div.paiAval article form fieldset fieldset.fieldOpn label:last-of-type{
+		width:20em;
+		float:right;
+		margin-top:-3em;
+	}
+	div.paiAval article form fieldset > fieldset:last-of-type input[type='button']{
+		top:2em;
+		left:-.5em;
+		width:90%;max-width:15em;
+	}
+
+	/*este seleciono nome e estrelas */
+	div.avalicao article > div:first-of-type{
+		left:-2.6em;
+	}
+	div.avalicao article > figure{
+		margin-right:5em;
+	}
+	div.avalicao article figure.imgRev img{
+		left:2em;
+	}
+
+	/*opiniao*/
+	div.avalicao article div:nth-of-type(2){
+		left:5em;
+		width:100%;max-width:38em;
+		margin-bottom:2.5em;
+	}
+
+	/*div onde tem a resposta*/
+	div.respDeAn > div:nth-of-type(2){
+		margin-left:2em !important;
+	}
+	div.respDeAn > div:nth-of-type(2) p strong{
+		margin-left:-8em;
+	}
+	/*bloco da resposta*/
+	div.respDeAn{
+		left:5em;
+	}
+
+	/*buttons curtir e responder*/
+	div.avalicao article > div:last-of-type{
+		max-width:40em;
+		left:5em;
+	}
+
+}
+@media screen and (min-width:1100px){
+
+	/*mensagem ao anunciante*/
+	div.paiMens article div{
+		width:100%;max-width:40em;
+	}
+	div.paiMens article h4{
+		font-size:2em;
+	}
+	div.paiMens article > p,
+	div.paiMens article div form fieldset legend{
+		font-size:1.4em;
+		max-width:20em;
+	}
+
+	div.paiMens article div form fieldset label[for='menText']{
+		top:3em;
+		font-size:1.7em !important;
+		margin-bottom:2.5em;
+	}
+	div.paiMens article div form fieldset textarea{
+		position:relative;
+		top:2em;
+	
+		width:100%;
+		height:10em;
+	}
+	div.paiMens article div form fieldset input[type="button"]{
+		top:1.7em;
+		max-width:20em;
+		margin:2em auto 6em;
+		
+	}
+}
