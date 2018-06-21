@@ -56,7 +56,7 @@ class AutenticadorFaceConfig {
     #retorna usuaário setado na session
     public function getUserFaceSession() {
 
-        return $_SESSION['faceUser'];
+         if(isset($_SESSION['faceUser'])){ return $_SESSION['faceUser']; }
 
     }
 

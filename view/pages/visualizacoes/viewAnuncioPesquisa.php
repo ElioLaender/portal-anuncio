@@ -751,7 +751,7 @@ if(isset($_POST['newSearch']) && !empty($_POST['newSearch'])) {
 
        // alert("Passou no filterOn" + cate);
 
-	   alert("entrou no filterOn");
+	  // alert("entrou no filterOn");
 
         $(".radioCate").html(geraCatCheck(cate));
         $(".checkBairros").html(geraCheckBairros(cate,bairro));

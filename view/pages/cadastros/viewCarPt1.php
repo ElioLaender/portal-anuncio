@@ -8,7 +8,6 @@
     <meta name="description" content="Semprenegócio Anuncios.">
     <meta name="keywords" content="Carrinho semprenegócio, realizar compra.">
     <link rel="icon" href="view/assets/imagens/flor.png">
-    <base href="http://www.semprenegocio.com.br/" target="">
     <title>carrinho semprenegócio pacotes</title>
     <!-- build:css css/index.min.css -->
     <link href="view/assets/estilo/reset.css" rel="stylesheet">

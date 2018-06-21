@@ -14,10 +14,8 @@
     <!-- build:css css/index.min.css -->
     <link href="view/assets/estilo/reset.css" rel="stylesheet">
     <link href="view/assets/estilo/index.css" rel="stylesheet">
-    <base href="http://www.semprenegocio.com.br/" target="">
     <link href="view/assets/estilo/planos.css" rel="stylesheet">
     <link href="view/assets/estilo/pagamento.css" rel="stylesheet">
-    <base href="http://www.semprenegocio.com.br/" target="">
     <link href="view/assets/estilo/breakReset.css" rel="stylesheet">
     <link href="view/assets/estilo/breakIndex.css" rel="stylesheet">
     <link href="view/assets/estilo/breackPlanos.css" rel="stylesheet">
@@ -115,7 +113,7 @@
 <script  src="view/assets/js/modernizr.custom.js"></script>
 
 <!-- build:js js/index.min.js -->
-<script src='/view/assets/js/jquery.mask.min.js'></script>
+<script src='view/assets/js/jquery.mask.min.js'></script>
 <script src="view/assets/js/efeito-foto.js"></script>
 <script src="view/assets/js/efeitoLabel.js"></script>
 <script src="view/assets/js/revelaSenha.js"></script>

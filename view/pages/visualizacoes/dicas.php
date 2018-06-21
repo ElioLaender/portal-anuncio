@@ -6,23 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <meta name="author" content="SempreNegócio soluções inteligentes">
-	 <base href="http://www.semprenegocio.com.br/" target="">
     <meta name="description" content="Aproveite nossas dicas, temos parceria com os melhores profissionais para lhe oferecer milhares de dicas para sua empresa, turbinar suas vendas. Dicas de balada, saúde e beleza, fique atualizado aqui na SempreNegócio.">
     <meta name="keywords" content="semprenegocio.com.br, semprenegocio.com, Sempre Negócio, sempre negócio, semprenegocio, Dicas de saúde,dicas para empreendedorismo,dicas de beleza,dicas para balada,balada,empresas,empreendedorismo,saúde.">
-    <link rel="icon" href="/view/assets/imagens/flor.png">
-<base href="http://www.semprenegocio.com.br/" target="">
+    <link rel="icon" href="view/assets/imagens/flor.png">
 
     <title>Sempre Negócio - Dicas para seu negócio, para</title>
     <!-- build:css css/index.min.css -->
-    <link href="/view/assets/estilo/reset.css" rel="stylesheet">
-    <link href="/view/assets/estilo/index.css" rel="stylesheet">
-    <link href="/view/assets/estilo/dicas.css" rel="stylesheet">
-    <link href="/view/assets/estilo/barraMenu.css" rel="stylesheet">
+    <link href="view/assets/estilo/reset.css" rel="stylesheet">
+    <link href="view/assets/estilo/index.css" rel="stylesheet">
+    <link href="view/assets/estilo/dicas.css" rel="stylesheet">
+    <link href="view/assets/estilo/barraMenu.css" rel="stylesheet">
 
-    <link href="/view/assets/estilo/breakReset.css" rel="stylesheet">
-    <link href="/view/assets/estilo/breakIndex.css" rel="stylesheet">
-    <link href="/view/assets/estilo/breackBarraMenu.css" rel="stylesheet">
-    <link href="/view/assets/estilo/breackDicas.css" rel="stylesheet">
+    <link href="view/assets/estilo/breakReset.css" rel="stylesheet">
+    <link href="view/assets/estilo/breakIndex.css" rel="stylesheet">
+    <link href="view/assets/estilo/breackBarraMenu.css" rel="stylesheet">
+    <link href="view/assets/estilo/breackDicas.css" rel="stylesheet">
     <!-- endbuild -->
 </head>
 <body>
@@ -51,25 +49,25 @@
                         </form>
                          <ul>
                             <li>
-                                <a href="/home" hreflang="pt-br" >Home</a>
+                                <a href="home" hreflang="pt-br" >Home</a>
                             </li>
                             <li>
                             <a href="?controller=CadastroCliente&action=telaCadastro" hreflang="pt-br">Cadastrar</a>
                         </li>
                         <li>
-                            <a href="/descontos/" hreflang="pt-br">Descontos</a>
+                            <a href="descontos/" hreflang="pt-br">Descontos</a>
                         </li>
                         <li>
-                            <a href="/duvidas-frequentes/" hreflang="pt-br">Dúvidas Freguentes</a>
+                            <a href="duvidas-frequentes/" hreflang="pt-br">Dúvidas Freguentes</a>
                         </li>
                         <li>
-                            <a href="/dicas/" hreflang="pt-br">Dicas</a>
+                            <a href="dicas/" hreflang="pt-br">Dicas</a>
                         </li>
                          <li>
-                            <a href="/anuncie/" hreflang="pt-br" class="cor">Anuncie Grátis</a>
+                            <a href="anuncie/" hreflang="pt-br" class="cor">Anuncie Grátis</a>
                         </li>
                              <li>
-                                <a href="/home" hreflang="pt-br">A empresa</a>
+                                <a href="home" hreflang="pt-br">A empresa</a>
                             </li>
                          </ul>
                     </aside>
@@ -208,7 +206,7 @@
                 ?>
                 <div class="home">
                     <ul>
-                        <li><a href="/home">Home</a></li>
+                        <li><a href="home">Home</a></li>
                     </ul>
                 </div>
                 <!--fim div que da contexto para seu filhos-->
@@ -219,7 +217,7 @@
           <section class='prinSect'>
           <h2 class='sumir'>Dicas SempreNegócio</h2>
             <figure>
-               <img src="/view/assets/imagens/logo@1x.png" alt="logo com escrito, sempre negócio">
+               <img src="view/assets/imagens/logo@1x.png" alt="logo com escrito, sempre negócio">
             </figure>
             <div>
                 <div class="paiDic">
@@ -402,25 +400,25 @@
                         <li>
                             <p>SempreNegócio</p>
                         </li>
-                      <li><a href="/trabalhe-conosco/" id="trab">Trabalhe conosco</a></li>
-                        <li><a href="/fale-conosco/" id="cont">Fale conosco</a></li>
+                      <li><a href="trabalhe-conosco/" id="trab">Trabalhe conosco</a></li>
+                        <li><a href="fale-conosco/" id="cont">Fale conosco</a></li>
                         <li><a href="http://www.expressahost.com.br" id="sit"  hreflang="pt-br" target="_blank">Conheça nossos sistemas</a></li>
                     </ul>
                     <ul>
                         <li>
                             <p>Para Você</p>
                         </li>
-                              <li><a href="/duvidas-frequentes/" id="duvi">Dúvidas frequêntes</a></li>
-                        <li><a href="/termos-de-uso/" id="term">Termos de uso</a></li>
-                        <li><a href="/politica-de-privacidade/" id="poli">Política de privacidade</a></li>
+                              <li><a href="duvidas-frequentes/" id="duvi">Dúvidas frequêntes</a></li>
+                        <li><a href="termos-de-uso/" id="term">Termos de uso</a></li>
+                        <li><a href="politica-de-privacidade/" id="poli">Política de privacidade</a></li>
                     </ul>
                     <ul>
                         <li>
                           <p>Para Anunciantes</p>
                         </li>
-                          <li><a href="/painel-de-controle/" hreflang="pt-br">Painel de Controle</a></li>
-                        <li><a href="/termos-gerais/" id="poli">Termos gerais</a></li>
-                        <li><a href="/cuidados-com-fraudes/">Cuidados com fraudes</a></li>
+                          <li><a href="painel-de-controle/" hreflang="pt-br">Painel de Controle</a></li>
+                        <li><a href="termos-gerais/" id="poli">Termos gerais</a></li>
+                        <li><a href="cuidados-com-fraudes/">Cuidados com fraudes</a></li>
                     </ul>
                     <ul>
                        <li>
@@ -433,7 +431,7 @@
                 <div>
                     <p>&copy; 2015</p>
                     <figure>
-                        <img src="/view/assets/imagens/logo@1x.png" alt="logo com escrito, semprenegócio">
+                        <img src="view/assets/imagens/logo@1x.png" alt="logo com escrito, semprenegócio">
                     </figure>
                 </div>
             </footer>
@@ -442,15 +440,15 @@
     </main>
 </div>
 </body>
-<script src="/view/assets/js/jquery-1.11.3.min.js"></script>
-<script src="/view/assets/js/modernizr.custom.js"></script>
-<script src="/view/assets/js/Assync/anuncioImpress.js"></script>
+<script src="view/assets/js/jquery-1.11.3.min.js"></script>
+<script src="view/assets/js/modernizr.custom.js"></script>
+<script src="view/assets/js/Assync/anuncioImpress.js"></script>
 <!-- build:js js/index.min.js -->
-<script src="/view/assets/js/barraMenu.js"></script>
-<script  src="/view/assets/js/loginDash.js"></script>
-<script  src="/view/assets/js/dica.js"></script>
-<script src="/view/assets/js/preventSubmit.js"></script>
-<script src="/view/assets/js/recoverPass.js"></script>
+<script src="view/assets/js/barraMenu.js"></script>
+<script  src="view/assets/js/loginDash.js"></script>
+<script  src="view/assets/js/dica.js"></script>
+<script src="view/assets/js/preventSubmit.js"></script>
+<script src="view/assets/js/recoverPass.js"></script>
 <!-- endbuild -->
 <!--os dois abaixo eh suporte para medias queries e html5-->
 <!-- [If lt IE 9]>

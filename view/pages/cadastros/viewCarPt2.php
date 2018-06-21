@@ -12,7 +12,6 @@
     <link rel="icon" href="view/assets/imagens/flor.png">
     <title>carrinho semprenegócio Identificação</title>
     <!-- Custom divfacil -->
-    <base href="http://www.semprenegocio.com.br/" target="">
     <!-- build:css css/index.min.css -->
     <link href="view/assets/estilo/reset.css" rel="stylesheet">
     <link href="view/assets/estilo/index.css" rel="stylesheet">

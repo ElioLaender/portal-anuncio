@@ -110,20 +110,11 @@ function htmlImpressAnuncio(status, finalidade,valores,bairro,limit,sql){
 
         var arrayAnuncioCompleto = returnJason("http://localhost/sn/?controller=Anuncio&action=anuncioPesquisaImpressAll&valores="+valores+"&bairro="+bairro+"&limit="+limit+"&count=not");
 
-        console.log("?controller=Anuncio&action=anuncioPesquisaImpressAll&valores="+valores+"&bairro="+bairro+"&limit="+limit+"&count=not");
-
-    //document.write("?controller=Anuncio&action=anuncioPesquisaImpressAll&valores="+valores+"&bairro="+bairro+"&limit="+limit);
     } else if (status == "pesquisaFiltro"){
 
-        //document.write("?controller=Anuncio&action=anuncioPesquisaImpressAll&sql="+sql);
        var arrayAnuncioCompleto = returnJason("?controller=Anuncio&action=anuncioPesquisaImpressAll&sql="+sql);
 
-       // document.write("?controller=Anuncio&action=anuncioPesquisaImpressAll&sql="+sql);
-
     }
-
-
-
 
     else {
 
@@ -147,7 +138,7 @@ function htmlImpressAnuncio(status, finalidade,valores,bairro,limit,sql){
         //recebe como argumento os subArrays em que cada posição corresponde aos dados de uma tabela.
         if(!arrayAnuncioCompleto[i]['anuncio'] == null || !arrayAnuncioCompleto[i]['anuncio'].length == 0){
 
-         //  anunInfo += extraiAnuncio(arrayAnuncioCompleto[i]['anuncio'], finalidade, status);
+           anunInfo += extraiAnuncio(arrayAnuncioCompleto[i]['anuncio'], finalidade, status);
 
         }
 
@@ -174,8 +165,6 @@ function htmlImpressAnuncio(status, finalidade,valores,bairro,limit,sql){
 
     }
 
-
-    //document.write(anuncioHtml);
 
     //retorna os anuncios devidamente convertidos em html.
     return anuncioHtml;
@@ -214,7 +203,7 @@ function extraiAnuncio(arrayAnuncio, finalidade, status,imagens,mensagens,avalia
                 "<p class='titu' "+arrayAnuncio[i]['anuncio_id']+"> " + arrayAnuncio[i]['anuncio_titulo'] + "</p>" +
                 "<p class='inat'>"+arrayAnuncio[i]['status_anuncio_situacao']+"</p>"+  
                 "<div class='divImg'>"+
-                    "<a href='/anuncio-painel/"+arrayAnuncio[i]['anuncio_id']+"' hreflang='pt-br'>"+
+                    "<a href='?controller=Anuncio&action=viewAnuncioIdAll&id="+arrayAnuncio[i]['anuncio_id']+"' hreflang='pt-br'>"+
                         "<img src='"+ arrayAnuncio[i]['anuncio_imagem_capa'] +"' >" +
                     "</a>"+
                 "<div>"+
@@ -228,7 +217,7 @@ function extraiAnuncio(arrayAnuncio, finalidade, status,imagens,mensagens,avalia
             "<div class='contBu'>"+
                 "<ul>"+
                     "<li>"+
-                     "<a href='/anuncio-painel/"+arrayAnuncio[i]['anuncio_id']+"' hreflang='pt-br'>Veja sua página"+"</a>"+
+                     "<a href='?controller=Anuncio&action=viewAnuncioIdAll&id="+arrayAnuncio[i]['anuncio_id']+"' hreflang='pt-br'>Veja sua página"+"</a>"+
                     "</li>"+
                     "<li>"+
                       "<a href='?controller=Anuncio&action=viewGerenciaImgId&id="+arrayAnuncio[i]['anuncio_id']+"' hreflang='pt-br'>Gerenciar Fotos"+"</a>"+
@@ -246,12 +235,11 @@ function extraiAnuncio(arrayAnuncio, finalidade, status,imagens,mensagens,avalia
 		//fazer lógica para somente poder colocar online se o anuncio estiver devidamente pago. Caso o pacote for gratuito o código de ativação é diferente. 
 		if(arrayAnuncio[i]['anuncio_pacote'] == "Grátis"){
 
-		 links[i] = '?controller=Anuncio&action=alterStatus&status=11&id='+arrayAnuncio[i]['anuncio_id'];	
+		    links[i] = '?controller=Anuncio&action=alterStatus&status=11&id='+arrayAnuncio[i]['anuncio_id'];
 
 		} else {
 
-		
-                links[i] = '?controller=Anuncio&action=alterStatus&status=3&id='+arrayAnuncio[i]['anuncio_id'];//cod 4 == online ps: retirar esses coments depois.
+		    links[i] = '?controller=Anuncio&action=alterStatus&status=3&id='+arrayAnuncio[i]['anuncio_id'];//cod 4 == online ps: retirar esses coments depois.
 
 		}
 	
@@ -567,9 +555,10 @@ function extraiAnuncio(arrayAnuncio, finalidade, status,imagens,mensagens,avalia
             if(arrayAnuncio[i]['horario_func_domingo_inicio'] != ""){
                 arrayHour['domingo'] = "checked";
             }
-	    if(arrayAnuncio[i]['horario_func_semana_inicio'] != ""){
-                arrayHour['semana'] = "checked";
-            }
+
+            if(arrayAnuncio[i]['horario_func_semana_inicio'] != ""){
+                    arrayHour['semana'] = "checked";
+                }
 
             //Formas de pagamento
             var arrayFormPag = {boleto:"",credito:"",débito:"",valeAlimentação:"",cheque:"",dinheiro:"",outrosFormPag:"",master:"",
@@ -736,15 +725,15 @@ function extraiAnuncio(arrayAnuncio, finalidade, status,imagens,mensagens,avalia
                                              "<input type='text' id='site' name='site' title='Ex: www.expressahost.com.br' value='"+arrayAnuncio[i]['link_site']+"'>" +
                                         " </label>";
 
-					if(arrayAnuncio[i]['anuncio_pacote'] == "Grátis"){
-						 html += "<label for='youtube'>Video do Youtube (Somente Premium)" +
-				                             "<input type='text' id='youtube' name='youtube' value='"+arrayAnuncio[i]['link_youtube']+"' disabled>"+
-				                        "</label>";
-					} else {
-						 html += "<label for='youtube'>Video do Youtube" +
-				                             "<input type='text' id='youtube' name='youtube' value='"+arrayAnuncio[i]['link_youtube']+"'>"+
-				                        "</label>";
-					}
+                                        if(arrayAnuncio[i]['anuncio_pacote'] == "Grátis"){
+                                             html += "<label for='youtube'>Video do Youtube (Somente Premium)" +
+                                                                 "<input type='text' id='youtube' name='youtube' value='"+arrayAnuncio[i]['link_youtube']+"' disabled>"+
+                                                            "</label>";
+                                        } else {
+                                             html += "<label for='youtube'>Video do Youtube" +
+                                                                 "<input type='text' id='youtube' name='youtube' value='"+arrayAnuncio[i]['link_youtube']+"'>"+
+                                                            "</label>";
+                                        }
                                       
                                       html +=  "<label for='face'>Facebook" +
                                             "<input type='text' id='face' name='facebook' value='"+arrayAnuncio[i]['link_facebook']+"'>" +
@@ -1064,11 +1053,7 @@ function extraiAnuncio(arrayAnuncio, finalidade, status,imagens,mensagens,avalia
 
     else if(finalidade == "parcialTodos") {
 
-
-
             for (var i = 0; i < arrayAnuncio.length; i++) {
-
-
 
                 /*Esta eh a parte do anuncio onde sera aproveitado como preview e view*/
                 /*Esta eh a parte do anuncio onde sera aproveitado como preview e view*/
@@ -1076,7 +1061,7 @@ function extraiAnuncio(arrayAnuncio, finalidade, status,imagens,mensagens,avalia
                     "<article>" +
                     "<h2 class='sumir' " + arrayAnuncio[i]['anuncio_id'] + "> " + arrayAnuncio[i]['anuncio_titulo'] + "</h2>" +
                     "<div class='PaiAnuncio'>" +
-                    "<a href='/anuncio-completo/" + arrayAnuncio[i]['anuncio_id'] + "' hreflang='pt-br'>" +
+                    "<a href='?controller=Anuncio&action=viewAnuncioIDAll&id=" + arrayAnuncio[i]['anuncio_id'] + "' hreflang='pt-br'>" +
                     "<div class='divImg'>" +
                     "<img src='" + arrayAnuncio[i]['anuncio_imagem_capa'] + "'>" +
                     "</div>" +
@@ -1097,7 +1082,7 @@ function extraiAnuncio(arrayAnuncio, finalidade, status,imagens,mensagens,avalia
                     "</a>" +
                     "<ul class='lin'>" +
                     "<li>" +
-                    "<a href='/anuncio-completo/" + arrayAnuncio[i]['anuncio_id'] + "' hreflang='pt-br'>ver anúncio" + "</a>" +
+                    "<a href='anuncio-completo/" + arrayAnuncio[i]['anuncio_id'] + "' hreflang='pt-br'>ver anúncio" + "</a>" +
                     "</li>" +
                     "<li>" +
                     "<a href='tel:' hreflang='pt-br' " + arrayAnuncio[i]['anuncio_tel_fixo'] + ">Ligar" + "</a>" +
@@ -1120,14 +1105,14 @@ function extraiAnuncio(arrayAnuncio, finalidade, status,imagens,mensagens,avalia
             "<div class='divCup'>"+
                 "<p class='titu' "+arrayAnuncio[i]['anuncio_id']+"> " + arrayAnuncio[i]['anuncio_titulo'] + "</p>" +
                 "<div class='divImg'>"+
-                    "<a href='/anuncio-painel/"+arrayAnuncio[i]['anuncio_id']+"' hreflang='pt-br'>"+
+                    "<a href='?controller=Anuncio&action=viewAnuncioIDAll&id="+arrayAnuncio[i]['anuncio_id']+"' hreflang='pt-br'>"+
                        "<figure>"+
                           "<img src='"+ arrayAnuncio[i]['anuncio_imagem_capa'] +"' >" +
                         "</figure>"+
                     "</a>"+
                 "</div>"+
-             "<button type='button' class='butCup'><a href='/cadastro-de-cupon/"+arrayAnuncio[i]['anuncio_id']+"'>Cadastrar Desconto</a></button> "+
-             "<button type='button' class='butCup'><a href='/editar-cupon/"+arrayAnuncio[i]['anuncio_id']+"'>Gerenciar Desconto</button></a>"+
+             "<button type='button' class='butCup'><a href='?controller=Dashboard&action=ViewDashboard&option=cadasDesc&anun="+arrayAnuncio[i]['anuncio_id']+"'>Cadastrar Desconto</a></button> "+
+             "<button type='button' class='butCup'><a href='?controller=Dashboard&action=ViewDashboard&option=cupAnun&anun="+arrayAnuncio[i]['anuncio_id']+"'>Gerenciar Desconto</button></a>"+
             "</div>";
             //foi adicionado um input inner para que possamos recuparar o id do anuncio em questão.
             html+= "<input type='hidden' class='idAnun' value='"+arrayAnuncio[i]['anuncio_id']+"' style='color:red;'>" +//deve ser criado um seletor para selecionar this.input.hidden.val
@@ -1152,7 +1137,7 @@ function extraiAnuncio(arrayAnuncio, finalidade, status,imagens,mensagens,avalia
                              "<p id='media'>" + arrayAnuncio[i]['anuncio_media'] + "</p>"+
                                 "<ul>"+
                                     "<li>"+
-                                        "<a href='/anuncio-completo/"+arrayAnuncio[i]['anuncio_id']+"#avalia'>Avaliar</a>"+
+                                        "<a href='?controller=Anuncio&action=viewAnuncioIdAll&id="+arrayAnuncio[i]['anuncio_id']+"#avalia'>Avaliar</a>"+
                                     "</li>"+
                                 "</ul>"+
                            "</div>"+
@@ -1569,7 +1554,7 @@ function extraiImagens(arrayImagens, finalidade){
 
                  html += "<li>"+
                     "<a href='#'>"+
-                       "<img class='foto' src='/upload/anuncio-images/"+ arrayImagens[i]['imagem_localizacao'] + "'>"+
+                       "<img class='foto' src='upload/anuncio-images/"+ arrayImagens[i]['imagem_localizacao'] + "'>"+
                     "</a>"+
                 "</li>";
 
@@ -1581,7 +1566,7 @@ function extraiImagens(arrayImagens, finalidade){
         //ficará diferente na página de edição.
         for(var i = 0; i < arrayImagens.length; i++){
 
-            html += "<img src='/upload/anuncio-images/"+ arrayImagens[i]['imagem_localizacao'] + "'>";
+            html += "<img src='upload/anuncio-images/"+ arrayImagens[i]['imagem_localizacao'] + "'>";
 
         }
     }
@@ -2105,10 +2090,10 @@ function geraRevewForHome(){
             "</ul>"+
             "<ul>"+
                 "<li>"+
-                    "<a href='/anuncio-completo/"+ arrayRevewHome[i]['anuncio_id'] +"' hreflag='pt-br'>" + arrayRevewHome[i]['anuncio_titulo'] + "</a>" +
+                    "<a href='anuncio-completo/"+ arrayRevewHome[i]['anuncio_id'] +"' hreflag='pt-br'>" + arrayRevewHome[i]['anuncio_titulo'] + "</a>" +
                 "</li>"+
                 "<li>"+
-                    "<a href='/anuncio-completo/"+ arrayRevewHome[i]['anuncio_id'] +"' hreflag='pt-br'>" + arrayRevewHome[i]['avaliacao_titulo'] + "</a>" +
+                    "<a href='anuncio-completo/"+ arrayRevewHome[i]['anuncio_id'] +"' hreflag='pt-br'>" + arrayRevewHome[i]['avaliacao_titulo'] + "</a>" +
                 "</li>"+
                 "<li>"+
                     "<span id='estrelas'>" + arrayRevewHome[i]['avaliacao_nota'] + "</span>" +
@@ -2117,7 +2102,7 @@ function geraRevewForHome(){
                     "<p>Avaliado em: " + arrayRevewHome[i]['avaliacao_data_horario'] + "</p>" +
                 "</li>"+
                 "<li>"+
-                    "<a href='/anuncio-completo/"+ arrayRevewHome[i]['anuncio_id'] +"' hreflag='pt-br'>" + arrayRevewHome[i]['avaliacao_comentario'] + "</a>" +
+                    "<a href='anuncio-completo/"+ arrayRevewHome[i]['anuncio_id'] +"' hreflag='pt-br'>" + arrayRevewHome[i]['avaliacao_comentario'] + "</a>" +
                 "</li>"+
             "</ul>"+
         "</div>";
@@ -2174,8 +2159,8 @@ function geraResposta(revewId, arrayResp){
 function cssInsertAnuncio(){
 
     var html;
-    html = "<link href='/view/assets/estilo/formAnun01.css' rel='stylesheet'>"+
-           "<link href='/view/assets/estilo/breackFormAnun01.css' rel='stylesheet'>";
+    html = "<link href='view/assets/estilo/formAnun01.css' rel='stylesheet'>"+
+           "<link href='view/assets/estilo/breackFormAnun01.css' rel='stylesheet'>";
     return html;
 }
 
@@ -2183,16 +2168,16 @@ function jsInsertAnuncio(idAnun){
 
     var html;
 
-    html =  "<script src='/view/assets/js/jquery.mask.min.js'></script>"+
-        "<script src='/view/assets/js/modernizr.custom.js'></script>"+
-        "<script src='/view/assets/js/efeito-foto.js'></script>"+
-        "<script src='/view/assets/js/viewFoto.js'></script>"+
-        "<script src='/view/assets/js/custom-file-input.js'></script>"+
-        "<script src='/view/assets/js/cep.js'></script>"+
-	"<script src='/view/assets/js/titleVeriry.js'></script>"+
-	 "<script src='/view/assets/js/jquery.validate.js'></script>"+
-        "<script src='/view/assets/js/checkAnunc.js'></script>"+
-        "<script src='/view/assets/js/formAn.js'></script>";
+    html =  "<script src='view/assets/js/jquery.mask.min.js'></script>"+
+        "<script src='view/assets/js/modernizr.custom.js'></script>"+
+        "<script src='view/assets/js/efeito-foto.js'></script>"+
+        "<script src='view/assets/js/viewFoto.js'></script>"+
+        "<script src='view/assets/js/custom-file-input.js'></script>"+
+        "<script src='view/assets/js/cep.js'></script>"+
+        "<script src='view/assets/js/titleVeriry.js'></script>"+
+        "<script src='view/assets/js/jquery.validate.js'></script>"+
+        "<script src='view/assets/js/checkAnunc.js'></script>"+
+        "<script src='view/assets/js/formAn.js'></script>";
 
     html += "<script type='text/javascript'>"+
             "$(document).ready(function() {"+
@@ -2254,9 +2239,9 @@ function cssAnuncioAtivos(){
 var html;
 
     html =
-        "<link href='/view/assets/estilo/anunciosAtiv.css' rel='stylesheet'>"+
-        "<link href='/view/assets/estilo/breakAnuncAt0.css' rel='stylesheet'>"+
-        "<link href='/view/assets/estilo/brackAnunAt01.css' rel='stylesheet'>";
+        "<link href='view/assets/estilo/anunciosAtiv.css' rel='stylesheet'>"+
+        "<link href='view/assets/estilo/breakAnuncAt0.css' rel='stylesheet'>"+
+        "<link href='view/assets/estilo/brackAnunAt01.css' rel='stylesheet'>";
 
         return html;
 }
@@ -2273,7 +2258,7 @@ if(arrayAnuncioCompleto == 0){
                     "<p>Não fique sem investir em sua empresa!</p>"+
                     "<ul>"+
                       "<li>"+
-                         "<a href='/anuncie/#pacotes' class='semAn' hreflang='pt-br'>Cadastre sua empresa!</a>")+
+                         "<a href='?controller=Home&action=viewInvistaNegocio#pacotes' class='semAn' hreflang='pt-br'>Cadastre sua empresa!</a>")+
                       "</li>"+
                    "</ul>";
 }
@@ -2334,10 +2319,10 @@ function cssAnuncioInativos(){
 var html;
 
 html =
-        "<link href='/view/assets/estilo/anunciosAtiv.css' rel='stylesheet'>"+
-        "<link href='/view/assets/estilo/anunciosDes.css' rel='stylesheet'>"+
-        "<link href='/view/assets/estilo/breakAnuncAt0.css' rel='stylesheet'>"+
-        "<link href='/view/assets/estilo/brackAnunAt01.css' rel='stylesheet'>";
+        "<link href='view/assets/estilo/anunciosAtiv.css' rel='stylesheet'>"+
+        "<link href='view/assets/estilo/anunciosDes.css' rel='stylesheet'>"+
+        "<link href='view/assets/estilo/breakAnuncAt0.css' rel='stylesheet'>"+
+        "<link href='view/assets/estilo/brackAnunAt01.css' rel='stylesheet'>";
 
         return html;
 
@@ -2598,9 +2583,9 @@ function cssViewAlterCadastro(){
 var html;
 
 html =
-        "<link href='/view/assets/estilo/editaLogin.css' rel='stylesheet'>"+
-        "<link href='/view/assets/estilo/breackEditLogin.css' rel='stylesheet'>"+
-        "<link href='/view/assets/estilo/breakReset.css' rel='stylesheet'>";
+        "<link href='view/assets/estilo/editaLogin.css' rel='stylesheet'>"+
+        "<link href='view/assets/estilo/breackEditLogin.css' rel='stylesheet'>"+
+        "<link href='view/assets/estilo/breakReset.css' rel='stylesheet'>";
 
         return html;
 }
@@ -2614,15 +2599,15 @@ var html;
 
 
 
-    html =  "<script src='/view/assets/js/jquery.mask.min.js'></script>"+
-            "<script src='/view/assets/js/modernizr.custom.js'></script>"+
-            "<script src='/view/assets/js/efeito-foto.js'></script>"+
-            "<script src='/view/assets/js/viewFoto.js'></script>"+
-            "<script src='/view/assets/js/custom-file-input.js'></script>"+
-            "<script src='/view/assets/js/revelaSenha.js'></script>"+
-	    "<script src='/view/assets/js/passValidade.js'></script>"+
-            "<script src='/view/assets/js/efeitoLabel.js'></script>"+
-            "<script src='/view/assets/js/revelaBloco.js'></script>"+
+    html =  "<script src='view/assets/js/jquery.mask.min.js'></script>"+
+            "<script src='view/assets/js/modernizr.custom.js'></script>"+
+            "<script src='view/assets/js/efeito-foto.js'></script>"+
+            "<script src='view/assets/js/viewFoto.js'></script>"+
+            "<script src='view/assets/js/custom-file-input.js'></script>"+
+            "<script src='view/assets/js/revelaSenha.js'></script>"+
+	    "<script src='view/assets/js/passValidade.js'></script>"+
+            "<script src='view/assets/js/efeitoLabel.js'></script>"+
+            "<script src='view/assets/js/revelaBloco.js'></script>"+
 
         "<script type='text/javascript'>"+
             "$(document).ready(function() {"+
@@ -2894,10 +2879,10 @@ return html;
 
 function cssViewInsertCurriculo(){
 
-var html =  "<link href='/view/assets/estilo/formAnunCur.css' rel='stylesheet'>"+
-            "<link href='/view/assets/estilo/viewCurr.css' rel='stylesheet'>"+
-            "<link href='/view/assets/estilo/breackViewCurr.css' rel='stylesheet'>"+
-            "<link href='/view/assets/estilo/breakReset.css' rel='stylesheet'>";
+var html =  "<link href='view/assets/estilo/formAnunCur.css' rel='stylesheet'>"+
+            "<link href='view/assets/estilo/viewCurr.css' rel='stylesheet'>"+
+            "<link href='view/assets/estilo/breackViewCurr.css' rel='stylesheet'>"+
+            "<link href='view/assets/estilo/breakReset.css' rel='stylesheet'>";
 
             return html;
 
@@ -2907,16 +2892,16 @@ function jsViewInsertCurriculo(){
 
 var html;
 
-html =  "<script src='/view/assets/js/jquery.mask.min.js'></script>"+
-        "<script src='/view/assets/js/modernizr.custom.js'></script>"+
+html =  "<script src='view/assets/js/jquery.mask.min.js'></script>"+
+        "<script src='view/assets/js/modernizr.custom.js'></script>"+
 
-        "<script src='/view/assets/js/efeito-foto.js'></script>"+
-        "<script src='/view/assets/js/viewFoto.js'></script>"+
-        "<script src='/view/assets/js/custom-file-input.js'></script>"+
-        "<script src='/view/assets/js/cep.js'></script>"+
-        "<script src='/view/assets/js/formAn.js'></script>"+
-	"<script src='/view/assets/js/jquery.validate.js'></script>"+
-	"<script src='/view/assets/js/jquery.mask.js'></script>";
+        "<script src='view/assets/js/efeito-foto.js'></script>"+
+        "<script src='view/assets/js/viewFoto.js'></script>"+
+        "<script src='view/assets/js/custom-file-input.js'></script>"+
+        "<script src='view/assets/js/cep.js'></script>"+
+        "<script src='view/assets/js/formAn.js'></script>"+
+	"<script src='view/assets/js/jquery.validate.js'></script>"+
+	"<script src='view/assets/js/jquery.mask.js'></script>";
 
 html += "<script>$(document).ready(function(){ $('#cIdade').mask('00');"+
 	"$('#tel-fixo').mask('(00)00000-0000');"+
@@ -3408,8 +3393,8 @@ return html;
     
 function cssSelAnunDes(){
   
-    html = "<link href='/view/assets/estilo/cupon.css' rel='stylesheet'>"+
-           "<link href='/view/assets/estilo/breakCupon.css' rel='stylesheet'>";
+    html = "<link href='view/assets/estilo/cupon.css' rel='stylesheet'>"+
+           "<link href='view/assets/estilo/breakCupon.css' rel='stylesheet'>";
 
         return html;
 }
@@ -3562,7 +3547,7 @@ function cssCadDes(){
 
 var html;
 
-    html = "<link href='/view/assets/estilo/cadasCup.css' rel='stylesheet'>";
+    html = "<link href='view/assets/estilo/cadasCup.css' rel='stylesheet'>";
         return html; 
 }
 
@@ -3570,14 +3555,14 @@ function jsCadDes(){
     
     var html;
 
-   html = "<script src='/view/assets/js/jquery.mask.min.js'></script>"+
-        "<script src='/view/assets/js/modernizr.custom.js'></script>"+
-        "<script src='/view/assets/js/efeito-foto.js'></script>"+
-        "<script src='/view/assets/js/viewFoto.js'></script>"+
-        "<script src='/view/assets/js/cadCupon.js'></script>"+
-        "<script src='/view/assets/js/custom-file-input.js'></script>"+
-	"<script src='/view/assets/js/jquery.validate.js'></script>"+
-	"<script src='/view/assets/js/validCadCup.js'></script>";
+   html = "<script src='view/assets/js/jquery.mask.min.js'></script>"+
+        "<script src='view/assets/js/modernizr.custom.js'></script>"+
+        "<script src='view/assets/js/efeito-foto.js'></script>"+
+        "<script src='view/assets/js/viewFoto.js'></script>"+
+        "<script src='view/assets/js/cadCupon.js'></script>"+
+        "<script src='view/assets/js/custom-file-input.js'></script>"+
+	"<script src='view/assets/js/jquery.validate.js'></script>"+
+	"<script src='view/assets/js/validCadCup.js'></script>";
 
    html += "<script>$('#qtdCupon').mask('00');"+
 		    "$('#percent').mask('00');"+   
@@ -3699,7 +3684,7 @@ if(arrayCuponsAnun == 0){
             "<p>Cadastres seu cupon e atraia mais clientes para seu negócio!</p>"+
             "<ul>"+
                 "<li>"+
-                   "<a href='/cadastrar-cupon/'>Cadastrar Desconto</a>"+    
+                   "<a href='cadastrar-cupon/'>Cadastrar Desconto</a>"+    
                 "</li>"+
             "</ul>"+
          "</div>";
@@ -3773,7 +3758,7 @@ return html;
 function cssCuponForAnun(){
 var html;
 
-    html = "<link href='/view/assets/estilo/gerencCup.css' rel='stylesheet'>";
+    html = "<link href='view/assets/estilo/gerencCup.css' rel='stylesheet'>";
         return html; 
 }
 
@@ -3900,20 +3885,20 @@ return html;
 
 }
 function cssAlterCadDes(){
- html = "<link href='/view/assets/estilo/cadasCup.css' rel='stylesheet'>";
+ html = "<link href='view/assets/estilo/cadasCup.css' rel='stylesheet'>";
         return html; 
 }
 
 function jsAlterCadDes(){
    var html;
 
-   html = "<script src='/view/assets/js/jquery.mask.min.js'></script>"+
-        "<script src='/view/assets/js/modernizr.custom.js'></script>"+
-        "<script src='/view/assets/js/efeito-foto.js'></script>"+
-        "<script src='/view/assets/js/viewFoto.js'></script>"+
-        "<script src='/view/assets/js/cadCupon.js'></script>"+
-        "<script src='/view/assets/js/custom-file-input.js'></script>"+
-	"<script src='/view/assets/js/validCadCup.js'></script>"; 
+   html = "<script src='view/assets/js/jquery.mask.min.js'></script>"+
+        "<script src='view/assets/js/modernizr.custom.js'></script>"+
+        "<script src='view/assets/js/efeito-foto.js'></script>"+
+        "<script src='view/assets/js/viewFoto.js'></script>"+
+        "<script src='view/assets/js/cadCupon.js'></script>"+
+        "<script src='view/assets/js/custom-file-input.js'></script>"+
+	"<script src='view/assets/js/validCadCup.js'></script>"; 
 
     html += "<!--os dois abaixo eh suporte para medias queries e html5-->"+
         "<!-- [If lt IE 9]>"+
@@ -4609,7 +4594,7 @@ function renderCuponCompleto(idCupon) {
                     "<div>"+
                          "<ul>"+
                             "<li>"+
-                               "<a href='/anuncio-completo/"+arrayCupon[0]['anuncio_id']+"'>"+arrayCupon[0]['anuncio_titulo']+"</a>"+
+                               "<a href='?controller=Anuncio&action=viewAnuncioIdAll&id="+arrayCupon[0]['anuncio_id']+"'>"+arrayCupon[0]['anuncio_titulo']+"</a>"+
                             "</li>"+
                          "</ul>"+
                          "<figure>"+
@@ -4816,7 +4801,7 @@ function cuponImpress(idCli, idCupon,qtdImpress,infinit,redirect) {
 
                          if (alfa[i] == arraySubcat[j]['sub_categoria_descricao'].substring(0,1)) {
 
-                                      html += "<dd><a href='/pesquisa/"+arraySubcat[j]['sub_categoria_descricao']+"'>"+arraySubcat[j]['sub_categoria_descricao']+"</a><dd>";
+                                      html += "<dd><a href='?controller=Anuncio&action=viewAnuncioPesquisa&busc="+arraySubcat[j]['sub_categoria_descricao']+"'>"+arraySubcat[j]['sub_categoria_descricao']+"</a><dd>";
 
                          }
             }

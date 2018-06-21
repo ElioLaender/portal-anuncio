@@ -9,7 +9,6 @@
     <meta name="description" content="Página exclusiva do anúnciante,orçamento, avaliações, vídeos e muito mais informações,estão disponíveis para a empresa visualizar como está seu anúncioS.">
     <meta name="keywords" content="anúncio,minha empresa,empresa,dados de empresa,avalições,orçamento,vídeo,album de fotos,estrelas">
     <link rel="icon" href="imagens/flor.png">
-   <base href="http://www.semprenegocio.com.br/" target="">
 
     <title>Sempre Negócio - Seu Anúncio</title>
     <!-- build:css css/index.min.css -->

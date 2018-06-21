@@ -10,19 +10,19 @@
  <base href="http://adminsn.semprenegocio.com.br/" target="">
     <meta name="description" content="Tire suas dúvidas, temos as respostas para suas dúvidas.">
     <meta name="keywords" content="dúvidas frequentes,dúvidas,tirar dúvidas,respostas, Sempre Negócio, semprenegocio.com.br, semprenegocio.com">
-    <link rel="icon" href="/view/assets/imagens/flor.png">
+    <link rel="icon" href="view/assets/imagens/flor.png">
 <base href="http://www.semprenegocio.com.br/" target="">
 
     <title>Sempre Negócio - Dúvidas frequentes</title>
      <!-- build:css css/index.min.css -->
-    <link href="/view/assets/estilo/reset.css" rel="stylesheet">
-    <link href="/view/assets/estilo/index.css" rel="stylesheet">
-    <link href="/view/assets/estilo/barraMenu.css" rel="stylesheet">
-    <link href="/view/assets/estilo/duvidas.css" rel="stylesheet">
+    <link href="view/assets/estilo/reset.css" rel="stylesheet">
+    <link href="view/assets/estilo/index.css" rel="stylesheet">
+    <link href="view/assets/estilo/barraMenu.css" rel="stylesheet">
+    <link href="view/assets/estilo/duvidas.css" rel="stylesheet">
 
-    <link href="/view/assets/estilo/breakReset.css" rel="stylesheet">
-    <link href="/view/assets/estilo/breakIndex.css" rel="stylesheet">
-    <link href="/view/assets/estilo/breackBarraMenu.css" rel="stylesheet">
+    <link href="view/assets/estilo/breakReset.css" rel="stylesheet">
+    <link href="view/assets/estilo/breakIndex.css" rel="stylesheet">
+    <link href="view/assets/estilo/breackBarraMenu.css" rel="stylesheet">
     <!-- endbuild -->
 </head>
 <body>
@@ -51,25 +51,25 @@
                         </form>
                          <ul>
                             <li>
-                                <a href="/home/" hreflang="pt-br" >Home</a>
+                                <a href="home/" hreflang="pt-br" >Home</a>
                             </li>
                             <li>
-                            <a href="/cadastro/" hreflang="pt-br">Cadastrar</a>
+                            <a href="cadastro/" hreflang="pt-br">Cadastrar</a>
                         </li>
                         <li>
-                            <a href="/descontos/" hreflang="pt-br">Descontos</a>
+                            <a href="descontos/" hreflang="pt-br">Descontos</a>
                         </li>
                         <li>
-                            <a href="/duvidas-frequentes/" hreflang="pt-br">Dúvidas Freguentes</a>
+                            <a href="duvidas-frequentes/" hreflang="pt-br">Dúvidas Freguentes</a>
                         </li>
                         <li>
-                            <a href="/dicas/" hreflang="pt-br">Dicas</a>
+                            <a href="dicas/" hreflang="pt-br">Dicas</a>
                         </li>
                          <li>
-                            <a href="/anuncie/" hreflang="pt-br" class="cor">Anuncie Grátis</a>
+                            <a href="anuncie/" hreflang="pt-br" class="cor">Anuncie Grátis</a>
                         </li>
                              <li>
-                                <a href="/home/" hreflang="pt-br">A empresa</a>
+                                <a href="home/" hreflang="pt-br">A empresa</a>
                             </li>
                          </ul>
                     </nav>
@@ -213,7 +213,7 @@
     <main>
         <div class='primDiv'>
             <figure>
-                <img src="/view/assets/imagens/logo@1x.png">
+                <img src="view/assets/imagens/logo@1x.png">
             </figure>
             <section>
                 <h3>Dúvidas Frequentes</h3>
@@ -366,25 +366,25 @@
                         <li>
                             <p>SempreNegócio</p>
                         </li>
-                        <li><a href="/trabalhe-conosco/" id="trab">Trabalhe conosco</a></li>
-                        <li><a href="/fale-conosco/" id="cont">Fale conosco</a></li>
+                        <li><a href="trabalhe-conosco/" id="trab">Trabalhe conosco</a></li>
+                        <li><a href="fale-conosco/" id="cont">Fale conosco</a></li>
                         <li><a href="http://www.expressahost.com.br" id="sit"  hreflang="pt-br" target="_blank">Conheça nossos sistemas</a></li>
                     </ul>
                     <ul>
                         <li>
                             <p>Para Você</p>
                         </li>
-                        <li><a href="/duvidas-frequentes/" id="duvi">Dúvidas frequêntes</a></li>
-                        <li><a href="/termos-de-uso/" id="term">Termos de uso</a></li>
-                        <li><a href="/politica-de-privacidade/" id="poli">Política de privacidade</a></li>
+                        <li><a href="duvidas-frequentes/" id="duvi">Dúvidas frequêntes</a></li>
+                        <li><a href="termos-de-uso/" id="term">Termos de uso</a></li>
+                        <li><a href="politica-de-privacidade/" id="poli">Política de privacidade</a></li>
                     </ul>
                     <ul>
                         <li>
                             <p>Para Anunciantes</p>
                         </li>
-                 <li><a href="/painel-de-controle/" hreflang="pt-br">Painel de Controle</a></li>
-                        <li><a href="/termos-gerais/" id="poli">Termos gerais</a></li>
-                        <li><a href="/cuidados-com-fraudes/">Cuidados com fraudes</a></li>
+                 <li><a href="painel-de-controle/" hreflang="pt-br">Painel de Controle</a></li>
+                        <li><a href="termos-gerais/" id="poli">Termos gerais</a></li>
+                        <li><a href="cuidados-com-fraudes/">Cuidados com fraudes</a></li>
                     </ul>
                     <ul>
                         <li>
@@ -397,7 +397,7 @@
                 <div>
                     <p>&copy; 2015</p>
                      <figure>
-                        <img src="/view/assets/imagens/logo@1x.png" alt="logo com escrito, semprenegócio">
+                        <img src="view/assets/imagens/logo@1x.png" alt="logo com escrito, semprenegócio">
                     </figure>
                 </div>
             </footer>
@@ -406,20 +406,20 @@
     </main>
 </div>
 </body>
-<script src="/view/assets/js/jquery-1.11.3.min.js"></script>
-<script src="/view/assets/js/duvidas.min.js"></script>
+<script src="view/assets/js/jquery-1.11.3.min.js"></script>
+<script src="view/assets/js/duvidas.min.js"></script>
 <!--os dois abaixo eh suporte para medias queries e html5-->
 <!-- [If lt IE 9]>
      <script  src = "js/html5shiv.js"> </ script>
      <script  src="js/css3-mediaqueries.js"></script>
 <[endif]-->
-<link rel="stylesheet" href="/view/assets/estilo/jquery-ui.css">
-<script src="/view/assets/js/loginDash.js"></script>
-<script src="/view/assets/js/Assync/anuncioImpress.js"></script>
-<script src="/view/assets/js/jquery-ui.min.js"></script>
-<script src="/view/assets/js/autocomplete.js"></script>
-<script src="/view/assets/js/recoverPass.js"></script>
-<script src="/view/assets/js/preventSubmit.js"></script>
+<link rel="stylesheet" href="view/assets/estilo/jquery-ui.css">
+<script src="view/assets/js/loginDash.js"></script>
+<script src="view/assets/js/Assync/anuncioImpress.js"></script>
+<script src="view/assets/js/jquery-ui.min.js"></script>
+<script src="view/assets/js/autocomplete.js"></script>
+<script src="view/assets/js/recoverPass.js"></script>
+<script src="view/assets/js/preventSubmit.js"></script>
 
 
 <!--Start of Tawk.to Script-->

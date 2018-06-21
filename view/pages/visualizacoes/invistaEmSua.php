@@ -8,21 +8,21 @@
     <meta name="author" content="SempreNegócio soluções inteligentes">
     <meta name="description" content="Invista em sua empresa, estamos preparados para melhorar sua visibilidade online. Veja nossos pacotes de incentivo a pequenas empresas e empreendedores individuais, aproveite nossas ofertas.">
     <meta name="keywords" content="ofertas,promoção,pacotes,assinatura semprenegócio,minha empresa online,anúnciar empresa,anúncios,apracer no google, semprenegocio.com.br, semprenegocio.com">
-<base href="http://www.semprenegocio.com.br/" target="">
+
 
     <title>Sempre Negócio - Invista em seu negócio</title>
     <!-- build:css css/index.min.css -->
-    <link href="/view/assets/estilo/reset.css" rel="stylesheet">
-    <link href="/view/assets/estilo/index.css" rel="stylesheet">
-    <link href="/view/assets/estilo/invista.css" rel="stylesheet">
-    <link href="/view/assets/estilo/barraMenu.css" rel="stylesheet">
-    <link href="/view/assets/estilo/banAnun.css" rel="stylesheet">
-    <link href="/view/assets/estilo/breakAnuncAt0.css" rel="stylesheet">
-    <link href="/view/assets/estilo/breakReset.css" rel="stylesheet">
-    <link href="/view/assets/estilo/breakIndex.css" rel="stylesheet">
-    <link href="/view/assets/estilo/breackInvista.css" rel="stylesheet">
-    <link href="/view/assets/estilo/breackBarraMenu.css" rel="stylesheet">
-    <link href="/view/assets/estilo/breackBanAnun.css" rel="stylesheet">
+    <link href="view/assets/estilo/reset.css" rel="stylesheet">
+    <link href="view/assets/estilo/index.css" rel="stylesheet">
+    <link href="view/assets/estilo/invista.css" rel="stylesheet">
+    <link href="view/assets/estilo/barraMenu.css" rel="stylesheet">
+    <link href="view/assets/estilo/banAnun.css" rel="stylesheet">
+    <link href="view/assets/estilo/breakAnuncAt0.css" rel="stylesheet">
+    <link href="view/assets/estilo/breakReset.css" rel="stylesheet">
+    <link href="view/assets/estilo/breakIndex.css" rel="stylesheet">
+    <link href="view/assets/estilo/breackInvista.css" rel="stylesheet">
+    <link href="view/assets/estilo/breackBarraMenu.css" rel="stylesheet">
+    <link href="view/assets/estilo/breackBanAnun.css" rel="stylesheet">
     <!-- endbuild -->
 </head>
 <body>
@@ -51,22 +51,22 @@
                     </form>
                     <ul>
                         <li>
-                            <a href="/home">Home</a>
+                            <a href="home">Home</a>
                         </li>
                         <li>
                             <a href="?controller=CadastroCliente&action=telaCadastro" hreflang="pt-br">Cadastrar</a>
                         </li>
                         <li>
-                            <a href="/descontos/" hreflang="pt-br">Descontos</a>
+                            <a href="descontos/" hreflang="pt-br">Descontos</a>
                         </li>
                         <li>
-                            <a href="/duvidas-frequentes/" hreflang="pt-br">Dúvidas Freguentes</a>
+                            <a href="duvidas-frequentes/" hreflang="pt-br">Dúvidas Freguentes</a>
                         </li>
                         <li>
-                            <a href="/dicas/" hreflang="pt-br">Dicas</a>
+                            <a href="dicas/" hreflang="pt-br">Dicas</a>
                         </li>
                         <li>
-                            <a href="/cuidados-com-fraudes/">Cuidados com fraudes</a>                            </li>
+                            <a href="cuidados-com-fraudes/">Cuidados com fraudes</a>                            </li>
                         <li>
                             <a href="#" hreflang="pt-br">A empresa</a>
                         </li>
@@ -208,7 +208,7 @@
             ?>
             <div class="home">
                 <ul>
-                    <li><a href="/home">Home</a></li>
+                    <li><a href="home">Home</a></li>
                 </ul>
             </div>
             <!--fim div que da contexto para seu filhos-->
@@ -223,7 +223,7 @@
                     <p>A Sempre Negócio tem o melhor custo benefício para sua empresa.</p>
                     <ul class='plan'>
                         <li>
-                            <a href="/anuncie/#pacotes">Confira os planos</a>
+                            <a href="anuncie/#pacotes">Confira os planos</a>
                         </li>
                     </ul>
                 </div>
@@ -281,19 +281,19 @@
                     <div class='paiImg'>
                         <div>
                             <p>Anuncios ativos</p>
-                            <img src="/view/assets/imagens/painel@1x.jpg" alt='imagem representando reviews de um anúncio'>
+                            <img src="view/assets/imagens/painel@1x.jpg" alt='imagem representando reviews de um anúncio'>
                         </div>
                         <div>
                             <p>Editar Anúncio</p>
-                            <img src="/view/assets/imagens/editarAnun@1x.jpg" alt='imagem representando edição de anúncio'>
+                            <img src="view/assets/imagens/editarAnun@1x.jpg" alt='imagem representando edição de anúncio'>
                         </div>
                         <div>
                             <p>Alterar fotos</p>
-                            <img src="/view/assets/imagens/edtImagens@1x.jpg" alt='imagem representando edição de fotos'>
+                            <img src="view/assets/imagens/edtImagens@1x.jpg" alt='imagem representando edição de fotos'>
                         </div>
                         <div>
                             <p>Crie cupons</p>
-                            <img src="/view/assets/imagens/cuponPro@2x.jpg" alt='imagem representando reviews de um anúncio'>
+                            <img src="view/assets/imagens/cuponPro@2x.jpg" alt='imagem representando reviews de um anúncio'>
                         </div>
                     </div>
                 </div>
@@ -315,19 +315,19 @@
                     <div>
                         <p><strong>1º</strong> Escolha seu plano</p>
                         <figure>
-                            <img src="/view/assets/imagens/planos@1x.png" alt="Dois banner informando valores de dois pacotes">
+                            <img src="view/assets/imagens/planos@1x.png" alt="Dois banner informando valores de dois pacotes">
                         </figure>
                     </div>
                     <div>
                         <p><strong>2º</strong> Cire seu anúncio </p>
                         <figure>
-                            <img src="/view/assets/imagens/form@1x.png" alt="Dois banner informando valores de dois pacotes">
+                            <img src="view/assets/imagens/form@1x.png" alt="Dois banner informando valores de dois pacotes">
                         </figure>
                     </div>
                     <div>
                         <p>Pronto!</p>
                         <figure class='an'>
-                            <img src="/view/assets/imagens/anunGra@2x.jpg" alt="Dois banner informando valores de dois pacotes">
+                            <img src="view/assets/imagens/anunGra@2x.jpg" alt="Dois banner informando valores de dois pacotes">
                         </figure>
                     </div>
                 </div>
@@ -564,25 +564,25 @@
                         <li>
                             <p>SempreNegócio</p>
                         </li>
-                             <li><a href="/trabalhe-conosco/" id="trab">Trabalhe conosco</a></li>
-                        <li><a href="/fale-conosco/" id="cont">Fale conosco</a></li>
+                             <li><a href="trabalhe-conosco/" id="trab">Trabalhe conosco</a></li>
+                        <li><a href="fale-conosco/" id="cont">Fale conosco</a></li>
                         <li><a href="http://www.expressahost.com.br" id="sit"  hreflang="pt-br" target="_blank">Conheça nossos sistemas</a></li>
                     </ul>
                     <ul>
                         <li>
                             <p>Para Você</p>
                         </li>
-                         <li><a href="/duvidas-frequentes/" id="duvi">Dúvidas frequêntes</a></li>
-                        <li><a href="/termos-de-uso/" id="term">Termos de uso</a></li>
-                        <li><a href="/politica-de-privacidade/" id="poli">Política de privacidade</a></li>
+                         <li><a href="duvidas-frequentes/" id="duvi">Dúvidas frequêntes</a></li>
+                        <li><a href="termos-de-uso/" id="term">Termos de uso</a></li>
+                        <li><a href="politica-de-privacidade/" id="poli">Política de privacidade</a></li>
                     </ul>
                     <ul>
                         <li>
                             <p>Para Anunciantes</p>
                         </li>
-                        <li><a href="/painel-de-controle/" hreflang="pt-br">Painel de Controle</a></li>
-                        <li><a href="/termos-gerais/" id="poli">Termos gerais</a></li>
-                        <li><a href="/cuidados-com-fraudes/">Cuidados com fraudes</a></li>
+                        <li><a href="painel-de-controle/" hreflang="pt-br">Painel de Controle</a></li>
+                        <li><a href="termos-gerais/" id="poli">Termos gerais</a></li>
+                        <li><a href="cuidados-com-fraudes/">Cuidados com fraudes</a></li>
                     </ul>
                     <ul>
                         <li>
@@ -595,7 +595,7 @@
                 <div>
                     <p>&copy; 2015</p>
                     <figure>
-                        <img src="/view/assets/imagens/logo@1x.png" alt="logo com escrito, semprenegócio">
+                        <img src="view/assets/imagens/logo@1x.png" alt="logo com escrito, semprenegócio">
                     </figure>
                 </div>
             </footer>
@@ -605,24 +605,24 @@
 </div>
 </body>
 <!-- build:js js/index.min.js -->
-<script src="/view/assets/js/jquery-1.11.3.min.js"></script>
-<script src="/view/assets/js/jquery.mask.min.js"></script>
-<script src="/view/assets/js/modernizr.custom.js"></script>
-<script src="/view/assets/js/efeito-foto.js"></script>
-<script src="/view/assets/js/efeitoLabel.js"></script>
-<script src="/view/assets/js/barraMenu.js"></script>
-<script src="/view/assets/js/revelaSenha.js"></script>
-<script src="/view/assets/js/miniP.js"></script>
-<script src="/view/assets/js/Assync/anuncioImpress.js"></script>
-<script src="/view/assets/js/jquery-ui.min.js"></script>
-<script src="/view/assets/js/autocomplete.js"></script>
-<script src="/view/assets/js/valorBan.js"></script>
-<script src="/view/assets/js/loginDash.js"></script>
-<script src="/view/assets/js/recoverPass.js"></script>
-<script src="/view/assets/js/preventSubmit.js"></script>
+<script src="view/assets/js/jquery-1.11.3.min.js"></script>
+<script src="view/assets/js/jquery.mask.min.js"></script>
+<script src="view/assets/js/modernizr.custom.js"></script>
+<script src="view/assets/js/efeito-foto.js"></script>
+<script src="view/assets/js/efeitoLabel.js"></script>
+<script src="view/assets/js/barraMenu.js"></script>
+<script src="view/assets/js/revelaSenha.js"></script>
+<script src="view/assets/js/miniP.js"></script>
+<script src="view/assets/js/Assync/anuncioImpress.js"></script>
+<script src="view/assets/js/jquery-ui.min.js"></script>
+<script src="view/assets/js/autocomplete.js"></script>
+<script src="view/assets/js/valorBan.js"></script>
+<script src="view/assets/js/loginDash.js"></script>
+<script src="view/assets/js/recoverPass.js"></script>
+<script src="view/assets/js/preventSubmit.js"></script>
     <!-- endbuild -->
 
-<!-- <script src="/view/assets/js/revelaBloco.js"></script> -->
+<!-- <script src="view/assets/js/revelaBloco.js"></script> -->
 <!-- endbuild -->
 <!--os dois abaixo eh suporte para medias queries e html5-->
 <!-- [If lt IE 9]>

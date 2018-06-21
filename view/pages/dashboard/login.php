@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="SempreNegócio soluções inteligentes">
     <meta name="description" content="Logar na SempreNegócio para poder comentar em anúncios,cadastrar novos anúncios, currículo,editar perfilde login.">
-    <base href="http://www.semprenegocio.com.br/" target="">
     <meta name="keywords" content="Logar na semprenegócio,login,entar na semprenegócio.">
     <link rel="icon" href="view/assets/imagens/flor.png">
 

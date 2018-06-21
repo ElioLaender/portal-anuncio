@@ -15,7 +15,6 @@
     <link href="view/assets/estilo/index.css" rel="stylesheet">
     <link href="view/assets/estilo/barraMenu.css" rel="stylesheet">
     <link href="view/assets/estilo/fraude.css" rel="stylesheet">
-<base href="http://www.semprenegocio.com.br/" target="">
     <link href="view/assets/estilo/breakReset.css" rel="stylesheet">
     <link href="view/assets/estilo/breakIndex.css" rel="stylesheet">
     <link href="view/assets/estilo/breackBarraMenu.css" rel="stylesheet">

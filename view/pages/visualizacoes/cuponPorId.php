@@ -8,13 +8,12 @@
     <meta name="author" content="SempreNegócio soluções inteligentes">
     <base href="http://www.semprenegocio.com.br/" target="">
     <meta name="keywords" content="Descontos, cupons, cupons de descontos, economizar, Sempre Negócio, sempre negócio, semprenegocio.com.br, semprenegocio.com">
-    <base href="http://www.semprenegocio.com.br/" target="">
-    <link rel="icon" href="/view/assets/imagens/flor.png">
+    <link rel="icon" href="view/assets/imagens/flor.png">
     <title>Sempre Negócio - Cupon de desconto <?php echo $description[0]['cupon_desconto_titulo']; ?></title>
     <meta name="description" content="<?php echo $description[0]['cupon_desconto_descricao']; ?>">
-    <link href="/view/assets/estilo/reset.css" rel="stylesheet">
-    <link href="/view/assets/estilo/index.css" rel="stylesheet">
-    <link href="/view/assets/estilo/painelCupon.css" rel="stylesheet">
+    <link href="view/assets/estilo/reset.css" rel="stylesheet">
+    <link href="view/assets/estilo/index.css" rel="stylesheet">
+    <link href="view/assets/estilo/painelCupon.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -22,7 +21,7 @@
     <h1> <img style='display:none;' href='<?php echo $description[0]['cupon_desconto_img']; ?>'> </h1>  
     <ul>
         <li>
-            <a href="/descontos/">Voltar</a>
+            <a href="descontos/">Voltar</a>
         </li>
     </ul>
     <p>Cupons de desconto</p>
@@ -37,9 +36,9 @@
 </section>
 </body>
 
-<script src="/view/assets/js/Assync/anuncioImpress.js"></script>
-<script src="/view/assets/js/jquery-1.11.3.min.js"></script>
-<script src="/view/assets/js/cuponPorld.js"></script>
+<script src="view/assets/js/Assync/anuncioImpress.js"></script>
+<script src="view/assets/js/jquery-1.11.3.min.js"></script>
+<script src="view/assets/js/cuponPorld.js"></script>
 
 <?php
 

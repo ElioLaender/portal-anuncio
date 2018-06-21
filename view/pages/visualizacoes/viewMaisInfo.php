@@ -9,7 +9,6 @@
     <meta name="description" content="Tire suas dúvidas, temos as respostas para suas dúvidas.">
     <meta name="keywords" content="dúvidas frequentes,dúvidas,tirar dúvidas,respostas.">
     <link rel="icon" href="view/assets/imagens/flor.png">
-<base href="http://www.semprenegocio.com.br/" target="">
     <title>Sempre Negócio - Vantagens para anunciantes</title>
      <!-- build:css css/index.min.css -->
     <link href="view/assets/estilo/reset.css" rel="stylesheet">

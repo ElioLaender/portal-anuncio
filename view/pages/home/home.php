@@ -114,7 +114,7 @@
 
                 echo  "<div id='fotoHome' class='fotoBar'>
                         <figure id='figuHome'>
-                            <img src='/".$arrayUser[0]['cli_foto']."' alt='imagem circular representando o proprietário da conta.'>
+                            <img src='".$arrayUser[0]['cli_foto']."' alt='imagem circular representando o proprietário da conta.'>
                         </figure>
                         <div id='blocoFot'>
                             <ul>

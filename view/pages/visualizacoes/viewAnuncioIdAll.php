@@ -14,7 +14,6 @@
     <meta property="og:type" content="website">
 
     <link rel="icon" href="imagens/flor.png">
-    <base href="http://www.semprenegocio.com.br/" target="">
     <title>Sempre Negócio - <?php echo $metas[0]['anuncio_titulo']; ?></title>
     <!-- build:css css/index.min.css -->
     <link href="view/assets/estilo/reset.css" rel="stylesheet">

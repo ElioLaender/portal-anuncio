@@ -9,7 +9,6 @@
     <meta name="description" content="Trabalhe conosco, desenvolvendo tecnoligia, promovendo soluções inovadoras.">
     <meta name="keywords" content="Trabalhe conosco, trabalhar na sempre negócio, candidato, semprenegocio.com, semprenegocio.com.br">
     <link rel="icon" href="view/assets/imagens/flor.png">
-    <base href="http://www.semprenegocio.com.br/" target="">
     <title>Sempre Negócio - Trabalhe Conosco</title>
     <!-- build:css css/index.min.css -->
     <link href="view/assets/estilo/reset.css" rel="stylesheet">

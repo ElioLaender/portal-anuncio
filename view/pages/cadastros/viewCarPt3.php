@@ -9,21 +9,20 @@
     <meta name="description" content="Semprenegócio Anuncios.">
     <meta name="keywords" content="Carrinho semprenegócio, realizar compra.">
     <title>SempreNegócio - Cadastre seu anuncio</title>
-    <base href="http://www.semprenegocio.com.br/" target="">
     <link rel="icon" href="imagens/flor.png">
-    <link href='/view/assets/estilo/formAnun.css' rel='stylesheet'>
+    <link href='view/assets/estilo/formAnun.css' rel='stylesheet'>
     <link href="view/assets/estilo/reset.css" rel="stylesheet">
     <link href="view/assets/estilo/index.css" rel="stylesheet">
     <link href="view/assets/estilo/barraMenu.css" rel="stylesheet">
     <link href="view/assets/estilo/dashboard.css" rel="stylesheet">
     <link href="view/assets/estilo/fotoUsu.css" rel="stylesheet">
     <link href="view/assets/estilo/configuraCheckbox.css" rel="stylesheet">
-    <link href='/view/assets/estilo//viewFolha.css' rel='stylesheet'>
-    <link href='/view/assets/estilo/breackFolha.css' rel='stylesheet'>
+    <link href='view/assets/estilo//viewFolha.css' rel='stylesheet'>
+    <link href='view/assets/estilo/breackFolha.css' rel='stylesheet'>
     <link href="view/assets/estilo/breackDasBoard.css" rel="stylesheet">
     <link href="view/assets/estilo/breakIndex.css" rel="stylesheet">
     <link href="view/assets/estilo/breackBarraMenu.css" rel="stylesheet">
-    <link href='/view/assets/estilo/breackFormAnun.css' rel='stylesheet'>
+    <link href='view/assets/estilo/breackFormAnun.css' rel='stylesheet'>
 <style>
 
 .alerta{

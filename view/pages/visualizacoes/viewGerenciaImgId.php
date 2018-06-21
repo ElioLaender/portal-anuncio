@@ -10,7 +10,6 @@
         <meta name="description" content="Suba imagens para seu anúncio, mostre para seus clientes, produtos ou serviços, que sua empresa desenvolve. Aproveite ao máximo nossos serviços para sua empresa obter os melhores resultados.">
         <meta name="keywords" content="imagens de anúncio,subir imagens,foto de empresa,foto de seerviço,foto de produtos,imagens de produtos,imagens de serviços,imagens de anunciantes">
         <link rel="icon" href="view/assets/imagens/flor.png">
-<base href="http://www.semprenegocio.com.br/" target="">
         <title>Sempre Negócio - Genrencie sua galeria de fotos</title>
         <!-- build:css css/index.min.css -->
         <link href="view/assets/estilo/reset.css" rel="stylesheet">

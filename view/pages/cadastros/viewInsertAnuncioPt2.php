@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>SempreNegocio - Insira fotos no seu anuncio</title>
-    <base href="http://www.semprenegocio.com.br/" target="">
 </head>
 <body>
 <h1>Parte dois do cadastro - Insira fotos no seu anuncio <?php echo $idAnun; ?></h1>
